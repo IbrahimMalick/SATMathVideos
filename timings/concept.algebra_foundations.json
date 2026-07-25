@@ -1,0 +1,216 @@
+{
+  "scene": "concept.algebra_foundations",
+  "duration": 675.764,
+  "beats": [
+    {
+      "name": "title",
+      "start": 0.0,
+      "end": 6.66
+    },
+    {
+      "name": "scope",
+      "start": 6.66,
+      "end": 30.12
+    },
+    {
+      "name": "why",
+      "start": 30.12,
+      "end": 56.42
+    },
+    {
+      "name": "two_ways",
+      "start": 56.42,
+      "end": 63.6
+    },
+    {
+      "name": "eq_example",
+      "start": 63.6,
+      "end": 78.74
+    },
+    {
+      "name": "fn_example",
+      "start": 78.74,
+      "end": 99.34
+    },
+    {
+      "name": "both",
+      "start": 99.34,
+      "end": 118.88
+    },
+    {
+      "name": "equivalence",
+      "start": 118.88,
+      "end": 140.18
+    },
+    {
+      "name": "solve_setup",
+      "start": 140.18,
+      "end": 144.12
+    },
+    {
+      "name": "solve_sub",
+      "start": 144.12,
+      "end": 148.76
+    },
+    {
+      "name": "solve_result",
+      "start": 148.76,
+      "end": 179.26
+    },
+    {
+      "name": "check",
+      "start": 179.26,
+      "end": 204.58
+    },
+    {
+      "name": "three_reps",
+      "start": 204.58,
+      "end": 222.94
+    },
+    {
+      "name": "gym_eq",
+      "start": 222.94,
+      "end": 249.54
+    },
+    {
+      "name": "gym_table",
+      "start": 249.54,
+      "end": 274.2
+    },
+    {
+      "name": "gym_graph",
+      "start": 274.2,
+      "end": 290.78
+    },
+    {
+      "name": "gym_slope",
+      "start": 290.78,
+      "end": 301.46
+    },
+    {
+      "name": "same_15_eq",
+      "start": 301.46,
+      "end": 309.86
+    },
+    {
+      "name": "same_15_table",
+      "start": 309.86,
+      "end": 314.04
+    },
+    {
+      "name": "same_15_graph",
+      "start": 314.04,
+      "end": 325.8
+    },
+    {
+      "name": "connect",
+      "start": 325.8,
+      "end": 343.22
+    },
+    {
+      "name": "linear",
+      "start": 343.22,
+      "end": 375.1
+    },
+    {
+      "name": "diff_table",
+      "start": 375.1,
+      "end": 403.22
+    },
+    {
+      "name": "diff_mark",
+      "start": 403.22,
+      "end": 414.12
+    },
+    {
+      "name": "nonlinear",
+      "start": 414.12,
+      "end": 430.94
+    },
+    {
+      "name": "key_idea",
+      "start": 430.94,
+      "end": 435.68
+    },
+    {
+      "name": "word",
+      "start": 435.68,
+      "end": 450.7
+    },
+    {
+      "name": "stream",
+      "start": 450.7,
+      "end": 467.52
+    },
+    {
+      "name": "stream_eq",
+      "start": 467.52,
+      "end": 471.56
+    },
+    {
+      "name": "mxb",
+      "start": 471.56,
+      "end": 485.88
+    },
+    {
+      "name": "m_warning",
+      "start": 485.88,
+      "end": 504.32
+    },
+    {
+      "name": "strategy",
+      "start": 504.32,
+      "end": 511.74
+    },
+    {
+      "name": "strat_list",
+      "start": 511.74,
+      "end": 527.1
+    },
+    {
+      "name": "efficient",
+      "start": 527.1,
+      "end": 573.3
+    },
+    {
+      "name": "review",
+      "start": 573.3,
+      "end": 578.46
+    },
+    {
+      "name": "rev1",
+      "start": 578.46,
+      "end": 593.58
+    },
+    {
+      "name": "rev2",
+      "start": 593.58,
+      "end": 603.74
+    },
+    {
+      "name": "rev3",
+      "start": 603.74,
+      "end": 613.72
+    },
+    {
+      "name": "rev4",
+      "start": 613.72,
+      "end": 627.48
+    },
+    {
+      "name": "rev5",
+      "start": 627.48,
+      "end": 640.04
+    },
+    {
+      "name": "next",
+      "start": 640.04,
+      "end": 653.7
+    },
+    {
+      "name": "pillars",
+      "start": 653.7,
+      "end": 675.764
+    }
+  ]
+}
