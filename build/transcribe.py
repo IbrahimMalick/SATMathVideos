@@ -34,8 +34,16 @@ def transcribe_faster_whisper(path, model_size):
     from faster_whisper import WhisperModel
 
     model = WhisperModel(model_size, device="cpu", compute_type="int8")
+    # condition_on_previous_text=False prevents the repetition loops whisper
+    # falls into on long, evenly-paced narration; VAD keeps silence out of
+    # the timestamps.
     segments, _info = model.transcribe(
-        str(path), word_timestamps=True, temperature=0.0, beam_size=5
+        str(path),
+        word_timestamps=True,
+        temperature=0.0,
+        beam_size=5,
+        condition_on_previous_text=False,
+        vad_filter=True,
     )
     words = []
     for segment in segments:
