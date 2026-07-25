@@ -365,7 +365,7 @@ class AlgebraFoundations(SATScene):
             [[1, 7], [2, 10], [3, 13], [4, 16]],
             col_widths=[1.4, 1.4],
         )
-        table.move_to(DOWN * 1.3 + LEFT * 0.6)
+        table.move_to(DOWN * 1.4 + LEFT * 3.5)
 
         with self.beat("diff_table") as t:
             self.play(Write(table), run_time=t.fill(0.4))
@@ -390,8 +390,11 @@ class AlgebraFoundations(SATScene):
             self.play(Write(diffs), run_time=t.fill(0.3))
             t.hold()
 
-        nonlinear = serif("quadratic and exponential change comes later", LABEL_SIZE, GREY)
-        nonlinear.next_to(table, RIGHT, buff=GAP_MD * 3).shift(UP * 0.3)
+        nonlinear = VGroup(
+            serif("quadratic and exponential", LABEL_SIZE, GREY),
+            serif("change comes later", LABEL_SIZE, GREY),
+        ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
+        nonlinear.move_to(np.array([3.2, -1.4, 0]))
 
         with self.beat("nonlinear") as t:
             self.play(diffs.animate.set_color(GREY), run_time=t.fill(0.08))
@@ -399,7 +402,7 @@ class AlgebraFoundations(SATScene):
             t.hold()
 
         key = serif("A straight line has a constant rate of change.", BODY_SIZE)
-        key.next_to(nonlinear, DOWN, buff=GAP_MD * 1.4)
+        key.move_to(DOWN * 3.3)
 
         with self.beat("key_idea") as t:
             self.play(Write(key), run_time=t.fill(0.3))
@@ -499,7 +502,7 @@ class AlgebraFoundations(SATScene):
             t.hold()
 
         lines = [
-            "1  equations find unknowns; functions describe relationships",
+            "1  equations find unknowns; functions relate quantities",
             "2  equivalence: do the same to both sides",
             "3  one function — equation, table, graph",
             "4  linear means a constant rate of change",
@@ -530,11 +533,13 @@ class AlgebraFoundations(SATScene):
             serif("equivalence", BODY_SIZE),
             serif("multiple representations", BODY_SIZE),
             serif("constant change", BODY_SIZE),
-        ).arrange(RIGHT, buff=GAP_MD * 2.4)
+        ).arrange(DOWN, buff=GAP_MD * 1.4)
         pillars.move_to(ORIGIN)
 
         with self.beat("pillars") as t:
             self.clear_section(t)
             self.play(Write(pillars), run_time=t.fill(0.3))
-            self.play(Create(underline(pillars)), run_time=t.fill(0.2))
+            self.play(
+                *[Create(underline(p)) for p in pillars], run_time=t.fill(0.2)
+            )
             t.hold()
