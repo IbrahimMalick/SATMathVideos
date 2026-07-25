@@ -31,6 +31,9 @@ MARGIN_SIZE = 28
 # same nominal size, so the equation default sits higher than BODY_SIZE.
 EQUATION_SIZE = 40
 
+# For the one equation a section is about — the hero of the frame.
+DISPLAY_SIZE = 56
+
 # ---------------------------------------------------------------- spacing
 
 GAP_SM = 0.25   # scene units; tight spacing within a group
