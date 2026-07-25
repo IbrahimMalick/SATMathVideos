@@ -1,0 +1,10 @@
+{
+  "scene": "concept.vertex_form",
+  "duration": 24.8,
+  "beats": [
+    {"name": "axes",     "start": 3.10, "end": 6.42},
+    {"name": "curve",    "start": 6.42, "end": 12.05},
+    {"name": "equation", "start": 12.05, "end": 16.30},
+    {"name": "vertex",   "start": 16.30, "end": 24.80}
+  ]
+}
