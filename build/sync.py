@@ -23,10 +23,12 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 
 MARKER_RE = re.compile(r"\[\[beat:([A-Za-z0-9_-]+)\]\]")
 
-# A marker resolves to the first *aligned* script word within this many words
-# after it. Beyond that, the recording has drifted too far from the script to
-# trust the timestamp.
+# A marker resolves to the first *aligned* script word within LOOKAHEAD words
+# after it. If the delivery dropped or reworded that stretch, we accept an
+# anchor up to LOOKAHEAD_MAX words out but warn loudly about the slip. Beyond
+# that, the recording has drifted too far to trust the timestamp.
 LOOKAHEAD = 5
+LOOKAHEAD_MAX = 15
 
 MATCH, MISMATCH, GAP = 2, -1, -1
 
@@ -112,15 +114,23 @@ def resolve_beats(tokens, words, duration):
         # Marker sits before script word `word_index`; anchor on the first
         # aligned word at or after it.
         start = None
-        for i in range(word_index, min(word_index + LOOKAHEAD, len(script_words))):
+        for i in range(word_index, min(word_index + LOOKAHEAD_MAX, len(script_words))):
             if i in mapping:
                 start = words[mapping[i]]["start"]
+                if i - word_index >= LOOKAHEAD:
+                    print(
+                        f"WARNING: beat '{value}' anchored {i - word_index} words "
+                        f"late, on {script_words[i]!r} at {start:.2f}s — the "
+                        "recording seems to skip or rework the words right after "
+                        "the marker. Check that the reveal still lands sensibly."
+                    )
                 break
         if start is None:
-            context = " ".join(script_words[word_index:word_index + LOOKAHEAD])
+            context = " ".join(script_words[word_index:word_index + LOOKAHEAD_MAX])
             raise SyncError(
-                f"Beat marker '{value}' did not resolve: none of the script words "
-                f"following it ({context!r}) were found in the recording."
+                f"Beat marker '{value}' did not resolve: none of the "
+                f"{LOOKAHEAD_MAX} script words following it ({context!r}) were "
+                "found in the recording."
             )
         beats.append({"name": value, "start": round(start, 3)})
 
