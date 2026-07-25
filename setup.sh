@@ -8,4 +8,7 @@ set -euo pipefail
 apt-get install -y libpango1.0-dev libcairo2-dev pkg-config dvisvgm ffmpeg \
     texlive texlive-latex-extra
 
+# Ubuntu's distro-patched setuptools can't build the srt sdist (a
+# faster-whisper dependency) — upgrade the build tools first.
+pip install --ignore-installed --upgrade pip setuptools wheel
 pip install manim faster-whisper
