@@ -23,7 +23,26 @@ apt-get install -y libpango1.0-dev libcairo2-dev pkg-config dvisvgm ffmpeg texli
 pip install manim faster-whisper
 ```
 
-## Rendering (Stage 1)
+## From a recording (Stage 2)
+
+Record yourself reading a script, then:
+
+```bash
+python build/render.py scripts/L03-vertex-form.md audio/L03-vertex-form.wav
+```
+
+This transcribes the recording (local faster-whisper by default; the
+transcript is cached as `audio/<name>.words.json`), aligns the script's
+`[[beat:...]]` markers against what was actually said, writes
+`timings/<scene>.json`, renders the scene, muxes the narration, and writes
+`out/<script-stem>.mp4`. Useful flags: `-q l` for a fast draft render,
+`--model small` for a more accurate transcription, `--retranscribe` after
+replacing a recording, `--backend assemblyai` (needs `ASSEMBLYAI_API_KEY`).
+
+A marker that can't be matched to the recording fails loudly with the marker
+name — fix the recording or the script, never the timing file by hand.
+
+## Rendering a scene directly (Stage 1)
 
 Always render from the repo root with `python -m manim` (this puts the repo
 root on the import path so `brand` and `scenes.base` resolve):

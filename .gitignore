@@ -3,3 +3,4 @@ __pycache__/
 media/
 out/
 audio/*.wav
+audio/*.words.json
