@@ -1,0 +1,276 @@
+{
+  "scene": "concept.data_analysis",
+  "duration": 678.673,
+  "beats": [
+    {
+      "name": "title",
+      "start": 0.0,
+      "end": 11.22
+    },
+    {
+      "name": "recap",
+      "start": 11.22,
+      "end": 23.04
+    },
+    {
+      "name": "topics",
+      "start": 23.04,
+      "end": 48.38
+    },
+    {
+      "name": "prop",
+      "start": 48.38,
+      "end": 65.62
+    },
+    {
+      "name": "prop_def",
+      "start": 65.62,
+      "end": 71.0
+    },
+    {
+      "name": "event",
+      "start": 71.0,
+      "end": 86.24
+    },
+    {
+      "name": "constant",
+      "start": 86.24,
+      "end": 93.76
+    },
+    {
+      "name": "event_values",
+      "start": 93.76,
+      "end": 105.54
+    },
+    {
+      "name": "rates",
+      "start": 105.54,
+      "end": 127.26
+    },
+    {
+      "name": "units",
+      "start": 127.26,
+      "end": 141.72
+    },
+    {
+      "name": "speed",
+      "start": 141.72,
+      "end": 151.22
+    },
+    {
+      "name": "speed_result",
+      "start": 151.22,
+      "end": 164.94
+    },
+    {
+      "name": "pct",
+      "start": 164.94,
+      "end": 183.98
+    },
+    {
+      "name": "pct_def",
+      "start": 183.98,
+      "end": 197.08
+    },
+    {
+      "name": "pct_change",
+      "start": 197.08,
+      "end": 219.56
+    },
+    {
+      "name": "keep64",
+      "start": 219.56,
+      "end": 236.58
+    },
+    {
+      "name": "decay1",
+      "start": 236.58,
+      "end": 243.56
+    },
+    {
+      "name": "decay2",
+      "start": 243.56,
+      "end": 264.02
+    },
+    {
+      "name": "pct_rule",
+      "start": 264.02,
+      "end": 274.24
+    },
+    {
+      "name": "multi",
+      "start": 274.24,
+      "end": 296.08
+    },
+    {
+      "name": "sleep",
+      "start": 296.08,
+      "end": 325.8
+    },
+    {
+      "name": "charts",
+      "start": 325.8,
+      "end": 338.86
+    },
+    {
+      "name": "centre",
+      "start": 338.86,
+      "end": 356.34
+    },
+    {
+      "name": "spread",
+      "start": 356.34,
+      "end": 373.2
+    },
+    {
+      "name": "stdev",
+      "start": 373.2,
+      "end": 378.12
+    },
+    {
+      "name": "stdev_small",
+      "start": 378.12,
+      "end": 382.34
+    },
+    {
+      "name": "stdev_large",
+      "start": 382.34,
+      "end": 386.52
+    },
+    {
+      "name": "stdev_note",
+      "start": 386.52,
+      "end": 395.8
+    },
+    {
+      "name": "prob",
+      "start": 395.8,
+      "end": 404.2
+    },
+    {
+      "name": "coin",
+      "start": 404.2,
+      "end": 425.66
+    },
+    {
+      "name": "dice",
+      "start": 425.66,
+      "end": 442.86
+    },
+    {
+      "name": "dice_result",
+      "start": 442.86,
+      "end": 447.28
+    },
+    {
+      "name": "inference",
+      "start": 447.28,
+      "end": 464.18
+    },
+    {
+      "name": "survey",
+      "start": 464.18,
+      "end": 479.34
+    },
+    {
+      "name": "random",
+      "start": 479.34,
+      "end": 493.74
+    },
+    {
+      "name": "biased",
+      "start": 493.74,
+      "end": 514.4
+    },
+    {
+      "name": "questions",
+      "start": 514.4,
+      "end": 527.24
+    },
+    {
+      "name": "generalise",
+      "start": 527.24,
+      "end": 543.28
+    },
+    {
+      "name": "causation",
+      "start": 543.28,
+      "end": 556.16
+    },
+    {
+      "name": "distinction",
+      "start": 556.16,
+      "end": 569.14
+    },
+    {
+      "name": "investigator",
+      "start": 569.14,
+      "end": 586.26
+    },
+    {
+      "name": "ask_list",
+      "start": 586.26,
+      "end": 607.84
+    },
+    {
+      "name": "investigator2",
+      "start": 607.84,
+      "end": 619.4
+    },
+    {
+      "name": "review",
+      "start": 619.4,
+      "end": 622.48
+    },
+    {
+      "name": "rev1",
+      "start": 622.48,
+      "end": 627.82
+    },
+    {
+      "name": "rev2",
+      "start": 627.82,
+      "end": 630.92
+    },
+    {
+      "name": "rev3",
+      "start": 630.92,
+      "end": 636.32
+    },
+    {
+      "name": "rev4",
+      "start": 636.32,
+      "end": 640.9
+    },
+    {
+      "name": "rev5",
+      "start": 640.9,
+      "end": 644.52
+    },
+    {
+      "name": "rev6",
+      "start": 644.52,
+      "end": 649.68
+    },
+    {
+      "name": "rev7",
+      "start": 649.68,
+      "end": 656.7
+    },
+    {
+      "name": "key",
+      "start": 656.7,
+      "end": 664.9
+    },
+    {
+      "name": "next",
+      "start": 664.9,
+      "end": 673.48
+    },
+    {
+      "name": "end",
+      "start": 673.48,
+      "end": 678.673
+    }
+  ]
+}
