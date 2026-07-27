@@ -40,6 +40,19 @@ class TimingError(Exception):
     """A beat could not be resolved. Fail loudly, never default."""
 
 
+def snap(seconds):
+    """Round a duration onto the frame grid.
+
+    Manim renders whole frames; handing it durations that aren't frame
+    multiples makes the rendered video drift ahead of the narration by a
+    frame per animation, which adds up over a long lecture. Every duration
+    the beat machinery emits goes through here so the scene clock and the
+    frame count always agree.
+    """
+    frames = max(1, round(seconds * config.frame_rate))
+    return frames / config.frame_rate
+
+
 class BeatTimer:
     """Handed to the scene inside a ``with self.beat(...)`` block."""
 
@@ -69,13 +82,13 @@ class BeatTimer:
                 "Earlier animations in this beat used more time than the narration allows."
             )
         run_time = max(MIN_RUN_TIME, fraction * self.span)
-        return min(run_time, remaining)
+        return snap(min(run_time, remaining))
 
     def hold(self):
         """Sit still for whatever is left of the beat."""
         remaining = self.remaining
         if remaining > 1 / config.frame_rate:
-            self._scene.wait(remaining)
+            self._scene.wait(snap(remaining))
 
 
 class SATScene(Scene):
@@ -131,7 +144,7 @@ class SATScene(Scene):
                 "off their words, so this fails instead."
             )
         if start - now > 1 / config.frame_rate:
-            self.wait(start - now)  # narration-only stretch before this beat
+            self.wait(snap(start - now))  # narration-only stretch before this beat
         yield BeatTimer(self, name, start, end)
 
     def tear_down(self):
@@ -139,5 +152,5 @@ class SATScene(Scene):
         # always match, whether or not the last beat held to its end.
         remaining = self.narration_duration - self.renderer.time
         if remaining > 1 / config.frame_rate:
-            self.wait(remaining)
+            self.wait(snap(remaining))
         super().tear_down()
