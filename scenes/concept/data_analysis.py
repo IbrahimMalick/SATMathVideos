@@ -335,9 +335,9 @@ class DataAnalysis(SATScene):
                             for x in values])
             return line, dots
 
-        base = -1.9
+        base = -2.25
         line1, dots1 = dot_row([-2.7, -2.4, -2.0, -1.8, -1.5], base)
-        line2, dots2 = dot_row([-4.7, -3.4, -2.1, -0.8, 0.7], base - 1.0)
+        line2, dots2 = dot_row([-4.7, -3.4, -2.1, -0.8, 0.7], base - 0.95)
         label1 = serif("small — close together", LABEL_SIZE, GREY)
         label1.next_to(line1, RIGHT, buff=GAP_SM)
         label2 = serif("large — spread out", LABEL_SIZE, GREY)
