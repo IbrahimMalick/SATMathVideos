@@ -1,0 +1,366 @@
+{
+  "scene": "concept.words_in_context",
+  "duration": 768.399,
+  "beats": [
+    {
+      "name": "title",
+      "start": 0.0,
+      "end": 15.74
+    },
+    {
+      "name": "stem",
+      "start": 15.74,
+      "end": 27.2
+    },
+    {
+      "name": "goal",
+      "start": 27.2,
+      "end": 36.84
+    },
+    {
+      "name": "bright",
+      "start": 36.84,
+      "end": 47.2
+    },
+    {
+      "name": "bright2",
+      "start": 47.2,
+      "end": 55.02
+    },
+    {
+      "name": "strategy",
+      "start": 55.02,
+      "end": 67.88
+    },
+    {
+      "name": "step1",
+      "start": 67.88,
+      "end": 83.36
+    },
+    {
+      "name": "step2",
+      "start": 83.36,
+      "end": 95.94
+    },
+    {
+      "name": "step3",
+      "start": 95.94,
+      "end": 106.02
+    },
+    {
+      "name": "step4",
+      "start": 106.02,
+      "end": 119.72
+    },
+    {
+      "name": "q1_passage",
+      "start": 119.72,
+      "end": 132.24
+    },
+    {
+      "name": "q1_stem",
+      "start": 132.24,
+      "end": 136.76
+    },
+    {
+      "name": "q1_choices",
+      "start": 136.76,
+      "end": 147.08
+    },
+    {
+      "name": "q1_pause",
+      "start": 147.08,
+      "end": 150.54
+    },
+    {
+      "name": "q1_answer",
+      "start": 150.54,
+      "end": 154.3
+    },
+    {
+      "name": "q1_read",
+      "start": 154.3,
+      "end": 170.9
+    },
+    {
+      "name": "q1_explain",
+      "start": 170.9,
+      "end": 180.52
+    },
+    {
+      "name": "q1_replace",
+      "start": 180.52,
+      "end": 195.9
+    },
+    {
+      "name": "q1_elimB",
+      "start": 195.9,
+      "end": 210.2
+    },
+    {
+      "name": "q1_elimC",
+      "start": 210.2,
+      "end": 217.24
+    },
+    {
+      "name": "q1_elimD",
+      "start": 217.24,
+      "end": 227.04
+    },
+    {
+      "name": "q1_lesson",
+      "start": 227.04,
+      "end": 235.68
+    },
+    {
+      "name": "q2_passage",
+      "start": 235.68,
+      "end": 249.24
+    },
+    {
+      "name": "q2_stem",
+      "start": 249.24,
+      "end": 254.4
+    },
+    {
+      "name": "q2_choices",
+      "start": 254.4,
+      "end": 266.1
+    },
+    {
+      "name": "q2_pause",
+      "start": 266.1,
+      "end": 270.16
+    },
+    {
+      "name": "q2_answer",
+      "start": 270.16,
+      "end": 274.68
+    },
+    {
+      "name": "q2_expl",
+      "start": 274.68,
+      "end": 291.18
+    },
+    {
+      "name": "q2_elimA",
+      "start": 291.18,
+      "end": 306.06
+    },
+    {
+      "name": "q2_elimC",
+      "start": 306.06,
+      "end": 313.52
+    },
+    {
+      "name": "q2_elimD",
+      "start": 313.52,
+      "end": 318.16
+    },
+    {
+      "name": "q2_trap",
+      "start": 318.16,
+      "end": 335.76
+    },
+    {
+      "name": "q3_passage",
+      "start": 335.76,
+      "end": 344.98
+    },
+    {
+      "name": "q3_stem",
+      "start": 344.98,
+      "end": 350.28
+    },
+    {
+      "name": "q3_choices",
+      "start": 350.28,
+      "end": 360.14
+    },
+    {
+      "name": "q3_pause",
+      "start": 360.14,
+      "end": 363.66
+    },
+    {
+      "name": "q3_answer",
+      "start": 363.66,
+      "end": 368.14
+    },
+    {
+      "name": "q3_expl",
+      "start": 368.14,
+      "end": 378.58
+    },
+    {
+      "name": "q3_elims",
+      "start": 378.58,
+      "end": 394.52
+    },
+    {
+      "name": "q4_passage",
+      "start": 394.52,
+      "end": 407.66
+    },
+    {
+      "name": "q4_stem",
+      "start": 407.66,
+      "end": 412.74
+    },
+    {
+      "name": "q4_choices",
+      "start": 412.74,
+      "end": 424.66
+    },
+    {
+      "name": "q4_pause",
+      "start": 424.66,
+      "end": 428.8
+    },
+    {
+      "name": "q4_answer",
+      "start": 428.8,
+      "end": 433.68
+    },
+    {
+      "name": "q4_expl",
+      "start": 433.68,
+      "end": 453.36
+    },
+    {
+      "name": "q4_elims",
+      "start": 453.36,
+      "end": 462.38
+    },
+    {
+      "name": "contrast",
+      "start": 462.38,
+      "end": 475.62
+    },
+    {
+      "name": "contrast_ex1",
+      "start": 475.62,
+      "end": 484.62
+    },
+    {
+      "name": "contrast_ex1b",
+      "start": 484.62,
+      "end": 500.68
+    },
+    {
+      "name": "contrast_ex2",
+      "start": 500.68,
+      "end": 511.32
+    },
+    {
+      "name": "contrast_ex2b",
+      "start": 511.32,
+      "end": 530.28
+    },
+    {
+      "name": "explain_tech",
+      "start": 530.28,
+      "end": 534.54
+    },
+    {
+      "name": "explain_ex1",
+      "start": 534.54,
+      "end": 547.58
+    },
+    {
+      "name": "explain_ex2",
+      "start": 547.58,
+      "end": 563.02
+    },
+    {
+      "name": "explain_note",
+      "start": 563.02,
+      "end": 574.28
+    },
+    {
+      "name": "q5_passage",
+      "start": 574.28,
+      "end": 587.86
+    },
+    {
+      "name": "q5_stem",
+      "start": 587.86,
+      "end": 593.24
+    },
+    {
+      "name": "q5_choices",
+      "start": 593.24,
+      "end": 605.66
+    },
+    {
+      "name": "q5_pause",
+      "start": 605.66,
+      "end": 609.14
+    },
+    {
+      "name": "q5_answer",
+      "start": 609.14,
+      "end": 614.08
+    },
+    {
+      "name": "q5_expl",
+      "start": 614.08,
+      "end": 641.7
+    },
+    {
+      "name": "q5_elimA",
+      "start": 641.7,
+      "end": 652.16
+    },
+    {
+      "name": "q5_elimCD",
+      "start": 652.16,
+      "end": 663.78
+    },
+    {
+      "name": "traps",
+      "start": 663.78,
+      "end": 666.9
+    },
+    {
+      "name": "trap1",
+      "start": 666.9,
+      "end": 676.46
+    },
+    {
+      "name": "trap2",
+      "start": 676.46,
+      "end": 683.52
+    },
+    {
+      "name": "trap3",
+      "start": 683.52,
+      "end": 692.28
+    },
+    {
+      "name": "trap4",
+      "start": 692.28,
+      "end": 708.1
+    },
+    {
+      "name": "trap5",
+      "start": 708.1,
+      "end": 720.18
+    },
+    {
+      "name": "process",
+      "start": 720.18,
+      "end": 751.24
+    },
+    {
+      "name": "key",
+      "start": 751.24,
+      "end": 765.84
+    },
+    {
+      "name": "end",
+      "start": 765.84,
+      "end": 768.399
+    }
+  ]
+}

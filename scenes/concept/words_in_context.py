@@ -42,7 +42,7 @@ from components.passage import PassageHighlight
 from scenes.base import SATScene
 
 
-def note_text(text, width=34, color=GREY, size=LABEL_SIZE):
+def note_text(text, width=26, color=GREY, size=LABEL_SIZE):
     return Text(
         textwrap.fill(text, width),
         font=SERIF_FONT,
@@ -66,7 +66,7 @@ def underline(mobject, color=SAGE):
 class WordsInContext(SATScene):
     scene_id = "concept.words_in_context"
 
-    NOTE_X = 3.6   # right-hand work column
+    NOTE_X = 0.9   # left edge of the right-hand work column
     CHOICES_X = -3.6
 
     def clear_section(self, t, fraction=0.12):
@@ -220,14 +220,14 @@ class WordsInContext(SATScene):
             t.hold()
 
         note2 = note_text("the evidence was so strong she had to")
-        note2.next_to(note1, DOWN, buff=GAP_MD, aligned_edge=LEFT)
+        note2.next_to(note1, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
 
         with self.beat("q1_explain") as t:
             self.play(Write(note2), run_time=t.fill(0.35))
             t.hold()
 
-        note3 = note_text('"the results forced her to reconsider"', 34, SAGE)
-        note3.next_to(note2, DOWN, buff=GAP_MD, aligned_edge=LEFT)
+        note3 = note_text('"the results forced her to reconsider"', 26, SAGE)
+        note3.next_to(note2, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
 
         with self.beat("q1_replace") as t:
             self.play(Write(note3), run_time=t.fill(0.35))
@@ -242,6 +242,10 @@ class WordsInContext(SATScene):
         lesson.to_edge(DOWN, buff=GAP_MD * 1.4)
 
         with self.beat("q1_lesson") as t:
+            self.play(
+                FadeOut(note1), FadeOut(note2), FadeOut(note3),
+                run_time=t.fill(0.1),
+            )
             self.play(Write(lesson), run_time=t.fill(0.3))
             self.play(Create(underline(lesson)), run_time=t.fill(0.15))
             t.hold()
@@ -267,7 +271,7 @@ class WordsInContext(SATScene):
             t.hold()
 
         note2 = note_text("an approach, not a physical object")
-        note2.next_to(note1, DOWN, buff=GAP_MD, aligned_edge=LEFT)
+        note2.next_to(note1, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
 
         with self.beat("q2_elimA") as t:
             self.play(*ac.eliminate("A"), run_time=t.fill(0.25))
@@ -286,6 +290,7 @@ class WordsInContext(SATScene):
         trap.to_edge(DOWN, buff=GAP_MD * 1.4)
 
         with self.beat("q2_trap") as t:
+            self.play(FadeOut(note1), FadeOut(note2), run_time=t.fill(0.1))
             self.play(Write(trap), run_time=t.fill(0.3))
             self.play(Create(underline(trap)), run_time=t.fill(0.15))
             t.hold()
@@ -454,7 +459,7 @@ class WordsInContext(SATScene):
             t.hold()
 
         note2 = note_text("a design, not a person")
-        note2.next_to(note1, DOWN, buff=GAP_MD, aligned_edge=LEFT)
+        note2.next_to(note1, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
 
         with self.beat("q5_elimA") as t:
             self.play(*ac.eliminate("A"), run_time=t.fill(0.25))
