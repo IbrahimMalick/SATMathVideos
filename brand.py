@@ -43,3 +43,17 @@ GAP_LG = 1.0    # between distinct regions of the frame
 # ---------------------------------------------------------------- pacing
 
 MIN_RUN_TIME = 0.5   # the calm-pacing floor; beat timers clamp to this
+
+# ---------------------------------------------------------------- text factories
+
+
+def serif(text, size=BODY_SIZE, color=CHARCOAL):
+    from manim import Text
+
+    return Text(text, font=SERIF_FONT, font_size=size, color=color)
+
+
+def mono(text, size=MARGIN_SIZE, color=GREY):
+    from manim import Text
+
+    return Text(text, font=MONO_FONT, font_size=size, color=color)
