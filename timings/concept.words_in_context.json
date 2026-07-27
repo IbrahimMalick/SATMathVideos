@@ -1,366 +1,366 @@
 {
   "scene": "concept.words_in_context",
-  "duration": 768.399,
+  "duration": 643.518,
   "beats": [
     {
       "name": "title",
       "start": 0.0,
-      "end": 15.74
+      "end": 12.98
     },
     {
       "name": "stem",
-      "start": 15.74,
-      "end": 27.2
+      "start": 12.98,
+      "end": 22.3
     },
     {
       "name": "goal",
-      "start": 27.2,
-      "end": 36.84
+      "start": 22.3,
+      "end": 30.02
     },
     {
       "name": "bright",
-      "start": 36.84,
-      "end": 47.2
+      "start": 30.02,
+      "end": 38.56
     },
     {
       "name": "bright2",
-      "start": 47.2,
-      "end": 55.02
+      "start": 38.56,
+      "end": 44.34
     },
     {
       "name": "strategy",
-      "start": 55.02,
-      "end": 67.88
+      "start": 44.34,
+      "end": 55.46
     },
     {
       "name": "step1",
-      "start": 67.88,
-      "end": 83.36
+      "start": 55.46,
+      "end": 68.46
     },
     {
       "name": "step2",
-      "start": 83.36,
-      "end": 95.94
+      "start": 68.46,
+      "end": 77.64
     },
     {
       "name": "step3",
-      "start": 95.94,
-      "end": 106.02
+      "start": 77.64,
+      "end": 85.6
     },
     {
       "name": "step4",
-      "start": 106.02,
-      "end": 119.72
+      "start": 85.6,
+      "end": 95.66
     },
     {
       "name": "q1_passage",
-      "start": 119.72,
-      "end": 132.24
+      "start": 95.66,
+      "end": 105.1
     },
     {
       "name": "q1_stem",
-      "start": 132.24,
-      "end": 136.76
+      "start": 105.1,
+      "end": 109.8
     },
     {
       "name": "q1_choices",
-      "start": 136.76,
-      "end": 147.08
+      "start": 109.8,
+      "end": 117.96
     },
     {
       "name": "q1_pause",
-      "start": 147.08,
-      "end": 150.54
+      "start": 117.96,
+      "end": 120.68
     },
     {
       "name": "q1_answer",
-      "start": 150.54,
-      "end": 154.3
+      "start": 120.68,
+      "end": 124.18
     },
     {
       "name": "q1_read",
-      "start": 154.3,
-      "end": 170.9
+      "start": 124.18,
+      "end": 138.26
     },
     {
       "name": "q1_explain",
-      "start": 170.9,
-      "end": 180.52
+      "start": 138.26,
+      "end": 146.14
     },
     {
       "name": "q1_replace",
-      "start": 180.52,
-      "end": 195.9
+      "start": 146.14,
+      "end": 159.16
     },
     {
       "name": "q1_elimB",
-      "start": 195.9,
-      "end": 210.2
+      "start": 159.16,
+      "end": 171.0
     },
     {
       "name": "q1_elimC",
-      "start": 210.2,
-      "end": 217.24
+      "start": 171.0,
+      "end": 176.98
     },
     {
       "name": "q1_elimD",
-      "start": 217.24,
-      "end": 227.04
+      "start": 176.98,
+      "end": 185.56
     },
     {
       "name": "q1_lesson",
-      "start": 227.04,
-      "end": 235.68
+      "start": 185.56,
+      "end": 193.14
     },
     {
       "name": "q2_passage",
-      "start": 235.68,
-      "end": 249.24
+      "start": 193.14,
+      "end": 204.04
     },
     {
       "name": "q2_stem",
-      "start": 249.24,
-      "end": 254.4
+      "start": 204.04,
+      "end": 208.4
     },
     {
       "name": "q2_choices",
-      "start": 254.4,
-      "end": 266.1
+      "start": 208.4,
+      "end": 219.58
     },
     {
       "name": "q2_pause",
-      "start": 266.1,
-      "end": 270.16
+      "start": 219.58,
+      "end": 222.12
     },
     {
       "name": "q2_answer",
-      "start": 270.16,
-      "end": 274.68
+      "start": 222.12,
+      "end": 226.46
     },
     {
       "name": "q2_expl",
-      "start": 274.68,
-      "end": 291.18
+      "start": 226.46,
+      "end": 240.9
     },
     {
       "name": "q2_elimA",
-      "start": 291.18,
-      "end": 306.06
+      "start": 240.9,
+      "end": 253.8
     },
     {
       "name": "q2_elimC",
-      "start": 306.06,
-      "end": 313.52
+      "start": 253.8,
+      "end": 260.46
     },
     {
       "name": "q2_elimD",
-      "start": 313.52,
-      "end": 318.16
+      "start": 260.46,
+      "end": 263.72
     },
     {
       "name": "q2_trap",
-      "start": 318.16,
-      "end": 335.76
+      "start": 263.72,
+      "end": 278.14
     },
     {
       "name": "q3_passage",
-      "start": 335.76,
-      "end": 344.98
+      "start": 278.14,
+      "end": 285.46
     },
     {
       "name": "q3_stem",
-      "start": 344.98,
-      "end": 350.28
+      "start": 285.46,
+      "end": 289.66
     },
     {
       "name": "q3_choices",
-      "start": 350.28,
-      "end": 360.14
+      "start": 289.66,
+      "end": 298.94
     },
     {
       "name": "q3_pause",
-      "start": 360.14,
-      "end": 363.66
+      "start": 298.94,
+      "end": 301.66
     },
     {
       "name": "q3_answer",
-      "start": 363.66,
-      "end": 368.14
+      "start": 301.66,
+      "end": 305.76
     },
     {
       "name": "q3_expl",
-      "start": 368.14,
-      "end": 378.58
+      "start": 305.76,
+      "end": 314.14
     },
     {
       "name": "q3_elims",
-      "start": 378.58,
-      "end": 394.52
+      "start": 314.14,
+      "end": 327.12
     },
     {
       "name": "q4_passage",
-      "start": 394.52,
-      "end": 407.66
+      "start": 327.12,
+      "end": 337.68
     },
     {
       "name": "q4_stem",
-      "start": 407.66,
-      "end": 412.74
+      "start": 337.68,
+      "end": 341.58
     },
     {
       "name": "q4_choices",
-      "start": 412.74,
-      "end": 424.66
+      "start": 341.58,
+      "end": 353.26
     },
     {
       "name": "q4_pause",
-      "start": 424.66,
-      "end": 428.8
+      "start": 353.26,
+      "end": 355.66
     },
     {
       "name": "q4_answer",
-      "start": 428.8,
-      "end": 433.68
+      "start": 355.66,
+      "end": 360.0
     },
     {
       "name": "q4_expl",
-      "start": 433.68,
-      "end": 453.36
+      "start": 360.0,
+      "end": 377.18
     },
     {
       "name": "q4_elims",
-      "start": 453.36,
-      "end": 462.38
+      "start": 377.18,
+      "end": 384.26
     },
     {
       "name": "contrast",
-      "start": 462.38,
-      "end": 475.62
+      "start": 384.26,
+      "end": 395.44
     },
     {
       "name": "contrast_ex1",
-      "start": 475.62,
-      "end": 484.62
+      "start": 395.44,
+      "end": 403.02
     },
     {
       "name": "contrast_ex1b",
-      "start": 484.62,
-      "end": 500.68
+      "start": 403.02,
+      "end": 418.22
     },
     {
       "name": "contrast_ex2",
-      "start": 500.68,
-      "end": 511.32
+      "start": 418.22,
+      "end": 426.74
     },
     {
       "name": "contrast_ex2b",
-      "start": 511.32,
-      "end": 530.28
+      "start": 426.74,
+      "end": 443.64
     },
     {
       "name": "explain_tech",
-      "start": 530.28,
-      "end": 534.54
+      "start": 443.64,
+      "end": 447.2
     },
     {
       "name": "explain_ex1",
-      "start": 534.54,
-      "end": 547.58
+      "start": 447.2,
+      "end": 457.9
     },
     {
       "name": "explain_ex2",
-      "start": 547.58,
-      "end": 563.02
+      "start": 457.9,
+      "end": 471.44
     },
     {
       "name": "explain_note",
-      "start": 563.02,
-      "end": 574.28
+      "start": 471.44,
+      "end": 480.62
     },
     {
       "name": "q5_passage",
-      "start": 574.28,
-      "end": 587.86
+      "start": 480.62,
+      "end": 491.74
     },
     {
       "name": "q5_stem",
-      "start": 587.86,
-      "end": 593.24
+      "start": 491.74,
+      "end": 496.1
     },
     {
       "name": "q5_choices",
-      "start": 593.24,
-      "end": 605.66
+      "start": 496.1,
+      "end": 507.68
     },
     {
       "name": "q5_pause",
-      "start": 605.66,
-      "end": 609.14
+      "start": 507.68,
+      "end": 510.44
     },
     {
       "name": "q5_answer",
-      "start": 609.14,
-      "end": 614.08
+      "start": 510.44,
+      "end": 515.26
     },
     {
       "name": "q5_expl",
-      "start": 614.08,
-      "end": 641.7
+      "start": 515.26,
+      "end": 538.18
     },
     {
       "name": "q5_elimA",
-      "start": 641.7,
-      "end": 652.16
+      "start": 538.18,
+      "end": 547.52
     },
     {
       "name": "q5_elimCD",
-      "start": 652.16,
-      "end": 663.78
+      "start": 547.52,
+      "end": 557.4
     },
     {
       "name": "traps",
-      "start": 663.78,
-      "end": 666.9
+      "start": 557.4,
+      "end": 560.22
     },
     {
       "name": "trap1",
-      "start": 666.9,
-      "end": 676.46
+      "start": 560.22,
+      "end": 567.0
     },
     {
       "name": "trap2",
-      "start": 676.46,
-      "end": 683.52
+      "start": 567.0,
+      "end": 572.46
     },
     {
       "name": "trap3",
-      "start": 683.52,
-      "end": 692.28
+      "start": 572.46,
+      "end": 579.32
     },
     {
       "name": "trap4",
-      "start": 692.28,
-      "end": 708.1
+      "start": 579.32,
+      "end": 592.6
     },
     {
       "name": "trap5",
-      "start": 708.1,
-      "end": 720.18
+      "start": 592.6,
+      "end": 602.24
     },
     {
       "name": "process",
-      "start": 720.18,
-      "end": 751.24
+      "start": 602.24,
+      "end": 629.82
     },
     {
       "name": "key",
-      "start": 751.24,
-      "end": 765.84
+      "start": 629.82,
+      "end": 641.62
     },
     {
       "name": "end",
-      "start": 765.84,
-      "end": 768.399
+      "start": 641.62,
+      "end": 643.518
     }
   ]
 }
