@@ -329,19 +329,19 @@ class DataAnalysis(SATScene):
 
         # Two dot rows: same centre, different standard deviation.
         def dot_row(values, y):
-            line = Line(np.array([-4.5, y, 0]), np.array([1.5, y, 0]),
+            line = Line(np.array([-5.0, y, 0]), np.array([1.0, y, 0]),
                         color=CHARCOAL, stroke_width=2)
             dots = VGroup(*[Dot(np.array([x, y, 0]), color=SLATE, radius=0.09)
                             for x in values])
             return line, dots
 
-        base = -2.1
-        line1, dots1 = dot_row([-2.2, -1.9, -1.5, -1.3, -1.0], base)
-        line2, dots2 = dot_row([-4.2, -2.9, -1.6, -0.3, 1.2], base - 1.2)
+        base = -1.9
+        line1, dots1 = dot_row([-2.7, -2.4, -2.0, -1.8, -1.5], base)
+        line2, dots2 = dot_row([-4.7, -3.4, -2.1, -0.8, 0.7], base - 1.0)
         label1 = serif("small — close together", LABEL_SIZE, GREY)
-        label1.next_to(line1, RIGHT, buff=GAP_MD)
+        label1.next_to(line1, RIGHT, buff=GAP_SM)
         label2 = serif("large — spread out", LABEL_SIZE, GREY)
-        label2.next_to(line2, RIGHT, buff=GAP_MD)
+        label2.next_to(line2, RIGHT, buff=GAP_SM)
         stdev_head = serif("standard deviation — distance from the mean", LABEL_SIZE)
         stdev_head.next_to(spread, DOWN, buff=GAP_MD, aligned_edge=LEFT)
 
