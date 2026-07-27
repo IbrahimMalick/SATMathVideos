@@ -66,7 +66,7 @@ def underline(mobject, color=SAGE):
 class WordsInContext(SATScene):
     scene_id = "concept.words_in_context"
 
-    NOTE_X = 0.9   # left edge of the right-hand work column
+    NOTE_X = 0.5   # left edge of the right-hand work column
     CHOICES_X = -3.6
 
     def clear_section(self, t, fraction=0.12):
@@ -212,21 +212,21 @@ class WordsInContext(SATScene):
             t.hold()
 
         anchor = self.note_column(ac)
-        note1 = note_text("the results caused her to change her mind")
+        note1 = note_text("the results made her change her mind")
         note1.move_to(anchor, aligned_edge=UP + LEFT)
 
         with self.beat("q1_read") as t:
             self.play(Write(note1), run_time=t.fill(0.35))
             t.hold()
 
-        note2 = note_text("the evidence was so strong she had to")
+        note2 = note_text("so strong she had to reconsider")
         note2.next_to(note1, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
 
         with self.beat("q1_explain") as t:
             self.play(Write(note2), run_time=t.fill(0.35))
             t.hold()
 
-        note3 = note_text('"the results forced her to reconsider"', 26, SAGE)
+        note3 = note_text('"forced her to reconsider"', 26, SAGE)
         note3.next_to(note2, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
 
         with self.beat("q1_replace") as t:
@@ -451,7 +451,7 @@ class WordsInContext(SATScene):
             self.play(*ac.confirm("B"), run_time=t.fill(0.4))
             t.hold()
 
-        note1 = note_text("however: ambitious, then modest — and the budget is the clue")
+        note1 = note_text("ambitious, then modest — the budget is the clue")
         note1.move_to(self.note_column(ac), aligned_edge=UP + LEFT)
 
         with self.beat("q5_expl") as t:
