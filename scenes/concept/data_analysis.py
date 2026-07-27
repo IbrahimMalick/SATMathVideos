@@ -138,6 +138,7 @@ class DataAnalysis(SATScene):
 
         const_label = serif("the constant of proportionality", LABEL_SIZE, TERRACOTTA)
         const_label.next_to(eq_note, DOWN, buff=GAP_MD)
+        const_label.move_to(np.array([-3.4, const_label.get_center()[1], 0]))
 
         with self.beat("constant") as t:
             self.play(eq[2].animate.set_color(TERRACOTTA), run_time=t.fill(0.15))
@@ -213,16 +214,16 @@ class DataAnalysis(SATScene):
             "20\\% = \\frac{20}{100} = 0.2",
             font_size=EQUATION_SIZE, color=CHARCOAL,
         )
-        pct_def.next_to(uses, DOWN, buff=GAP_MD * 1.4)
+        pct_def.next_to(uses, DOWN, buff=GAP_MD * 0.9)
 
         with self.beat("pct_def") as t:
             self.play(Write(pct_def), run_time=t.fill(0.35))
             t.hold()
 
         change = serif("loses 36% of its value every year", BODY_SIZE)
-        change.next_to(pct_def, DOWN, buff=GAP_MD * 1.5)
+        change.next_to(pct_def, DOWN, buff=GAP_MD)
         wrong = serif("not: subtract 36 each year", LABEL_SIZE, TERRACOTTA)
-        wrong.next_to(change, DOWN, buff=GAP_MD)
+        wrong.next_to(change, DOWN, buff=GAP_MD * 0.8)
 
         with self.beat("pct_change") as t:
             self.play(Write(change), run_time=t.fill(0.3))
@@ -233,7 +234,7 @@ class DataAnalysis(SATScene):
             "\\text{keeps } 64\\% \\;\\Rightarrow\\; \\times\\, 0.64 \\text{ each year}",
             font_size=EQUATION_SIZE, color=CHARCOAL,
         )
-        keep.next_to(wrong, DOWN, buff=GAP_MD * 1.2)
+        keep.next_to(wrong, DOWN, buff=GAP_MD * 0.9)
 
         with self.beat("keep64") as t:
             self.play(wrong.animate.set_color(GREY), run_time=t.fill(0.08))
@@ -244,7 +245,7 @@ class DataAnalysis(SATScene):
             "1000", "\\times 0.64", "=", "640",
             font_size=EQUATION_SIZE, color=CHARCOAL,
         )
-        decay1.to_edge(DOWN, buff=GAP_MD * 2.6).shift(LEFT * 2.8)
+        decay1.next_to(keep, DOWN, buff=GAP_MD).shift(LEFT * 2.8)
 
         with self.beat("decay1") as t:
             self.play(Write(decay1), run_time=t.fill(0.35))
@@ -254,7 +255,7 @@ class DataAnalysis(SATScene):
             "640", "\\times 0.64", "= \\; ?",
             font_size=EQUATION_SIZE, color=CHARCOAL,
         )
-        decay2.next_to(decay1, RIGHT, buff=GAP_MD * 2.4)
+        decay2.next_to(decay1, RIGHT, buff=GAP_MD * 1.6)
         decay2[0].set_color(TERRACOTTA)
         from_note = serif("from 640, not 1000", LABEL_SIZE, GREY)
         from_note.next_to(decay2, DOWN, buff=GAP_SM * 1.4)
@@ -337,9 +338,9 @@ class DataAnalysis(SATScene):
         base = -2.1
         line1, dots1 = dot_row([-2.2, -1.9, -1.5, -1.3, -1.0], base)
         line2, dots2 = dot_row([-4.2, -2.9, -1.6, -0.3, 1.2], base - 1.2)
-        label1 = serif("small — values close together", LABEL_SIZE, GREY)
+        label1 = serif("small — close together", LABEL_SIZE, GREY)
         label1.next_to(line1, RIGHT, buff=GAP_MD)
-        label2 = serif("large — values spread out", LABEL_SIZE, GREY)
+        label2 = serif("large — spread out", LABEL_SIZE, GREY)
         label2.next_to(line2, RIGHT, buff=GAP_MD)
         stdev_head = serif("standard deviation — distance from the mean", LABEL_SIZE)
         stdev_head.next_to(spread, DOWN, buff=GAP_MD, aligned_edge=LEFT)
