@@ -335,9 +335,9 @@ class DataAnalysis(SATScene):
                             for x in values])
             return line, dots
 
-        base = -2.25
+        base = -2.05
         line1, dots1 = dot_row([-2.7, -2.4, -2.0, -1.8, -1.5], base)
-        line2, dots2 = dot_row([-4.7, -3.4, -2.1, -0.8, 0.7], base - 0.95)
+        line2, dots2 = dot_row([-4.7, -3.4, -2.1, -0.8, 0.7], base - 0.85)
         label1 = serif("small — close together", LABEL_SIZE, GREY)
         label1.next_to(line1, RIGHT, buff=GAP_SM)
         label2 = serif("large — spread out", LABEL_SIZE, GREY)
@@ -362,7 +362,7 @@ class DataAnalysis(SATScene):
             t.hold()
 
         note = mono("interpret it — you won't compute it", MARGIN_SIZE)
-        note.to_edge(DOWN, buff=GAP_SM * 1.4)
+        note.to_edge(DOWN, buff=GAP_SM * 0.8)
 
         with self.beat("stdev_note") as t:
             self.play(Write(note), run_time=t.fill(0.3))
