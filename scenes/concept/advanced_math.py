@@ -188,22 +188,21 @@ class AdvancedMath(SATScene):
             t.hold()
 
         linear = serif("linear — the output rises by 3 every step", LABEL_SIZE)
-        linear.next_to(head, DOWN, buff=GAP_MD * 1.3)
-        linear.move_to(np.array([-2.6, linear.get_center()[1], 0]))
+        quad = serif("quadratic — second differences are constant", LABEL_SIZE)
+        expo = serif("exponential — multiplied by a constant factor", LABEL_SIZE)
+        rate_lines = VGroup(linear, quad, expo).arrange(
+            DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT
+        )
+        rate_lines.next_to(head, DOWN, buff=GAP_MD * 1.2)
+        rate_lines.move_to(np.array([-0.3, rate_lines.get_center()[1], 0]))
 
         with self.beat("linear_rate") as t:
             self.play(Write(linear), run_time=t.fill(0.35))
             t.hold()
 
-        quad = serif("quadratic — second differences are constant", LABEL_SIZE)
-        quad.next_to(linear, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
-
         with self.beat("quad_rate") as t:
             self.play(Write(quad), run_time=t.fill(0.35))
             t.hold()
-
-        expo = serif("exponential — multiplied by a constant factor", LABEL_SIZE)
-        expo.next_to(quad, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
         seq = MathTex(
             "2", "\\;\\xrightarrow{\\times 3}\\;", "6",
             "\\;\\xrightarrow{\\times 3}\\;", "18",
@@ -258,7 +257,7 @@ class AdvancedMath(SATScene):
             t.hold()
 
         profit = serif("profit rises, then falls", LABEL_SIZE)
-        profit.move_to(RIGHT * 3.4 + UP * 1.0)
+        profit.move_to(RIGHT * 2.4 + UP * 1.0)
 
         with self.beat("profit") as t:
             self.play(Write(profit), run_time=t.fill(0.3))
@@ -374,7 +373,7 @@ class AdvancedMath(SATScene):
         std_head.move_to(np.array([col_x[0], 2.2, 0]))
         std_form = MathTex("ax^2 + bx + c", font_size=EQUATION_SIZE, color=CHARCOAL)
         std_form.next_to(std_head, DOWN, buff=GAP_MD)
-        std_reveal = serif("c is the y-intercept", LABEL_SIZE, GREY)
+        std_reveal = serif("c is the y-intercept", MARGIN_SIZE, GREY)
         std_reveal.next_to(std_form, DOWN, buff=GAP_SM * 1.4)
 
         with self.beat("standard") as t:
@@ -397,7 +396,7 @@ class AdvancedMath(SATScene):
         fac_head.move_to(np.array([col_x[1], 2.2, 0]))
         fac_form = MathTex("a(x - r)(x - s)", font_size=EQUATION_SIZE, color=CHARCOAL)
         fac_form.next_to(fac_head, DOWN, buff=GAP_MD)
-        fac_reveal = serif("r and s are the roots", LABEL_SIZE, GREY)
+        fac_reveal = serif("r and s are the roots", MARGIN_SIZE, GREY)
         fac_reveal.next_to(fac_form, DOWN, buff=GAP_SM * 1.4)
 
         with self.beat("factored") as t:
@@ -425,7 +424,7 @@ class AdvancedMath(SATScene):
         ver_head.move_to(np.array([col_x[2], 2.2, 0]))
         ver_form = MathTex("a(x - h)^2 + k", font_size=EQUATION_SIZE, color=CHARCOAL)
         ver_form.next_to(ver_head, DOWN, buff=GAP_MD)
-        ver_reveal = serif("vertex at (h, k)", LABEL_SIZE, GREY)
+        ver_reveal = serif("vertex at (h, k)", MARGIN_SIZE, GREY)
         ver_reveal.next_to(ver_form, DOWN, buff=GAP_SM * 1.4)
 
         with self.beat("vertexform") as t:
