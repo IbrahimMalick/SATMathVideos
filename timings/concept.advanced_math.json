@@ -1,0 +1,311 @@
+{
+  "scene": "concept.advanced_math",
+  "duration": 866.755,
+  "beats": [
+    {
+      "name": "title",
+      "start": 0.0,
+      "end": 7.48
+    },
+    {
+      "name": "recap",
+      "start": 7.48,
+      "end": 18.82
+    },
+    {
+      "name": "third",
+      "start": 18.82,
+      "end": 28.6
+    },
+    {
+      "name": "bridge",
+      "start": 28.6,
+      "end": 40.54
+    },
+    {
+      "name": "corr",
+      "start": 40.54,
+      "end": 59.88
+    },
+    {
+      "name": "feval",
+      "start": 59.88,
+      "end": 69.04
+    },
+    {
+      "name": "feval2",
+      "start": 69.04,
+      "end": 78.36
+    },
+    {
+      "name": "fnotation",
+      "start": 78.36,
+      "end": 92.62
+    },
+    {
+      "name": "fxa",
+      "start": 92.62,
+      "end": 112.74
+    },
+    {
+      "name": "fxa2",
+      "start": 112.74,
+      "end": 119.3
+    },
+    {
+      "name": "mistake",
+      "start": 119.3,
+      "end": 129.0
+    },
+    {
+      "name": "cov",
+      "start": 129.0,
+      "end": 142.66
+    },
+    {
+      "name": "linear_rate",
+      "start": 142.66,
+      "end": 153.36
+    },
+    {
+      "name": "quad_rate",
+      "start": 153.36,
+      "end": 175.34
+    },
+    {
+      "name": "expo",
+      "start": 175.34,
+      "end": 200.36
+    },
+    {
+      "name": "families",
+      "start": 200.36,
+      "end": 208.26
+    },
+    {
+      "name": "real",
+      "start": 208.26,
+      "end": 222.74
+    },
+    {
+      "name": "ball",
+      "start": 222.74,
+      "end": 232.28
+    },
+    {
+      "name": "profit",
+      "start": 232.28,
+      "end": 242.38
+    },
+    {
+      "name": "expo_real",
+      "start": 242.38,
+      "end": 255.78
+    },
+    {
+      "name": "poly",
+      "start": 255.78,
+      "end": 269.12
+    },
+    {
+      "name": "interpret",
+      "start": 269.12,
+      "end": 279.16
+    },
+    {
+      "name": "ask_list",
+      "start": 279.16,
+      "end": 301.14
+    },
+    {
+      "name": "pattern_note",
+      "start": 301.14,
+      "end": 305.66
+    },
+    {
+      "name": "cart",
+      "start": 305.66,
+      "end": 321.86
+    },
+    {
+      "name": "cart_ex",
+      "start": 321.86,
+      "end": 331.74
+    },
+    {
+      "name": "cart_on",
+      "start": 331.74,
+      "end": 345.22
+    },
+    {
+      "name": "cart_off",
+      "start": 345.22,
+      "end": 358.38
+    },
+    {
+      "name": "cart_note",
+      "start": 358.38,
+      "end": 372.28
+    },
+    {
+      "name": "forms",
+      "start": 372.28,
+      "end": 384.0
+    },
+    {
+      "name": "standard",
+      "start": 384.0,
+      "end": 404.46
+    },
+    {
+      "name": "standard_ex",
+      "start": 404.46,
+      "end": 415.18
+    },
+    {
+      "name": "factored",
+      "start": 415.18,
+      "end": 439.28
+    },
+    {
+      "name": "factored_ex",
+      "start": 439.28,
+      "end": 462.0
+    },
+    {
+      "name": "vertexform",
+      "start": 462.0,
+      "end": 495.08
+    },
+    {
+      "name": "vertex_ex",
+      "start": 495.08,
+      "end": 512.9
+    },
+    {
+      "name": "which",
+      "start": 512.9,
+      "end": 534.0
+    },
+    {
+      "name": "rewrite",
+      "start": 534.0,
+      "end": 546.68
+    },
+    {
+      "name": "parent",
+      "start": 546.68,
+      "end": 571.64
+    },
+    {
+      "name": "vshift",
+      "start": 571.64,
+      "end": 592.72
+    },
+    {
+      "name": "hshift",
+      "start": 592.72,
+      "end": 625.96
+    },
+    {
+      "name": "hshift2",
+      "start": 625.96,
+      "end": 640.84
+    },
+    {
+      "name": "shift_rule",
+      "start": 640.84,
+      "end": 662.42
+    },
+    {
+      "name": "stretch",
+      "start": 662.42,
+      "end": 675.66
+    },
+    {
+      "name": "compress",
+      "start": 675.66,
+      "end": 685.12
+    },
+    {
+      "name": "reflect",
+      "start": 685.12,
+      "end": 697.44
+    },
+    {
+      "name": "reverse",
+      "start": 697.44,
+      "end": 718.6
+    },
+    {
+      "name": "rev_eq",
+      "start": 718.6,
+      "end": 732.88
+    },
+    {
+      "name": "rev_solve",
+      "start": 732.88,
+      "end": 736.98
+    },
+    {
+      "name": "rev_answer",
+      "start": 736.98,
+      "end": 739.78
+    },
+    {
+      "name": "rev_note",
+      "start": 739.78,
+      "end": 751.22
+    },
+    {
+      "name": "questions",
+      "start": 751.22,
+      "end": 778.92
+    },
+    {
+      "name": "review",
+      "start": 778.92,
+      "end": 785.96
+    },
+    {
+      "name": "rev1",
+      "start": 785.96,
+      "end": 796.92
+    },
+    {
+      "name": "rev2",
+      "start": 796.92,
+      "end": 807.92
+    },
+    {
+      "name": "rev3",
+      "start": 807.92,
+      "end": 812.46
+    },
+    {
+      "name": "rev4",
+      "start": 812.46,
+      "end": 823.0
+    },
+    {
+      "name": "rev5",
+      "start": 823.0,
+      "end": 830.28
+    },
+    {
+      "name": "rev6",
+      "start": 830.28,
+      "end": 835.3
+    },
+    {
+      "name": "key",
+      "start": 835.3,
+      "end": 854.9
+    },
+    {
+      "name": "next_lecture",
+      "start": 854.9,
+      "end": 866.755
+    }
+  ]
+}

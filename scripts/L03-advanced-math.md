@@ -191,5 +191,4 @@ tables, and real world situations. When you understand the structure of a
 function, you can choose the most efficient path to the answer.
 [[beat:next_lecture]] In our next and final lecture, we will study Geometry
 and Trigonometry. We will apply algebraic reasoning to shapes, angles,
-circles, triangles, and spatial measurement. [[beat:end]] That completes
-this introduction to Advanced Math.
+circles, triangles, and spatial measurement.

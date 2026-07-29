@@ -662,14 +662,10 @@ class AdvancedMath(SATScene):
 
         upcoming = serif("next: Geometry and Trigonometry", LABEL_SIZE, GREY)
         upcoming.next_to(key, DOWN, buff=GAP_MD * 1.6)
-
-        with self.beat("next_lecture") as t:
-            self.play(Write(upcoming), run_time=t.fill(0.35))
-            t.hold()
-
         end = mono("end of lecture", MARGIN_SIZE)
         end.to_edge(DOWN, buff=GAP_MD)
 
-        with self.beat("end") as t:
-            self.play(Write(end), run_time=t.fill(0.4))
+        with self.beat("next_lecture") as t:
+            self.play(Write(upcoming), run_time=t.fill(0.3))
+            self.play(Write(end), run_time=t.fill(0.2))
             t.hold()
