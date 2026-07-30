@@ -192,13 +192,13 @@ class AlgebraQ1(SATScene):
             "y", "=", "m", "x", "+", "b",
             font_size=DISPLAY_SIZE, color=GREY,
         )
-        mxb.move_to(np.array([self.WORK_X, 1.4, 0]))
+        mxb.move_to(np.array([self.WORK_X, 0.65, 0]))
 
         cue1 = VGroup(
             serif("the anchor — happens once", LABEL_SIZE),
             serif("flat fee: 12", LABEL_SIZE, TERRACOTTA),
         ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
-        cue1.next_to(mxb, DOWN, buff=GAP_MD * 1.2)
+        cue1.next_to(mxb, DOWN, buff=GAP_SM * 1.5)
         cue1.move_to(np.array([self.WORK_X, cue1.get_center()[1], 0]))
 
         with self.beat("cue_constant") as t:
@@ -211,7 +211,7 @@ class AlgebraQ1(SATScene):
             serif("the jumper — per, each, every", LABEL_SIZE),
             serif("rate: 0.75 per pound", LABEL_SIZE, TERRACOTTA),
         ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
-        cue2.next_to(cue1, DOWN, buff=GAP_MD, aligned_edge=LEFT)
+        cue2.next_to(cue1, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
 
         with self.beat("cue_rate") as t:
             self.play(
@@ -227,7 +227,7 @@ class AlgebraQ1(SATScene):
             serif("the result of the story", LABEL_SIZE),
             serif("total: 21", LABEL_SIZE, TERRACOTTA),
         ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
-        cue3.next_to(cue2, DOWN, buff=GAP_MD, aligned_edge=LEFT)
+        cue3.next_to(cue2, DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
 
         with self.beat("cue_total") as t:
             self.play(
@@ -248,12 +248,12 @@ class AlgebraQ1(SATScene):
             font_size=DISPLAY_SIZE, color=CHARCOAL,
         )
         for step in (step1, step2, step3):
-            step.move_to(np.array([self.WORK_X, 0.4, 0]))
+            step.move_to(np.array([self.WORK_X, -0.5, 0]))
 
         with self.beat("build_var") as t:
             self.swap_work(t)
             label = serif("rate × variable", LABEL_SIZE, GREY)
-            label.move_to(np.array([self.WORK_X, 1.6, 0]))
+            label.move_to(np.array([self.WORK_X, 0.55, 0]))
             self.play(Write(label), run_time=t.fill(0.15))
             self.play(Write(step1), run_time=t.fill(0.3))
             self.work.add(label)
@@ -277,7 +277,7 @@ class AlgebraQ1(SATScene):
             col_widths=[1.9, 1.9],
         )
         table.scale(0.9)
-        table.move_to(np.array([1.9, -2.2, 0]))
+        table.move_to(np.array([1.5, -2.2, 0]))
 
         with self.beat("table_lang") as t:
             self.swap_work(t)
@@ -293,7 +293,7 @@ class AlgebraQ1(SATScene):
             axis_config={"color": CHARCOAL, "include_ticks": False,
                          "tip_length": 0.12},
         )
-        axes.move_to(np.array([5.3, -2.2, 0]))
+        axes.move_to(np.array([5.5, -2.2, 0]))
         line = axes.plot(lambda x: 12 + 0.75 * x * 4, x_range=[0, 3.8], color=SLATE)
         intercept = MathTex("12", font_size=MARGIN_SIZE, color=CHARCOAL)
         intercept.next_to(axes.c2p(0, 12), LEFT, buff=GAP_SM * 0.8)
@@ -307,7 +307,7 @@ class AlgebraQ1(SATScene):
 
     def verification(self):
         head = serif("test a value: w = 10", BODY_SIZE)
-        head.move_to(np.array([self.WORK_X, 1.4, 0]))
+        head.move_to(np.array([self.WORK_X, 0.6, 0]))
 
         with self.beat("verify") as t:
             self.swap_work(t)
@@ -349,7 +349,7 @@ class AlgebraQ1(SATScene):
             serif("jump per unit → the rate m", LABEL_SIZE),
             serif("final result → what it equals", LABEL_SIZE),
         ).arrange(DOWN, buff=GAP_SM * 1.5, aligned_edge=LEFT)
-        lines.move_to(np.array([self.WORK_X, 0.6, 0]))
+        lines.move_to(np.array([self.WORK_X, -0.2, 0]))
 
         with self.beat("wrap") as t:
             self.swap_work(t)
