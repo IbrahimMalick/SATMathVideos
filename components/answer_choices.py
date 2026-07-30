@@ -4,7 +4,7 @@ The component holds the mobjects and returns animations; the scene decides
 when to play them (inside beats) and with what run_time.
 """
 
-from manim import Create, Line, VGroup, DOWN, LEFT
+from manim import Create, Line, Mobject, VGroup, DOWN, LEFT, RIGHT
 
 from brand import CHARCOAL, GAP_SM, GREY, LABEL_SIZE, SAGE, serif
 
@@ -12,11 +12,18 @@ LETTERS = "ABCD"
 
 
 class AnswerChoices(VGroup):
+    """Choices may be strings (rendered as serif text) or ready-made
+    mobjects such as MathTex equations."""
+
     def __init__(self, choices, font_size=LABEL_SIZE):
         super().__init__()
         self.rows = {}
-        for letter, text in zip(LETTERS, choices):
-            row = serif(f"{letter}.  {text}", font_size)
+        for letter, choice in zip(LETTERS, choices):
+            if isinstance(choice, Mobject):
+                label = serif(f"{letter}.", font_size)
+                row = VGroup(label, choice).arrange(RIGHT, buff=GAP_SM * 1.2)
+            else:
+                row = serif(f"{letter}.  {choice}", font_size)
             self.rows[letter] = row
             self.add(row)
         self.arrange(DOWN, buff=GAP_SM * 1.4, aligned_edge=LEFT)
