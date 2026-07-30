@@ -1,0 +1,81 @@
+{
+  "scene": "worked.algebra_q2",
+  "duration": 286.947,
+  "beats": [
+    {
+      "name": "title",
+      "start": 1.48,
+      "end": 10.58
+    },
+    {
+      "name": "big_picture",
+      "start": 10.58,
+      "end": 58.34
+    },
+    {
+      "name": "problem",
+      "start": 58.34,
+      "end": 70.4
+    },
+    {
+      "name": "compare",
+      "start": 70.4,
+      "end": 87.82
+    },
+    {
+      "name": "structure",
+      "start": 87.82,
+      "end": 106.02
+    },
+    {
+      "name": "equivalence",
+      "start": 106.02,
+      "end": 147.78
+    },
+    {
+      "name": "divide",
+      "start": 147.78,
+      "end": 176.32
+    },
+    {
+      "name": "divide_left",
+      "start": 176.32,
+      "end": 188.66
+    },
+    {
+      "name": "divide_right",
+      "start": 188.66,
+      "end": 195.2
+    },
+    {
+      "name": "result",
+      "start": 195.2,
+      "end": 204.78
+    },
+    {
+      "name": "standard",
+      "start": 204.78,
+      "end": 226.24
+    },
+    {
+      "name": "compare_ways",
+      "start": 226.24,
+      "end": 248.66
+    },
+    {
+      "name": "recap",
+      "start": 248.66,
+      "end": 258.72
+    },
+    {
+      "name": "recap_list",
+      "start": 258.72,
+      "end": 276.74
+    },
+    {
+      "name": "outro",
+      "start": 276.74,
+      "end": 286.947
+    }
+  ]
+}
