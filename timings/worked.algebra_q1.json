@@ -1,0 +1,111 @@
+{
+  "scene": "worked.algebra_q1",
+  "duration": 424.136,
+  "beats": [
+    {
+      "name": "title",
+      "start": 0.4,
+      "end": 11.46
+    },
+    {
+      "name": "topics",
+      "start": 11.46,
+      "end": 29.2
+    },
+    {
+      "name": "format",
+      "start": 29.2,
+      "end": 47.34
+    },
+    {
+      "name": "lesson_goal",
+      "start": 47.34,
+      "end": 81.84
+    },
+    {
+      "name": "model",
+      "start": 81.84,
+      "end": 114.12
+    },
+    {
+      "name": "problem",
+      "start": 114.12,
+      "end": 145.38
+    },
+    {
+      "name": "pause",
+      "start": 145.38,
+      "end": 160.04
+    },
+    {
+      "name": "answer",
+      "start": 160.04,
+      "end": 170.16
+    },
+    {
+      "name": "cue_constant",
+      "start": 170.16,
+      "end": 199.98
+    },
+    {
+      "name": "cue_rate",
+      "start": 199.98,
+      "end": 231.44
+    },
+    {
+      "name": "cue_total",
+      "start": 231.44,
+      "end": 245.54
+    },
+    {
+      "name": "build_var",
+      "start": 245.54,
+      "end": 264.02
+    },
+    {
+      "name": "build_fix",
+      "start": 264.02,
+      "end": 270.58
+    },
+    {
+      "name": "build_total",
+      "start": 270.58,
+      "end": 287.48
+    },
+    {
+      "name": "table_lang",
+      "start": 287.48,
+      "end": 316.68
+    },
+    {
+      "name": "graph_lang",
+      "start": 316.68,
+      "end": 333.42
+    },
+    {
+      "name": "verify",
+      "start": 333.42,
+      "end": 356.1
+    },
+    {
+      "name": "verify_b",
+      "start": 356.1,
+      "end": 368.54
+    },
+    {
+      "name": "verify_a",
+      "start": 368.54,
+      "end": 392.16
+    },
+    {
+      "name": "wrap",
+      "start": 392.16,
+      "end": 414.64
+    },
+    {
+      "name": "outro",
+      "start": 414.64,
+      "end": 424.136
+    }
+  ]
+}

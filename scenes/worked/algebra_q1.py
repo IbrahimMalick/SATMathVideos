@@ -96,29 +96,55 @@ class AlgebraQ1(SATScene):
         title = serif("SAT Algebra · Practice", TITLE_SIZE * 1.15)
         subtitle = serif("Q1 · translating word problems", BODY_SIZE, GREY)
         subtitle.next_to(title, DOWN, buff=GAP_MD)
-        VGroup(title, subtitle).move_to(UP * 1.0)
+        VGroup(title, subtitle).to_edge(UP, buff=GAP_MD * 1.6)
 
         with self.beat("title") as t:
             self.play(Write(title), run_time=t.fill(0.4))
             self.play(Write(subtitle), run_time=t.fill(0.25))
             t.hold()
 
+        topics = VGroup(
+            *[
+                serif(line, LABEL_SIZE)
+                for line in [
+                    "translating word problems",
+                    "recognizing equivalent expressions",
+                    "solving systems of equations",
+                    "interpreting linear coefficients",
+                    "constructing the equation of a line",
+                ]
+            ]
+        ).arrange(DOWN, buff=GAP_SM * 1.2, aligned_edge=LEFT)
+        topics.next_to(subtitle, DOWN, buff=GAP_MD * 1.3)
+
+        with self.beat("topics") as t:
+            self.play(Write(topics), run_time=t.fill(0.5))
+            t.hold()
+
+        fmt = serif("read · pause and attempt · solve step by step",
+                    LABEL_SIZE, GREY)
+        fmt.next_to(topics, DOWN, buff=GAP_MD * 1.2)
+
+        with self.beat("format") as t:
+            self.play(Write(fmt), run_time=t.fill(0.3))
+            t.hold()
+
         goal = serif("from English into the language of algebra", LABEL_SIZE, GREY)
-        goal.next_to(subtitle, DOWN, buff=GAP_MD * 1.6)
+        goal.next_to(fmt, DOWN, buff=GAP_MD)
 
         with self.beat("lesson_goal") as t:
             self.play(Write(goal), run_time=t.fill(0.3))
             t.hold()
 
         model = serif("linear — it changes at a constant rate", BODY_SIZE)
-        model.next_to(goal, DOWN, buff=GAP_MD * 1.4)
+        model.next_to(goal, DOWN, buff=GAP_MD)
 
         with self.beat("model") as t:
             self.play(Write(model), run_time=t.fill(0.3))
             self.play(Create(underline(model)), run_time=t.fill(0.15))
             t.hold()
 
-        self._intro_group = VGroup(title, subtitle, goal, model)
+        self._intro_group = VGroup(title, subtitle, topics, fmt, goal, model)
 
     def show_problem(self):
         problem = Text(

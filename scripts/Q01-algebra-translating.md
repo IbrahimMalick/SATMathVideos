@@ -2,10 +2,16 @@
 scene: worked.algebra_q1
 ---
 
-[[beat:title]] Each question, I'll first read the question in the problem.
-You will then have time to attempt it independently. Right after the pause,
-we'll solve the problem step by step and identify the main technique you
-should remember for similar questions. [[beat:lesson_goal]] So let's begin.
+[[beat:title]] Welcome to the digital SAT Algebra practice lesson. In this
+lesson, we'll work through questions based on common digital SAT patterns,
+okay? [[beat:topics]] We'll practice translating word problems, recognizing
+equivalent expressions, solving systems of equations, interpreting linear
+coefficients, and constructing the equation of a line. So I'll make videos
+for each one of the sets, right? [[beat:format]] For each question, I'll
+first read the question, the problem. You will then have time to attempt it
+independently, right? After the pause, we'll solve the problem step by step
+and identify the main technique you should remember for similar questions.
+[[beat:lesson_goal]] So let's begin.
 All right, so in the translating a word problem into equation, this lecture,
 basically this video is designed to help you master the art of translating
 word problems. A vital skill for the digital SAT. Algebra on this exam often
