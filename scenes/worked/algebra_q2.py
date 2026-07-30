@@ -83,13 +83,15 @@ class AlgebraQ2(SATScene):
                      LABEL_SIZE, GREY)
         big2.next_to(big1, DOWN, buff=GAP_MD)
 
+        big1_line = underline(big1)
+
         with self.beat("big_picture") as t:
             self.play(Write(big1), run_time=t.fill(0.3))
-            self.play(Create(underline(big1)), run_time=t.fill(0.12))
+            self.play(Create(big1_line), run_time=t.fill(0.12))
             self.play(Write(big2), run_time=t.fill(0.2))
             t.hold()
 
-        self._intro_group = VGroup(title, subtitle, big1, big2)
+        self._intro_group = VGroup(title, subtitle, big1, big2, big1_line)
 
     def problem_and_structure(self):
         problem = MathTex(
@@ -155,13 +157,14 @@ class AlgebraQ2(SATScene):
 
         divide_note = serif("divide both sides by 3 — one step", BODY_SIZE)
         divide_note.move_to(DOWN * 2.9)
+        divide_line = underline(divide_note)
 
         with self.beat("divide") as t:
             self.play(FadeOut(scale_note), run_time=t.fill(0.08))
             self.play(*[FadeOut(m) for m in self._compare_group[2:]],
                       run_time=t.fill(0.08))
             self.play(Write(divide_note), run_time=t.fill(0.25))
-            self.play(Create(underline(divide_note)), run_time=t.fill(0.12))
+            self.play(Create(divide_line), run_time=t.fill(0.12))
             t.hold()
 
         left = MathTex(
@@ -188,11 +191,16 @@ class AlgebraQ2(SATScene):
         result.set_color(SAGE)
         result.move_to(DOWN * 2.9)
 
+        result_line = underline(result)
+
         with self.beat("result") as t:
-            self.play(FadeOut(divide_note), run_time=t.fill(0.08))
+            self.play(FadeOut(divide_note), FadeOut(divide_line),
+                      run_time=t.fill(0.08))
             self.play(Write(result), run_time=t.fill(0.3))
-            self.play(Create(underline(result)), run_time=t.fill(0.12))
+            self.play(Create(result_line), run_time=t.fill(0.12))
             t.hold()
+
+        self._result_line = result_line
 
         self._shortcut_group = VGroup(
             self._compare_group[0], self._compare_group[1], left, right, result
@@ -211,6 +219,7 @@ class AlgebraQ2(SATScene):
         with self.beat("standard") as t:
             self.play(
                 *[FadeOut(m) for m in self._shortcut_group[:4]],
+                FadeOut(self._result_line),
                 self._shortcut_group[4].animate.move_to(
                     np.array([3.4, -0.9, 0])
                 ),
