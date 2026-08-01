@@ -145,7 +145,7 @@ class AlgebraQ3(SATScene):
         tools.move_to(np.array([-3.8, -0.6, 0]))
         expert = serif("the expert reads the structure first", LABEL_SIZE, GREY)
         expert.next_to(tools, DOWN, buff=GAP_MD)
-        expert.move_to(np.array([-3.4, expert.get_center()[1], 0]))
+        expert.move_to(np.array([-2.9, expert.get_center()[1], 0]))
 
         with self.beat("tool") as t:
             self.swap_work(t)
@@ -249,7 +249,7 @@ class AlgebraQ3(SATScene):
         l1_label = MathTex("x + y = 25", font_size=MARGIN_SIZE, color=SLATE)
         l1_label.next_to(axes.c2p(4, 21), RIGHT, buff=GAP_SM)
         l2_label = MathTex("x = 4y", font_size=MARGIN_SIZE, color=CHARCOAL)
-        l2_label.next_to(axes.c2p(24, 6), UP, buff=GAP_SM)
+        l2_label.next_to(axes.c2p(27, 6.75), DOWN, buff=GAP_SM * 1.2)
 
         with self.beat("cartesian") as t:
             self.swap_work(t)
@@ -273,7 +273,7 @@ class AlgebraQ3(SATScene):
         plug.next_to(meet, DOWN, buff=GAP_MD)
         point = Dot(axes.c2p(20, 5), color=TERRACOTTA, radius=0.09)
         point_label = MathTex("(20, 5)", font_size=EQUATION_SIZE, color=TERRACOTTA)
-        point_label.next_to(point, UP + RIGHT, buff=GAP_SM * 0.8)
+        point_label.next_to(point, UP, buff=GAP_SM * 1.6).shift(LEFT * 0.4)
 
         with self.beat("plug") as t:
             self.play(Write(plug), run_time=t.fill(0.25))
