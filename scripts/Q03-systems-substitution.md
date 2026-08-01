@@ -10,10 +10,10 @@ is more than just, you know, it's just more than just a test-taking trick,
 right? Success in Algebra 1 is a significant milestone that predicts future
 academic and career achievement. [[beat:method_intro]] Today, we are going
 to learn how to solve a system of leveraging its structure using the
-substitution method. [[beat:clues]] So the mindset should be, right, is
-that, imagine you're a detective investigating a mystery with two clues.
-Clue 1, two numbers, x and y, add up to 25. [[beat:clue2]] Clue 2, the first
-number x is exactly 4 times as large as the second y. [[beat:system]] In
+substitution method. So the mindset should be, right, is that, imagine you're a detective
+investigating a mystery with two clues. Clue 1, two numbers, x and y, add up
+to 25. [[beat:clues]] Clue 2, the first number x is exactly 4 times as large
+as the second y. [[beat:system]] In
 algebra, we write these clues as a system of equations. X plus y equals 25,
 and x equals 4y. Our goal is to find a pair of values, x, y, that makes both
 statements true at the exact same time. [[beat:tool]] So, before you start

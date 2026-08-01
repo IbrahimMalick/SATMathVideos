@@ -116,11 +116,8 @@ class AlgebraQ3(SATScene):
         with self.beat("clues") as t:
             self.play(*[FadeOut(m) for m in self._intro_group],
                       run_time=t.fill(0.12))
-            self.play(Write(clue1), run_time=t.fill(0.35))
-            t.hold()
-
-        with self.beat("clue2") as t:
-            self.play(Write(clue2), run_time=t.fill(0.35))
+            self.play(Write(clue1), run_time=t.fill(0.3))
+            self.play(Write(clue2), run_time=t.fill(0.3))
             t.hold()
 
         eq1 = MathTex("1.\\quad x + y = 25", font_size=EQUATION_SIZE, color=CHARCOAL)

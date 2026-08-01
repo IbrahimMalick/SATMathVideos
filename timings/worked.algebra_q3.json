@@ -1,0 +1,96 @@
+{
+  "scene": "worked.algebra_q3",
+  "duration": 322.757,
+  "beats": [
+    {
+      "name": "title",
+      "start": 0.34,
+      "end": 10.54
+    },
+    {
+      "name": "why",
+      "start": 10.54,
+      "end": 34.24
+    },
+    {
+      "name": "method_intro",
+      "start": 34.24,
+      "end": 56.08
+    },
+    {
+      "name": "clues",
+      "start": 56.08,
+      "end": 61.94
+    },
+    {
+      "name": "system",
+      "start": 61.94,
+      "end": 80.1
+    },
+    {
+      "name": "tool",
+      "start": 80.1,
+      "end": 104.36
+    },
+    {
+      "name": "cue",
+      "start": 104.36,
+      "end": 121.72
+    },
+    {
+      "name": "disguise",
+      "start": 121.72,
+      "end": 135.06
+    },
+    {
+      "name": "step1",
+      "start": 135.06,
+      "end": 156.98
+    },
+    {
+      "name": "step2",
+      "start": 156.98,
+      "end": 178.16
+    },
+    {
+      "name": "step3",
+      "start": 178.16,
+      "end": 200.98
+    },
+    {
+      "name": "conclusion",
+      "start": 200.98,
+      "end": 210.64
+    },
+    {
+      "name": "cartesian",
+      "start": 210.64,
+      "end": 234.5
+    },
+    {
+      "name": "intersection",
+      "start": 234.5,
+      "end": 246.16
+    },
+    {
+      "name": "plug",
+      "start": 246.16,
+      "end": 270.78
+    },
+    {
+      "name": "recap",
+      "start": 270.78,
+      "end": 287.9
+    },
+    {
+      "name": "recap2",
+      "start": 287.9,
+      "end": 298.38
+    },
+    {
+      "name": "outro",
+      "start": 298.38,
+      "end": 322.757
+    }
+  ]
+}
