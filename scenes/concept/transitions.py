@@ -815,11 +815,11 @@ class Transitions(SATScene):
             t.hold()
 
         analysis = VGroup(
-            serif("interior: inhospitable · peninsula: mild", LABEL_SIZE),
-            serif("two regions compared — we need contrast", LABEL_SIZE, GREY),
-        ).arrange(DOWN, buff=GAP_SM * 1.3, aligned_edge=LEFT)
-        analysis.next_to(passage, DOWN, buff=GAP_MD)
-        analysis.move_to(np.array([-2.9, analysis.get_center()[1], 0]))
+            serif("interior: inhospitable · peninsula: mild", MARGIN_SIZE),
+            serif("two regions compared — we need contrast", MARGIN_SIZE, GREY),
+        ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
+        analysis.next_to(passage, DOWN, buff=GAP_SM * 1.5)
+        analysis.align_to(passage, LEFT)
 
         with self.beat("ant_ignore") as t:
             self.play(Write(analysis), run_time=t.fill(0.4))
@@ -827,9 +827,9 @@ class Transitions(SATScene):
             t.hold()
 
         choices = AnswerChoices(["Therefore", "For instance", "Indeed", "In contrast"])
-        choices.scale(0.9)
-        choices.next_to(analysis, DOWN, buff=GAP_MD)
-        choices.move_to(np.array([-3.8, choices.get_center()[1], 0]))
+        choices.scale(0.85)
+        choices.next_to(analysis, DOWN, buff=GAP_SM * 1.5)
+        choices.move_to(np.array([-4.2, choices.get_center()[1], 0]))
 
         with self.beat("ant_choices") as t:
             self.play(Write(choices), run_time=t.fill(0.4))
@@ -837,17 +837,15 @@ class Transitions(SATScene):
             t.hold()
 
         reasons = {
-            "ant_elimA": ("A", "harsh interior did not cause mild peninsula"),
-            "ant_elimB": ("B", "the peninsula is not an example of the interior"),
-            "ant_elimC": ("C", "nothing is being strengthened or confirmed"),
+            "ant_elimA": ("A", "not a cause"),
+            "ant_elimB": ("B", "not an example"),
+            "ant_elimC": ("C", "nothing is confirmed"),
         }
-        reason_pos = np.array([3.3, choices.get_top()[1] - 0.2, 0])
 
         for name, (letter, why) in reasons.items():
             with self.beat(name) as t:
                 note = serif(why, MARGIN_SIZE, GREY)
-                note.move_to(reason_pos, aligned_edge=UP + LEFT)
-                reason_pos = reason_pos + DOWN * 0.55
+                note.next_to(choices.rows[letter], RIGHT, buff=GAP_MD * 1.2)
                 self.play(*choices.eliminate(letter), run_time=t.fill(0.2))
                 self.play(Write(note), run_time=t.fill(0.2))
                 self.work.add(note)
@@ -856,7 +854,7 @@ class Transitions(SATScene):
         with self.beat("ant_answer") as t:
             self.play(*choices.confirm("D"), run_time=t.fill(0.25))
             final = serif("a direct comparison — in contrast", BODY_SIZE)
-            final.to_edge(DOWN, buff=GAP_MD)
+            final.move_to(np.array([3.2, choices.get_center()[1] - 0.5, 0]))
             final_line = underline(final)
             self.play(Write(final), run_time=t.fill(0.25))
             self.play(Create(final_line), run_time=t.fill(0.12))
