@@ -853,10 +853,9 @@ class Transitions(SATScene):
 
         with self.beat("ant_answer") as t:
             self.play(*choices.confirm("D"), run_time=t.fill(0.25))
-            final = serif("a direct comparison — in contrast", BODY_SIZE)
-            final.move_to(np.array([3.2, choices.get_center()[1] - 0.5, 0]))
-            final_line = underline(final)
+            final = serif("a direct comparison", LABEL_SIZE, SAGE)
+            final.next_to(choices.rows["D"], RIGHT, buff=GAP_MD * 1.2)
             self.play(Write(final), run_time=t.fill(0.25))
-            self.play(Create(final_line), run_time=t.fill(0.12))
-            self.work.add(final, final_line)
+            self.play(Create(underline(choices.rows["D"])), run_time=t.fill(0.12))
+            self.work.add(final)
             t.hold()
