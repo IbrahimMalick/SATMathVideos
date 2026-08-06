@@ -286,6 +286,7 @@ class VerbTense(SATScene):
             "the building.",
             highlight="had left",
             highlight_color=SAGE,
+            width=44,
         )
         fire.next_to(martha_note, DOWN, buff=GAP_MD)
 
