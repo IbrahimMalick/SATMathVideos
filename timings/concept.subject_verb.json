@@ -1,0 +1,121 @@
+{
+  "scene": "concept.subject_verb",
+  "duration": 367.99,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.0,
+      "end": 11.4
+    },
+    {
+      "name": "promise",
+      "start": 11.4,
+      "end": 24.16
+    },
+    {
+      "name": "challenge",
+      "start": 24.16,
+      "end": 35.02
+    },
+    {
+      "name": "title",
+      "start": 35.02,
+      "end": 44.0
+    },
+    {
+      "name": "traveler",
+      "start": 44.0,
+      "end": 63.5
+    },
+    {
+      "name": "rule",
+      "start": 63.5,
+      "end": 71.3
+    },
+    {
+      "name": "researcher",
+      "start": 71.3,
+      "end": 84.88
+    },
+    {
+      "name": "researchers",
+      "start": 84.88,
+      "end": 107.46
+    },
+    {
+      "name": "lonely_rule",
+      "start": 107.46,
+      "end": 122.14
+    },
+    {
+      "name": "dog",
+      "start": 122.14,
+      "end": 132.58
+    },
+    {
+      "name": "dogs",
+      "start": 132.58,
+      "end": 145.44
+    },
+    {
+      "name": "bodyguard",
+      "start": 145.44,
+      "end": 161.46
+    },
+    {
+      "name": "woodpecker",
+      "start": 161.46,
+      "end": 183.02
+    },
+    {
+      "name": "woodpecker2",
+      "start": 183.02,
+      "end": 200.54
+    },
+    {
+      "name": "box",
+      "start": 200.54,
+      "end": 227.96
+    },
+    {
+      "name": "players",
+      "start": 227.96,
+      "end": 249.92
+    },
+    {
+      "name": "strategy",
+      "start": 249.92,
+      "end": 267.44
+    },
+    {
+      "name": "preps",
+      "start": 267.44,
+      "end": 279.8
+    },
+    {
+      "name": "coins",
+      "start": 279.8,
+      "end": 294.68
+    },
+    {
+      "name": "effects",
+      "start": 294.68,
+      "end": 310.34
+    },
+    {
+      "name": "habit",
+      "start": 310.34,
+      "end": 336.16
+    },
+    {
+      "name": "pairs",
+      "start": 336.16,
+      "end": 344.3
+    },
+    {
+      "name": "closing",
+      "start": 344.3,
+      "end": 367.99
+    }
+  ]
+}
