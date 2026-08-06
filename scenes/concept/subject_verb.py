@@ -317,19 +317,26 @@ class SubjectVerb(SATScene):
             self.work.add(coins, coins_note)
             t.hold()
 
-        effects = PassageHighlight(
+        effects_wrong = PassageHighlight(
+            "The effects of the new policy concerns many employees.",
+            highlight="concerns",
+            highlight_color=TERRACOTTA,
+        )
+        effects_wrong.next_to(self.work[1], DOWN, buff=GAP_MD * 1.2)
+        catch = mono("the hidden error — did you catch it?", MARGIN_SIZE)
+        catch.next_to(effects_wrong, DOWN, buff=GAP_SM * 1.4)
+        effects_right = PassageHighlight(
             "The effects of the new policy concern many employees.",
             highlight="concern",
             highlight_color=SAGE,
         )
-        effects.next_to(self.work[1], DOWN, buff=GAP_MD * 1.2)
-        effects_note = serif("the effects concern — plural", LABEL_SIZE, GREY)
-        effects_note.next_to(effects, DOWN, buff=GAP_MD)
+        effects_right.next_to(catch, DOWN, buff=GAP_SM * 1.6)
 
         with self.beat("effects") as t:
-            self.play(Write(effects), run_time=t.fill(0.35))
-            self.play(Write(effects_note), run_time=t.fill(0.2))
-            self.work.add(effects, effects_note)
+            self.play(Write(effects_wrong), run_time=t.fill(0.25))
+            self.play(Write(catch), run_time=t.fill(0.12))
+            self.play(Write(effects_right), run_time=t.fill(0.25))
+            self.work.add(effects_wrong, catch, effects_right)
             t.hold()
 
     def wrap_up(self):
