@@ -1,0 +1,151 @@
+{
+  "scene": "concept.pronoun_agreement",
+  "duration": 536.613,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 3.16,
+      "end": 25.24
+    },
+    {
+      "name": "promise",
+      "start": 25.24,
+      "end": 40.72
+    },
+    {
+      "name": "challenge",
+      "start": 40.72,
+      "end": 48.36
+    },
+    {
+      "name": "mirror",
+      "start": 48.36,
+      "end": 64.7
+    },
+    {
+      "name": "pronoun_def",
+      "start": 64.7,
+      "end": 86.76
+    },
+    {
+      "name": "cacao",
+      "start": 86.76,
+      "end": 99.78
+    },
+    {
+      "name": "cacao_plural",
+      "start": 99.78,
+      "end": 113.6
+    },
+    {
+      "name": "mirror_rule",
+      "start": 113.6,
+      "end": 133.86
+    },
+    {
+      "name": "bicycle",
+      "start": 133.86,
+      "end": 147.5
+    },
+    {
+      "name": "bicycle_fix",
+      "start": 147.5,
+      "end": 154.34
+    },
+    {
+      "name": "students",
+      "start": 154.34,
+      "end": 172.36
+    },
+    {
+      "name": "method1",
+      "start": 172.36,
+      "end": 187.86
+    },
+    {
+      "name": "collective",
+      "start": 187.86,
+      "end": 214.18
+    },
+    {
+      "name": "theater",
+      "start": 214.18,
+      "end": 238.22
+    },
+    {
+      "name": "team_ex",
+      "start": 238.22,
+      "end": 251.42
+    },
+    {
+      "name": "more_collective",
+      "start": 251.42,
+      "end": 267.28
+    },
+    {
+      "name": "camera",
+      "start": 267.28,
+      "end": 288.32
+    },
+    {
+      "name": "we_you",
+      "start": 288.32,
+      "end": 305.5
+    },
+    {
+      "name": "we_fix",
+      "start": 305.5,
+      "end": 334.98
+    },
+    {
+      "name": "person",
+      "start": 334.98,
+      "end": 360.02
+    },
+    {
+      "name": "pov_rule",
+      "start": 360.02,
+      "end": 383.72
+    },
+    {
+      "name": "maya",
+      "start": 383.72,
+      "end": 405.4
+    },
+    {
+      "name": "maya_fix",
+      "start": 405.4,
+      "end": 423.0
+    },
+    {
+      "name": "distorted",
+      "start": 423.0,
+      "end": 449.36
+    },
+    {
+      "name": "distorted_fix",
+      "start": 449.36,
+      "end": 460.38
+    },
+    {
+      "name": "lab",
+      "start": 460.38,
+      "end": 483.72
+    },
+    {
+      "name": "strategy",
+      "start": 483.72,
+      "end": 503.46
+    },
+    {
+      "name": "reflections",
+      "start": 503.46,
+      "end": 522.7
+    },
+    {
+      "name": "closing",
+      "start": 522.7,
+      "end": 536.613
+    }
+  ]
+}
