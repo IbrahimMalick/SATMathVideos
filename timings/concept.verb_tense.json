@@ -1,0 +1,141 @@
+{
+  "scene": "concept.verb_tense",
+  "duration": 480.839,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.0,
+      "end": 12.7
+    },
+    {
+      "name": "watch",
+      "start": 12.7,
+      "end": 27.24
+    },
+    {
+      "name": "promise",
+      "start": 27.24,
+      "end": 46.6
+    },
+    {
+      "name": "title",
+      "start": 46.6,
+      "end": 57.4
+    },
+    {
+      "name": "maria",
+      "start": 57.4,
+      "end": 71.74
+    },
+    {
+      "name": "consistent",
+      "start": 71.74,
+      "end": 78.16
+    },
+    {
+      "name": "movie",
+      "start": 78.16,
+      "end": 93.58
+    },
+    {
+      "name": "scientist",
+      "start": 93.58,
+      "end": 118.42
+    },
+    {
+      "name": "scientist_fix",
+      "start": 118.42,
+      "end": 135.48
+    },
+    {
+      "name": "plant",
+      "start": 135.48,
+      "end": 155.72
+    },
+    {
+      "name": "plant_wrong",
+      "start": 155.72,
+      "end": 172.9
+    },
+    {
+      "name": "strategy1",
+      "start": 172.9,
+      "end": 203.14
+    },
+    {
+      "name": "shift",
+      "start": 203.14,
+      "end": 218.36
+    },
+    {
+      "name": "past_perfect",
+      "start": 218.36,
+      "end": 241.74
+    },
+    {
+      "name": "martha",
+      "start": 241.74,
+      "end": 266.5
+    },
+    {
+      "name": "firefighters",
+      "start": 266.5,
+      "end": 287.14
+    },
+    {
+      "name": "meeting",
+      "start": 287.14,
+      "end": 301.18
+    },
+    {
+      "name": "pp_caution",
+      "start": 301.18,
+      "end": 314.2
+    },
+    {
+      "name": "hypo",
+      "start": 314.2,
+      "end": 335.36
+    },
+    {
+      "name": "equipment",
+      "start": 335.36,
+      "end": 351.24
+    },
+    {
+      "name": "would_past",
+      "start": 351.24,
+      "end": 374.12
+    },
+    {
+      "name": "traveler",
+      "start": 374.12,
+      "end": 386.3
+    },
+    {
+      "name": "reveal",
+      "start": 386.3,
+      "end": 398.42
+    },
+    {
+      "name": "traveler_fix",
+      "start": 398.42,
+      "end": 414.96
+    },
+    {
+      "name": "method",
+      "start": 414.96,
+      "end": 452.82
+    },
+    {
+      "name": "director",
+      "start": 452.82,
+      "end": 476.1
+    },
+    {
+      "name": "outro",
+      "start": 476.1,
+      "end": 480.839
+    }
+  ]
+}
