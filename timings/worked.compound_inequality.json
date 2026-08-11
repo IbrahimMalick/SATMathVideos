@@ -1,0 +1,66 @@
+{
+  "scene": "worked.compound_inequality",
+  "duration": 148.48,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.0,
+      "end": 7.88
+    },
+    {
+      "name": "setup",
+      "start": 7.88,
+      "end": 22.76
+    },
+    {
+      "name": "ali",
+      "start": 22.76,
+      "end": 38.08
+    },
+    {
+      "name": "target",
+      "start": 38.08,
+      "end": 57.22
+    },
+    {
+      "name": "compound",
+      "start": 57.22,
+      "end": 65.52
+    },
+    {
+      "name": "step1",
+      "start": 65.52,
+      "end": 84.62
+    },
+    {
+      "name": "step2",
+      "start": 84.62,
+      "end": 102.48
+    },
+    {
+      "name": "step3",
+      "start": 102.48,
+      "end": 117.12
+    },
+    {
+      "name": "catch",
+      "start": 117.12,
+      "end": 127.5
+    },
+    {
+      "name": "answer",
+      "start": 127.5,
+      "end": 134.08
+    },
+    {
+      "name": "key",
+      "start": 134.08,
+      "end": 142.92
+    },
+    {
+      "name": "boundaries",
+      "start": 142.92,
+      "end": 148.48
+    }
+  ]
+}
