@@ -212,9 +212,9 @@ class FunctionalWriting(SATScene):
                 serif('"You won\'t believe what happened..."', LABEL_SIZE),
                 serif('"The best part was..."', LABEL_SIZE),
             ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
-            cols = VGroup(formal, informal).arrange(RIGHT, buff=GAP_MD * 2.2,
-                                                    aligned_edge=UP)
-            cols.next_to(reg_head, DOWN, buff=GAP_MD * 1.2)
+            cols = VGroup(formal, informal).arrange(DOWN, buff=GAP_MD,
+                                                    aligned_edge=LEFT)
+            cols.next_to(reg_head, DOWN, buff=GAP_MD * 1.1)
             self.play(Write(reg_head), run_time=t.fill(0.2))
             self.play(Write(formal), run_time=t.fill(0.25))
             self.play(Write(informal), run_time=t.fill(0.25))
