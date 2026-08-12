@@ -1,0 +1,141 @@
+{
+  "scene": "concept.functional_writing",
+  "duration": 728.177,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.97,
+      "end": 23.61
+    },
+    {
+      "name": "apfk",
+      "start": 23.61,
+      "end": 54.93
+    },
+    {
+      "name": "what_is",
+      "start": 54.93,
+      "end": 80.53
+    },
+    {
+      "name": "forms",
+      "start": 80.53,
+      "end": 107.89
+    },
+    {
+      "name": "audience",
+      "start": 107.89,
+      "end": 116.67
+    },
+    {
+      "name": "cafeteria",
+      "start": 116.67,
+      "end": 142.65
+    },
+    {
+      "name": "audience_list",
+      "start": 142.65,
+      "end": 166.09
+    },
+    {
+      "name": "register",
+      "start": 166.09,
+      "end": 189.33
+    },
+    {
+      "name": "register_rule",
+      "start": 189.33,
+      "end": 210.05
+    },
+    {
+      "name": "purpose",
+      "start": 210.05,
+      "end": 233.29
+    },
+    {
+      "name": "persuade_ex",
+      "start": 233.29,
+      "end": 258.57
+    },
+    {
+      "name": "report_ex",
+      "start": 258.57,
+      "end": 293.83
+    },
+    {
+      "name": "one_sentence",
+      "start": 293.83,
+      "end": 335.49
+    },
+    {
+      "name": "format",
+      "start": 335.49,
+      "end": 350.65
+    },
+    {
+      "name": "format_wrong",
+      "start": 350.65,
+      "end": 368.87
+    },
+    {
+      "name": "letters",
+      "start": 368.87,
+      "end": 401.75
+    },
+    {
+      "name": "reports",
+      "start": 401.75,
+      "end": 440.13
+    },
+    {
+      "name": "speeches",
+      "start": 440.13,
+      "end": 478.57
+    },
+    {
+      "name": "key",
+      "start": 478.57,
+      "end": 501.67
+    },
+    {
+      "name": "roadmap",
+      "start": 501.67,
+      "end": 531.61
+    },
+    {
+      "name": "plan",
+      "start": 531.61,
+      "end": 563.83
+    },
+    {
+      "name": "command",
+      "start": 563.83,
+      "end": 594.89
+    },
+    {
+      "name": "scenario",
+      "start": 594.89,
+      "end": 630.39
+    },
+    {
+      "name": "routine",
+      "start": 630.39,
+      "end": 658.73
+    },
+    {
+      "name": "challenge",
+      "start": 658.73,
+      "end": 673.53
+    },
+    {
+      "name": "challenge_answer",
+      "start": 673.53,
+      "end": 699.05
+    },
+    {
+      "name": "conclusion",
+      "start": 699.05,
+      "end": 728.177
+    }
+  ]
+}
