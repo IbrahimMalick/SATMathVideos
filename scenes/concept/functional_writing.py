@@ -212,9 +212,9 @@ class FunctionalWriting(SATScene):
                 serif('"You won\'t believe what happened..."', LABEL_SIZE),
                 serif('"The best part was..."', LABEL_SIZE),
             ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
-            cols = VGroup(formal, informal).arrange(DOWN, buff=GAP_MD,
+            cols = VGroup(formal, informal).arrange(DOWN, buff=GAP_SM * 1.2,
                                                     aligned_edge=LEFT)
-            cols.next_to(reg_head, DOWN, buff=GAP_MD * 1.1)
+            cols.next_to(reg_head, DOWN, buff=GAP_MD * 0.9)
             self.play(Write(reg_head), run_time=t.fill(0.2))
             self.play(Write(formal), run_time=t.fill(0.25))
             self.play(Write(informal), run_time=t.fill(0.25))
@@ -222,7 +222,7 @@ class FunctionalWriting(SATScene):
             t.hold()
 
         rule = serif("a report is not a WhatsApp message", LABEL_SIZE)
-        rule.next_to(self.work[1], DOWN, buff=GAP_MD * 1.1)
+        rule.to_edge(DOWN, buff=GAP_SM * 1.2)
         rule_line = underline(rule)
 
         with self.beat("register_rule") as t:
