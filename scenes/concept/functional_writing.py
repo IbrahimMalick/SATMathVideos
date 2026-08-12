@@ -205,12 +205,10 @@ class FunctionalWriting(SATScene):
             formal = VGroup(
                 serif("formal", MARGIN_SIZE, GREY),
                 serif('"I would like to suggest..."', LABEL_SIZE),
-                serif('"It has come to my attention..."', LABEL_SIZE),
             ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
             informal = VGroup(
                 serif("informal", MARGIN_SIZE, GREY),
                 serif('"You won\'t believe what happened..."', LABEL_SIZE),
-                serif('"The best part was..."', LABEL_SIZE),
             ).arrange(DOWN, buff=GAP_SM, aligned_edge=LEFT)
             cols = VGroup(formal, informal).arrange(DOWN, buff=GAP_SM * 1.2,
                                                     aligned_edge=LEFT)
