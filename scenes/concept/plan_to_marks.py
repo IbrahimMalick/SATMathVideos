@@ -206,15 +206,15 @@ class PlanToMarks(SATScene):
             t.hold()
 
         with self.beat("organization") as t:
-            self.swap_work(t)
+            self.clear_all(t)
+            self.set_head(t, "Every paragraph has a job")
             org = VGroup(
-                serif("every paragraph has a job", BODY_SIZE),
-                serif("1 — purpose of the report", LABEL_SIZE, GREY),
-                serif("2 — what went well", LABEL_SIZE, GREY),
-                serif("3 — the problems", LABEL_SIZE, GREY),
-                serif("4 — recommendations", LABEL_SIZE, GREY),
-            ).arrange(DOWN, buff=GAP_SM * 1.2, aligned_edge=LEFT)
-            org.next_to(self.section_head, DOWN, buff=GAP_MD * 1.2)
+                serif("1 — purpose of the report", BODY_SIZE),
+                serif("2 — what went well", BODY_SIZE),
+                serif("3 — the problems", BODY_SIZE),
+                serif("4 — recommendations", BODY_SIZE),
+            ).arrange(DOWN, buff=GAP_SM * 1.3, aligned_edge=LEFT)
+            org.next_to(self.section_head, DOWN, buff=GAP_MD * 1.3)
             self.play(Write(org), run_time=t.fill(0.45))
             self.work.add(org)
             t.hold()
