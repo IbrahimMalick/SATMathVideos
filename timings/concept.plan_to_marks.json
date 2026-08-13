@@ -1,0 +1,161 @@
+{
+  "scene": "concept.plan_to_marks",
+  "duration": 871.867,
+  "beats": [
+    {
+      "name": "recap",
+      "start": 40.74,
+      "end": 56.88
+    },
+    {
+      "name": "goal",
+      "start": 56.88,
+      "end": 82.38
+    },
+    {
+      "name": "basic",
+      "start": 82.38,
+      "end": 111.26
+    },
+    {
+      "name": "developed",
+      "start": 111.26,
+      "end": 136.94
+    },
+    {
+      "name": "pee",
+      "start": 136.94,
+      "end": 166.4
+    },
+    {
+      "name": "three_q",
+      "start": 166.4,
+      "end": 180.48
+    },
+    {
+      "name": "boxes",
+      "start": 180.48,
+      "end": 207.83
+    },
+    {
+      "name": "unbalanced",
+      "start": 207.83,
+      "end": 235.71
+    },
+    {
+      "name": "organization",
+      "start": 235.71,
+      "end": 273.51
+    },
+    {
+      "name": "progression",
+      "start": 273.51,
+      "end": 289.01
+    },
+    {
+      "name": "progression2",
+      "start": 289.01,
+      "end": 310.8
+    },
+    {
+      "name": "register",
+      "start": 310.8,
+      "end": 343.22
+    },
+    {
+      "name": "appropriate",
+      "start": 343.22,
+      "end": 366.72
+    },
+    {
+      "name": "collapse",
+      "start": 366.72,
+      "end": 391.9
+    },
+    {
+      "name": "vocab",
+      "start": 391.9,
+      "end": 447.54
+    },
+    {
+      "name": "overblown",
+      "start": 447.54,
+      "end": 479.93
+    },
+    {
+      "name": "variety",
+      "start": 479.93,
+      "end": 529.01
+    },
+    {
+      "name": "tenses",
+      "start": 529.01,
+      "end": 570.07
+    },
+    {
+      "name": "sva",
+      "start": 570.07,
+      "end": 598.67
+    },
+    {
+      "name": "punctuation",
+      "start": 598.67,
+      "end": 633.72
+    },
+    {
+      "name": "conjunctions",
+      "start": 633.72,
+      "end": 661.8
+    },
+    {
+      "name": "contractions",
+      "start": 661.8,
+      "end": 685.44
+    },
+    {
+      "name": "word_limits",
+      "start": 685.44,
+      "end": 716.63
+    },
+    {
+      "name": "checking",
+      "start": 716.63,
+      "end": 741.71
+    },
+    {
+      "name": "check2",
+      "start": 741.71,
+      "end": 748.87
+    },
+    {
+      "name": "check3",
+      "start": 748.87,
+      "end": 759.33
+    },
+    {
+      "name": "check4",
+      "start": 759.33,
+      "end": 771.97
+    },
+    {
+      "name": "check5",
+      "start": 771.97,
+      "end": 782.07
+    },
+    {
+      "name": "check6",
+      "start": 782.07,
+      "end": 807.55
+    },
+    {
+      "name": "together",
+      "start": 807.55,
+      "end": 835.89
+    },
+    {
+      "name": "control",
+      "start": 835.89,
+      "end": 871.867
+    }
+  ]
+}
