@@ -268,12 +268,13 @@ class BuildingBlocks(SATScene):
         with self.beat("rational") as t:
             self.clear_all(t)
             self.set_head(t, "Rational and irrational")
-            rat = MathTex(
-                "\\tfrac{1}{2},\\quad \\tfrac{3}{4},\\quad 5 = \\tfrac{5}{1},"
-                "\\quad 0.75 = \\tfrac{3}{4},\\quad 0.333\\dots = \\tfrac{1}{3}",
-                font_size=EQUATION_SIZE, color=CHARCOAL,
-            )
-            rat.next_to(self.section_head, DOWN, buff=GAP_MD * 1.2)
+            rat = VGroup(
+                MathTex("\\frac{1}{2},\\quad \\frac{3}{4},\\quad 5 = \\frac{5}{1}",
+                        font_size=DISPLAY_SIZE, color=CHARCOAL),
+                MathTex("0.75 = \\frac{3}{4},\\quad 0.333\\dots = \\frac{1}{3}",
+                        font_size=DISPLAY_SIZE, color=CHARCOAL),
+            ).arrange(DOWN, buff=GAP_MD)
+            rat.next_to(self.section_head, DOWN, buff=GAP_MD * 1.1)
             rat_note = serif("rational — it can be written as a fraction of "
                              "integers", LABEL_SIZE, GREY)
             rat_note.next_to(rat, DOWN, buff=GAP_MD)
