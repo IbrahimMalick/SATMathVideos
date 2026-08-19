@@ -299,10 +299,12 @@ class BuildingBlocks(SATScene):
             t.hold()
 
         memory = serif("ratio → fraction → rational", BODY_SIZE)
-        memory.next_to(irr_note, DOWN, buff=GAP_MD)
+        memory.move_to(irr_note)
         memory_line = underline(memory)
 
         with self.beat("ratio_memory") as t:
+            self.play(FadeOut(irr_note), run_time=t.fill(0.08))
+            self.work.remove(irr_note)
             self.play(Write(memory), run_time=t.fill(0.3))
             self.play(Create(memory_line), run_time=t.fill(0.12))
             self.work.add(memory, memory_line)
