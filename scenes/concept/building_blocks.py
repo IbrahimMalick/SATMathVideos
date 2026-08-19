@@ -88,9 +88,19 @@ class BuildingBlocks(SATScene):
     # ------------------------------------------------------------- sections
 
     def opening(self):
+        title = serif("The Building Blocks", TITLE_SIZE * 1.2)
+        title.to_edge(UP, buff=GAP_MD * 1.8)
+        subtitle = serif("O Level Mathematics · Lecture 1", LABEL_SIZE, GREY)
+        subtitle.next_to(title, DOWN, buff=GAP_MD)
+
+        with self.beat("open") as t:
+            self.play(Write(title), run_time=t.fill(0.35))
+            self.play(Write(subtitle), run_time=t.fill(0.2))
+            t.hold()
+
         quote = serif('"I know how to do this... but I got the wrong answer?"',
                       BODY_SIZE)
-        quote.move_to(UP * 1.2)
+        quote.next_to(subtitle, DOWN, buff=GAP_MD * 1.6)
 
         with self.beat("hook") as t:
             self.play(Write(quote), run_time=t.fill(0.4))
@@ -117,22 +127,19 @@ class BuildingBlocks(SATScene):
             self.play(Create(house_line), run_time=t.fill(0.12))
             t.hold()
 
-        title = serif("The Building Blocks", TITLE_SIZE * 1.2)
-        title.to_edge(UP, buff=GAP_MD * 1.8)
         agenda = VGroup(
             serif("1  types of numbers", BODY_SIZE),
             serif("2  order of operations", BODY_SIZE),
             serif("3  comparing and ordering", BODY_SIZE),
             serif("4  prime factorisation", BODY_SIZE),
         ).arrange(DOWN, buff=GAP_SM * 1.4, aligned_edge=LEFT)
-        agenda.next_to(title, DOWN, buff=GAP_MD * 1.4)
+        agenda.next_to(subtitle, DOWN, buff=GAP_MD * 1.4)
         paper1 = mono("paper 1: no calculator to rescue you", MARGIN_SIZE)
         paper1.next_to(agenda, DOWN, buff=GAP_MD * 1.2)
 
         with self.beat("agenda") as t:
             self.play(FadeOut(quote), FadeOut(traps), FadeOut(crack),
                       FadeOut(house), FadeOut(house_line), run_time=t.fill(0.1))
-            self.play(Write(title), run_time=t.fill(0.25))
             self.play(Write(agenda), run_time=t.fill(0.35))
             self.play(Write(paper1), run_time=t.fill(0.15))
             t.hold()

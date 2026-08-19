@@ -2,10 +2,12 @@
 scene: concept.building_blocks
 ---
 
-[[beat:hook]] Assalam-o-Alaikum, everyone. Welcome to our first proper O
-Level Mathematics lesson. Now before we start, let me ask you something.
-Have you ever looked at a mathematics question and thought: I know how to do
-this, but somehow I still got the wrong answer? [[beat:small_mistakes]] That
+[[beat:open]] Assalamu alaikum bachho. Today we are going to look at the
+building blocks of mathematics, right? Isme jo hum karenge wo types of
+numbers, BODMAS, ordering and prime factorization. [[beat:hook]] So first of
+all, let me ask you something. Have you ever looked at a mathematics
+question and thought: I know how to do this, but somehow I still got the
+wrong answer? [[beat:small_mistakes]] That
 happens a lot. And very often, the problem is not some difficult formula. It
 is something basic. A negative sign. The order of operations. A fraction. A
 prime factor. One small mistake at the beginning, and the entire answer

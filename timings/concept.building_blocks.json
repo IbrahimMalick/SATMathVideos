@@ -1,0 +1,136 @@
+{
+  "scene": "concept.building_blocks",
+  "duration": 1091.338,
+  "beats": [
+    {
+      "name": "open",
+      "start": 0.72,
+      "end": 15.08
+    },
+    {
+      "name": "hook",
+      "start": 15.08,
+      "end": 42.4
+    },
+    {
+      "name": "small_mistakes",
+      "start": 42.4,
+      "end": 68.9
+    },
+    {
+      "name": "foundation",
+      "start": 68.9,
+      "end": 93.86
+    },
+    {
+      "name": "agenda",
+      "start": 93.86,
+      "end": 143.88
+    },
+    {
+      "name": "families",
+      "start": 143.88,
+      "end": 180.5
+    },
+    {
+      "name": "natural",
+      "start": 180.5,
+      "end": 226.4
+    },
+    {
+      "name": "integers",
+      "start": 226.4,
+      "end": 247.42
+    },
+    {
+      "name": "integers_ex",
+      "start": 247.42,
+      "end": 307.38
+    },
+    {
+      "name": "int_check",
+      "start": 307.38,
+      "end": 335.46
+    },
+    {
+      "name": "primes",
+      "start": 335.46,
+      "end": 406.63
+    },
+    {
+      "name": "one_trap",
+      "start": 406.63,
+      "end": 436.97
+    },
+    {
+      "name": "two_even",
+      "start": 436.97,
+      "end": 471.11
+    },
+    {
+      "name": "prime_check",
+      "start": 471.11,
+      "end": 514.39
+    },
+    {
+      "name": "rational",
+      "start": 514.39,
+      "end": 594.2
+    },
+    {
+      "name": "irrational",
+      "start": 594.2,
+      "end": 647.01
+    },
+    {
+      "name": "ratio_memory",
+      "start": 647.01,
+      "end": 662.17
+    },
+    {
+      "name": "overlap",
+      "start": 662.17,
+      "end": 714.91
+    },
+    {
+      "name": "bodmas",
+      "start": 714.91,
+      "end": 796.69
+    },
+    {
+      "name": "why_rule",
+      "start": 796.69,
+      "end": 811.07
+    },
+    {
+      "name": "samosa",
+      "start": 811.07,
+      "end": 867.97
+    },
+    {
+      "name": "example1",
+      "start": 867.97,
+      "end": 917.39
+    },
+    {
+      "name": "example2",
+      "start": 917.39,
+      "end": 975.26
+    },
+    {
+      "name": "equal_priority",
+      "start": 975.26,
+      "end": 1036.92
+    },
+    {
+      "name": "powers",
+      "start": 1036.92,
+      "end": 1072.88
+    },
+    {
+      "name": "control",
+      "start": 1072.88,
+      "end": 1091.338
+    }
+  ]
+}
