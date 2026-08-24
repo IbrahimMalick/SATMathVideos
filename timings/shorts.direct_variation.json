@@ -1,14 +1,18 @@
 {
   "scene": "shorts.direct_variation",
-  "duration": 43.0,
+  "duration": 120.0,
   "beats": [
-    {"name": "hook",    "start": 0.0,  "end": 4.0},
-    {"name": "squares", "start": 4.0,  "end": 10.0},
-    {"name": "rule",    "start": 10.0, "end": 15.0},
-    {"name": "find_k",  "start": 15.0, "end": 23.0},
-    {"name": "formula", "start": 23.0, "end": 27.0},
-    {"name": "solve",   "start": 27.0, "end": 34.0},
-    {"name": "answer",  "start": 34.0, "end": 39.0},
-    {"name": "cta",     "start": 39.0, "end": 43.0}
+    {"name": "question", "start": 0.0,   "end": 14.0},
+    {"name": "picture",  "start": 14.0,  "end": 26.0},
+    {"name": "rule",     "start": 26.0,  "end": 38.0},
+    {"name": "plug_in",  "start": 38.0,  "end": 50.0},
+    {"name": "simplify", "start": 50.0,  "end": 60.0},
+    {"name": "solve_k",  "start": 60.0,  "end": 72.0},
+    {"name": "formula",  "start": 72.0,  "end": 82.0},
+    {"name": "plug50",   "start": 82.0,  "end": 92.0},
+    {"name": "square50", "start": 92.0,  "end": 100.0},
+    {"name": "result",   "start": 100.0, "end": 107.0},
+    {"name": "answer",   "start": 107.0, "end": 116.0},
+    {"name": "cta",      "start": 116.0, "end": 120.0}
   ]
 }
