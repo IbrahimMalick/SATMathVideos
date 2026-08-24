@@ -1,0 +1,14 @@
+{
+  "scene": "shorts.direct_variation",
+  "duration": 43.0,
+  "beats": [
+    {"name": "hook",    "start": 0.0,  "end": 4.0},
+    {"name": "squares", "start": 4.0,  "end": 10.0},
+    {"name": "rule",    "start": 10.0, "end": 15.0},
+    {"name": "find_k",  "start": 15.0, "end": 23.0},
+    {"name": "formula", "start": 23.0, "end": 27.0},
+    {"name": "solve",   "start": 27.0, "end": 34.0},
+    {"name": "answer",  "start": 34.0, "end": 39.0},
+    {"name": "cta",     "start": 39.0, "end": 43.0}
+  ]
+}
