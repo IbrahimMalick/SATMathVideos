@@ -1,0 +1,14 @@
+{
+  "scene": "shorts.substitution",
+  "duration": 120.0,
+  "beats": [
+    {"name": "question",   "start": 0.0,   "end": 14.0},
+    {"name": "method",     "start": 14.0,  "end": 28.0},
+    {"name": "substitute", "start": 28.0,  "end": 42.0},
+    {"name": "combine",    "start": 42.0,  "end": 54.0},
+    {"name": "solve",      "start": 54.0,  "end": 68.0},
+    {"name": "check",      "start": 68.0,  "end": 84.0},
+    {"name": "answer",     "start": 84.0,  "end": 100.0},
+    {"name": "cta",        "start": 100.0, "end": 120.0}
+  ]
+}
