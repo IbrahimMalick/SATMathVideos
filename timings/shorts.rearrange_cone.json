@@ -1,0 +1,14 @@
+{
+  "scene": "shorts.rearrange_cone",
+  "duration": 120.0,
+  "beats": [
+    {"name": "question", "start": 0.0,   "end": 14.0},
+    {"name": "choices",  "start": 14.0,  "end": 28.0},
+    {"name": "clear",    "start": 28.0,  "end": 42.0},
+    {"name": "isolate",  "start": 42.0,  "end": 56.0},
+    {"name": "root",     "start": 56.0,  "end": 70.0},
+    {"name": "pick",     "start": 70.0,  "end": 86.0},
+    {"name": "answer",   "start": 86.0,  "end": 100.0},
+    {"name": "cta",      "start": 100.0, "end": 120.0}
+  ]
+}
