@@ -1,14 +1,15 @@
 {
   "scene": "shorts.rearrange_cone",
-  "duration": 120.0,
+  "duration": 112.0,
   "beats": [
-    {"name": "question", "start": 0.0,   "end": 14.0},
-    {"name": "choices",  "start": 14.0,  "end": 28.0},
-    {"name": "clear",    "start": 28.0,  "end": 42.0},
-    {"name": "isolate",  "start": 42.0,  "end": 56.0},
-    {"name": "root",     "start": 56.0,  "end": 70.0},
-    {"name": "pick",     "start": 70.0,  "end": 86.0},
-    {"name": "answer",   "start": 86.0,  "end": 100.0},
-    {"name": "cta",      "start": 100.0, "end": 120.0}
+    {"name": "question", "start": 0.0,   "end": 12.0},
+    {"name": "goal",     "start": 12.0,  "end": 22.0},
+    {"name": "times3",   "start": 22.0,  "end": 36.0},
+    {"name": "cancel3",  "start": 36.0,  "end": 48.0},
+    {"name": "divide",   "start": 48.0,  "end": 62.0},
+    {"name": "cancelpi", "start": 62.0,  "end": 76.0},
+    {"name": "root",     "start": 76.0,  "end": 90.0},
+    {"name": "answer",   "start": 90.0,  "end": 100.0},
+    {"name": "cta",      "start": 100.0, "end": 112.0}
   ]
 }
