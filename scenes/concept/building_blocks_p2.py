@@ -268,21 +268,25 @@ class BuildingBlocksP2(SATScene):
                 color=GREY, stroke_width=3,
             )
 
+        branches = [
+            branch(n36, n2a), branch(n36, n18),
+            branch(n18, n2b), branch(n18, n9),
+            branch(n9, n3a), branch(n9, n3b),
+        ]
+
         with self.beat("tree36") as t:
             self.swap_work(t)
             self.play(Write(n36), run_time=t.fill(0.08))
-            self.play(Create(branch(n36, n2a)), Create(branch(n36, n18)),
+            self.play(Create(branches[0]), Create(branches[1]),
                       run_time=t.fill(0.1))
             self.play(Write(n2a), Write(n18), run_time=t.fill(0.12))
-            self.play(Create(branch(n18, n2b)), Create(branch(n18, n9)),
+            self.play(Create(branches[2]), Create(branches[3]),
                       run_time=t.fill(0.1))
             self.play(Write(n2b), Write(n9), run_time=t.fill(0.12))
-            self.play(Create(branch(n9, n3a)), Create(branch(n9, n3b)),
+            self.play(Create(branches[4]), Create(branches[5]),
                       run_time=t.fill(0.1))
             self.play(Write(n3a), Write(n3b), run_time=t.fill(0.12))
-            self.work.add(*[m for m in self.mobjects
-                            if m is not self.margin_note
-                            and m is not self.section_head])
+            self.work.add(n36, n2a, n18, n2b, n9, n3a, n3b, *branches)
             t.hold()
 
         r1 = MathTex("36 = 2 \\times 2 \\times 3 \\times 3",

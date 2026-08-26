@@ -1,0 +1,131 @@
+{
+  "scene": "concept.building_blocks_p2",
+  "duration": 733.727,
+  "beats": [
+    {
+      "name": "ordering",
+      "start": 12.76,
+      "end": 44.0
+    },
+    {
+      "name": "open_side",
+      "start": 44.0,
+      "end": 80.56
+    },
+    {
+      "name": "data_package",
+      "start": 80.56,
+      "end": 112.08
+    },
+    {
+      "name": "messy",
+      "start": 112.08,
+      "end": 131.84
+    },
+    {
+      "name": "compare_convert",
+      "start": 131.84,
+      "end": 161.34
+    },
+    {
+      "name": "same_language",
+      "start": 161.34,
+      "end": 187.54
+    },
+    {
+      "name": "negatives",
+      "start": 187.54,
+      "end": 211.48
+    },
+    {
+      "name": "temperature",
+      "start": 211.48,
+      "end": 223.78
+    },
+    {
+      "name": "neg_rule",
+      "start": 223.78,
+      "end": 237.36
+    },
+    {
+      "name": "number_sense",
+      "start": 237.36,
+      "end": 251.46
+    },
+    {
+      "name": "prime_intro",
+      "start": 251.46,
+      "end": 270.53
+    },
+    {
+      "name": "tree36",
+      "start": 270.53,
+      "end": 296.26
+    },
+    {
+      "name": "tree_result",
+      "start": 296.26,
+      "end": 319.76
+    },
+    {
+      "name": "routes",
+      "start": 319.76,
+      "end": 344.94
+    },
+    {
+      "name": "why_care",
+      "start": 344.94,
+      "end": 360.66
+    },
+    {
+      "name": "hcf",
+      "start": 360.66,
+      "end": 414.55
+    },
+    {
+      "name": "lcm_buses",
+      "start": 414.55,
+      "end": 456.83
+    },
+    {
+      "name": "lcm_calc",
+      "start": 456.83,
+      "end": 505.76
+    },
+    {
+      "name": "recognition",
+      "start": 505.76,
+      "end": 541.92
+    },
+    {
+      "name": "review",
+      "start": 541.92,
+      "end": 597.54
+    },
+    {
+      "name": "review_bodmas",
+      "start": 597.54,
+      "end": 621.86
+    },
+    {
+      "name": "review_compare",
+      "start": 621.86,
+      "end": 639.74
+    },
+    {
+      "name": "homework",
+      "start": 639.74,
+      "end": 684.98
+    },
+    {
+      "name": "paper1",
+      "start": 684.98,
+      "end": 694.46
+    },
+    {
+      "name": "closing",
+      "start": 694.46,
+      "end": 733.727
+    }
+  ]
+}
