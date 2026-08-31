@@ -1,0 +1,21 @@
+{
+  "scene": "concept.inference",
+  "duration": 120.0,
+  "beats": [
+    {"name": "hook",     "start": 0.0,   "end": 12.0},
+    {"name": "passage1", "start": 12.0,  "end": 24.0},
+    {"name": "wrong",    "start": 24.0,  "end": 40.0},
+    {"name": "method",   "start": 40.0,  "end": 48.0},
+    {"name": "clue1",    "start": 48.0,  "end": 54.0},
+    {"name": "clue2",    "start": 54.0,  "end": 60.0},
+    {"name": "model1",   "start": 60.0,  "end": 65.0},
+    {"name": "passage2", "start": 65.0,  "end": 74.0},
+    {"name": "careful",  "start": 74.0,  "end": 80.0},
+    {"name": "clues2",   "start": 80.0,  "end": 88.0},
+    {"name": "model2",   "start": 88.0,  "end": 94.0},
+    {"name": "evidence", "start": 94.0,  "end": 98.0},
+    {"name": "triggers", "start": 98.0,  "end": 108.0},
+    {"name": "rule",     "start": 108.0, "end": 116.0},
+    {"name": "end",      "start": 116.0, "end": 120.0}
+  ]
+}
