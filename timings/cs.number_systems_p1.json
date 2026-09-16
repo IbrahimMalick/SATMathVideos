@@ -1,0 +1,176 @@
+{
+  "scene": "cs.number_systems_p1",
+  "duration": 476.0,
+  "beats": [
+    {
+      "name": "open",
+      "start": 0.0,
+      "end": 14.0
+    },
+    {
+      "name": "common",
+      "start": 14.0,
+      "end": 28.0
+    },
+    {
+      "name": "not_human",
+      "start": 28.0,
+      "end": 42.0
+    },
+    {
+      "name": "objectives",
+      "start": 42.0,
+      "end": 56.0
+    },
+    {
+      "name": "workbook",
+      "start": 56.0,
+      "end": 70.0
+    },
+    {
+      "name": "switch",
+      "start": 70.0,
+      "end": 84.0
+    },
+    {
+      "name": "hardware",
+      "start": 84.0,
+      "end": 98.0
+    },
+    {
+      "name": "bit",
+      "start": 98.0,
+      "end": 112.0
+    },
+    {
+      "name": "byte",
+      "start": 112.0,
+      "end": 126.0
+    },
+    {
+      "name": "base2",
+      "start": 126.0,
+      "end": 140.0
+    },
+    {
+      "name": "denary",
+      "start": 140.0,
+      "end": 154.0
+    },
+    {
+      "name": "place_value",
+      "start": 154.0,
+      "end": 168.0
+    },
+    {
+      "name": "expand",
+      "start": 168.0,
+      "end": 182.0
+    },
+    {
+      "name": "powers10",
+      "start": 182.0,
+      "end": 196.0
+    },
+    {
+      "name": "powers2",
+      "start": 196.0,
+      "end": 210.0
+    },
+    {
+      "name": "columns",
+      "start": 210.0,
+      "end": 224.0
+    },
+    {
+      "name": "doubling",
+      "start": 224.0,
+      "end": 238.0
+    },
+    {
+      "name": "convert_intro",
+      "start": 238.0,
+      "end": 252.0
+    },
+    {
+      "name": "rule",
+      "start": 252.0,
+      "end": 266.0
+    },
+    {
+      "name": "walk",
+      "start": 266.0,
+      "end": 280.0
+    },
+    {
+      "name": "sum",
+      "start": 280.0,
+      "end": 294.0
+    },
+    {
+      "name": "total",
+      "start": 294.0,
+      "end": 308.0
+    },
+    {
+      "name": "challenge1",
+      "start": 308.0,
+      "end": 322.0
+    },
+    {
+      "name": "challenge1_answer",
+      "start": 322.0,
+      "end": 336.0
+    },
+    {
+      "name": "denary_to_binary",
+      "start": 336.0,
+      "end": 350.0
+    },
+    {
+      "name": "subtract_walk",
+      "start": 350.0,
+      "end": 364.0
+    },
+    {
+      "name": "result93",
+      "start": 364.0,
+      "end": 378.0
+    },
+    {
+      "name": "division",
+      "start": 378.0,
+      "end": 392.0
+    },
+    {
+      "name": "read_up",
+      "start": 392.0,
+      "end": 406.0
+    },
+    {
+      "name": "two_methods",
+      "start": 406.0,
+      "end": 420.0
+    },
+    {
+      "name": "range_min",
+      "start": 420.0,
+      "end": 434.0
+    },
+    {
+      "name": "range_max",
+      "start": 434.0,
+      "end": 448.0
+    },
+    {
+      "name": "formula",
+      "start": 448.0,
+      "end": 462.0
+    },
+    {
+      "name": "overflow_tease",
+      "start": 462.0,
+      "end": 476.0
+    }
+  ]
+}
