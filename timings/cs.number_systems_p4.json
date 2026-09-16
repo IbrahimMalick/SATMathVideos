@@ -1,0 +1,56 @@
+{
+  "scene": "cs.number_systems_p4",
+  "duration": 140.0,
+  "beats": [
+    {
+      "name": "where_negatives",
+      "start": 0.0,
+      "end": 14.0
+    },
+    {
+      "name": "name",
+      "start": 14.0,
+      "end": 28.0
+    },
+    {
+      "name": "negative_column",
+      "start": 28.0,
+      "end": 42.0
+    },
+    {
+      "name": "sign_clue",
+      "start": 42.0,
+      "end": 56.0
+    },
+    {
+      "name": "sign_examples",
+      "start": 56.0,
+      "end": 70.0
+    },
+    {
+      "name": "sign_warning",
+      "start": 70.0,
+      "end": 84.0
+    },
+    {
+      "name": "largest",
+      "start": 84.0,
+      "end": 98.0
+    },
+    {
+      "name": "most_negative",
+      "start": 98.0,
+      "end": 112.0
+    },
+    {
+      "name": "range",
+      "start": 112.0,
+      "end": 126.0
+    },
+    {
+      "name": "same_bits",
+      "start": 126.0,
+      "end": 140.0
+    }
+  ]
+}
