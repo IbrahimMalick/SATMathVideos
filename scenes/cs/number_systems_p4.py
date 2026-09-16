@@ -273,3 +273,16 @@ class NumberSystemsP4(SATScene):
                       run_time=t.fill(0.2))
             self.work.add(closing)
             t.hold()
+
+        with self.beat("outro") as t:
+            self.clear_all(t)
+            nxt = VGroup(
+                serif("Next: positive numbers", TITLE_SIZE),
+                serif("in two's complement", TITLE_SIZE),
+            ).arrange(DOWN, buff=GAP_SM)
+            nxt.move_to(UP * 0.7)
+            practice = serif("until then — please practice", BODY_SIZE, GREY)
+            practice.next_to(nxt, DOWN, buff=GAP_MD * 1.8)
+            self.play(Write(nxt), run_time=t.fill(0.4))
+            self.play(Write(practice), run_time=t.fill(0.25))
+            t.hold()

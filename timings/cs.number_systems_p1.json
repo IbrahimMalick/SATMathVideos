@@ -1,176 +1,176 @@
 {
   "scene": "cs.number_systems_p1",
-  "duration": 476.0,
+  "duration": 1175.431,
   "beats": [
     {
       "name": "open",
-      "start": 0.0,
-      "end": 14.0
+      "start": 2.3,
+      "end": 16.35
     },
     {
       "name": "common",
-      "start": 14.0,
-      "end": 28.0
+      "start": 16.35,
+      "end": 58.29
     },
     {
       "name": "not_human",
-      "start": 28.0,
-      "end": 42.0
+      "start": 58.29,
+      "end": 81.63
     },
     {
       "name": "objectives",
-      "start": 42.0,
-      "end": 56.0
+      "start": 81.63,
+      "end": 145.93
     },
     {
       "name": "workbook",
-      "start": 56.0,
-      "end": 70.0
+      "start": 145.93,
+      "end": 173.39
     },
     {
       "name": "switch",
-      "start": 70.0,
-      "end": 84.0
+      "start": 173.39,
+      "end": 211.77
     },
     {
       "name": "hardware",
-      "start": 84.0,
-      "end": 98.0
+      "start": 211.77,
+      "end": 253.07
     },
     {
       "name": "bit",
-      "start": 98.0,
-      "end": 112.0
+      "start": 253.07,
+      "end": 288.83
     },
     {
       "name": "byte",
-      "start": 112.0,
-      "end": 126.0
+      "start": 288.83,
+      "end": 297.47
     },
     {
       "name": "base2",
-      "start": 126.0,
-      "end": 140.0
+      "start": 297.47,
+      "end": 324.48
     },
     {
       "name": "denary",
-      "start": 140.0,
-      "end": 154.0
+      "start": 324.48,
+      "end": 353.35
     },
     {
       "name": "place_value",
-      "start": 154.0,
-      "end": 168.0
+      "start": 353.35,
+      "end": 363.21
     },
     {
       "name": "expand",
-      "start": 168.0,
-      "end": 182.0
+      "start": 363.21,
+      "end": 384.75
     },
     {
       "name": "powers10",
-      "start": 182.0,
-      "end": 196.0
+      "start": 384.75,
+      "end": 427.53
     },
     {
       "name": "powers2",
-      "start": 196.0,
-      "end": 210.0
+      "start": 427.53,
+      "end": 468.9
     },
     {
       "name": "columns",
-      "start": 210.0,
-      "end": 224.0
+      "start": 468.9,
+      "end": 481.44
     },
     {
       "name": "doubling",
-      "start": 224.0,
-      "end": 238.0
+      "start": 481.44,
+      "end": 545.7
     },
     {
       "name": "convert_intro",
-      "start": 238.0,
-      "end": 252.0
+      "start": 545.7,
+      "end": 577.0
     },
     {
       "name": "rule",
-      "start": 252.0,
-      "end": 266.0
+      "start": 577.0,
+      "end": 600.16
     },
     {
       "name": "walk",
-      "start": 266.0,
-      "end": 280.0
+      "start": 600.16,
+      "end": 631.9
     },
     {
       "name": "sum",
-      "start": 280.0,
-      "end": 294.0
+      "start": 631.9,
+      "end": 657.48
     },
     {
       "name": "total",
-      "start": 294.0,
-      "end": 308.0
+      "start": 657.48,
+      "end": 699.34
     },
     {
       "name": "challenge1",
-      "start": 308.0,
-      "end": 322.0
+      "start": 699.34,
+      "end": 733.34
     },
     {
       "name": "challenge1_answer",
-      "start": 322.0,
-      "end": 336.0
+      "start": 733.34,
+      "end": 829.231
     },
     {
       "name": "denary_to_binary",
-      "start": 336.0,
-      "end": 350.0
+      "start": 829.231,
+      "end": 850.031
     },
     {
       "name": "subtract_walk",
-      "start": 350.0,
-      "end": 364.0
+      "start": 850.031,
+      "end": 933.671
     },
     {
       "name": "result93",
-      "start": 364.0,
-      "end": 378.0
+      "start": 933.671,
+      "end": 966.151
     },
     {
       "name": "division",
-      "start": 378.0,
-      "end": 392.0
+      "start": 966.151,
+      "end": 1009.871
     },
     {
       "name": "read_up",
-      "start": 392.0,
-      "end": 406.0
+      "start": 1009.871,
+      "end": 1045.811
     },
     {
       "name": "two_methods",
-      "start": 406.0,
-      "end": 420.0
+      "start": 1045.811,
+      "end": 1065.491
     },
     {
       "name": "range_min",
-      "start": 420.0,
-      "end": 434.0
+      "start": 1065.491,
+      "end": 1092.091
     },
     {
       "name": "range_max",
-      "start": 434.0,
-      "end": 448.0
+      "start": 1092.091,
+      "end": 1128.271
     },
     {
       "name": "formula",
-      "start": 448.0,
-      "end": 462.0
+      "start": 1128.271,
+      "end": 1166.691
     },
     {
       "name": "overflow_tease",
-      "start": 462.0,
-      "end": 476.0
+      "start": 1166.691,
+      "end": 1175.431
     }
   ]
 }

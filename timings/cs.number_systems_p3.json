@@ -1,116 +1,116 @@
 {
   "scene": "cs.number_systems_p3",
-  "duration": 308.0,
+  "duration": 692.291,
   "beats": [
     {
       "name": "add_rules",
-      "start": 0.0,
-      "end": 14.0
+      "start": 1.72,
+      "end": 57.58
     },
     {
       "name": "carry_analogy",
-      "start": 14.0,
-      "end": 28.0
+      "start": 57.58,
+      "end": 89.081
     },
     {
       "name": "triple",
-      "start": 28.0,
-      "end": 42.0
+      "start": 89.081,
+      "end": 120.561
     },
     {
       "name": "add_setup",
-      "start": 42.0,
-      "end": 56.0
+      "start": 120.561,
+      "end": 166.921
     },
     {
       "name": "add_columns",
-      "start": 56.0,
-      "end": 70.0
+      "start": 166.921,
+      "end": 174.741
     },
     {
       "name": "add_verify",
-      "start": 70.0,
-      "end": 84.0
+      "start": 174.741,
+      "end": 188.501
     },
     {
       "name": "why_verify",
-      "start": 84.0,
-      "end": 98.0
+      "start": 188.501,
+      "end": 207.841
     },
     {
       "name": "overflow_intro",
-      "start": 98.0,
-      "end": 112.0
+      "start": 207.841,
+      "end": 228.301
     },
     {
       "name": "overflow_def",
-      "start": 112.0,
-      "end": 126.0
+      "start": 228.301,
+      "end": 258.061
     },
     {
       "name": "overflow_wording",
-      "start": 126.0,
-      "end": 140.0
+      "start": 258.061,
+      "end": 286.941
     },
     {
       "name": "overflow_carry",
-      "start": 140.0,
-      "end": 154.0
+      "start": 286.941,
+      "end": 302.341
     },
     {
       "name": "shift_left",
-      "start": 154.0,
-      "end": 168.0
+      "start": 302.341,
+      "end": 358.251
     },
     {
       "name": "shift_left2",
-      "start": 168.0,
-      "end": 182.0
+      "start": 358.251,
+      "end": 403.051
     },
     {
       "name": "shift_n",
-      "start": 182.0,
-      "end": 196.0
+      "start": 403.051,
+      "end": 441.991
     },
     {
       "name": "shift_caveat",
-      "start": 196.0,
-      "end": 210.0
+      "start": 441.991,
+      "end": 451.111
     },
     {
       "name": "shift_right",
-      "start": 210.0,
-      "end": 224.0
+      "start": 451.111,
+      "end": 500.071
     },
     {
       "name": "shift_right2",
-      "start": 224.0,
-      "end": 238.0
+      "start": 500.071,
+      "end": 519.851
     },
     {
       "name": "shift_right_n",
-      "start": 238.0,
-      "end": 252.0
+      "start": 519.851,
+      "end": 548.361
     },
     {
       "name": "bits_lost",
-      "start": 252.0,
-      "end": 266.0
+      "start": 548.361,
+      "end": 585.861
     },
     {
       "name": "precise_statement",
-      "start": 266.0,
-      "end": 280.0
+      "start": 585.861,
+      "end": 634.891
     },
     {
       "name": "msb_lsb",
-      "start": 280.0,
-      "end": 294.0
+      "start": 634.891,
+      "end": 660.821
     },
     {
       "name": "msb_why",
-      "start": 294.0,
-      "end": 308.0
+      "start": 660.821,
+      "end": 692.291
     }
   ]
 }

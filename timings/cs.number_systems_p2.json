@@ -1,141 +1,141 @@
 {
   "scene": "cs.number_systems_p2",
-  "duration": 378.0,
+  "duration": 1201.081,
   "beats": [
     {
       "name": "hex_intro",
-      "start": 0.0,
-      "end": 14.0
+      "start": 2.12,
+      "end": 38.12
     },
     {
       "name": "hex_symbols",
-      "start": 14.0,
-      "end": 28.0
+      "start": 38.12,
+      "end": 67.24
     },
     {
       "name": "memorize",
-      "start": 28.0,
-      "end": 42.0
+      "start": 67.24,
+      "end": 121.76
     },
     {
       "name": "four_bits",
-      "start": 42.0,
-      "end": 56.0
+      "start": 121.76,
+      "end": 170.85
     },
     {
       "name": "full_table",
-      "start": 56.0,
-      "end": 70.0
+      "start": 170.85,
+      "end": 267.37
     },
     {
       "name": "fallback",
-      "start": 70.0,
-      "end": 84.0
+      "start": 267.37,
+      "end": 282.87
     },
     {
       "name": "group_intro",
-      "start": 84.0,
-      "end": 98.0
+      "start": 282.87,
+      "end": 322.33
     },
     {
       "name": "group1",
-      "start": 98.0,
-      "end": 112.0
+      "start": 322.33,
+      "end": 387.44
     },
     {
       "name": "group2",
-      "start": 112.0,
-      "end": 126.0
+      "start": 387.44,
+      "end": 413.28
     },
     {
       "name": "group3",
-      "start": 126.0,
-      "end": 140.0
+      "start": 413.28,
+      "end": 434.36
     },
     {
       "name": "assemble",
-      "start": 140.0,
-      "end": 154.0
+      "start": 434.36,
+      "end": 470.531
     },
     {
       "name": "challenge2",
-      "start": 154.0,
-      "end": 168.0
+      "start": 470.531,
+      "end": 491.351
     },
     {
       "name": "challenge2_answer",
-      "start": 168.0,
-      "end": 182.0
+      "start": 491.351,
+      "end": 532.971
     },
     {
       "name": "padding",
-      "start": 182.0,
-      "end": 196.0
+      "start": 532.971,
+      "end": 621.781
     },
     {
       "name": "padding_warning",
-      "start": 196.0,
-      "end": 210.0
+      "start": 621.781,
+      "end": 661.981
     },
     {
       "name": "hex_to_binary",
-      "start": 210.0,
-      "end": 224.0
+      "start": 661.981,
+      "end": 737.671
     },
     {
       "name": "hex_binary_note",
-      "start": 224.0,
-      "end": 238.0
+      "start": 737.671,
+      "end": 754.891
     },
     {
       "name": "hex_to_denary",
-      "start": 238.0,
-      "end": 252.0
+      "start": 754.891,
+      "end": 824.281
     },
     {
       "name": "hex_denary_calc",
-      "start": 252.0,
-      "end": 266.0
+      "start": 824.281,
+      "end": 879.941
     },
     {
       "name": "denary_to_hex",
-      "start": 266.0,
-      "end": 280.0
+      "start": 879.941,
+      "end": 906.041
     },
     {
       "name": "denary_hex_read",
-      "start": 280.0,
-      "end": 294.0
+      "start": 906.041,
+      "end": 971.891
     },
     {
       "name": "why_hex",
-      "start": 294.0,
-      "end": 308.0
+      "start": 971.891,
+      "end": 1002.511
     },
     {
       "name": "colours",
-      "start": 308.0,
-      "end": 322.0
+      "start": 1002.511,
+      "end": 1034.371
     },
     {
       "name": "ff_value",
-      "start": 322.0,
-      "end": 336.0
+      "start": 1034.371,
+      "end": 1063.591
     },
     {
       "name": "colour_examples",
-      "start": 336.0,
-      "end": 350.0
+      "start": 1063.591,
+      "end": 1116.291
     },
     {
       "name": "mac",
-      "start": 350.0,
-      "end": 364.0
+      "start": 1116.291,
+      "end": 1164.291
     },
     {
       "name": "why_summary",
-      "start": 364.0,
-      "end": 378.0
+      "start": 1164.291,
+      "end": 1201.081
     }
   ]
 }

@@ -37,4 +37,5 @@ hundred and twenty eight to plus one hundred and twenty seven. Notice that
 this is different from unsigned eight-bit binary. Unsigned is zero to two
 hundred and fifty five. Two's complement is minus one hundred and twenty
 eight to plus one hundred and twenty seven. [[beat:same_bits]] Same eight
-bits. Different interpretation.
+bits. Different interpretation. [[beat:outro]] When I come back, we'll look at positive numbers in
+two's complement. Until then, have a good day and please practice.

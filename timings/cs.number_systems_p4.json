@@ -1,56 +1,61 @@
 {
   "scene": "cs.number_systems_p4",
-  "duration": 140.0,
+  "duration": 203.801,
   "beats": [
     {
       "name": "where_negatives",
       "start": 0.0,
-      "end": 14.0
+      "end": 22.66
     },
     {
       "name": "name",
-      "start": 14.0,
-      "end": 28.0
+      "start": 22.66,
+      "end": 36.96
     },
     {
       "name": "negative_column",
-      "start": 28.0,
-      "end": 42.0
+      "start": 36.96,
+      "end": 78.66
     },
     {
       "name": "sign_clue",
-      "start": 42.0,
-      "end": 56.0
+      "start": 78.66,
+      "end": 97.04
     },
     {
       "name": "sign_examples",
-      "start": 56.0,
-      "end": 70.0
+      "start": 97.04,
+      "end": 113.96
     },
     {
       "name": "sign_warning",
-      "start": 70.0,
-      "end": 84.0
+      "start": 113.96,
+      "end": 130.03
     },
     {
       "name": "largest",
-      "start": 84.0,
-      "end": 98.0
+      "start": 130.03,
+      "end": 155.11
     },
     {
       "name": "most_negative",
-      "start": 98.0,
-      "end": 112.0
+      "start": 155.11,
+      "end": 164.55
     },
     {
       "name": "range",
-      "start": 112.0,
-      "end": 126.0
+      "start": 164.55,
+      "end": 186.81
     },
     {
       "name": "same_bits",
-      "start": 126.0,
-      "end": 140.0
+      "start": 186.81,
+      "end": 192.73
+    },
+    {
+      "name": "outro",
+      "start": 192.73,
+      "end": 203.801
     }
   ]
 }

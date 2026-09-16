@@ -219,25 +219,30 @@ class NumberSystemsP3(SATScene):
             bar = self.rows[3]
             sum_row = bit_row(total)
             sum_row.next_to(bar, DOWN, buff=GAP_SM * 1.1)
+            # One play per column: the spotlight moves, the sum digit lands,
+            # and any carry appears together. The delivery works through this
+            # addition without narrating each column, so the reveal has to
+            # keep up with a short beat rather than stretch across it.
             box = None
             carry_marks = VGroup()
             for i in range(7, -1, -1):
                 target = VGroup(self.rows[0][i], row_b[i], sum_row[i])
                 spotlight = self._column_spotlight(target)
+                steps = [Write(sum_row[i])]
                 if box is None:
                     box = spotlight
-                    self.play(Create(box), run_time=t.fill(0.03))
+                    steps.append(Create(box))
                 else:
-                    self.play(Transform(box, spotlight), run_time=t.fill(0.02))
-                self.play(Write(sum_row[i]), run_time=t.fill(0.03))
+                    steps.append(Transform(box, spotlight))
                 if i in carries:
                     mark = MathTex(carries[i], font_size=LABEL_SIZE,
                                    color=SLATE)
                     mark.move_to(self.rows[0][i])
                     mark.shift(UP * 0.85)
                     carry_marks.add(mark)
-                    self.play(Write(mark), run_time=t.fill(0.02))
-            self.play(FadeOut(box), run_time=t.fill(0.03))
+                    steps.append(Write(mark))
+                self.play(*steps, run_time=t.fill(0.09))
+            self.play(FadeOut(box), run_time=t.fill(0.05))
             self.sum_row = sum_row
             self.work.add(sum_row, carry_marks)
             t.hold()
