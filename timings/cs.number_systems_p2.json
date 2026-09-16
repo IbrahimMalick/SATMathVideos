@@ -1,0 +1,141 @@
+{
+  "scene": "cs.number_systems_p2",
+  "duration": 378.0,
+  "beats": [
+    {
+      "name": "hex_intro",
+      "start": 0.0,
+      "end": 14.0
+    },
+    {
+      "name": "hex_symbols",
+      "start": 14.0,
+      "end": 28.0
+    },
+    {
+      "name": "memorize",
+      "start": 28.0,
+      "end": 42.0
+    },
+    {
+      "name": "four_bits",
+      "start": 42.0,
+      "end": 56.0
+    },
+    {
+      "name": "full_table",
+      "start": 56.0,
+      "end": 70.0
+    },
+    {
+      "name": "fallback",
+      "start": 70.0,
+      "end": 84.0
+    },
+    {
+      "name": "group_intro",
+      "start": 84.0,
+      "end": 98.0
+    },
+    {
+      "name": "group1",
+      "start": 98.0,
+      "end": 112.0
+    },
+    {
+      "name": "group2",
+      "start": 112.0,
+      "end": 126.0
+    },
+    {
+      "name": "group3",
+      "start": 126.0,
+      "end": 140.0
+    },
+    {
+      "name": "assemble",
+      "start": 140.0,
+      "end": 154.0
+    },
+    {
+      "name": "challenge2",
+      "start": 154.0,
+      "end": 168.0
+    },
+    {
+      "name": "challenge2_answer",
+      "start": 168.0,
+      "end": 182.0
+    },
+    {
+      "name": "padding",
+      "start": 182.0,
+      "end": 196.0
+    },
+    {
+      "name": "padding_warning",
+      "start": 196.0,
+      "end": 210.0
+    },
+    {
+      "name": "hex_to_binary",
+      "start": 210.0,
+      "end": 224.0
+    },
+    {
+      "name": "hex_binary_note",
+      "start": 224.0,
+      "end": 238.0
+    },
+    {
+      "name": "hex_to_denary",
+      "start": 238.0,
+      "end": 252.0
+    },
+    {
+      "name": "hex_denary_calc",
+      "start": 252.0,
+      "end": 266.0
+    },
+    {
+      "name": "denary_to_hex",
+      "start": 266.0,
+      "end": 280.0
+    },
+    {
+      "name": "denary_hex_read",
+      "start": 280.0,
+      "end": 294.0
+    },
+    {
+      "name": "why_hex",
+      "start": 294.0,
+      "end": 308.0
+    },
+    {
+      "name": "colours",
+      "start": 308.0,
+      "end": 322.0
+    },
+    {
+      "name": "ff_value",
+      "start": 322.0,
+      "end": 336.0
+    },
+    {
+      "name": "colour_examples",
+      "start": 336.0,
+      "end": 350.0
+    },
+    {
+      "name": "mac",
+      "start": 350.0,
+      "end": 364.0
+    },
+    {
+      "name": "why_summary",
+      "start": 364.0,
+      "end": 378.0
+    }
+  ]
+}
