@@ -1,0 +1,116 @@
+{
+  "scene": "cs.number_systems_p3",
+  "duration": 308.0,
+  "beats": [
+    {
+      "name": "add_rules",
+      "start": 0.0,
+      "end": 14.0
+    },
+    {
+      "name": "carry_analogy",
+      "start": 14.0,
+      "end": 28.0
+    },
+    {
+      "name": "triple",
+      "start": 28.0,
+      "end": 42.0
+    },
+    {
+      "name": "add_setup",
+      "start": 42.0,
+      "end": 56.0
+    },
+    {
+      "name": "add_columns",
+      "start": 56.0,
+      "end": 70.0
+    },
+    {
+      "name": "add_verify",
+      "start": 70.0,
+      "end": 84.0
+    },
+    {
+      "name": "why_verify",
+      "start": 84.0,
+      "end": 98.0
+    },
+    {
+      "name": "overflow_intro",
+      "start": 98.0,
+      "end": 112.0
+    },
+    {
+      "name": "overflow_def",
+      "start": 112.0,
+      "end": 126.0
+    },
+    {
+      "name": "overflow_wording",
+      "start": 126.0,
+      "end": 140.0
+    },
+    {
+      "name": "overflow_carry",
+      "start": 140.0,
+      "end": 154.0
+    },
+    {
+      "name": "shift_left",
+      "start": 154.0,
+      "end": 168.0
+    },
+    {
+      "name": "shift_left2",
+      "start": 168.0,
+      "end": 182.0
+    },
+    {
+      "name": "shift_n",
+      "start": 182.0,
+      "end": 196.0
+    },
+    {
+      "name": "shift_caveat",
+      "start": 196.0,
+      "end": 210.0
+    },
+    {
+      "name": "shift_right",
+      "start": 210.0,
+      "end": 224.0
+    },
+    {
+      "name": "shift_right2",
+      "start": 224.0,
+      "end": 238.0
+    },
+    {
+      "name": "shift_right_n",
+      "start": 238.0,
+      "end": 252.0
+    },
+    {
+      "name": "bits_lost",
+      "start": 252.0,
+      "end": 266.0
+    },
+    {
+      "name": "precise_statement",
+      "start": 266.0,
+      "end": 280.0
+    },
+    {
+      "name": "msb_lsb",
+      "start": 280.0,
+      "end": 294.0
+    },
+    {
+      "name": "msb_why",
+      "start": 294.0,
+      "end": 308.0
+    }
+  ]
+}
