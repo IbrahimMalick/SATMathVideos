@@ -45,6 +45,10 @@ def main():
     parser.add_argument("--model", default="base", help="faster-whisper model size")
     parser.add_argument("--backend", default="faster-whisper")
     parser.add_argument(
+        "--language", default=None,
+        help="ISO code to pin for transcription (e.g. en)",
+    )
+    parser.add_argument(
         "--retranscribe", action="store_true",
         help="ignore the cached .words.json and transcribe again",
     )
@@ -53,7 +57,8 @@ def main():
     words_path = args.audio.with_suffix(".words.json")
     if args.retranscribe or not words_path.exists():
         print(f"transcribing {args.audio} ({args.backend}, model={args.model}) ...")
-        result = transcribe(args.audio, args.backend, args.model)
+        result = transcribe(args.audio, args.backend, args.model,
+                            args.language)
         words_path.write_text(json.dumps(result, indent=2))
         print(f"  {len(result['words'])} words, {result['duration']}s")
     else:

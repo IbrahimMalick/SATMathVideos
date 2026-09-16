@@ -30,7 +30,7 @@ def audio_duration(path):
     return float(out.stdout.strip())
 
 
-def transcribe_faster_whisper(path, model_size):
+def transcribe_faster_whisper(path, model_size, language=None):
     from faster_whisper import WhisperModel
 
     model = WhisperModel(model_size, device="cpu", compute_type="int8")
@@ -44,6 +44,11 @@ def transcribe_faster_whisper(path, model_size):
         beam_size=5,
         condition_on_previous_text=False,
         vad_filter=True,
+        # Auto-detection reads only the opening seconds. A lecture that
+        # greets the class in Urdu and then teaches in English gets tagged
+        # Urdu, and the whole transcript comes back in Urdu script — which
+        # aligns against nothing. Pin the language for mixed delivery.
+        language=language,
     )
     words = []
     for segment in segments:
@@ -54,7 +59,7 @@ def transcribe_faster_whisper(path, model_size):
     return words
 
 
-def transcribe_assemblyai(path, _model_size):
+def transcribe_assemblyai(path, _model_size, language=None):
     import urllib.request
 
     api_key = os.environ.get("ASSEMBLYAI_API_KEY")
@@ -100,9 +105,10 @@ BACKENDS = {
 }
 
 
-def transcribe(audio_path, backend="faster-whisper", model_size="base"):
+def transcribe(audio_path, backend="faster-whisper", model_size="base",
+               language=None):
     """Return {"duration": float, "words": [...]} for a recording."""
-    words = BACKENDS[backend](audio_path, model_size)
+    words = BACKENDS[backend](audio_path, model_size, language)
     return {"duration": round(audio_duration(audio_path), 3), "words": words}
 
 
@@ -112,9 +118,14 @@ def main():
     parser.add_argument("--backend", choices=BACKENDS, default="faster-whisper")
     parser.add_argument("--model", default="base", help="faster-whisper model size")
     parser.add_argument("-o", "--output", type=Path, default=None)
+    parser.add_argument(
+        "--language", default=None,
+        help="ISO code to pin (e.g. en). Leave unset to auto-detect; pin it "
+             "when the delivery mixes languages.",
+    )
     args = parser.parse_args()
 
-    result = transcribe(args.audio, args.backend, args.model)
+    result = transcribe(args.audio, args.backend, args.model, args.language)
     out = args.output or args.audio.with_suffix(".words.json")
     out.write_text(json.dumps(result, indent=2))
     print(f"{len(result['words'])} words, {result['duration']}s -> {out}")
