@@ -25,7 +25,8 @@ class WordArc(VGroup):
                  dim=GREY, lit=TERRACOTTA):
         super().__init__()
         self.words = list(words)
-        self.dim, self.lit = dim, lit
+        # NB: not self.dim / self.lit — Mobject.dim is its dimensionality.
+        self.dim_color, self.lit_color = dim, lit
 
         self.cells = VGroup()
         chains = []
@@ -55,9 +56,10 @@ class WordArc(VGroup):
         """Animations that light one word and dim the others."""
         moves = []
         for i, cell in enumerate(self.cells):
-            target = self.lit if i == index else self.dim
+            target = self.lit_color if i == index else self.dim_color
             moves.append(cell.animate.set_color(target))
         return moves
 
     def dim_all(self):
-        return [cell.animate.set_color(self.dim) for cell in self.cells]
+        return [cell.animate.set_color(self.dim_color)
+                for cell in self.cells]
