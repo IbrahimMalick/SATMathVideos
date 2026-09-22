@@ -1,0 +1,301 @@
+{
+  "scene": "concept.using_numbers",
+  "duration": 1677.262,
+  "beats": [
+    {
+      "name": "open",
+      "start": 2.22,
+      "end": 27.94
+    },
+    {
+      "name": "hook_problem",
+      "start": 27.94,
+      "end": 52.02
+    },
+    {
+      "name": "why_difference",
+      "start": 52.02,
+      "end": 77.94
+    },
+    {
+      "name": "four_words",
+      "start": 77.94,
+      "end": 100.32
+    },
+    {
+      "name": "represent_intro",
+      "start": 100.32,
+      "end": 120.54
+    },
+    {
+      "name": "three_outfits",
+      "start": 120.54,
+      "end": 143.36
+    },
+    {
+      "name": "frac_to_dec",
+      "start": 143.36,
+      "end": 163.6
+    },
+    {
+      "name": "dec_to_pct",
+      "start": 163.6,
+      "end": 185.12
+    },
+    {
+      "name": "one_quantity",
+      "start": 185.12,
+      "end": 194.8
+    },
+    {
+      "name": "pct_to_dec",
+      "start": 194.8,
+      "end": 210.2
+    },
+    {
+      "name": "highway",
+      "start": 210.2,
+      "end": 226.76
+    },
+    {
+      "name": "half_pct_trap",
+      "start": 226.76,
+      "end": 261.64
+    },
+    {
+      "name": "benchmarks",
+      "start": 261.64,
+      "end": 301.02
+    },
+    {
+      "name": "multiplier_intro",
+      "start": 301.02,
+      "end": 328.52
+    },
+    {
+      "name": "multiplier",
+      "start": 328.52,
+      "end": 358.36
+    },
+    {
+      "name": "increase",
+      "start": 358.36,
+      "end": 383.46
+    },
+    {
+      "name": "multiplier_rule",
+      "start": 383.46,
+      "end": 397.16
+    },
+    {
+      "name": "pct_trap",
+      "start": 397.16,
+      "end": 416.94
+    },
+    {
+      "name": "pct_trap_calc",
+      "start": 416.94,
+      "end": 436.816
+    },
+    {
+      "name": "base_matters",
+      "start": 436.816,
+      "end": 469.715
+    },
+    {
+      "name": "not_reversible",
+      "start": 469.715,
+      "end": 487.956
+    },
+    {
+      "name": "neg_intro",
+      "start": 487.956,
+      "end": 515.236
+    },
+    {
+      "name": "neg_numberline",
+      "start": 515.236,
+      "end": 531.776
+    },
+    {
+      "name": "neg_pattern",
+      "start": 531.776,
+      "end": 562.216
+    },
+    {
+      "name": "neg_pattern2",
+      "start": 562.216,
+      "end": 587.976
+    },
+    {
+      "name": "sign_rule",
+      "start": 587.976,
+      "end": 601.206
+    },
+    {
+      "name": "bracket_trap",
+      "start": 601.206,
+      "end": 665.546
+    },
+    {
+      "name": "powers_intro",
+      "start": 665.546,
+      "end": 685.906
+    },
+    {
+      "name": "squares_roots",
+      "start": 685.906,
+      "end": 710.986
+    },
+    {
+      "name": "cubes",
+      "start": 710.986,
+      "end": 726.065
+    },
+    {
+      "name": "pm_root",
+      "start": 726.065,
+      "end": 762.186
+    },
+    {
+      "name": "index_mult",
+      "start": 762.186,
+      "end": 816.716
+    },
+    {
+      "name": "index_div",
+      "start": 816.716,
+      "end": 852.771
+    },
+    {
+      "name": "zero_index",
+      "start": 852.771,
+      "end": 896.341
+    },
+    {
+      "name": "std_form_why",
+      "start": 896.341,
+      "end": 929.661
+    },
+    {
+      "name": "std_form_def",
+      "start": 929.661,
+      "end": 947.881
+    },
+    {
+      "name": "std_big",
+      "start": 947.881,
+      "end": 978.751
+    },
+    {
+      "name": "std_small",
+      "start": 978.751,
+      "end": 1005.911
+    },
+    {
+      "name": "std_intuition",
+      "start": 1005.911,
+      "end": 1015.141
+    },
+    {
+      "name": "std_trap",
+      "start": 1015.141,
+      "end": 1042.091
+    },
+    {
+      "name": "rounding_intro",
+      "start": 1042.091,
+      "end": 1065.101
+    },
+    {
+      "name": "decimal_places",
+      "start": 1065.101,
+      "end": 1118.611
+    },
+    {
+      "name": "sig_figs",
+      "start": 1118.611,
+      "end": 1147.611
+    },
+    {
+      "name": "sf_distinction",
+      "start": 1147.611,
+      "end": 1161.871
+    },
+    {
+      "name": "sf_small",
+      "start": 1161.871,
+      "end": 1193.441
+    },
+    {
+      "name": "estimation",
+      "start": 1193.441,
+      "end": 1240.501
+    },
+    {
+      "name": "lie_detector",
+      "start": 1240.501,
+      "end": 1268.186
+    },
+    {
+      "name": "challenge1",
+      "start": 1268.186,
+      "end": 1321.956
+    },
+    {
+      "name": "challenge2",
+      "start": 1321.956,
+      "end": 1360.206
+    },
+    {
+      "name": "challenge3",
+      "start": 1360.206,
+      "end": 1401.786
+    },
+    {
+      "name": "challenge4",
+      "start": 1401.786,
+      "end": 1436.187
+    },
+    {
+      "name": "challenge5",
+      "start": 1436.187,
+      "end": 1474.406
+    },
+    {
+      "name": "challenge6",
+      "start": 1474.406,
+      "end": 1514.046
+    },
+    {
+      "name": "challenge6_calc",
+      "start": 1514.046,
+      "end": 1558.586
+    },
+    {
+      "name": "never_cancel",
+      "start": 1558.586,
+      "end": 1570.366
+    },
+    {
+      "name": "closing_choose",
+      "start": 1570.366,
+      "end": 1583.246
+    },
+    {
+      "name": "closing_list",
+      "start": 1583.246,
+      "end": 1630.206
+    },
+    {
+      "name": "closing_four",
+      "start": 1630.206,
+      "end": 1661.236
+    },
+    {
+      "name": "closing_think",
+      "start": 1661.236,
+      "end": 1677.262
+    }
+  ]
+}
