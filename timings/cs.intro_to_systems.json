@@ -1,0 +1,411 @@
+{
+  "scene": "cs.intro_to_systems",
+  "duration": 2744.341,
+  "beats": [
+    {
+      "name": "open",
+      "start": 7.47,
+      "end": 21.83
+    },
+    {
+      "name": "everything_system",
+      "start": 21.83,
+      "end": 48.89
+    },
+    {
+      "name": "system_def",
+      "start": 48.89,
+      "end": 80.99
+    },
+    {
+      "name": "parts_purpose",
+      "start": 80.99,
+      "end": 95.19
+    },
+    {
+      "name": "car_parts",
+      "start": 95.19,
+      "end": 117.31
+    },
+    {
+      "name": "car_objective",
+      "start": 117.31,
+      "end": 155.67
+    },
+    {
+      "name": "computer_parts",
+      "start": 155.67,
+      "end": 194.21
+    },
+    {
+      "name": "together",
+      "start": 194.21,
+      "end": 228.52
+    },
+    {
+      "name": "systems_theory",
+      "start": 228.52,
+      "end": 288.24
+    },
+    {
+      "name": "body_example",
+      "start": 288.24,
+      "end": 344.24
+    },
+    {
+      "name": "ocec",
+      "start": 344.24,
+      "end": 371.22
+    },
+    {
+      "name": "objective",
+      "start": 371.22,
+      "end": 427.61
+    },
+    {
+      "name": "objective_cats",
+      "start": 427.61,
+      "end": 472.71
+    },
+    {
+      "name": "no_destination",
+      "start": 472.71,
+      "end": 505.95
+    },
+    {
+      "name": "components",
+      "start": 505.95,
+      "end": 545.29
+    },
+    {
+      "name": "environment",
+      "start": 545.29,
+      "end": 567.85
+    },
+    {
+      "name": "env_examples",
+      "start": 567.85,
+      "end": 638.73
+    },
+    {
+      "name": "communication",
+      "start": 638.73,
+      "end": 724.025
+    },
+    {
+      "name": "static_dynamic",
+      "start": 724.025,
+      "end": 768.765
+    },
+    {
+      "name": "weather",
+      "start": 768.765,
+      "end": 804.705
+    },
+    {
+      "name": "deterministic",
+      "start": 804.705,
+      "end": 827.915
+    },
+    {
+      "name": "d_definite",
+      "start": 827.915,
+      "end": 843.435
+    },
+    {
+      "name": "dont_confuse",
+      "start": 843.435,
+      "end": 861.525
+    },
+    {
+      "name": "natural_artificial",
+      "start": 861.525,
+      "end": 900.985
+    },
+    {
+      "name": "natural_kinds",
+      "start": 900.985,
+      "end": 957.825
+    },
+    {
+      "name": "levels",
+      "start": 957.825,
+      "end": 980.135
+    },
+    {
+      "name": "artificial",
+      "start": 980.135,
+      "end": 998.525
+    },
+    {
+      "name": "artificial_kinds",
+      "start": 998.525,
+      "end": 1010.185
+    },
+    {
+      "name": "knowledge",
+      "start": 1010.185,
+      "end": 1048.815
+    },
+    {
+      "name": "engineering",
+      "start": 1048.815,
+      "end": 1100.035
+    },
+    {
+      "name": "social",
+      "start": 1100.035,
+      "end": 1124.815
+    },
+    {
+      "name": "systems_thinking",
+      "start": 1124.815,
+      "end": 1146.655
+    },
+    {
+      "name": "science",
+      "start": 1146.655,
+      "end": 1167.635
+    },
+    {
+      "name": "understand_create",
+      "start": 1167.635,
+      "end": 1219.345
+    },
+    {
+      "name": "forest",
+      "start": 1219.345,
+      "end": 1261.785
+    },
+    {
+      "name": "cycles",
+      "start": 1261.785,
+      "end": 1302.665
+    },
+    {
+      "name": "cs_fits",
+      "start": 1302.665,
+      "end": 1348.425
+    },
+    {
+      "name": "not_just_using",
+      "start": 1348.425,
+      "end": 1383.66
+    },
+    {
+      "name": "computer_system",
+      "start": 1383.66,
+      "end": 1438.61
+    },
+    {
+      "name": "computer_objective",
+      "start": 1438.61,
+      "end": 1466.11
+    },
+    {
+      "name": "interface_components",
+      "start": 1466.11,
+      "end": 1482.59
+    },
+    {
+      "name": "cpu",
+      "start": 1482.59,
+      "end": 1496.08
+    },
+    {
+      "name": "ram",
+      "start": 1496.08,
+      "end": 1529.78
+    },
+    {
+      "name": "storage_os_apps",
+      "start": 1529.78,
+      "end": 1561.43
+    },
+    {
+      "name": "buses",
+      "start": 1561.43,
+      "end": 1605.03
+    },
+    {
+      "name": "dac_meaning",
+      "start": 1605.03,
+      "end": 1617.03
+    },
+    {
+      "name": "delivery",
+      "start": 1617.03,
+      "end": 1641.17
+    },
+    {
+      "name": "interaction",
+      "start": 1641.17,
+      "end": 1704.35
+    },
+    {
+      "name": "environment2",
+      "start": 1704.35,
+      "end": 1773.0
+    },
+    {
+      "name": "von_neumann",
+      "start": 1773.0,
+      "end": 1800.44
+    },
+    {
+      "name": "vn_components",
+      "start": 1800.44,
+      "end": 1819.64
+    },
+    {
+      "name": "alu_cu",
+      "start": 1819.64,
+      "end": 1863.34
+    },
+    {
+      "name": "io_flow",
+      "start": 1863.34,
+      "end": 1882.62
+    },
+    {
+      "name": "fdes",
+      "start": 1882.62,
+      "end": 1909.1
+    },
+    {
+      "name": "fetch",
+      "start": 1909.1,
+      "end": 1956.66
+    },
+    {
+      "name": "decode",
+      "start": 1956.66,
+      "end": 1989.3
+    },
+    {
+      "name": "execute",
+      "start": 1989.3,
+      "end": 2013.83
+    },
+    {
+      "name": "store",
+      "start": 2013.83,
+      "end": 2050.23
+    },
+    {
+      "name": "vn_characteristics",
+      "start": 2050.23,
+      "end": 2109.266
+    },
+    {
+      "name": "stored_program",
+      "start": 2109.266,
+      "end": 2130.926
+    },
+    {
+      "name": "advantages",
+      "start": 2130.926,
+      "end": 2152.686
+    },
+    {
+      "name": "flexibility_example",
+      "start": 2152.686,
+      "end": 2179.376
+    },
+    {
+      "name": "bottleneck",
+      "start": 2179.376,
+      "end": 2225.696
+    },
+    {
+      "name": "motorway",
+      "start": 2225.696,
+      "end": 2250.506
+    },
+    {
+      "name": "security",
+      "start": 2250.506,
+      "end": 2313.986
+    },
+    {
+      "name": "computing_systems",
+      "start": 2313.986,
+      "end": 2345.206
+    },
+    {
+      "name": "hardware_software",
+      "start": 2345.206,
+      "end": 2402.576
+    },
+    {
+      "name": "kinds",
+      "start": 2402.576,
+      "end": 2411.676
+    },
+    {
+      "name": "networks",
+      "start": 2411.676,
+      "end": 2441.116
+    },
+    {
+      "name": "lan_wan",
+      "start": 2441.116,
+      "end": 2503.246
+    },
+    {
+      "name": "protocols",
+      "start": 2503.246,
+      "end": 2559.906
+    },
+    {
+      "name": "recap_start",
+      "start": 2559.906,
+      "end": 2569.966
+    },
+    {
+      "name": "recap_ocec",
+      "start": 2569.966,
+      "end": 2581.566
+    },
+    {
+      "name": "recap_natural",
+      "start": 2581.566,
+      "end": 2593.976
+    },
+    {
+      "name": "recap_science",
+      "start": 2593.976,
+      "end": 2605.626
+    },
+    {
+      "name": "recap_computer",
+      "start": 2605.626,
+      "end": 2633.046
+    },
+    {
+      "name": "recap_vn",
+      "start": 2633.046,
+      "end": 2641.606
+    },
+    {
+      "name": "recap_internet",
+      "start": 2641.606,
+      "end": 2661.586
+    },
+    {
+      "name": "one_idea",
+      "start": 2661.586,
+      "end": 2683.466
+    },
+    {
+      "name": "questions",
+      "start": 2683.466,
+      "end": 2724.406
+    },
+    {
+      "name": "homework",
+      "start": 2724.406,
+      "end": 2744.341
+    }
+  ]
+}
