@@ -1,0 +1,391 @@
+{
+  "scene": "cs.course_roadmap",
+  "duration": 1897.781,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 1.14,
+      "end": 10.84
+    },
+    {
+      "name": "promise",
+      "start": 10.84,
+      "end": 26.4
+    },
+    {
+      "name": "one_map",
+      "start": 26.4,
+      "end": 28.84
+    },
+    {
+      "name": "you_will_know",
+      "start": 28.84,
+      "end": 48.44
+    },
+    {
+      "name": "scattered",
+      "start": 48.44,
+      "end": 63.1
+    },
+    {
+      "name": "connect",
+      "start": 63.1,
+      "end": 74.36
+    },
+    {
+      "name": "one_story",
+      "start": 74.36,
+      "end": 93.24
+    },
+    {
+      "name": "three_rules_tease",
+      "start": 93.24,
+      "end": 118.55
+    },
+    {
+      "name": "not_about_computers",
+      "start": 118.55,
+      "end": 129.49
+    },
+    {
+      "name": "about_information",
+      "start": 129.49,
+      "end": 142.87
+    },
+    {
+      "name": "break_problem",
+      "start": 142.87,
+      "end": 153.51
+    },
+    {
+      "name": "before_watching",
+      "start": 153.51,
+      "end": 173.17
+    },
+    {
+      "name": "underneath",
+      "start": 173.17,
+      "end": 201.09
+    },
+    {
+      "name": "pressed_play",
+      "start": 201.09,
+      "end": 227.89
+    },
+    {
+      "name": "dont_memorise",
+      "start": 227.89,
+      "end": 250.31
+    },
+    {
+      "name": "school_problem",
+      "start": 250.31,
+      "end": 278.25
+    },
+    {
+      "name": "data",
+      "start": 278.25,
+      "end": 293.48
+    },
+    {
+      "name": "algorithm",
+      "start": 293.48,
+      "end": 310.8
+    },
+    {
+      "name": "program",
+      "start": 310.8,
+      "end": 319.44
+    },
+    {
+      "name": "system",
+      "start": 319.44,
+      "end": 338.94
+    },
+    {
+      "name": "daps",
+      "start": 338.94,
+      "end": 352.22
+    },
+    {
+      "name": "two_worlds",
+      "start": 352.22,
+      "end": 374.04
+    },
+    {
+      "name": "paper1",
+      "start": 374.04,
+      "end": 397.52
+    },
+    {
+      "name": "paper2",
+      "start": 397.52,
+      "end": 415.0
+    },
+    {
+      "name": "scenario",
+      "start": 415.0,
+      "end": 444.04
+    },
+    {
+      "name": "fifty_fifty",
+      "start": 444.04,
+      "end": 461.06
+    },
+    {
+      "name": "the_map",
+      "start": 461.06,
+      "end": 481.665
+    },
+    {
+      "name": "paper1_topics",
+      "start": 481.665,
+      "end": 497.225
+    },
+    {
+      "name": "topic1",
+      "start": 497.225,
+      "end": 535.245
+    },
+    {
+      "name": "topic2",
+      "start": 535.245,
+      "end": 580.285
+    },
+    {
+      "name": "topic3",
+      "start": 580.285,
+      "end": 617.205
+    },
+    {
+      "name": "topic4",
+      "start": 617.205,
+      "end": 642.045
+    },
+    {
+      "name": "topic5",
+      "start": 642.045,
+      "end": 682.605
+    },
+    {
+      "name": "topic6",
+      "start": 682.605,
+      "end": 706.265
+    },
+    {
+      "name": "sense_process_act",
+      "start": 706.265,
+      "end": 732.965
+    },
+    {
+      "name": "world_two",
+      "start": 732.965,
+      "end": 749.205
+    },
+    {
+      "name": "not_programming_first",
+      "start": 749.205,
+      "end": 780.805
+    },
+    {
+      "name": "problem_plan",
+      "start": 780.805,
+      "end": 796.245
+    },
+    {
+      "name": "topic7",
+      "start": 796.245,
+      "end": 817.405
+    },
+    {
+      "name": "literal",
+      "start": 817.405,
+      "end": 832.885
+    },
+    {
+      "name": "topic7_tools",
+      "start": 832.885,
+      "end": 855.925
+    },
+    {
+      "name": "topic8",
+      "start": 855.925,
+      "end": 886.865
+    },
+    {
+      "name": "loop_selection",
+      "start": 886.865,
+      "end": 932.105
+    },
+    {
+      "name": "topic9",
+      "start": 932.105,
+      "end": 984.33
+    },
+    {
+      "name": "topic10",
+      "start": 984.33,
+      "end": 1003.23
+    },
+    {
+      "name": "simple_combined",
+      "start": 1003.23,
+      "end": 1038.45
+    },
+    {
+      "name": "three_skills",
+      "start": 1038.45,
+      "end": 1075.53
+    },
+    {
+      "name": "know",
+      "start": 1075.53,
+      "end": 1098.59
+    },
+    {
+      "name": "apply",
+      "start": 1098.59,
+      "end": 1129.39
+    },
+    {
+      "name": "weightings",
+      "start": 1129.39,
+      "end": 1157.65
+    },
+    {
+      "name": "judge",
+      "start": 1157.65,
+      "end": 1181.91
+    },
+    {
+      "name": "evaluation_chain",
+      "start": 1181.91,
+      "end": 1212.09
+    },
+    {
+      "name": "fool",
+      "start": 1212.09,
+      "end": 1237.37
+    },
+    {
+      "name": "recognise_retrieve",
+      "start": 1237.37,
+      "end": 1253.45
+    },
+    {
+      "name": "trap1",
+      "start": 1253.45,
+      "end": 1269.41
+    },
+    {
+      "name": "trap2",
+      "start": 1269.41,
+      "end": 1296.27
+    },
+    {
+      "name": "trap3",
+      "start": 1296.27,
+      "end": 1350.33
+    },
+    {
+      "name": "trap4",
+      "start": 1350.33,
+      "end": 1378.39
+    },
+    {
+      "name": "learn_use",
+      "start": 1378.39,
+      "end": 1384.93
+    },
+    {
+      "name": "teaching_method",
+      "start": 1384.93,
+      "end": 1425.476
+    },
+    {
+      "name": "five_steps",
+      "start": 1425.476,
+      "end": 1431.336
+    },
+    {
+      "name": "packets_example",
+      "start": 1431.336,
+      "end": 1503.356
+    },
+    {
+      "name": "programming_promise",
+      "start": 1503.356,
+      "end": 1547.276
+    },
+    {
+      "name": "start_small",
+      "start": 1547.276,
+      "end": 1559.116
+    },
+    {
+      "name": "build_up",
+      "start": 1559.116,
+      "end": 1582.896
+    },
+    {
+      "name": "logic_first",
+      "start": 1582.896,
+      "end": 1608.196
+    },
+    {
+      "name": "roadmap_q",
+      "start": 1608.196,
+      "end": 1625.816
+    },
+    {
+      "name": "binary",
+      "start": 1625.816,
+      "end": 1628.356
+    },
+    {
+      "name": "roadmap",
+      "start": 1628.356,
+      "end": 1685.416
+    },
+    {
+      "name": "rule1",
+      "start": 1685.416,
+      "end": 1707.656
+    },
+    {
+      "name": "rule2",
+      "start": 1707.656,
+      "end": 1739.036
+    },
+    {
+      "name": "rule3",
+      "start": 1739.036,
+      "end": 1755.716
+    },
+    {
+      "name": "not_failure",
+      "start": 1755.716,
+      "end": 1772.126
+    },
+    {
+      "name": "closing",
+      "start": 1772.126,
+      "end": 1793.786
+    },
+    {
+      "name": "think_like",
+      "start": 1793.786,
+      "end": 1845.196
+    },
+    {
+      "name": "next",
+      "start": 1845.196,
+      "end": 1881.556
+    },
+    {
+      "name": "thanks",
+      "start": 1881.556,
+      "end": 1897.781
+    }
+  ]
+}
