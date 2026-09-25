@@ -5,6 +5,10 @@
 #   - MathTex fails at render time without dvisvgm
 set -euo pipefail
 
+# A fresh container ships a stale package index, so apt resolves versions
+# that have already been superseded and the downloads 404. Refresh first.
+apt-get update
+
 apt-get install -y libpango1.0-dev libcairo2-dev pkg-config dvisvgm ffmpeg \
     texlive texlive-latex-extra
 
