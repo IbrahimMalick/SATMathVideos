@@ -37,6 +37,30 @@ def scene_location(scene_id):
     return path, class_name
 
 
+def drop_broken_partials(scene_stem, res_dir, class_name):
+    """Delete unreadable partial movie files before handing over to Manim.
+
+    A lecture render takes half an hour, and if the machine goes away
+    part-way through it leaves a truncated clip behind. Manim's cache
+    trusts whatever is on disk, reuses the stub, and the next run gets all
+    the way to the concatenation step before failing with an opaque
+    'Invalid data found when processing input'. Cheaper to check first.
+    """
+    partials = (REPO_ROOT / "media" / "videos" / scene_stem / res_dir
+                / "partial_movie_files" / class_name)
+    if not partials.is_dir():
+        return
+    for clip in sorted(partials.glob("*.mp4")):
+        probe = subprocess.run(
+            ["ffprobe", "-v", "error", "-show_entries", "format=duration",
+             "-of", "csv=p=0", str(clip)],
+            capture_output=True, text=True,
+        )
+        if probe.returncode != 0 or not probe.stdout.strip():
+            print(f"discarding truncated partial {clip.name}")
+            clip.unlink()
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
     parser.add_argument("script", type=Path)
@@ -70,6 +94,7 @@ def main():
 
     scene_path, class_name = scene_location(timing["scene"])
     qflag, res_dir = QUALITY[args.quality]
+    drop_broken_partials(scene_path.stem, res_dir, class_name)
     subprocess.run(
         [sys.executable, "-m", "manim", "render", qflag,
          str(scene_path.relative_to(REPO_ROOT)), class_name],
