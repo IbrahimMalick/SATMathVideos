@@ -108,6 +108,10 @@ def main():
         ["ffmpeg", "-y", "-v", "error",
          "-i", str(video), "-i", str(args.audio),
          "-map", "0:v", "-map", "1:a", "-c:v", "copy", "-c:a", "aac",
+         # Manim renders whole frames and rounds each one up, so over a
+         # long lecture the video track ends a few frames past the last
+         # word. The narration defines the length: cut the tail to it.
+         "-shortest",
          "-map_metadata", "-1", "-fflags", "+bitexact", "-flags:a", "+bitexact",
          str(out)],
         check=True,
