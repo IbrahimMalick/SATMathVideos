@@ -202,3 +202,24 @@ Do not build all of this at once. Stop after each stage and show me the output.
   costs more than a round trip.
 * Prefer boring, obvious Python. This repo will be read by me months from now while I'm thinking
   about pedagogy, not architecture.
+
+## 9. YouTube chapter timestamps
+
+This is the format YouTube accepts. Use it verbatim — plain text, no decoration:
+
+```text
+TIMESTAMPS:
+00:00 - Why one map beats ten chapters
+01:58 - Computer Science is not really about computers
+04:10 - Data, Algorithm, Program, System
+```
+
+Rules:
+
+* Header is the literal word `TIMESTAMPS:` on its own line. Not an emoji, not "Chapters".
+* One entry per line, no blank lines between them.
+* `MM:SS - Title`, separated by a plain space-hyphen-space. Use `:` and `-` inside titles;
+  never an em dash — YouTube's parser is happier with ASCII and it survives copy-paste.
+* First entry must be `00:00`, entries ascend, each chapter at least 10 seconds long.
+* Derive the times from `timings/<scene>.json`, never by scrubbing the video. The beats are
+  already anchored to the words, so a chapter opens exactly where the narration turns.
