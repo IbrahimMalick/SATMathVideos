@@ -66,6 +66,11 @@ def main():
     parser.add_argument("script", type=Path)
     parser.add_argument("audio", type=Path)
     parser.add_argument("-q", "--quality", choices=QUALITY, default="h")
+    parser.add_argument(
+        "-r", "--resolution", default=None,
+        help="W,H override for portrait Shorts (e.g. 1080,1920). The scene "
+             "module pins the matching frame size; this sets the pixels.",
+    )
     parser.add_argument("--model", default="base", help="faster-whisper model size")
     parser.add_argument("--backend", default="faster-whisper")
     parser.add_argument(
@@ -94,9 +99,15 @@ def main():
 
     scene_path, class_name = scene_location(timing["scene"])
     qflag, res_dir = QUALITY[args.quality]
+    extra = []
+    if args.resolution:
+        width, height = (int(v) for v in args.resolution.split(","))
+        # Manim names the output directory after the pixel height and fps.
+        res_dir = f"{height}p60"
+        extra = ["-r", args.resolution, "--fps", "60"]
     drop_broken_partials(scene_path.stem, res_dir, class_name)
     subprocess.run(
-        [sys.executable, "-m", "manim", "render", qflag,
+        [sys.executable, "-m", "manim", "render", qflag, *extra,
          str(scene_path.relative_to(REPO_ROOT)), class_name],
         cwd=REPO_ROOT, check=True,
     )
