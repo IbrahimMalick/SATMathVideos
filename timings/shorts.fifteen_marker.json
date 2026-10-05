@@ -1,0 +1,86 @@
+{
+  "scene": "shorts.fifteen_marker",
+  "duration": 77.85,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.45,
+      "end": 7.93
+    },
+    {
+      "name": "dont_code",
+      "start": 7.93,
+      "end": 9.49
+    },
+    {
+      "name": "destroy",
+      "start": 9.49,
+      "end": 12.35
+    },
+    {
+      "name": "break_req",
+      "start": 12.35,
+      "end": 14.89
+    },
+    {
+      "name": "r_array",
+      "start": 14.89,
+      "end": 21.49
+    },
+    {
+      "name": "r_input",
+      "start": 21.49,
+      "end": 23.49
+    },
+    {
+      "name": "r_accum",
+      "start": 23.49,
+      "end": 26.65
+    },
+    {
+      "name": "r_count",
+      "start": 26.65,
+      "end": 28.53
+    },
+    {
+      "name": "r_streak",
+      "start": 28.53,
+      "end": 35.77
+    },
+    {
+      "name": "r_drought",
+      "start": 35.77,
+      "end": 41.17
+    },
+    {
+      "name": "six",
+      "start": 41.17,
+      "end": 47.53
+    },
+    {
+      "name": "streak_rule",
+      "start": 47.53,
+      "end": 51.11
+    },
+    {
+      "name": "current",
+      "start": 51.11,
+      "end": 61.15
+    },
+    {
+      "name": "card",
+      "start": 61.15,
+      "end": 64.33
+    },
+    {
+      "name": "never_code",
+      "start": 64.33,
+      "end": 67.63
+    },
+    {
+      "name": "close",
+      "start": 67.63,
+      "end": 77.85
+    }
+  ]
+}

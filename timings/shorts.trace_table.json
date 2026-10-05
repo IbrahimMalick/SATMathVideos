@@ -1,0 +1,81 @@
+{
+  "scene": "shorts.trace_table",
+  "duration": 78.73,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.45,
+      "end": 8.79
+    },
+    {
+      "name": "reset",
+      "start": 8.79,
+      "end": 13.49
+    },
+    {
+      "name": "count0",
+      "start": 13.49,
+      "end": 16.79
+    },
+    {
+      "name": "match",
+      "start": 16.79,
+      "end": 20.43
+    },
+    {
+      "name": "increment",
+      "start": 20.43,
+      "end": 26.35
+    },
+    {
+      "name": "next_pair",
+      "start": 26.35,
+      "end": 29.25
+    },
+    {
+      "name": "rule",
+      "start": 29.25,
+      "end": 35.07
+    },
+    {
+      "name": "example",
+      "start": 35.07,
+      "end": 39.55
+    },
+    {
+      "name": "trace_ba",
+      "start": 39.55,
+      "end": 42.73
+    },
+    {
+      "name": "trace_al",
+      "start": 42.73,
+      "end": 45.05
+    },
+    {
+      "name": "trace_ll",
+      "start": 45.05,
+      "end": 49.75
+    },
+    {
+      "name": "trace_lo",
+      "start": 49.75,
+      "end": 54.53
+    },
+    {
+      "name": "trace_oo",
+      "start": 54.53,
+      "end": 60.63
+    },
+    {
+      "name": "steps",
+      "start": 60.63,
+      "end": 66.65
+    },
+    {
+      "name": "close",
+      "start": 66.65,
+      "end": 78.73
+    }
+  ]
+}

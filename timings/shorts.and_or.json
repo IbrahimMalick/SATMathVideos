@@ -1,0 +1,81 @@
+{
+  "scene": "shorts.and_or",
+  "duration": 80.13,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.45,
+      "end": 6.67
+    },
+    {
+      "name": "rule",
+      "start": 6.67,
+      "end": 10.73
+    },
+    {
+      "name": "range",
+      "start": 10.73,
+      "end": 16.25
+    },
+    {
+      "name": "and_cond",
+      "start": 16.25,
+      "end": 23.03
+    },
+    {
+      "name": "why_and",
+      "start": 23.03,
+      "end": 28.13
+    },
+    {
+      "name": "invalid",
+      "start": 28.13,
+      "end": 32.01
+    },
+    {
+      "name": "or_cond",
+      "start": 32.01,
+      "end": 38.49
+    },
+    {
+      "name": "low_high",
+      "start": 38.49,
+      "end": 42.73
+    },
+    {
+      "name": "trap",
+      "start": 42.73,
+      "end": 46.29
+    },
+    {
+      "name": "try50",
+      "start": 46.29,
+      "end": 48.43
+    },
+    {
+      "name": "check",
+      "start": 48.43,
+      "end": 53.67
+    },
+    {
+      "name": "accepted",
+      "start": 53.67,
+      "end": 58.55
+    },
+    {
+      "name": "why",
+      "start": 58.55,
+      "end": 63.65
+    },
+    {
+      "name": "again",
+      "start": 63.65,
+      "end": 67.89
+    },
+    {
+      "name": "close",
+      "start": 67.89,
+      "end": 80.13
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "scene": "shorts.four_errors",
+  "duration": 82.49,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.45,
+      "end": 7.75
+    },
+    {
+      "name": "context",
+      "start": 7.75,
+      "end": 14.03
+    },
+    {
+      "name": "err1",
+      "start": 14.03,
+      "end": 22.99
+    },
+    {
+      "name": "fix1",
+      "start": 22.99,
+      "end": 26.77
+    },
+    {
+      "name": "err2",
+      "start": 26.77,
+      "end": 31.33
+    },
+    {
+      "name": "wrong2",
+      "start": 31.33,
+      "end": 34.77
+    },
+    {
+      "name": "fix2",
+      "start": 34.77,
+      "end": 38.61
+    },
+    {
+      "name": "err3",
+      "start": 38.61,
+      "end": 44.65
+    },
+    {
+      "name": "fix3",
+      "start": 44.65,
+      "end": 49.89
+    },
+    {
+      "name": "err4",
+      "start": 49.89,
+      "end": 53.41
+    },
+    {
+      "name": "why4",
+      "start": 53.41,
+      "end": 59.15
+    },
+    {
+      "name": "fix4",
+      "start": 59.15,
+      "end": 66.39
+    },
+    {
+      "name": "memory",
+      "start": 66.39,
+      "end": 73.65
+    },
+    {
+      "name": "ple",
+      "start": 73.65,
+      "end": 75.79
+    },
+    {
+      "name": "close",
+      "start": 75.79,
+      "end": 82.49
+    }
+  ]
+}

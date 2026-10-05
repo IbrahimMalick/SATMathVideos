@@ -1,0 +1,61 @@
+{
+  "scene": "shorts.boolean_split",
+  "duration": 56.47,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.45,
+      "end": 8.23
+    },
+    {
+      "name": "dont_panic",
+      "start": 8.23,
+      "end": 12.83
+    },
+    {
+      "name": "x1",
+      "start": 12.83,
+      "end": 16.11
+    },
+    {
+      "name": "x2",
+      "start": 16.11,
+      "end": 20.95
+    },
+    {
+      "name": "x3",
+      "start": 20.95,
+      "end": 23.73
+    },
+    {
+      "name": "x4",
+      "start": 23.73,
+      "end": 28.29
+    },
+    {
+      "name": "final_z",
+      "start": 28.29,
+      "end": 31.44
+    },
+    {
+      "name": "table",
+      "start": 31.44,
+      "end": 39.77
+    },
+    {
+      "name": "one_gate",
+      "start": 39.77,
+      "end": 42.41
+    },
+    {
+      "name": "never",
+      "start": 42.41,
+      "end": 48.29
+    },
+    {
+      "name": "close",
+      "start": 48.29,
+      "end": 56.47
+    }
+  ]
+}
