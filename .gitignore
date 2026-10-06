@@ -4,3 +4,6 @@ media/
 out/
 audio/*.wav
 audio/*.words.json
+
+# scratch chunks from parallel transcription
+audio/ptrans_work/
