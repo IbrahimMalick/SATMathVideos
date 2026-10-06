@@ -11,10 +11,12 @@ the number suggests; the floor that matters is 28px at 1080x1920, which
 works out at a nominal ~15.8.
 """
 
-from manim import DOWN, LEFT, SurroundingRectangle, VGroup
+from manim import DOWN, LEFT, ORIGIN, RIGHT, SurroundingRectangle, UP, VGroup
 
 from brand import (
+    MARGIN_SIZE,
     CHARCOAL,
+    GAP_LG,
     GAP_MD,
     GAP_SM,
     GREY,
@@ -80,3 +82,60 @@ def series_card(size=SERIES, width=PORTRAIT_SAFE):
     ).arrange(DOWN, buff=GAP_SM * 0.9)
     card = VGroup(head, steps).arrange(DOWN, buff=GAP_MD * 1.6)
     return fit(card, width)
+
+
+# ------------------------------------------------------- the STEP-UP spine
+
+STEP_UP = [
+    ("S", "step through one\ninstruction at a time"),
+    ("T", "tear problems\ninto requirements"),
+    ("E", "establish\ninitial values"),
+    ("P", "preserve values\nuntil changed"),
+    ("U", "use intermediate\nresults"),
+    ("P", "plan before\nyou code"),
+]
+
+
+class StepUpSpine(VGroup):
+    """The six letters, one lit at a time.
+
+    The lecture returns to this whenever a rule is named, so the student
+    sees which of the six they are being handed rather than six unrelated
+    pieces of advice. Labels are optional: the full form opens and closes
+    the lecture, the bare letters flash inline.
+    """
+
+    def __init__(self, size=56, width=13.4, labels=False, label_size=MARGIN_SIZE,
+                 dim=GREY, lit=TERRACOTTA):
+        super().__init__()
+        self.dim_color, self.lit_color = dim, lit
+        self.letters = VGroup()
+        columns = VGroup()
+        for letter, meaning in STEP_UP:
+            glyph = serif(letter, size, dim)
+            self.letters.add(glyph)
+            if labels:
+                caption = VGroup(*[serif(line, label_size, GREY)
+                                   for line in meaning.split("\n")])
+                caption.arrange(DOWN, buff=GAP_SM * 0.5)
+                columns.add(VGroup(glyph, caption).arrange(DOWN,
+                                                           buff=GAP_SM * 1.2))
+            else:
+                columns.add(glyph)
+        if labels:
+            # Six labelled columns in one row only fit by scaling the
+            # captions under the 28px floor, so they go two rows of three.
+            columns.arrange_in_grid(rows=2, buff=(GAP_LG, GAP_MD * 1.3))
+        else:
+            columns.arrange(RIGHT, buff=GAP_MD * 2.2)
+        self.add(columns)
+        if self.width > width:
+            self.scale_to_fit_width(width)
+
+    def focus(self, index):
+        return [glyph.animate.set_color(
+            self.lit_color if i == index else self.dim_color)
+            for i, glyph in enumerate(self.letters)]
+
+    def dim_all(self):
+        return [g.animate.set_color(self.dim_color) for g in self.letters]

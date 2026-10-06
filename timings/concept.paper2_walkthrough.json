@@ -1,0 +1,486 @@
+{
+  "scene": "concept.paper2_walkthrough",
+  "duration": 1573.675,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.5,
+      "end": 8.1
+    },
+    {
+      "name": "promise",
+      "start": 8.1,
+      "end": 19.26
+    },
+    {
+      "name": "by_end",
+      "start": 19.26,
+      "end": 32.74
+    },
+    {
+      "name": "stepup",
+      "start": 32.74,
+      "end": 37.82
+    },
+    {
+      "name": "s_step",
+      "start": 37.82,
+      "end": 42.8
+    },
+    {
+      "name": "t_tear",
+      "start": 42.8,
+      "end": 46.18
+    },
+    {
+      "name": "e_establish",
+      "start": 46.18,
+      "end": 50.0
+    },
+    {
+      "name": "p_preserve",
+      "start": 50.0,
+      "end": 55.66
+    },
+    {
+      "name": "u_use",
+      "start": 55.66,
+      "end": 58.72
+    },
+    {
+      "name": "p_plan",
+      "start": 58.72,
+      "end": 82.16
+    },
+    {
+      "name": "warning",
+      "start": 82.16,
+      "end": 101.38
+    },
+    {
+      "name": "q1",
+      "start": 101.38,
+      "end": 108.86
+    },
+    {
+      "name": "q1_mean",
+      "start": 108.86,
+      "end": 124.9
+    },
+    {
+      "name": "q1_answer",
+      "start": 124.9,
+      "end": 137.68
+    },
+    {
+      "name": "families",
+      "start": 137.68,
+      "end": 158.06
+    },
+    {
+      "name": "q2",
+      "start": 158.06,
+      "end": 168.12
+    },
+    {
+      "name": "q2_char",
+      "start": 168.12,
+      "end": 180.42
+    },
+    {
+      "name": "q2_answer",
+      "start": 180.42,
+      "end": 190.06
+    },
+    {
+      "name": "q3",
+      "start": 190.06,
+      "end": 198.28
+    },
+    {
+      "name": "presence",
+      "start": 198.28,
+      "end": 203.86
+    },
+    {
+      "name": "checkdigit",
+      "start": 203.86,
+      "end": 215.0
+    },
+    {
+      "name": "format",
+      "start": 215.0,
+      "end": 236.58
+    },
+    {
+      "name": "format_trap",
+      "start": 236.58,
+      "end": 268.3
+    },
+    {
+      "name": "q3c",
+      "start": 268.3,
+      "end": 288.84
+    },
+    {
+      "name": "valid_first",
+      "start": 288.84,
+      "end": 292.2
+    },
+    {
+      "name": "two_loops",
+      "start": 292.2,
+      "end": 305.34
+    },
+    {
+      "name": "q3c_code",
+      "start": 305.34,
+      "end": 328.84
+    },
+    {
+      "name": "mod_why",
+      "start": 328.84,
+      "end": 342.54
+    },
+    {
+      "name": "q3c_marks",
+      "start": 342.54,
+      "end": 357.38
+    },
+    {
+      "name": "and_or",
+      "start": 357.38,
+      "end": 368.34
+    },
+    {
+      "name": "q4",
+      "start": 368.34,
+      "end": 380.136
+    },
+    {
+      "name": "coding",
+      "start": 380.136,
+      "end": 409.136
+    },
+    {
+      "name": "testing",
+      "start": 409.136,
+      "end": 432.496
+    },
+    {
+      "name": "q4_marks",
+      "start": 432.496,
+      "end": 447.716
+    },
+    {
+      "name": "q4_rule",
+      "start": 447.716,
+      "end": 454.016
+    },
+    {
+      "name": "q5",
+      "start": 454.016,
+      "end": 461.856
+    },
+    {
+      "name": "q5_task",
+      "start": 461.856,
+      "end": 472.397
+    },
+    {
+      "name": "ple",
+      "start": 472.397,
+      "end": 488.796
+    },
+    {
+      "name": "err1",
+      "start": 488.796,
+      "end": 501.516
+    },
+    {
+      "name": "err2",
+      "start": 501.516,
+      "end": 514.617
+    },
+    {
+      "name": "err3",
+      "start": 514.617,
+      "end": 528.136
+    },
+    {
+      "name": "err4",
+      "start": 528.136,
+      "end": 553.536
+    },
+    {
+      "name": "linear",
+      "start": 553.536,
+      "end": 566.756
+    },
+    {
+      "name": "q5c",
+      "start": 566.756,
+      "end": 575.696
+    },
+    {
+      "name": "flag",
+      "start": 575.696,
+      "end": 583.176
+    },
+    {
+      "name": "flag_code",
+      "start": 583.176,
+      "end": 599.586
+    },
+    {
+      "name": "flag_marks",
+      "start": 599.586,
+      "end": 621.886
+    },
+    {
+      "name": "rule_p",
+      "start": 621.886,
+      "end": 628.666
+    },
+    {
+      "name": "q6",
+      "start": 628.666,
+      "end": 638.686
+    },
+    {
+      "name": "rerm",
+      "start": 638.686,
+      "end": 648.746
+    },
+    {
+      "name": "numletter",
+      "start": 648.746,
+      "end": 652.566
+    },
+    {
+      "name": "post",
+      "start": 652.566,
+      "end": 674.206
+    },
+    {
+      "name": "committee",
+      "start": 674.206,
+      "end": 690.286
+    },
+    {
+      "name": "no_change",
+      "start": 690.286,
+      "end": 725.546
+    },
+    {
+      "name": "purpose",
+      "start": 725.546,
+      "end": 739.146
+    },
+    {
+      "name": "q7",
+      "start": 739.146,
+      "end": 754.066
+    },
+    {
+      "name": "why_file",
+      "start": 754.066,
+      "end": 766.806
+    },
+    {
+      "name": "file_seq",
+      "start": 766.806,
+      "end": 795.728
+    },
+    {
+      "name": "q8",
+      "start": 795.728,
+      "end": 802.528
+    },
+    {
+      "name": "one_jump",
+      "start": 802.528,
+      "end": 813.508
+    },
+    {
+      "name": "intermediates",
+      "start": 813.508,
+      "end": 839.208
+    },
+    {
+      "name": "circuit",
+      "start": 839.208,
+      "end": 874.828
+    },
+    {
+      "name": "mechanical",
+      "start": 874.828,
+      "end": 881.848
+    },
+    {
+      "name": "q9",
+      "start": 881.848,
+      "end": 893.868
+    },
+    {
+      "name": "datatypes",
+      "start": 893.868,
+      "end": 929.738
+    },
+    {
+      "name": "sql_three",
+      "start": 929.738,
+      "end": 940.038
+    },
+    {
+      "name": "sql_code",
+      "start": 940.038,
+      "end": 962.418
+    },
+    {
+      "name": "redundant",
+      "start": 962.418,
+      "end": 991.688
+    },
+    {
+      "name": "sql_rule",
+      "start": 991.688,
+      "end": 1003.828
+    },
+    {
+      "name": "q10",
+      "start": 1003.828,
+      "end": 1008.808
+    },
+    {
+      "name": "fear",
+      "start": 1008.808,
+      "end": 1017.308
+    },
+    {
+      "name": "plan_first",
+      "start": 1017.308,
+      "end": 1023.188
+    },
+    {
+      "name": "requirements",
+      "start": 1023.188,
+      "end": 1037.968
+    },
+    {
+      "name": "tear_down",
+      "start": 1037.968,
+      "end": 1071.088
+    },
+    {
+      "name": "patterns",
+      "start": 1071.088,
+      "end": 1098.448
+    },
+    {
+      "name": "blocks",
+      "start": 1098.448,
+      "end": 1106.548
+    },
+    {
+      "name": "declare",
+      "start": 1106.548,
+      "end": 1165.008
+    },
+    {
+      "name": "init",
+      "start": 1165.008,
+      "end": 1191.225
+    },
+    {
+      "name": "input_block",
+      "start": 1191.225,
+      "end": 1216.685
+    },
+    {
+      "name": "total_avg",
+      "start": 1216.685,
+      "end": 1243.365
+    },
+    {
+      "name": "accumulator",
+      "start": 1243.365,
+      "end": 1256.685
+    },
+    {
+      "name": "rounding",
+      "start": 1256.685,
+      "end": 1277.145
+    },
+    {
+      "name": "dry_days",
+      "start": 1277.145,
+      "end": 1333.625
+    },
+    {
+      "name": "resets",
+      "start": 1333.625,
+      "end": 1338.385
+    },
+    {
+      "name": "dry_code",
+      "start": 1338.385,
+      "end": 1380.885
+    },
+    {
+      "name": "three_patterns",
+      "start": 1380.885,
+      "end": 1390.365
+    },
+    {
+      "name": "output_block",
+      "start": 1390.365,
+      "end": 1412.345
+    },
+    {
+      "name": "drought",
+      "start": 1412.345,
+      "end": 1425.375
+    },
+    {
+      "name": "why_ge",
+      "start": 1425.375,
+      "end": 1456.215
+    },
+    {
+      "name": "bestfit",
+      "start": 1456.215,
+      "end": 1460.255
+    },
+    {
+      "name": "marks_split",
+      "start": 1460.255,
+      "end": 1489.695
+    },
+    {
+      "name": "syntax",
+      "start": 1489.695,
+      "end": 1495.555
+    },
+    {
+      "name": "close",
+      "start": 1495.555,
+      "end": 1507.495
+    },
+    {
+      "name": "six_habits",
+      "start": 1507.495,
+      "end": 1552.935
+    },
+    {
+      "name": "cta",
+      "start": 1552.935,
+      "end": 1562.215
+    },
+    {
+      "name": "signoff",
+      "start": 1562.215,
+      "end": 1573.675
+    }
+  ]
+}
