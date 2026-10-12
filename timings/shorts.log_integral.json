@@ -1,0 +1,19 @@
+{
+  "scene": "shorts.log_integral",
+  "duration": 60.0,
+  "_note": "Hand-authored: this Short carries music, not narration, so there is no delivery to derive timing from. The countdown beat runs a real ten seconds because the hook promises ten.",
+  "beats": [
+    {"name": "hook",       "start": 0.0,  "end": 4.0},
+    {"name": "challenge",  "start": 4.0,  "end": 6.5},
+    {"name": "timer",      "start": 6.5,  "end": 16.5},
+    {"name": "method",     "start": 16.5, "end": 20.0},
+    {"name": "parts",      "start": 20.0, "end": 25.0},
+    {"name": "applied",    "start": 25.0, "end": 32.0},
+    {"name": "first_term", "start": 32.0, "end": 36.0},
+    {"name": "rewrite",    "start": 36.0, "end": 42.0},
+    {"name": "inner",      "start": 42.0, "end": 47.0},
+    {"name": "combine",    "start": 47.0, "end": 52.0},
+    {"name": "answer",     "start": 52.0, "end": 57.0},
+    {"name": "outro",      "start": 57.0, "end": 60.0}
+  ]
+}
