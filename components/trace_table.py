@@ -39,24 +39,37 @@ class TraceTable(VGroup):
         self.has_start = start is not None
 
         head = VGroup(*[serif(str(h), size, SLATE) for h in headers])
-        for i, cell in enumerate(head):
-            cell.move_to(RIGHT * (i - (len(headers) - 1) / 2) * col_width)
+        body_rows = [VGroup(*[serif(str(v), size, dim) for v in values])
+                     for values in body]
 
+        # Columns are as wide as their widest cell, header included, with
+        # col_width only a floor. A fixed width silently overlaps the
+        # moment a header is longer than it ("Visitors", "Longest").
+        centres, x = [], 0.0
+        for i in range(len(headers)):
+            column = [head[i]] + [row[i] for row in body_rows]
+            span = max(max(cell.width for cell in column), col_width)
+            centres.append(x + span / 2)
+            x += span + GAP_SM
+        offset = (x - GAP_SM) / 2
+        centres = [c - offset for c in centres]
+
+        for i, cell in enumerate(head):
+            cell.move_to(RIGHT * centres[i])
+        rule = Line(LEFT * (offset + GAP_SM * 0.6),
+                    RIGHT * (offset + GAP_SM * 0.6),
+                    color=GREY, stroke_width=2)
+        rule.next_to(head, DOWN, buff=GAP_SM * 0.6)
+
+        # Rows hang off the rule, not off the header's centre, so the first
+        # row never ends up sitting on the line.
         self.rows = VGroup()
-        for r, values in enumerate(body):
-            row = VGroup(*[serif(str(v), size, dim) for v in values])
+        top = rule.get_y()
+        for r, row in enumerate(body_rows):
             for i, cell in enumerate(row):
-                cell.move_to(
-                    RIGHT * (i - (len(headers) - 1) / 2) * col_width
-                    + DOWN * (r + 1) * row_height)
+                cell.move_to([centres[i], top - (r + 0.7) * row_height, 0])
             self.rows.add(row)
 
-        grid = VGroup(head, self.rows)
-        rule = Line(grid.get_left() + LEFT * GAP_SM * 0.6,
-                    grid.get_right() + RIGHT * GAP_SM * 0.6,
-                    color=GREY, stroke_width=2)
-        rule.next_to(head, DOWN, buff=GAP_SM * 0.5)
-        rule.set_x(grid.get_x())
         self.head, self.rule = head, rule
         self.add(head, rule, self.rows)
         if width and self.width > width:

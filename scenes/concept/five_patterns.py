@@ -154,24 +154,47 @@ class FivePatterns(SATScene):
             mobject.to_edge(DOWN, buff=buff)
         return mobject
 
-    def pairs(self, rows, size=LABEL_SIZE, left_x=-5.8, right_x=-0.9,
-              cue=GREY, answer=CHARCOAL, buff=GAP_SM * 1.4):
+    def pairs(self, rows, top=None, size=LABEL_SIZE, left_x=-5.8,
+              right_x=-0.9, cue=GREY, answer=CHARCOAL, gap=GAP_SM * 1.4,
+              floor=FLOOR):
         """Two aligned columns: a cue on the left, its answer on the right.
 
         Placed by coordinate rather than padded with spaces — Pango is free
         to collapse runs of whitespace, so space-aligned columns are not
-        actually aligned.
+        actually aligned. Rows sit on a fixed pitch rather than being
+        arranged by their bounding boxes: a row whose text has no descender
+        is shorter than its neighbours, and arranging by edge turns that
+        into visibly uneven gaps.
         """
-        group = VGroup()
         gutter = right_x - left_x - 0.35
+        built = []
         for left_text, right_text in rows:
             left = fit(serif(left_text, size, cue), gutter)
             right = fit(serif(right_text, size, answer),
                         FRAME_SAFE / 2 - right_x - 0.4)
-            left.move_to([left_x, 0, 0], aligned_edge=LEFT)
-            right.move_to([right_x, 0, 0], aligned_edge=LEFT)
-            group.add(VGroup(left, right))
-        group.arrange(DOWN, buff=buff, aligned_edge=LEFT)
+            built.append((left, right))
+        line = max(max(l.height, r.height) for l, r in built)
+
+        group = VGroup()
+        for factor in (1.0, 0.85, 0.7, 0.55, 0.42, 0.32, 0.24):
+            pitch = line + gap * factor
+            group = VGroup()
+            for i, (left, right) in enumerate(built):
+                y = -i * pitch
+                left.move_to([left_x, y, 0], aligned_edge=LEFT)
+                right.move_to([right_x, y, 0], aligned_edge=LEFT)
+                group.add(VGroup(left, right))
+            if top is None:
+                group.move_to(ORIGIN)
+            else:
+                group.next_to(top, DOWN, buff=gap * factor)
+            # next_to and move_to recentre horizontally; put the two
+            # columns back on the x they were laid out against.
+            for sub in group:
+                sub[0].set_x(left_x + sub[0].width / 2)
+                sub[1].set_x(right_x + sub[1].width / 2)
+            if group.get_bottom()[1] >= floor:
+                break
         return group
 
     def stack(self, group, top=None, buff=GAP_MD, floor=FLOOR, align=ORIGIN):
@@ -340,8 +363,7 @@ class FivePatterns(SATScene):
             rows = self.pairs([(str(i + 1), name)
                                for i, name in enumerate(PATTERNS)],
                               size=BODY_SIZE, left_x=-4.4, right_x=-3.4,
-                              cue=SLATE, buff=GAP_MD)
-            rows.move_to(ORIGIN)
+                              cue=SLATE, gap=GAP_MD)
             self.hide(rows)
             self.reveal(t, rows, 0, len(rows), 0.16)
             t.hold()
@@ -739,9 +761,8 @@ class FivePatterns(SATScene):
             rows = self.pairs([
                 ("FOR", "you know how many repetitions"),
                 ("WHILE", "check the condition first"),
-                ("REPEAT", "do the body first")], size=BODY_SIZE,
-                left_x=-5.4, right_x=-2.6)
-            rows.next_to(self.head, DOWN, buff=GAP_LG)
+                ("REPEAT", "do the body first")], top=self.head,
+                size=BODY_SIZE, left_x=-5.4, right_x=-2.6, gap=GAP_MD)
             self.hide(rows)
             self.reveal(t, rows, 0, len(rows), 0.22)
             t.hold()
@@ -986,15 +1007,13 @@ class FivePatterns(SATScene):
             self.title(t, "The gate rules", fraction=0.5)
             t.hold()
 
-        self.gate_rows = self.pairs([
-            ("AND", "both inputs are 1"),
-            ("OR", "at least one input is 1"),
-            ("XOR", "the inputs are different"),
-            ("NOT", "flip it")], size=BODY_SIZE, left_x=-5.0, right_x=-2.4,
-            buff=GAP_MD)
-
         with self.beat("p4_and_or") as t:
-            self.stack(self.gate_rows, self.head, buff=GAP_MD, align=LEFT)
+            self.gate_rows = self.pairs([
+                ("AND", "both inputs are 1"),
+                ("OR", "at least one input is 1"),
+                ("XOR", "the inputs are different"),
+                ("NOT", "flip it")], top=self.head, size=BODY_SIZE,
+                left_x=-5.0, right_x=-2.4, gap=GAP_MD)
             self.hide(self.gate_rows)
             self.reveal(t, self.gate_rows, 0, 2, 0.3)
             t.hold()
@@ -1119,9 +1138,10 @@ class FivePatterns(SATScene):
             note = self.caption("The brackets tell you which gate comes first.")
             self.foot(note)
             self.play(Write(note), run_time=t.fill(0.45))
+            self.bracket_note = note
             t.hold()
 
-        top, bottom = 0.95, -1.55
+        top, bottom = 1.05, -1.35
         a = fit(serif("A", BODY_SIZE, CHARCOAL)).move_to([-5.4, top + 0.5, 0])
         b1 = fit(serif("B", BODY_SIZE, CHARCOAL)).move_to([-5.4, top - 0.5, 0])
         b2 = fit(serif("B", BODY_SIZE, CHARCOAL)).move_to([-5.4,
@@ -1135,13 +1155,15 @@ class FivePatterns(SATScene):
         z = fit(serif("Z", TITLE_SIZE, TERRACOTTA)).move_to([4.6, -0.3, 0])
 
         with self.beat("p4_and_gate") as t:
+            # The caption sat where the lower inputs are about to land.
+            self.play(FadeOut(self.bracket_note), run_time=t.fill(0.12))
             wires = VGroup(
                 self.wire(a.get_right(), and_gate.get_left() + UP * 0.22),
                 self.wire(b1.get_right(), and_gate.get_left() + DOWN * 0.22))
             self.play(Write(VGroup(a, b1)), run_time=t.fill(0.2))
-            self.play(Create(wires), run_time=t.fill(0.2))
+            self.play(Create(wires), run_time=t.fill(0.18))
             self.play(Create(and_gate[0]), Write(and_gate[1]),
-                      run_time=t.fill(0.3))
+                      run_time=t.fill(0.28))
             t.hold()
 
         with self.beat("p4_not_gate") as t:
@@ -1262,10 +1284,8 @@ class FivePatterns(SATScene):
                 ("quiet days", "COUNTER"),
                 ("consecutive quiet days", "CURRENT STREAK"),
                 ("longest quiet run", "MAXIMUM"),
-                ("warning", "IF")], left_x=-5.8, right_x=-0.2,
-                buff=GAP_SM * 1.2)
-            self.stack(self.map_rows, self.head, buff=GAP_SM * 1.2,
-                       align=LEFT)
+                ("warning", "IF")], top=self.head, left_x=-5.8,
+                right_x=-0.2, gap=GAP_SM * 1.2)
             self.hide(self.map_rows)
             self.reveal(t, self.map_rows, 0, 2, 0.35)
             t.hold()
@@ -1419,9 +1439,9 @@ class FivePatterns(SATScene):
         three = self.pairs([
             ("COUNT", "how many in total"),
             ("CURRENT", "the streak right now"),
-            ("LONGEST", "the best streak seen")], size=BODY_SIZE,
-            left_x=-5.4, right_x=-1.6, cue=SLATE, buff=GAP_MD)
-        self.stack(three, self.head, buff=GAP_MD, align=LEFT)
+            ("LONGEST", "the best streak seen")], top=self.head,
+            size=BODY_SIZE, left_x=-5.4, right_x=-1.6, cue=SLATE,
+            gap=GAP_MD)
         self.hide(three)
         for position, name in enumerate(("p5_def_count", "p5_def_current",
                                          "p5_def_longest")):
@@ -1436,18 +1456,20 @@ class FivePatterns(SATScene):
         with self.beat("p5_data") as t:
             self.wipe(t)
             self.title(t, "Six days  ·  quiet is under 20", fraction=0.08)
-            data = fit(serif("12    15    35    10    8    7", TITLE_SIZE,
-                             CHARCOAL))
-            data.next_to(self.head, DOWN, buff=GAP_SM * 1.4)
-            self.play(Write(data), run_time=t.fill(0.3))
             trace = self.table(
                 ["Day", "Visitors", "Count", "Current", "Longest"],
                 [(2, 15, 2, 2, 2), (3, 35, 2, 0, 2), (4, 10, 3, 1, 2),
                  (5, 8, 4, 2, 2), (6, 7, 5, 3, 3)],
-                start=(1, 12, 1, 1, 1), top=data, row_height=0.5)
+                start=(1, 12, 1, 1, 1), top=self.head, row_height=0.52)
+            # The dataset takes the commentary line's place and hands it over
+            # once the Visitors column starts carrying the same numbers.
+            data = fit(serif("12    15    35    10    8    7", TITLE_SIZE,
+                             CHARCOAL))
+            self.foot(data)
+            self.play(Write(data), run_time=t.fill(0.35))
             self.play(Write(trace.head), Create(trace.rule),
-                      run_time=t.fill(0.25))
-            self.fitness = trace
+                      run_time=t.fill(0.3))
+            self.fitness, self.data_line = trace, data
             t.hold()
 
         notes = (("p5_d1", 0, "12 is quiet"),
@@ -1459,12 +1481,14 @@ class FivePatterns(SATScene):
         self.day_note = None
         for name, index, text in notes:
             with self.beat(name) as t:
-                self.play(*self.fitness.step(index), run_time=t.fill(0.3))
                 if self.day_note is None:
+                    self.play(FadeOut(self.data_line),
+                              *self.fitness.step(index), run_time=t.fill(0.3))
                     self.day_note = self.caption(text, SLATE, LABEL_SIZE)
                     self.foot(self.day_note)
                     self.play(Write(self.day_note), run_time=t.fill(0.25))
                 else:
+                    self.play(*self.fitness.step(index), run_time=t.fill(0.3))
                     self.recaption(t, self.day_note, text, SLATE, 0.25)
                 t.hold()
 
@@ -1660,23 +1684,19 @@ class FivePatterns(SATScene):
         rows = self.pairs([
             ("trace", "READ · EXECUTE · RECORD · MOVE"),
             ("no instruction", "keep the old value"),
-            ("valid range", "AND"),
-            ("invalid range", "OR"),
+            ("range", "inside AND · outside OR"),
             ("flag", "FALSE · TRUE · CHECK"),
             ("Boolean", "ONE GATE · ONE COLUMN"),
             ("running total", "Total <- Total + Value"),
             ("consecutive run", "CURRENT resets · LONGEST survives"),
-            ("15-marker", "PLAN BEFORE YOU CODE")],
-            left_x=-6.1, right_x=-2.4, buff=GAP_SM * 1.1)
-        self.stack(rows, self.head, buff=GAP_SM * 1.1, align=LEFT)
+            ("15-marker", "PLAN BEFORE YOU CODE")], top=self.head,
+            left_x=-6.1, right_x=-2.4, gap=GAP_SM * 1.3)
         self.hide(rows)
 
-        # Nine lines, eight beats: the valid and invalid range land together,
-        # which is how they are said.
         slices = (("check_trace", 0, 1), ("check_persist", 1, 2),
-                  ("check_range", 2, 4), ("check_flag", 4, 5),
-                  ("check_bool", 5, 6), ("check_total", 6, 7),
-                  ("check_streak", 7, 8), ("check_15", 8, 9))
+                  ("check_range", 2, 3), ("check_flag", 3, 4),
+                  ("check_bool", 4, 5), ("check_total", 5, 6),
+                  ("check_streak", 6, 7), ("check_15", 7, 8))
         for name, start, stop in slices:
             with self.beat(name) as t:
                 self.reveal(t, rows, start, stop, 0.45 / (stop - start))
