@@ -11,14 +11,27 @@ Usage:
         --cut CS01-number-systems-p2="long binary sequences are easy" \\
         --cut CS01-number-systems-p3="now we are going to add binary numbers"
 
-The first --cut starts at 0; every later one starts at the phrase given,
-located in the transcript by best word overlap. For each segment this
+A --cut without a phrase starts at 0; every other one starts at the phrase
+given, located in the transcript by best word overlap. For each segment this
 writes audio/<name>.m4a and audio/<name>.words.json with timestamps rebased
 to that segment's start, which is exactly what build/render.py expects to
 find beside a recording.
 
 A phrase that matches poorly fails loudly with its score rather than
 silently cutting in the wrong place.
+
+Recordings normally open with a slate ("starting in one, two, three") and
+close with several seconds of room noise after the last word. Giving the
+first --cut an anchor drops the slate, and --pad sets how much breathing
+room to keep at the two outer ends of the recording:
+
+    python build/segment.py audio/P2-five-patterns-raw.words.json \\
+        --audio audio/P2-five-patterns-raw.m4a \\
+        --cut P2-five-patterns="suppose a variable called count" --pad 0.5
+
+--pad only ever applies to the start of the first segment and the end of
+the last one. Interior boundaries stay exactly where an anchor puts them,
+so no segment can grow into its neighbour.
 """
 
 import argparse
@@ -116,14 +129,17 @@ def main():
                         help="segment name, optionally =anchor phrase")
     parser.add_argument("--out-dir", type=Path,
                         default=REPO_ROOT / "audio")
+    parser.add_argument("--pad", type=float, default=None, metavar="SECONDS",
+                        help="trim the recording's outer ends, keeping this "
+                             "much breathing room before the first word and "
+                             "after the last; without it the segments span "
+                             "the whole file as recorded")
     args = parser.parse_args()
 
     cuts = []
     for raw in args.cut:
         name, sep, phrase = raw.partition("=")
         cuts.append((name.strip(), phrase.strip() if sep else None))
-    if cuts[0][1] is not None:
-        cuts[0] = (cuts[0][0], None)  # the first segment always starts at 0
 
     data = json.loads(args.words.read_text())
     words = data["words"]
@@ -135,12 +151,20 @@ def main():
         sys.exit(f"segment failed: {e}")
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
+    # The recording's two outer ends are the only places --pad applies:
+    # anything earlier is the slate, anything later is room noise. Without
+    # --pad the segments span the file exactly as they always have.
+    if args.pad is None:
+        head, tail = 0.0, duration
+    else:
+        head = max(0.0, words[points[0][1]]["start"] - args.pad)
+        tail = min(duration, words[-1]["end"] + args.pad)
     for i, (name, index) in enumerate(points):
-        start = 0.0 if index == 0 else words[index]["start"]
+        start = head if i == 0 else words[index]["start"]
         if i + 1 < len(points):
             end = words[points[i + 1][1]]["start"]
         else:
-            end = duration
+            end = tail
         try:
             write_segment(name, words, start, end, args.audio, args.out_dir)
         except SegmentError as e:

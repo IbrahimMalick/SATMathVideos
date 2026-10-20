@@ -7,15 +7,16 @@ back the animations to reveal each row in turn, with the newest row lit.
 
     table = TraceTable(["Value", "Count"], [(4, 1), (8, 2), (16, 3), (32, 4)],
                        start=(2, 0))
-    self.play(Create(table.frame))
+    table.hidden()
+    self.play(Write(table.head), Create(table.rule))
     for i in range(len(table.rows)):
-        self.play(*table.reveal(i))
+        self.play(*table.step(i))
 
 The starting state is a row like any other, so the student sees where the
 variables began rather than being told.
 """
 
-from manim import DOWN, LEFT, RIGHT, UP, Line, VGroup
+from manim import DOWN, LEFT, RIGHT, FadeIn, Line, VGroup
 
 from brand import (
     CHARCOAL,
@@ -80,3 +81,17 @@ class TraceTable(VGroup):
         """Make one row visible; pair with reveal() for the colour."""
         self.rows[index].set_opacity(1)
         return self.rows[index]
+
+    def step(self, index):
+        """Animations for 'this iteration happened': new row lit, last settled.
+
+        One lit row at a time, which is both the point pedagogically and
+        what keeps terracotta scarce.
+        """
+        row = self.show_row(index)
+        row.set_color(self.lit_color)
+        anims = [FadeIn(row)]
+        if index:
+            anims.extend(cell.animate.set_color(self.dim_color)
+                         for cell in self.rows[index - 1])
+        return anims

@@ -1,0 +1,1011 @@
+{
+  "scene": "concept.five_patterns",
+  "duration": 1608.405,
+  "beats": [
+    {
+      "name": "cold_code",
+      "start": 0.45,
+      "end": 6.47
+    },
+    {
+      "name": "cold_if",
+      "start": 6.47,
+      "end": 18.17
+    },
+    {
+      "name": "cold_ask",
+      "start": 18.17,
+      "end": 25.23
+    },
+    {
+      "name": "cold_answer",
+      "start": 25.23,
+      "end": 32.35
+    },
+    {
+      "name": "cold_cost",
+      "start": 32.35,
+      "end": 39.13
+    },
+    {
+      "name": "cold_rule",
+      "start": 39.13,
+      "end": 42.03
+    },
+    {
+      "name": "agenda",
+      "start": 42.03,
+      "end": 49.93
+    },
+    {
+      "name": "agenda_list",
+      "start": 49.93,
+      "end": 63.61
+    },
+    {
+      "name": "agenda_learn",
+      "start": 63.61,
+      "end": 69.63
+    },
+    {
+      "name": "agenda_similar",
+      "start": 69.63,
+      "end": 73.71
+    },
+    {
+      "name": "su_intro",
+      "start": 73.71,
+      "end": 76.41
+    },
+    {
+      "name": "su_s",
+      "start": 76.41,
+      "end": 80.47
+    },
+    {
+      "name": "su_t",
+      "start": 80.47,
+      "end": 84.57
+    },
+    {
+      "name": "su_e",
+      "start": 84.57,
+      "end": 87.33
+    },
+    {
+      "name": "su_p1",
+      "start": 87.33,
+      "end": 93.59
+    },
+    {
+      "name": "su_u",
+      "start": 93.59,
+      "end": 96.73
+    },
+    {
+      "name": "su_p2",
+      "start": 96.73,
+      "end": 100.69
+    },
+    {
+      "name": "su_again",
+      "start": 100.69,
+      "end": 105.07
+    },
+    {
+      "name": "p1_title",
+      "start": 105.07,
+      "end": 107.47
+    },
+    {
+      "name": "p1_mistake",
+      "start": 107.47,
+      "end": 115.19
+    },
+    {
+      "name": "p1_rule",
+      "start": 115.19,
+      "end": 120.97
+    },
+    {
+      "name": "p1_rule_detail",
+      "start": 120.97,
+      "end": 131.27
+    },
+    {
+      "name": "p1_code",
+      "start": 131.27,
+      "end": 136.87
+    },
+    {
+      "name": "p1_while",
+      "start": 136.87,
+      "end": 149.63
+    },
+    {
+      "name": "p1_notjump",
+      "start": 149.63,
+      "end": 153.43
+    },
+    {
+      "name": "p1_start",
+      "start": 153.43,
+      "end": 160.39
+    },
+    {
+      "name": "p1_r1",
+      "start": 160.39,
+      "end": 170.49
+    },
+    {
+      "name": "p1_r1b",
+      "start": 170.49,
+      "end": 189.19
+    },
+    {
+      "name": "p1_r2",
+      "start": 189.19,
+      "end": 207.23
+    },
+    {
+      "name": "p1_r2b",
+      "start": 207.23,
+      "end": 213.23
+    },
+    {
+      "name": "p1_r3",
+      "start": 213.23,
+      "end": 226.27
+    },
+    {
+      "name": "p1_r4",
+      "start": 226.27,
+      "end": 241.51
+    },
+    {
+      "name": "p1_stop",
+      "start": 241.51,
+      "end": 245.67
+    },
+    {
+      "name": "p1_final",
+      "start": 245.67,
+      "end": 250.81
+    },
+    {
+      "name": "p1_notice",
+      "start": 250.81,
+      "end": 263.07
+    },
+    {
+      "name": "p1_persist_code",
+      "start": 263.07,
+      "end": 275.83
+    },
+    {
+      "name": "p1_persist_ask",
+      "start": 275.83,
+      "end": 281.97
+    },
+    {
+      "name": "p1_persist_ans",
+      "start": 281.97,
+      "end": 293.97
+    },
+    {
+      "name": "p1_persist_rule",
+      "start": 293.97,
+      "end": 303.29
+    },
+    {
+      "name": "p1_chal",
+      "start": 303.29,
+      "end": 311.51
+    },
+    {
+      "name": "p1_chal_for",
+      "start": 311.51,
+      "end": 317.73
+    },
+    {
+      "name": "p1_chal_q",
+      "start": 317.73,
+      "end": 321.55
+    },
+    {
+      "name": "p1_chal_start",
+      "start": 321.55,
+      "end": 333.17
+    },
+    {
+      "name": "p1_chal_i1",
+      "start": 333.17,
+      "end": 341.95
+    },
+    {
+      "name": "p1_chal_i2",
+      "start": 341.95,
+      "end": 354.97
+    },
+    {
+      "name": "p1_chal_i3",
+      "start": 354.97,
+      "end": 368.07
+    },
+    {
+      "name": "p1_chal_ans",
+      "start": 368.07,
+      "end": 371.43
+    },
+    {
+      "name": "p1_chal_sum",
+      "start": 371.43,
+      "end": 383.93
+    },
+    {
+      "name": "p1_close",
+      "start": 383.93,
+      "end": 391.827
+    },
+    {
+      "name": "p2_title",
+      "start": 391.827,
+      "end": 394.107
+    },
+    {
+      "name": "p2_range",
+      "start": 394.107,
+      "end": 399.567
+    },
+    {
+      "name": "p2_options",
+      "start": 399.567,
+      "end": 415.327
+    },
+    {
+      "name": "p2_answer",
+      "start": 415.327,
+      "end": 420.187
+    },
+    {
+      "name": "p2_both",
+      "start": 420.187,
+      "end": 427.647
+    },
+    {
+      "name": "p2_rule",
+      "start": 427.647,
+      "end": 437.407
+    },
+    {
+      "name": "p2_rule_again",
+      "start": 437.407,
+      "end": 445.687
+    },
+    {
+      "name": "p2_fifty",
+      "start": 445.687,
+      "end": 459.267
+    },
+    {
+      "name": "p2_eval1",
+      "start": 459.267,
+      "end": 463.167
+    },
+    {
+      "name": "p2_eval2",
+      "start": 463.167,
+      "end": 471.547
+    },
+    {
+      "name": "p2_or",
+      "start": 471.547,
+      "end": 477.947
+    },
+    {
+      "name": "p2_accepts",
+      "start": 477.947,
+      "end": 495.667
+    },
+    {
+      "name": "p2_invalid",
+      "start": 495.667,
+      "end": 506.887
+    },
+    {
+      "name": "p2_loop",
+      "start": 506.887,
+      "end": 514.107
+    },
+    {
+      "name": "p2_loop_code",
+      "start": 514.107,
+      "end": 536.527
+    },
+    {
+      "name": "p2_loop_why",
+      "start": 536.527,
+      "end": 545.667
+    },
+    {
+      "name": "p2_three",
+      "start": 545.667,
+      "end": 563.707
+    },
+    {
+      "name": "p2_chal",
+      "start": 563.707,
+      "end": 566.527
+    },
+    {
+      "name": "p2_chal_q",
+      "start": 566.527,
+      "end": 577.377
+    },
+    {
+      "name": "p2_chal_ans",
+      "start": 577.377,
+      "end": 588.797
+    },
+    {
+      "name": "p2_chal_rule",
+      "start": 588.797,
+      "end": 596.147
+    },
+    {
+      "name": "p3_title",
+      "start": 596.147,
+      "end": 601.187
+    },
+    {
+      "name": "p3_data",
+      "start": 601.187,
+      "end": 604.987
+    },
+    {
+      "name": "p3_cols",
+      "start": 604.987,
+      "end": 615.407
+    },
+    {
+      "name": "p3_problem",
+      "start": 615.407,
+      "end": 620.987
+    },
+    {
+      "name": "p3_flag",
+      "start": 620.987,
+      "end": 624.627
+    },
+    {
+      "name": "p3_false",
+      "start": 624.627,
+      "end": 631.907
+    },
+    {
+      "name": "p3_loop",
+      "start": 631.907,
+      "end": 651.827
+    },
+    {
+      "name": "p3_after",
+      "start": 651.827,
+      "end": 667.447
+    },
+    {
+      "name": "p3_rule",
+      "start": 667.447,
+      "end": 676.947
+    },
+    {
+      "name": "p3_memory",
+      "start": 676.947,
+      "end": 686.187
+    },
+    {
+      "name": "p3_persist",
+      "start": 686.187,
+      "end": 698.907
+    },
+    {
+      "name": "p3_persist_ans",
+      "start": 698.907,
+      "end": 710.507
+    },
+    {
+      "name": "p3_trap",
+      "start": 710.507,
+      "end": 718.147
+    },
+    {
+      "name": "p3_trap_detail",
+      "start": 718.147,
+      "end": 730.927
+    },
+    {
+      "name": "p3_trap_problem",
+      "start": 730.927,
+      "end": 741.867
+    },
+    {
+      "name": "p3_safe1",
+      "start": 741.867,
+      "end": 746.847
+    },
+    {
+      "name": "p3_safe2",
+      "start": 746.847,
+      "end": 759.207
+    },
+    {
+      "name": "p3_rule2",
+      "start": 759.207,
+      "end": 766.187
+    },
+    {
+      "name": "p4_title",
+      "start": 766.187,
+      "end": 771.247
+    },
+    {
+      "name": "p4_expr",
+      "start": 771.247,
+      "end": 788.347
+    },
+    {
+      "name": "p4_dont",
+      "start": 788.347,
+      "end": 793.327
+    },
+    {
+      "name": "p4_one",
+      "start": 793.327,
+      "end": 796.747
+    },
+    {
+      "name": "p4_break",
+      "start": 796.747,
+      "end": 799.974
+    },
+    {
+      "name": "p4_x1",
+      "start": 799.974,
+      "end": 809.794
+    },
+    {
+      "name": "p4_z",
+      "start": 809.794,
+      "end": 813.774
+    },
+    {
+      "name": "p4_easier",
+      "start": 813.774,
+      "end": 817.394
+    },
+    {
+      "name": "p4_gates",
+      "start": 817.394,
+      "end": 820.454
+    },
+    {
+      "name": "p4_and_or",
+      "start": 820.454,
+      "end": 829.894
+    },
+    {
+      "name": "p4_xor_not",
+      "start": 829.894,
+      "end": 843.954
+    },
+    {
+      "name": "p4_xor_table",
+      "start": 843.954,
+      "end": 865.494
+    },
+    {
+      "name": "p4_xor_rule",
+      "start": 865.494,
+      "end": 882.334
+    },
+    {
+      "name": "p4_row",
+      "start": 882.334,
+      "end": 886.134
+    },
+    {
+      "name": "p4_row_vals",
+      "start": 886.134,
+      "end": 891.714
+    },
+    {
+      "name": "p4_row_x1",
+      "start": 891.714,
+      "end": 900.794
+    },
+    {
+      "name": "p4_row_x2",
+      "start": 900.794,
+      "end": 913.294
+    },
+    {
+      "name": "p4_row_x3",
+      "start": 913.294,
+      "end": 929.114
+    },
+    {
+      "name": "p4_row_z",
+      "start": 929.114,
+      "end": 941.464
+    },
+    {
+      "name": "p4_mech",
+      "start": 941.464,
+      "end": 947.374
+    },
+    {
+      "name": "p4_clever",
+      "start": 947.374,
+      "end": 954.894
+    },
+    {
+      "name": "p4_circuit",
+      "start": 954.894,
+      "end": 959.594
+    },
+    {
+      "name": "p4_brackets",
+      "start": 959.594,
+      "end": 969.114
+    },
+    {
+      "name": "p4_and_gate",
+      "start": 969.114,
+      "end": 973.114
+    },
+    {
+      "name": "p4_not_gate",
+      "start": 973.114,
+      "end": 977.514
+    },
+    {
+      "name": "p4_xor_gate",
+      "start": 977.514,
+      "end": 986.554
+    },
+    {
+      "name": "p4_or_gate",
+      "start": 986.554,
+      "end": 995.334
+    },
+    {
+      "name": "p4_inside_out",
+      "start": 995.334,
+      "end": 1000.314
+    },
+    {
+      "name": "p4_chal",
+      "start": 1000.314,
+      "end": 1016.054
+    },
+    {
+      "name": "p4_chal_q",
+      "start": 1016.054,
+      "end": 1019.614
+    },
+    {
+      "name": "p4_chal_ans",
+      "start": 1019.614,
+      "end": 1029.574
+    },
+    {
+      "name": "p4_chal_y",
+      "start": 1029.574,
+      "end": 1036.034
+    },
+    {
+      "name": "p5_title",
+      "start": 1036.034,
+      "end": 1045.254
+    },
+    {
+      "name": "p5_scare",
+      "start": 1045.254,
+      "end": 1053.914
+    },
+    {
+      "name": "p5_dont",
+      "start": 1053.914,
+      "end": 1060.914
+    },
+    {
+      "name": "p5_dont_again",
+      "start": 1060.914,
+      "end": 1064.214
+    },
+    {
+      "name": "p5_break",
+      "start": 1064.214,
+      "end": 1069.754
+    },
+    {
+      "name": "p5_scenario",
+      "start": 1069.754,
+      "end": 1075.054
+    },
+    {
+      "name": "p5_reqs",
+      "start": 1075.054,
+      "end": 1083.294
+    },
+    {
+      "name": "p5_reqs2",
+      "start": 1083.294,
+      "end": 1087.834
+    },
+    {
+      "name": "p5_reqs3",
+      "start": 1087.834,
+      "end": 1096.974
+    },
+    {
+      "name": "p5_large",
+      "start": 1096.974,
+      "end": 1101.874
+    },
+    {
+      "name": "p5_map1",
+      "start": 1101.874,
+      "end": 1110.954
+    },
+    {
+      "name": "p5_map2",
+      "start": 1110.954,
+      "end": 1117.974
+    },
+    {
+      "name": "p5_map3",
+      "start": 1117.974,
+      "end": 1126.314
+    },
+    {
+      "name": "p5_map4",
+      "start": 1126.314,
+      "end": 1131.714
+    },
+    {
+      "name": "p5_gone",
+      "start": 1131.714,
+      "end": 1138.734
+    },
+    {
+      "name": "p5_init",
+      "start": 1138.734,
+      "end": 1144.354
+    },
+    {
+      "name": "p5_init_code",
+      "start": 1144.354,
+      "end": 1154.654
+    },
+    {
+      "name": "p5_init_why",
+      "start": 1154.654,
+      "end": 1166.034
+    },
+    {
+      "name": "p5_init_e",
+      "start": 1166.034,
+      "end": 1172.014
+    },
+    {
+      "name": "p5_loop",
+      "start": 1172.014,
+      "end": 1176.574
+    },
+    {
+      "name": "p5_loop_code",
+      "start": 1176.574,
+      "end": 1183.014
+    },
+    {
+      "name": "p5_accum",
+      "start": 1183.014,
+      "end": 1190.214
+    },
+    {
+      "name": "p5_contrast",
+      "start": 1190.214,
+      "end": 1197.554
+    },
+    {
+      "name": "p5_replace",
+      "start": 1197.554,
+      "end": 1205.975
+    },
+    {
+      "name": "p5_adds",
+      "start": 1205.975,
+      "end": 1210.155
+    },
+    {
+      "name": "p5_rule",
+      "start": 1210.155,
+      "end": 1215.235
+    },
+    {
+      "name": "p5_quiet",
+      "start": 1215.235,
+      "end": 1220.935
+    },
+    {
+      "name": "p5_quiet_code",
+      "start": 1220.935,
+      "end": 1232.735
+    },
+    {
+      "name": "p5_streak",
+      "start": 1232.735,
+      "end": 1241.855
+    },
+    {
+      "name": "p5_record",
+      "start": 1241.855,
+      "end": 1254.875
+    },
+    {
+      "name": "p5_reset",
+      "start": 1254.875,
+      "end": 1259.475
+    },
+    {
+      "name": "p5_why_reset",
+      "start": 1259.475,
+      "end": 1270.675
+    },
+    {
+      "name": "p5_survives",
+      "start": 1270.675,
+      "end": 1276.555
+    },
+    {
+      "name": "p5_three",
+      "start": 1276.555,
+      "end": 1286.835
+    },
+    {
+      "name": "p5_def_count",
+      "start": 1286.835,
+      "end": 1290.455
+    },
+    {
+      "name": "p5_def_current",
+      "start": 1290.455,
+      "end": 1294.575
+    },
+    {
+      "name": "p5_def_longest",
+      "start": 1294.575,
+      "end": 1299.335
+    },
+    {
+      "name": "p5_data",
+      "start": 1299.335,
+      "end": 1309.975
+    },
+    {
+      "name": "p5_d1",
+      "start": 1309.975,
+      "end": 1318.855
+    },
+    {
+      "name": "p5_d2",
+      "start": 1318.855,
+      "end": 1329.835
+    },
+    {
+      "name": "p5_d3",
+      "start": 1329.835,
+      "end": 1343.575
+    },
+    {
+      "name": "p5_d4",
+      "start": 1343.575,
+      "end": 1355.015
+    },
+    {
+      "name": "p5_d5",
+      "start": 1355.015,
+      "end": 1367.315
+    },
+    {
+      "name": "p5_d6",
+      "start": 1367.315,
+      "end": 1375.155
+    },
+    {
+      "name": "p5_d6_record",
+      "start": 1375.155,
+      "end": 1380.615
+    },
+    {
+      "name": "p5_totals",
+      "start": 1380.615,
+      "end": 1388.175
+    },
+    {
+      "name": "p5_proves",
+      "start": 1388.175,
+      "end": 1393.575
+    },
+    {
+      "name": "p5_avg",
+      "start": 1393.575,
+      "end": 1400.375
+    },
+    {
+      "name": "p5_avg_code",
+      "start": 1400.375,
+      "end": 1412.255
+    },
+    {
+      "name": "p5_output",
+      "start": 1412.255,
+      "end": 1418.895
+    },
+    {
+      "name": "p5_warn",
+      "start": 1418.895,
+      "end": 1427.795
+    },
+    {
+      "name": "p5_warn_else",
+      "start": 1427.795,
+      "end": 1431.715
+    },
+    {
+      "name": "p5_why4",
+      "start": 1431.715,
+      "end": 1439.555
+    },
+    {
+      "name": "p5_gt4",
+      "start": 1439.555,
+      "end": 1444.455
+    },
+    {
+      "name": "p5_boundary",
+      "start": 1444.455,
+      "end": 1455.215
+    },
+    {
+      "name": "p5_lesson",
+      "start": 1455.215,
+      "end": 1463.315
+    },
+    {
+      "name": "p5_familiar",
+      "start": 1463.315,
+      "end": 1466.835
+    },
+    {
+      "name": "p5_list",
+      "start": 1466.835,
+      "end": 1475.055
+    },
+    {
+      "name": "p5_code_reqs",
+      "start": 1475.055,
+      "end": 1479.835
+    },
+    {
+      "name": "recap_intro",
+      "start": 1479.835,
+      "end": 1484.675
+    },
+    {
+      "name": "recap_s",
+      "start": 1484.675,
+      "end": 1490.855
+    },
+    {
+      "name": "recap_t",
+      "start": 1490.855,
+      "end": 1497.615
+    },
+    {
+      "name": "recap_e",
+      "start": 1497.615,
+      "end": 1503.475
+    },
+    {
+      "name": "recap_p",
+      "start": 1503.475,
+      "end": 1511.195
+    },
+    {
+      "name": "recap_u",
+      "start": 1511.195,
+      "end": 1517.135
+    },
+    {
+      "name": "recap_p2",
+      "start": 1517.135,
+      "end": 1520.415
+    },
+    {
+      "name": "recap_easier",
+      "start": 1520.415,
+      "end": 1529.455
+    },
+    {
+      "name": "check_intro",
+      "start": 1529.455,
+      "end": 1533.235
+    },
+    {
+      "name": "check_trace",
+      "start": 1533.235,
+      "end": 1538.335
+    },
+    {
+      "name": "check_persist",
+      "start": 1538.335,
+      "end": 1542.855
+    },
+    {
+      "name": "check_range",
+      "start": 1542.855,
+      "end": 1547.635
+    },
+    {
+      "name": "check_flag",
+      "start": 1547.635,
+      "end": 1555.095
+    },
+    {
+      "name": "check_bool",
+      "start": 1555.095,
+      "end": 1559.235
+    },
+    {
+      "name": "check_total",
+      "start": 1559.235,
+      "end": 1565.715
+    },
+    {
+      "name": "check_streak",
+      "start": 1565.715,
+      "end": 1571.315
+    },
+    {
+      "name": "check_15",
+      "start": 1571.315,
+      "end": 1574.835
+    },
+    {
+      "name": "cta",
+      "start": 1574.835,
+      "end": 1580.375
+    },
+    {
+      "name": "cta_words",
+      "start": 1580.375,
+      "end": 1585.795
+    },
+    {
+      "name": "cta_decide",
+      "start": 1585.795,
+      "end": 1592.195
+    },
+    {
+      "name": "cta_sub",
+      "start": 1592.195,
+      "end": 1601.795
+    },
+    {
+      "name": "outro",
+      "start": 1601.795,
+      "end": 1608.405
+    }
+  ]
+}
