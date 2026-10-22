@@ -579,9 +579,10 @@ class FivePatterns(SATScene):
             t.hold()
 
         with self.beat("p1_chal_q") as t:
-            ask = self.caption("What is the final value of Total?", CHARCOAL)
-            self.foot(ask)
-            self.play(Write(ask), run_time=t.fill(0.4))
+            ask = fit(serif("What is the final value of Total?", TITLE_SIZE,
+                            CHARCOAL))
+            ask.move_to(self.head)
+            self.play(Transform(self.head, ask), run_time=t.fill(0.4))
             t.hold()
 
         with self.beat("p1_chal_start") as t:
@@ -651,7 +652,7 @@ class FivePatterns(SATScene):
             option_a = self.code(["A    Age >= 10 OR Age <= 18"], accent=GREY)
             option_b = self.code(["B    Age >= 10 AND Age <= 18"], accent=GREY)
             pair = VGroup(option_a, option_b).arrange(DOWN, buff=GAP_MD)
-            pair.next_to(self.spec, DOWN, buff=GAP_LG)
+            pair.next_to(self.spec, DOWN, buff=GAP_MD)
             self.play(Create(option_a[0]), Write(option_a[1]),
                       run_time=t.fill(0.3))
             self.play(Create(option_b[0]), Write(option_b[1]),
@@ -668,7 +669,7 @@ class FivePatterns(SATScene):
         with self.beat("p2_both") as t:
             both = self.lines("at least 10", "and at most 18",
                               size=BODY_SIZE, color=GREY)
-            self.foot(both)
+            self.stack(both, self.option_b, buff=GAP_MD)
             self.play(Write(both), run_time=t.fill(0.5))
             t.hold()
 
