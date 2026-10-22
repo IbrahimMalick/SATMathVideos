@@ -1,0 +1,746 @@
+{
+  "scene": "concept.data_representation",
+  "duration": 1465.575,
+  "beats": [
+    {
+      "name": "open_title",
+      "start": 3.22,
+      "end": 11.78
+    },
+    {
+      "name": "open_book",
+      "start": 11.78,
+      "end": 17.02
+    },
+    {
+      "name": "open_scope",
+      "start": 17.02,
+      "end": 31.48
+    },
+    {
+      "name": "open_goal",
+      "start": 31.48,
+      "end": 35.64
+    },
+    {
+      "name": "open_by_end",
+      "start": 35.64,
+      "end": 51.44
+    },
+    {
+      "name": "open_pause",
+      "start": 51.44,
+      "end": 62.8
+    },
+    {
+      "name": "why_display",
+      "start": 62.8,
+      "end": 76.96
+    },
+    {
+      "name": "why_states",
+      "start": 76.96,
+      "end": 81.72
+    },
+    {
+      "name": "why_switch",
+      "start": 81.72,
+      "end": 87.4
+    },
+    {
+      "name": "why_bit",
+      "start": 87.4,
+      "end": 94.74
+    },
+    {
+      "name": "why_reliable",
+      "start": 94.74,
+      "end": 109.86
+    },
+    {
+      "name": "why_answer",
+      "start": 109.86,
+      "end": 121.6
+    },
+    {
+      "name": "why_vague",
+      "start": 121.6,
+      "end": 129.56
+    },
+    {
+      "name": "map_intro",
+      "start": 129.56,
+      "end": 136.44
+    },
+    {
+      "name": "map_1",
+      "start": 136.44,
+      "end": 150.06
+    },
+    {
+      "name": "map_2",
+      "start": 150.06,
+      "end": 159.22
+    },
+    {
+      "name": "map_3",
+      "start": 159.22,
+      "end": 163.76
+    },
+    {
+      "name": "map_4",
+      "start": 163.76,
+      "end": 170.76
+    },
+    {
+      "name": "map_connected",
+      "start": 170.76,
+      "end": 184.26
+    },
+    {
+      "name": "map_question",
+      "start": 184.26,
+      "end": 191.38
+    },
+    {
+      "name": "pv_base",
+      "start": 191.38,
+      "end": 201.52
+    },
+    {
+      "name": "pv_denary",
+      "start": 201.52,
+      "end": 210.76
+    },
+    {
+      "name": "pv_binary",
+      "start": 210.76,
+      "end": 214.24
+    },
+    {
+      "name": "pv_row",
+      "start": 214.24,
+      "end": 231.627
+    },
+    {
+      "name": "pv_contrib",
+      "start": 231.627,
+      "end": 239.586
+    },
+    {
+      "name": "pv_learn",
+      "start": 239.586,
+      "end": 257.006
+    },
+    {
+      "name": "b2d_intro",
+      "start": 257.006,
+      "end": 264.366
+    },
+    {
+      "name": "b2d_write",
+      "start": 264.366,
+      "end": 268.946
+    },
+    {
+      "name": "b2d_ones",
+      "start": 268.946,
+      "end": 280.926
+    },
+    {
+      "name": "b2d_add",
+      "start": 280.926,
+      "end": 283.066
+    },
+    {
+      "name": "b2d_result",
+      "start": 283.066,
+      "end": 301.806
+    },
+    {
+      "name": "b2d_show",
+      "start": 301.806,
+      "end": 312.426
+    },
+    {
+      "name": "b2d_check",
+      "start": 312.426,
+      "end": 325.896
+    },
+    {
+      "name": "d2b_intro",
+      "start": 325.896,
+      "end": 334.176
+    },
+    {
+      "name": "d2b_128",
+      "start": 334.176,
+      "end": 346.516
+    },
+    {
+      "name": "d2b_6432",
+      "start": 346.516,
+      "end": 353.656
+    },
+    {
+      "name": "d2b_rest",
+      "start": 353.656,
+      "end": 370.676
+    },
+    {
+      "name": "d2b_result",
+      "start": 370.676,
+      "end": 374.656
+    },
+    {
+      "name": "d2b_leading",
+      "start": 374.656,
+      "end": 380.216
+    },
+    {
+      "name": "d2b_13",
+      "start": 380.216,
+      "end": 393.286
+    },
+    {
+      "name": "hex_base",
+      "start": 393.286,
+      "end": 403.566
+    },
+    {
+      "name": "hex_nibble",
+      "start": 403.566,
+      "end": 412.926
+    },
+    {
+      "name": "hex_shorter",
+      "start": 412.926,
+      "end": 417.526
+    },
+    {
+      "name": "hex_example",
+      "start": 417.526,
+      "end": 432.947
+    },
+    {
+      "name": "hex_reverse",
+      "start": 432.947,
+      "end": 448.207
+    },
+    {
+      "name": "hex_where",
+      "start": 448.207,
+      "end": 461.386
+    },
+    {
+      "name": "hex_storage",
+      "start": 461.386,
+      "end": 472.606
+    },
+    {
+      "name": "hp_two",
+      "start": 472.606,
+      "end": 484.086
+    },
+    {
+      "name": "hp_4d",
+      "start": 484.086,
+      "end": 494.106
+    },
+    {
+      "name": "hp_77",
+      "start": 494.106,
+      "end": 507.427
+    },
+    {
+      "name": "hp_206",
+      "start": 507.427,
+      "end": 514.786
+    },
+    {
+      "name": "hp_quotient",
+      "start": 514.786,
+      "end": 519.846
+    },
+    {
+      "name": "hp_ce",
+      "start": 519.846,
+      "end": 525.866
+    },
+    {
+      "name": "hp_check",
+      "start": 525.866,
+      "end": 541.427
+    },
+    {
+      "name": "add_rules",
+      "start": 541.427,
+      "end": 555.136
+    },
+    {
+      "name": "add_r1",
+      "start": 555.136,
+      "end": 561.376
+    },
+    {
+      "name": "add_r2",
+      "start": 561.376,
+      "end": 569.136
+    },
+    {
+      "name": "add_r3",
+      "start": 569.136,
+      "end": 577.996
+    },
+    {
+      "name": "add_dir",
+      "start": 577.996,
+      "end": 583.316
+    },
+    {
+      "name": "add_example",
+      "start": 583.316,
+      "end": 604.536
+    },
+    {
+      "name": "add_check",
+      "start": 604.536,
+      "end": 613.774
+    },
+    {
+      "name": "add_carry",
+      "start": 613.774,
+      "end": 620.834
+    },
+    {
+      "name": "ov_range",
+      "start": 620.834,
+      "end": 634.285
+    },
+    {
+      "name": "ov_def",
+      "start": 634.285,
+      "end": 642.264
+    },
+    {
+      "name": "ov_example",
+      "start": 642.264,
+      "end": 652.724
+    },
+    {
+      "name": "ov_values",
+      "start": 652.724,
+      "end": 658.604
+    },
+    {
+      "name": "ov_sum",
+      "start": 658.604,
+      "end": 661.964
+    },
+    {
+      "name": "ov_ninth",
+      "start": 661.964,
+      "end": 672.564
+    },
+    {
+      "name": "ov_explain",
+      "start": 672.564,
+      "end": 677.724
+    },
+    {
+      "name": "ov_notcarry",
+      "start": 677.724,
+      "end": 686.314
+    },
+    {
+      "name": "sh_intro",
+      "start": 686.314,
+      "end": 688.914
+    },
+    {
+      "name": "sh_def",
+      "start": 688.914,
+      "end": 693.894
+    },
+    {
+      "name": "sh_lost",
+      "start": 693.894,
+      "end": 700.134
+    },
+    {
+      "name": "sh_mult",
+      "start": 700.134,
+      "end": 707.394
+    },
+    {
+      "name": "sh_div",
+      "start": 707.394,
+      "end": 715.614
+    },
+    {
+      "name": "sh_example",
+      "start": 715.614,
+      "end": 730.474
+    },
+    {
+      "name": "sh_result",
+      "start": 730.474,
+      "end": 736.974
+    },
+    {
+      "name": "sh_inspect",
+      "start": 736.974,
+      "end": 756.034
+    },
+    {
+      "name": "tc_intro",
+      "start": 756.034,
+      "end": 758.974
+    },
+    {
+      "name": "tc_def",
+      "start": 758.974,
+      "end": 766.854
+    },
+    {
+      "name": "tc_msb",
+      "start": 766.854,
+      "end": 773.834
+    },
+    {
+      "name": "tc_rest",
+      "start": 773.834,
+      "end": 784.274
+    },
+    {
+      "name": "tc_range",
+      "start": 784.274,
+      "end": 795.814
+    },
+    {
+      "name": "tc_leading",
+      "start": 795.814,
+      "end": 810.314
+    },
+    {
+      "name": "tc_read",
+      "start": 810.314,
+      "end": 822.654
+    },
+    {
+      "name": "tc_result",
+      "start": 822.654,
+      "end": 835.214
+    },
+    {
+      "name": "ia_intro",
+      "start": 835.214,
+      "end": 837.794
+    },
+    {
+      "name": "ia_write",
+      "start": 837.794,
+      "end": 847.034
+    },
+    {
+      "name": "ia_invert",
+      "start": 847.034,
+      "end": 855.614
+    },
+    {
+      "name": "ia_add",
+      "start": 855.614,
+      "end": 863.794
+    },
+    {
+      "name": "ia_check",
+      "start": 863.794,
+      "end": 883.494
+    },
+    {
+      "name": "ia_never",
+      "start": 883.494,
+      "end": 891.074
+    },
+    {
+      "name": "ia_limit",
+      "start": 891.074,
+      "end": 903.894
+    },
+    {
+      "name": "sc_intro",
+      "start": 903.894,
+      "end": 908.694
+    },
+    {
+      "name": "sc_pause",
+      "start": 908.694,
+      "end": 913.374
+    },
+    {
+      "name": "sc_q1",
+      "start": 913.374,
+      "end": 923.974
+    },
+    {
+      "name": "sc_q2",
+      "start": 923.974,
+      "end": 931.034
+    },
+    {
+      "name": "sc_q3",
+      "start": 931.034,
+      "end": 944.794
+    },
+    {
+      "name": "sc_q4",
+      "start": 944.794,
+      "end": 960.374
+    },
+    {
+      "name": "sc_resume",
+      "start": 960.374,
+      "end": 962.714
+    },
+    {
+      "name": "sc_answers",
+      "start": 962.714,
+      "end": 984.014
+    },
+    {
+      "name": "sc_differs",
+      "start": 984.014,
+      "end": 1002.484
+    },
+    {
+      "name": "tx_intro",
+      "start": 1002.484,
+      "end": 1007.164
+    },
+    {
+      "name": "tx_stored",
+      "start": 1007.164,
+      "end": 1010.364
+    },
+    {
+      "name": "tx_examples",
+      "start": 1010.364,
+      "end": 1021.844
+    },
+    {
+      "name": "tx_ascii",
+      "start": 1021.844,
+      "end": 1029.404
+    },
+    {
+      "name": "tx_unicode",
+      "start": 1029.404,
+      "end": 1039.624
+    },
+    {
+      "name": "tx_compare",
+      "start": 1039.624,
+      "end": 1052.015
+    },
+    {
+      "name": "tx_avoid",
+      "start": 1052.015,
+      "end": 1060.725
+    },
+    {
+      "name": "sn_intro",
+      "start": 1060.725,
+      "end": 1067.025
+    },
+    {
+      "name": "sn_wave",
+      "start": 1067.025,
+      "end": 1073.905
+    },
+    {
+      "name": "sn_adc",
+      "start": 1073.905,
+      "end": 1078.105
+    },
+    {
+      "name": "sn_sample",
+      "start": 1078.105,
+      "end": 1083.005
+    },
+    {
+      "name": "sn_rate",
+      "start": 1083.005,
+      "end": 1088.545
+    },
+    {
+      "name": "sn_44k",
+      "start": 1088.545,
+      "end": 1098.205
+    },
+    {
+      "name": "sn_res",
+      "start": 1098.205,
+      "end": 1131.245
+    },
+    {
+      "name": "sn_increase",
+      "start": 1131.245,
+      "end": 1150.365
+    },
+    {
+      "name": "sn_separate",
+      "start": 1150.365,
+      "end": 1161.625
+    },
+    {
+      "name": "sf_intro",
+      "start": 1161.625,
+      "end": 1165.125
+    },
+    {
+      "name": "sf_formula",
+      "start": 1165.125,
+      "end": 1175.865
+    },
+    {
+      "name": "sf_again",
+      "start": 1175.865,
+      "end": 1190.865
+    },
+    {
+      "name": "sf_example",
+      "start": 1190.865,
+      "end": 1202.465
+    },
+    {
+      "name": "sf_mono",
+      "start": 1202.465,
+      "end": 1211.345
+    },
+    {
+      "name": "sf_calc",
+      "start": 1211.345,
+      "end": 1218.625
+    },
+    {
+      "name": "sf_bytes",
+      "start": 1218.625,
+      "end": 1227.305
+    },
+    {
+      "name": "sf_units",
+      "start": 1227.305,
+      "end": 1242.965
+    },
+    {
+      "name": "sf_stereo",
+      "start": 1242.965,
+      "end": 1250.835
+    },
+    {
+      "name": "im_intro",
+      "start": 1250.835,
+      "end": 1255.895
+    },
+    {
+      "name": "im_grid",
+      "start": 1255.895,
+      "end": 1261.655
+    },
+    {
+      "name": "im_pixel",
+      "start": 1261.655,
+      "end": 1265.155
+    },
+    {
+      "name": "im_res",
+      "start": 1265.155,
+      "end": 1273.735
+    },
+    {
+      "name": "im_phone",
+      "start": 1273.735,
+      "end": 1284.435
+    },
+    {
+      "name": "im_detail",
+      "start": 1284.435,
+      "end": 1289.775
+    },
+    {
+      "name": "im_depth",
+      "start": 1289.775,
+      "end": 1301.075
+    },
+    {
+      "name": "im_meta",
+      "start": 1301.075,
+      "end": 1323.665
+    },
+    {
+      "name": "if_formula",
+      "start": 1323.665,
+      "end": 1335.305
+    },
+    {
+      "name": "if_example",
+      "start": 1335.305,
+      "end": 1346.575
+    },
+    {
+      "name": "if_calc",
+      "start": 1346.575,
+      "end": 1356.935
+    },
+    {
+      "name": "if_bits",
+      "start": 1356.935,
+      "end": 1365.175
+    },
+    {
+      "name": "if_bytes",
+      "start": 1365.175,
+      "end": 1374.815
+    },
+    {
+      "name": "if_errors",
+      "start": 1374.815,
+      "end": 1389.715
+    },
+    {
+      "name": "st_intro",
+      "start": 1389.715,
+      "end": 1400.335
+    },
+    {
+      "name": "st_binary",
+      "start": 1400.335,
+      "end": 1405.195
+    },
+    {
+      "name": "st_ladder",
+      "start": 1405.195,
+      "end": 1412.895
+    },
+    {
+      "name": "st_1024",
+      "start": 1412.895,
+      "end": 1426.955
+    },
+    {
+      "name": "st_direction",
+      "start": 1426.955,
+      "end": 1436.835
+    },
+    {
+      "name": "st_example",
+      "start": 1436.835,
+      "end": 1458.815
+    },
+    {
+      "name": "st_unit",
+      "start": 1458.815,
+      "end": 1465.575
+    }
+  ]
+}

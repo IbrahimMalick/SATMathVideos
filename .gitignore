@@ -7,3 +7,6 @@ audio/*.words.json
 
 # scratch chunks from parallel transcription
 audio/ptrans_work/
+media/retake_work/
+audio/*-trim.m4a
+audio/*-trim.words.json
