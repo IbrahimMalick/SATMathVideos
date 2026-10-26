@@ -1,0 +1,741 @@
+{
+  "scene": "concept.data_transmission",
+  "duration": 1178.624,
+  "beats": [
+    {
+      "name": "open",
+      "start": 7.46,
+      "end": 13.92
+    },
+    {
+      "name": "hook",
+      "start": 13.92,
+      "end": 25.94
+    },
+    {
+      "name": "hook_q",
+      "start": 25.94,
+      "end": 40.18
+    },
+    {
+      "name": "map",
+      "start": 40.18,
+      "end": 53.46
+    },
+    {
+      "name": "exam_note",
+      "start": 53.46,
+      "end": 61.22
+    },
+    {
+      "name": "part1",
+      "start": 61.22,
+      "end": 64.12
+    },
+    {
+      "name": "packet_def",
+      "start": 64.12,
+      "end": 67.16
+    },
+    {
+      "name": "packet_why",
+      "start": 67.16,
+      "end": 74.06
+    },
+    {
+      "name": "packet_routes",
+      "start": 74.06,
+      "end": 79.8
+    },
+    {
+      "name": "three_parts",
+      "start": 79.8,
+      "end": 86.12
+    },
+    {
+      "name": "header",
+      "start": 86.12,
+      "end": 88.82
+    },
+    {
+      "name": "header_list",
+      "start": 88.82,
+      "end": 94.94
+    },
+    {
+      "name": "payload",
+      "start": 94.94,
+      "end": 103.1
+    },
+    {
+      "name": "trailer",
+      "start": 103.1,
+      "end": 113.02
+    },
+    {
+      "name": "exam_point",
+      "start": 113.02,
+      "end": 119.88
+    },
+    {
+      "name": "exam_point2",
+      "start": 119.88,
+      "end": 123.44
+    },
+    {
+      "name": "switching",
+      "start": 123.44,
+      "end": 128.26
+    },
+    {
+      "name": "ps_divide",
+      "start": 128.26,
+      "end": 132.94
+    },
+    {
+      "name": "ps_add",
+      "start": 132.94,
+      "end": 138.18
+    },
+    {
+      "name": "ps_route",
+      "start": 138.18,
+      "end": 143.36
+    },
+    {
+      "name": "ps_differ",
+      "start": 143.36,
+      "end": 147.82
+    },
+    {
+      "name": "ps_arrive",
+      "start": 147.82,
+      "end": 154.64
+    },
+    {
+      "name": "ps_reorder",
+      "start": 154.64,
+      "end": 160.54
+    },
+    {
+      "name": "ps_missing",
+      "start": 160.54,
+      "end": 166.76
+    },
+    {
+      "name": "ps_reconstruct",
+      "start": 166.76,
+      "end": 173.74
+    },
+    {
+      "name": "ps_sequence",
+      "start": 173.74,
+      "end": 185.76
+    },
+    {
+      "name": "ps_trap",
+      "start": 185.76,
+      "end": 193.3
+    },
+    {
+      "name": "ps_why",
+      "start": 193.3,
+      "end": 204.44
+    },
+    {
+      "name": "ps_limits",
+      "start": 204.44,
+      "end": 213.36
+    },
+    {
+      "name": "part2",
+      "start": 213.36,
+      "end": 217.94
+    },
+    {
+      "name": "serial",
+      "start": 217.94,
+      "end": 223.16
+    },
+    {
+      "name": "parallel",
+      "start": 223.16,
+      "end": 230.14
+    },
+    {
+      "name": "wires",
+      "start": 230.14,
+      "end": 240.5
+    },
+    {
+      "name": "not_same_time",
+      "start": 240.5,
+      "end": 244.28
+    },
+    {
+      "name": "skew",
+      "start": 244.28,
+      "end": 247.8
+    },
+    {
+      "name": "skew_group",
+      "start": 247.8,
+      "end": 255.1
+    },
+    {
+      "name": "skew_distance",
+      "start": 255.1,
+      "end": 260.92
+    },
+    {
+      "name": "serial_wins",
+      "start": 260.92,
+      "end": 272.72
+    },
+    {
+      "name": "recommend",
+      "start": 272.72,
+      "end": 280.44
+    },
+    {
+      "name": "recommend_why",
+      "start": 280.44,
+      "end": 286.1
+    },
+    {
+      "name": "recommend_eg",
+      "start": 286.1,
+      "end": 298.46
+    },
+    {
+      "name": "recommend_marks",
+      "start": 298.46,
+      "end": 303.62
+    },
+    {
+      "name": "direction",
+      "start": 303.62,
+      "end": 308.0
+    },
+    {
+      "name": "simplex",
+      "start": 308.0,
+      "end": 311.94
+    },
+    {
+      "name": "simplex_eg",
+      "start": 311.94,
+      "end": 319.4
+    },
+    {
+      "name": "half",
+      "start": 319.4,
+      "end": 327.68
+    },
+    {
+      "name": "half_eg",
+      "start": 327.68,
+      "end": 333.38
+    },
+    {
+      "name": "full",
+      "start": 333.38,
+      "end": 339.94
+    },
+    {
+      "name": "full_eg",
+      "start": 339.94,
+      "end": 348.26
+    },
+    {
+      "name": "memory",
+      "start": 348.26,
+      "end": 350.68
+    },
+    {
+      "name": "mem_simplex",
+      "start": 350.68,
+      "end": 354.5
+    },
+    {
+      "name": "mem_half",
+      "start": 354.5,
+      "end": 358.18
+    },
+    {
+      "name": "mem_full",
+      "start": 358.18,
+      "end": 361.54
+    },
+    {
+      "name": "dir_trap",
+      "start": 361.54,
+      "end": 371.22
+    },
+    {
+      "name": "dir_method",
+      "start": 371.22,
+      "end": 391.68
+    },
+    {
+      "name": "part3",
+      "start": 391.68,
+      "end": 396.64
+    },
+    {
+      "name": "usb_def",
+      "start": 396.64,
+      "end": 402.08
+    },
+    {
+      "name": "usb_seq",
+      "start": 402.08,
+      "end": 407.62
+    },
+    {
+      "name": "usb_driver",
+      "start": 407.62,
+      "end": 412.86
+    },
+    {
+      "name": "usb_proto",
+      "start": 412.86,
+      "end": 425.06
+    },
+    {
+      "name": "usb_benefits",
+      "start": 425.06,
+      "end": 429.84
+    },
+    {
+      "name": "usb_pnp",
+      "start": 429.84,
+      "end": 437.96
+    },
+    {
+      "name": "usb_power",
+      "start": 437.96,
+      "end": 441.16
+    },
+    {
+      "name": "usb_hot",
+      "start": 441.16,
+      "end": 447.32
+    },
+    {
+      "name": "usb_limits",
+      "start": 447.32,
+      "end": 456.34
+    },
+    {
+      "name": "usb_bandwidth",
+      "start": 456.34,
+      "end": 470.94
+    },
+    {
+      "name": "usb_serial",
+      "start": 470.94,
+      "end": 480.74
+    },
+    {
+      "name": "part4",
+      "start": 480.74,
+      "end": 484.4
+    },
+    {
+      "name": "causes",
+      "start": 484.4,
+      "end": 494.32
+    },
+    {
+      "name": "bit_change",
+      "start": 494.32,
+      "end": 499.8
+    },
+    {
+      "name": "data_lost",
+      "start": 499.8,
+      "end": 503.42
+    },
+    {
+      "name": "data_extra",
+      "start": 503.42,
+      "end": 505.94
+    },
+    {
+      "name": "need_check",
+      "start": 505.94,
+      "end": 514.9
+    },
+    {
+      "name": "detect_vs_correct",
+      "start": 514.9,
+      "end": 524.96
+    },
+    {
+      "name": "detect_note",
+      "start": 524.96,
+      "end": 533.38
+    },
+    {
+      "name": "parity",
+      "start": 533.38,
+      "end": 536.44
+    },
+    {
+      "name": "parity_def",
+      "start": 536.44,
+      "end": 542.68
+    },
+    {
+      "name": "even",
+      "start": 542.68,
+      "end": 546.5
+    },
+    {
+      "name": "odd",
+      "start": 546.5,
+      "end": 550.16
+    },
+    {
+      "name": "example",
+      "start": 550.16,
+      "end": 557.44
+    },
+    {
+      "name": "count_ones",
+      "start": 557.44,
+      "end": 559.66
+    },
+    {
+      "name": "even_bit",
+      "start": 559.66,
+      "end": 568.5
+    },
+    {
+      "name": "odd_bit",
+      "start": 568.5,
+      "end": 578.7
+    },
+    {
+      "name": "receiver_counts",
+      "start": 578.7,
+      "end": 588.54
+    },
+    {
+      "name": "parity_limit",
+      "start": 588.54,
+      "end": 600.24
+    },
+    {
+      "name": "two_bits",
+      "start": 600.24,
+      "end": 610.2
+    },
+    {
+      "name": "block",
+      "start": 610.2,
+      "end": 614.7
+    },
+    {
+      "name": "block_rows",
+      "start": 614.7,
+      "end": 622.54
+    },
+    {
+      "name": "block_single",
+      "start": 622.54,
+      "end": 650.8
+    },
+    {
+      "name": "block_locate",
+      "start": 650.8,
+      "end": 658.76
+    },
+    {
+      "name": "four",
+      "start": 658.76,
+      "end": 672.12
+    },
+    {
+      "name": "checksum",
+      "start": 672.12,
+      "end": 681.08
+    },
+    {
+      "name": "checksum_recv",
+      "start": 681.08,
+      "end": 689.64
+    },
+    {
+      "name": "checksum_limit",
+      "start": 689.64,
+      "end": 705.84
+    },
+    {
+      "name": "echo",
+      "start": 705.84,
+      "end": 711.36
+    },
+    {
+      "name": "echo_compare",
+      "start": 711.36,
+      "end": 714.68
+    },
+    {
+      "name": "echo_retx",
+      "start": 714.68,
+      "end": 719.96
+    },
+    {
+      "name": "echo_cost",
+      "start": 719.96,
+      "end": 732.46
+    },
+    {
+      "name": "digit",
+      "start": 732.46,
+      "end": 746.98
+    },
+    {
+      "name": "digit_calc",
+      "start": 746.98,
+      "end": 757.78
+    },
+    {
+      "name": "digit_trap",
+      "start": 757.78,
+      "end": 767.24
+    },
+    {
+      "name": "digit_not",
+      "start": 767.24,
+      "end": 772.44
+    },
+    {
+      "name": "part5",
+      "start": 772.44,
+      "end": 783.26
+    },
+    {
+      "name": "arq_def",
+      "start": 783.26,
+      "end": 795.2
+    },
+    {
+      "name": "arq_send",
+      "start": 795.2,
+      "end": 801.22
+    },
+    {
+      "name": "arq_timer",
+      "start": 801.22,
+      "end": 803.56
+    },
+    {
+      "name": "arq_check",
+      "start": 803.56,
+      "end": 805.76
+    },
+    {
+      "name": "arq_ack",
+      "start": 805.76,
+      "end": 811.0
+    },
+    {
+      "name": "arq_nak",
+      "start": 811.0,
+      "end": 824.06
+    },
+    {
+      "name": "arq_retx",
+      "start": 824.06,
+      "end": 831.98
+    },
+    {
+      "name": "arq_timeout",
+      "start": 831.98,
+      "end": 838.16
+    },
+    {
+      "name": "arq_repeat",
+      "start": 838.16,
+      "end": 845.04
+    },
+    {
+      "name": "arq_why",
+      "start": 845.04,
+      "end": 851.48
+    },
+    {
+      "name": "arq_forever",
+      "start": 851.48,
+      "end": 855.48
+    },
+    {
+      "name": "arq_answer",
+      "start": 855.48,
+      "end": 882.16
+    },
+    {
+      "name": "part6",
+      "start": 882.16,
+      "end": 885.04
+    },
+    {
+      "name": "enc_def",
+      "start": 885.04,
+      "end": 903.68
+    },
+    {
+      "name": "enc_key",
+      "start": 903.68,
+      "end": 910.94
+    },
+    {
+      "name": "enc_conf",
+      "start": 910.94,
+      "end": 929.98
+    },
+    {
+      "name": "enc_not",
+      "start": 929.98,
+      "end": 939.82
+    },
+    {
+      "name": "enc_diff",
+      "start": 939.82,
+      "end": 947.52
+    },
+    {
+      "name": "sym",
+      "start": 947.52,
+      "end": 952.14
+    },
+    {
+      "name": "sym_fast",
+      "start": 952.14,
+      "end": 957.9
+    },
+    {
+      "name": "asym",
+      "start": 957.9,
+      "end": 964.04
+    },
+    {
+      "name": "asym_public",
+      "start": 964.04,
+      "end": 969.26
+    },
+    {
+      "name": "asym_use",
+      "start": 969.26,
+      "end": 976.12
+    },
+    {
+      "name": "asym_decrypt",
+      "start": 976.12,
+      "end": 981.36
+    },
+    {
+      "name": "asym_slow",
+      "start": 981.36,
+      "end": 989.08
+    },
+    {
+      "name": "hybrid",
+      "start": 989.08,
+      "end": 994.82
+    },
+    {
+      "name": "hybrid_how",
+      "start": 994.82,
+      "end": 1005.04
+    },
+    {
+      "name": "hybrid_why",
+      "start": 1005.04,
+      "end": 1012.92
+    },
+    {
+      "name": "enc_remember",
+      "start": 1012.92,
+      "end": 1024.64
+    },
+    {
+      "name": "review",
+      "start": 1024.64,
+      "end": 1027.36
+    },
+    {
+      "name": "r_packet",
+      "start": 1027.36,
+      "end": 1036.42
+    },
+    {
+      "name": "r_switching",
+      "start": 1036.42,
+      "end": 1042.84
+    },
+    {
+      "name": "r_serial",
+      "start": 1042.84,
+      "end": 1051.64
+    },
+    {
+      "name": "r_duplex",
+      "start": 1051.64,
+      "end": 1061.32
+    },
+    {
+      "name": "r_usb",
+      "start": 1061.32,
+      "end": 1076.52
+    },
+    {
+      "name": "r_errors",
+      "start": 1076.52,
+      "end": 1082.74
+    },
+    {
+      "name": "r_arq",
+      "start": 1082.74,
+      "end": 1090.56
+    },
+    {
+      "name": "r_enc",
+      "start": 1090.56,
+      "end": 1102.68
+    },
+    {
+      "name": "practise",
+      "start": 1102.68,
+      "end": 1109.3
+    },
+    {
+      "name": "pr_order",
+      "start": 1109.3,
+      "end": 1123.64
+    },
+    {
+      "name": "pause",
+      "start": 1123.64,
+      "end": 1130.14
+    },
+    {
+      "name": "diagnostic",
+      "start": 1130.14,
+      "end": 1139.92
+    },
+    {
+      "name": "ai",
+      "start": 1139.92,
+      "end": 1153.14
+    },
+    {
+      "name": "close",
+      "start": 1153.14,
+      "end": 1178.624
+    }
+  ]
+}

@@ -48,9 +48,13 @@ FLOOR_PX = 28.0
 OVERLAP_TOL = 0.06      # scene units of mutual intrusion before it counts
 OVERLAP_SHARE = 0.08    # ...and this much of the smaller box's area
 
-REPORT, OVERFLOW, OVERLAPS, TEXTS = [], [], [], []
+REPORT, OVERFLOW, OVERLAPS, SMALL = [], [], [], []
 SEEN = set()
 CURRENT, PLAYS, PLAY_TIME = [None], [0], [0.0]
+
+# Tracked text, by object id: the nominal size it asked for and its string.
+# Measured once, at first display — see check_sizes.
+TRACKED = {}
 
 _real_serif, _real_mono = brand.serif, brand.mono
 
@@ -58,7 +62,7 @@ _real_serif, _real_mono = brand.serif, brand.mono
 def _tracked(factory, default_size):
     def wrapper(text, size=default_size, *args, **kw):
         mob = factory(text, size, *args, **kw)
-        TEXTS.append((size, mob, mob.height, CURRENT[0], text))
+        TRACKED[id(mob)] = [size, text, False]
         return mob
     return wrapper
 
@@ -95,6 +99,7 @@ def make_dry(cls):
             self.renderer.time += run_time
             check_frame(self)
             check_overlap(self)
+            check_sizes(self)
 
         def wait(self, duration=1.0, **kw):
             self.renderer.time += duration
@@ -174,6 +179,35 @@ def check_overlap(scene):
                              round(wide, 2), round(high, 2)))
 
 
+def check_sizes(scene):
+    """Rendered text size, measured once per Text at its first display.
+
+    Manim's ``Text.font_size`` is derived from the mobject's height, so it
+    tracks a real ``scale()`` or shrink-to-fit exactly — and is fooled by
+    ``Transform``, which replaces the glyphs and so changes the height for
+    reasons that have nothing to do with size. Two strings at the same
+    nominal size differ in bounding-box height by a quarter or more
+    depending on their ascenders and descenders, which is enough to report
+    a caption as undersized when it is nothing of the kind.
+
+    So each Text is measured the first time it appears on screen and never
+    again. Shrink-to-fit and scaling both happen at construction, which is
+    before first display, so the measurement still catches them. A scene
+    that shrank a mobject *after* showing it would slip through; nothing in
+    this repo does that, and a still frame would catch it.
+    """
+    density = (config.pixel_height / config.frame_height) / REFERENCE_DENSITY
+    for mob in text_leaves(scene):
+        entry = TRACKED.get(id(mob))
+        if entry is None or entry[2]:
+            continue
+        size, text, _ = entry
+        entry[2] = True
+        rendered = mob.font_size * density
+        if rendered < FLOOR_PX - 0.1:
+            SMALL.append((CURRENT[0], round(rendered, 1), size, text[:40]))
+
+
 def snap(scene, name, index, folder):
     cam = scene.renderer.camera
     cam.reset()
@@ -213,20 +247,14 @@ def report():
     elif len(OVERLAPS) > 40:
         print(f"   ... and {len(OVERLAPS) - 40} more")
 
-    density = (config.pixel_height / config.frame_height) / REFERENCE_DENSITY
-    small = []
-    for size, mob, birth, beat, text in TEXTS:
-        if birth <= 0:
-            continue
-        rendered = size * (mob.height / birth) * density
-        if rendered < FLOOR_PX - 0.1:
-            small.append((beat, round(rendered, 1), size, text[:40]))
-    print(f"\n--- text below the {FLOOR_PX:.0f}px floor: {len(small)} ---")
-    for row in small[:30]:
+    print(f"\n--- text below the {FLOOR_PX:.0f}px floor: {len(SMALL)} ---")
+    for row in SMALL[:30]:
         print("  ", row)
-    if not small:
+    if not SMALL:
         print("   none")
-    return len(OVERFLOW) + len(OVERLAPS) + len(small)
+    elif len(SMALL) > 30:
+        print(f"   ... and {len(SMALL) - 30} more")
+    return len(OVERFLOW) + len(OVERLAPS) + len(SMALL)
 
 
 def main():
