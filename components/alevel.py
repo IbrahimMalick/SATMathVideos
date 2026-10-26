@@ -11,23 +11,13 @@ the number suggests; the floor that matters is 28px at 1080x1920, which
 works out at a nominal ~15.8.
 """
 
-from manim import (
-    DOWN,
-    LEFT,
-    RIGHT,
-    UP,
-    Line,
-    SurroundingRectangle,
-    VGroup,
-)
+from manim import DOWN, LEFT, Line, SurroundingRectangle, VGroup
 
 from brand import (
     CHARCOAL,
-    GAP_LG,
     GAP_MD,
     GAP_SM,
     GREY,
-    MARGIN_SIZE,
     SAGE,
     SLATE,
     TERRACOTTA,
@@ -147,18 +137,41 @@ class CallTree(VGroup):
         if width and self.width > width:
             self.scale_to_fit_width(width)
 
+    # Visibility is stroke-only. set_opacity() sets fill as well, which
+    # turns the rings into filled discs; and FadeIn interpolates towards a
+    # mobject's current state, so anything hidden by opacity has to be
+    # restored before it is faded in or it fades from nothing to nothing.
+
     def hidden(self):
         for node in self.nodes:
-            node.set_opacity(0)
+            node[0].set_stroke(opacity=0)
+            node[1].set_opacity(0)
         for edge in self.edges:
-            edge.set_opacity(0)
+            edge.set_stroke(opacity=0)
         return self
 
     def show_level(self, depth):
         """Make one level of the tree visible; returns it for FadeIn."""
-        for node in self.levels[depth]:
-            node.set_opacity(1)
-        return self.levels[depth]
+        return self.show_nodes(range(len(self.levels[depth])),
+                               level=depth)
+
+    def show_nodes(self, indices, level=None):
+        """Restore some nodes to visible and hand them back for FadeIn."""
+        group = VGroup()
+        source = self.levels[level] if level is not None else self.nodes
+        for i in indices:
+            node = source[i]
+            node[0].set_stroke(opacity=1)
+            node[1].set_opacity(1)
+            group.add(node)
+        return group
+
+    def show_edges(self, indices):
+        group = VGroup()
+        for i in indices:
+            self.edges[i].set_stroke(opacity=1)
+            group.add(self.edges[i])
+        return group
 
     def light(self, indices):
         """Highlight some nodes — one branch at a time."""

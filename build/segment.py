@@ -29,9 +29,9 @@ room to keep at the two outer ends of the recording:
         --audio audio/P2-five-patterns-raw.m4a \\
         --cut P2-five-patterns="suppose a variable called count" --pad 0.5
 
---pad only ever applies to the start of the first segment and the end of
-the last one. Interior boundaries stay exactly where an anchor puts them,
-so no segment can grow into its neighbour.
+--pad trims silence at both ends of every segment, so a segment that runs
+up to the next anchor does not carry the pause before it. Interior anchors
+still place the boundaries; padding never grows one into its neighbour.
 """
 
 import argparse
@@ -151,20 +151,23 @@ def main():
         sys.exit(f"segment failed: {e}")
 
     args.out_dir.mkdir(parents=True, exist_ok=True)
-    # The recording's two outer ends are the only places --pad applies:
-    # anything earlier is the slate, anything later is room noise. Without
-    # --pad the segments span the file exactly as they always have.
-    if args.pad is None:
-        head, tail = 0.0, duration
-    else:
-        head = max(0.0, words[points[0][1]]["start"] - args.pad)
-        tail = min(duration, words[-1]["end"] + args.pad)
+    # --pad trims silence at both ends of *every* segment, not just the
+    # recording's: a segment that runs to the next anchor carries whatever
+    # pause came before that anchor, which is dead air on the end of an
+    # otherwise finished video. Without --pad the segments span the file
+    # exactly as they always have.
     for i, (name, index) in enumerate(points):
-        start = head if i == 0 else words[index]["start"]
-        if i + 1 < len(points):
-            end = words[points[i + 1][1]]["start"]
+        next_index = points[i + 1][1] if i + 1 < len(points) else None
+        if args.pad is None:
+            start = 0.0 if i == 0 else words[index]["start"]
+            end = words[next_index]["start"] if next_index else duration
         else:
-            end = tail
+            last = (next_index - 1) if next_index else len(words) - 1
+            start = max(0.0, words[index]["start"] - args.pad)
+            end = min(duration, words[last]["end"] + args.pad)
+            # Never let a padded end run into the next segment's padded start.
+            if next_index is not None:
+                end = min(end, words[next_index]["start"] - args.pad)
         try:
             write_segment(name, words, start, end, args.audio, args.out_dir)
         except SegmentError as e:

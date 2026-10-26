@@ -1,0 +1,96 @@
+{
+  "scene": "shorts.floating_point",
+  "duration": 115.38,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.6,
+      "end": 7.88
+    },
+    {
+      "name": "format",
+      "start": 7.88,
+      "end": 16.2
+    },
+    {
+      "name": "point",
+      "start": 16.2,
+      "end": 20.18
+    },
+    {
+      "name": "question",
+      "start": 20.18,
+      "end": 25.52
+    },
+    {
+      "name": "pause",
+      "start": 25.52,
+      "end": 30.68
+    },
+    {
+      "name": "solve",
+      "start": 30.68,
+      "end": 33.6
+    },
+    {
+      "name": "binary",
+      "start": 33.6,
+      "end": 39.98
+    },
+    {
+      "name": "normalize",
+      "start": 39.98,
+      "end": 44.9
+    },
+    {
+      "name": "normalized",
+      "start": 44.9,
+      "end": 52.82
+    },
+    {
+      "name": "mantissa_pos",
+      "start": 52.82,
+      "end": 57.14
+    },
+    {
+      "name": "eight_bits",
+      "start": 57.14,
+      "end": 71.64
+    },
+    {
+      "name": "invert",
+      "start": 71.64,
+      "end": 76.22
+    },
+    {
+      "name": "result",
+      "start": 76.22,
+      "end": 84.34
+    },
+    {
+      "name": "exponent",
+      "start": 84.34,
+      "end": 90.84
+    },
+    {
+      "name": "answer",
+      "start": 90.84,
+      "end": 103.86
+    },
+    {
+      "name": "check",
+      "start": 103.86,
+      "end": 105.92
+    },
+    {
+      "name": "trap",
+      "start": 105.92,
+      "end": 112.1
+    },
+    {
+      "name": "close",
+      "start": 112.1,
+      "end": 115.38
+    }
+  ]
+}

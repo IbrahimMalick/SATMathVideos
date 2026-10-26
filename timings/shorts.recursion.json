@@ -1,0 +1,126 @@
+{
+  "scene": "shorts.recursion",
+  "duration": 102.72,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.6,
+      "end": 6.06
+    },
+    {
+      "name": "study",
+      "start": 6.06,
+      "end": 8.9
+    },
+    {
+      "name": "base",
+      "start": 8.9,
+      "end": 13.92
+    },
+    {
+      "name": "recurse",
+      "start": 13.92,
+      "end": 21.22
+    },
+    {
+      "name": "question",
+      "start": 21.22,
+      "end": 24.72
+    },
+    {
+      "name": "two_parts",
+      "start": 24.72,
+      "end": 29.98
+    },
+    {
+      "name": "pause",
+      "start": 29.98,
+      "end": 40.04
+    },
+    {
+      "name": "solve",
+      "start": 40.04,
+      "end": 40.9
+    },
+    {
+      "name": "tree6",
+      "start": 40.9,
+      "end": 45.44
+    },
+    {
+      "name": "tree3",
+      "start": 45.44,
+      "end": 49.32
+    },
+    {
+      "name": "tree3_val",
+      "start": 49.32,
+      "end": 53.04
+    },
+    {
+      "name": "tree4",
+      "start": 53.04,
+      "end": 56.78
+    },
+    {
+      "name": "tree2",
+      "start": 56.78,
+      "end": 61.32
+    },
+    {
+      "name": "tree2_val",
+      "start": 61.32,
+      "end": 64.66
+    },
+    {
+      "name": "tree4_val",
+      "start": 64.66,
+      "end": 68.02
+    },
+    {
+      "name": "value",
+      "start": 68.02,
+      "end": 73.72
+    },
+    {
+      "name": "count_intro",
+      "start": 73.72,
+      "end": 79.54
+    },
+    {
+      "name": "count_6",
+      "start": 79.54,
+      "end": 82.58
+    },
+    {
+      "name": "count_3",
+      "start": 82.58,
+      "end": 85.54
+    },
+    {
+      "name": "count_4",
+      "start": 85.54,
+      "end": 88.6
+    },
+    {
+      "name": "total",
+      "start": 88.6,
+      "end": 91.52
+    },
+    {
+      "name": "answer",
+      "start": 91.52,
+      "end": 96.86
+    },
+    {
+      "name": "trap",
+      "start": 96.86,
+      "end": 101.38
+    },
+    {
+      "name": "close",
+      "start": 101.38,
+      "end": 102.72
+    }
+  ]
+}

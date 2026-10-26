@@ -27,7 +27,6 @@ config.frame_width = 4.5
 
 from brand import (  # noqa: E402
     CHARCOAL,
-    GAP_LG,
     GAP_MD,
     GAP_SM,
     GREY,
@@ -38,10 +37,7 @@ from brand import (  # noqa: E402
     serif,
 )
 from components.alevel import (  # noqa: E402
-    ANSWER,
-    CODE,
     COUNT,
-    QUESTION,
     answer_card,
     fit,
     hook_lines,
@@ -109,18 +105,18 @@ class ALevelShort(SATScene):
         self.play(Write(lines), run_time=t.fill(fraction))
         return lines
 
-    def countdown(self, t, start=10, y=-1.0, lit_from=3):
-        """A real countdown, because the narration promises ten seconds."""
-        digit = serif(str(start), COUNT, SLATE)
-        digit.move_to([0, y, 0])
-        self.play(FadeIn(digit), run_time=t.fill(0.05))
-        share = 0.92 / max(1, start - 1)
-        for n in range(start - 1, 0, -1):
-            nxt = serif(str(n), COUNT,
-                        TERRACOTTA if n <= lit_from else SLATE)
-            nxt.move_to(digit)
-            self.play(Transform(digit, nxt), run_time=t.fill(share))
-        return digit
+    def pause_card(self, t, label="PAUSE", fraction=0.4, y=-2.4):
+        """The cue to stop and try it.
+
+        The written brief asks for a ten-second countdown, but the delivery
+        leaves a beat and moves on, so a counter would be animation the
+        narration never earns. The card holds for whatever pause there is.
+        """
+        card = serif(label, COUNT * 0.5, TERRACOTTA)
+        fit(card, 2.6)
+        card.move_to([0, y, 0])
+        self.play(Write(card), run_time=t.fill(fraction))
+        return card
 
     def spec(self, t, rows, accent=SLATE, draw=0.14, write=0.4, top=None,
              y=0.4):

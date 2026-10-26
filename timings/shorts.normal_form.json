@@ -1,0 +1,126 @@
+{
+  "scene": "shorts.normal_form",
+  "duration": 111.14,
+  "beats": [
+    {
+      "name": "hook",
+      "start": 0.6,
+      "end": 5.98
+    },
+    {
+      "name": "table",
+      "start": 5.98,
+      "end": 10.52
+    },
+    {
+      "name": "fields",
+      "start": 10.52,
+      "end": 14.68
+    },
+    {
+      "name": "key",
+      "start": 14.68,
+      "end": 19.64
+    },
+    {
+      "name": "fd1",
+      "start": 19.64,
+      "end": 22.14
+    },
+    {
+      "name": "fd2",
+      "start": 22.14,
+      "end": 27.4
+    },
+    {
+      "name": "fd3",
+      "start": 27.4,
+      "end": 29.96
+    },
+    {
+      "name": "question",
+      "start": 29.96,
+      "end": 35.76
+    },
+    {
+      "name": "pause",
+      "start": 35.76,
+      "end": 41.7
+    },
+    {
+      "name": "solve",
+      "start": 41.7,
+      "end": 43.26
+    },
+    {
+      "name": "partial1",
+      "start": 43.26,
+      "end": 48.4
+    },
+    {
+      "name": "partial_rule",
+      "start": 48.4,
+      "end": 51.36
+    },
+    {
+      "name": "student_table",
+      "start": 51.36,
+      "end": 55.54
+    },
+    {
+      "name": "course_fd",
+      "start": 55.54,
+      "end": 59.68
+    },
+    {
+      "name": "course_table",
+      "start": 59.68,
+      "end": 66.42
+    },
+    {
+      "name": "enrol_table",
+      "start": 66.42,
+      "end": 73.82
+    },
+    {
+      "name": "not_finished",
+      "start": 73.82,
+      "end": 75.5
+    },
+    {
+      "name": "transitive",
+      "start": 75.5,
+      "end": 80.44
+    },
+    {
+      "name": "transitive_rule",
+      "start": 80.44,
+      "end": 85.7
+    },
+    {
+      "name": "tutor_table",
+      "start": 85.7,
+      "end": 89.7
+    },
+    {
+      "name": "four_tables",
+      "start": 89.7,
+      "end": 92.92
+    },
+    {
+      "name": "names",
+      "start": 92.92,
+      "end": 95.94
+    },
+    {
+      "name": "trap",
+      "start": 95.94,
+      "end": 103.12
+    },
+    {
+      "name": "close",
+      "start": 103.12,
+      "end": 111.14
+    }
+  ]
+}
