@@ -30,20 +30,28 @@ def audio_duration(path):
     return float(out.stdout.strip())
 
 
-def transcribe_faster_whisper(path, model_size, language=None):
+def transcribe_faster_whisper(path, model_size, language=None, vad=True,
+                              repetition_penalty=1.0):
     from faster_whisper import WhisperModel
 
     model = WhisperModel(model_size, device="cpu", compute_type="int8")
-    # condition_on_previous_text=False prevents the repetition loops whisper
-    # falls into on long, evenly-paced narration; VAD keeps silence out of
-    # the timestamps.
+    # condition_on_previous_text=False heads off most of the repetition
+    # loops whisper falls into on long, evenly-paced narration, but not all
+    # of them: an Urdu lecture here still looped on one word for six
+    # seconds and swallowed the sentence underneath it, in two separate
+    # runs at the same spot. When that happens the fix is --no-vad with a
+    # --repetition-penalty above 1; both together recovered the lost
+    # sentence. They are not the default because VAD keeps silence out of
+    # the timestamps, and a penalty leans against phrases a teacher really
+    # does repeat for emphasis.
     segments, _info = model.transcribe(
         str(path),
         word_timestamps=True,
         temperature=0.0,
         beam_size=5,
         condition_on_previous_text=False,
-        vad_filter=True,
+        repetition_penalty=repetition_penalty,
+        vad_filter=vad,
         # Auto-detection reads only the opening seconds. A lecture that
         # greets the class in Urdu and then teaches in English gets tagged
         # Urdu, and the whole transcript comes back in Urdu script — which
@@ -59,7 +67,8 @@ def transcribe_faster_whisper(path, model_size, language=None):
     return words
 
 
-def transcribe_assemblyai(path, _model_size, language=None):
+def transcribe_assemblyai(path, _model_size, language=None, vad=True,
+                          repetition_penalty=1.0):
     import urllib.request
 
     api_key = os.environ.get("ASSEMBLYAI_API_KEY")
@@ -106,9 +115,10 @@ BACKENDS = {
 
 
 def transcribe(audio_path, backend="faster-whisper", model_size="base",
-               language=None):
+               language=None, vad=True, repetition_penalty=1.0):
     """Return {"duration": float, "words": [...]} for a recording."""
-    words = BACKENDS[backend](audio_path, model_size, language)
+    words = BACKENDS[backend](audio_path, model_size, language, vad,
+                              repetition_penalty)
     return {"duration": round(audio_duration(audio_path), 3), "words": words}
 
 
@@ -123,9 +133,21 @@ def main():
         help="ISO code to pin (e.g. en). Leave unset to auto-detect; pin it "
              "when the delivery mixes languages.",
     )
+    parser.add_argument(
+        "--no-vad", dest="vad", action="store_false",
+        help="turn off voice-activity filtering. Reach for this when the "
+             "transcript shows one word repeated many times over: VAD is "
+             "usually part of what triggers the loop.",
+    )
+    parser.add_argument(
+        "--repetition-penalty", type=float, default=1.0, metavar="P",
+        help="above 1.0 leans the decoder away from repeating itself. "
+             "1.25 with --no-vad recovered a sentence a loop had eaten.",
+    )
     args = parser.parse_args()
 
-    result = transcribe(args.audio, args.backend, args.model, args.language)
+    result = transcribe(args.audio, args.backend, args.model, args.language,
+                        args.vad, args.repetition_penalty)
     out = args.output or args.audio.with_suffix(".words.json")
     out.write_text(json.dumps(result, indent=2))
     print(f"{len(result['words'])} words, {result['duration']}s -> {out}")

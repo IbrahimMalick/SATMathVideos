@@ -1,0 +1,266 @@
+{
+  "scene": "concept.matrices",
+  "duration": 491.77,
+  "beats": [
+    {
+      "name": "title",
+      "start": 0.76,
+      "end": 3.92
+    },
+    {
+      "name": "misconception",
+      "start": 3.92,
+      "end": 10.64
+    },
+    {
+      "name": "not_true",
+      "start": 10.64,
+      "end": 15.88
+    },
+    {
+      "name": "tournament",
+      "start": 15.88,
+      "end": 23.88
+    },
+    {
+      "name": "students_come",
+      "start": 23.88,
+      "end": 35.54
+    },
+    {
+      "name": "two_each",
+      "start": 35.54,
+      "end": 43.16
+    },
+    {
+      "name": "multiply",
+      "start": 43.16,
+      "end": 48.46
+    },
+    {
+      "name": "not_only",
+      "start": 48.46,
+      "end": 51.6
+    },
+    {
+      "name": "also",
+      "start": 51.6,
+      "end": 59.72
+    },
+    {
+      "name": "headcount",
+      "start": 59.72,
+      "end": 70.96
+    },
+    {
+      "name": "needs_differ",
+      "start": 70.96,
+      "end": 74.62
+    },
+    {
+      "name": "per_person",
+      "start": 74.62,
+      "end": 84.84
+    },
+    {
+      "name": "calc_students",
+      "start": 84.84,
+      "end": 90.04
+    },
+    {
+      "name": "calc_teachers",
+      "start": 90.04,
+      "end": 95.64
+    },
+    {
+      "name": "calc_players",
+      "start": 95.64,
+      "end": 101.5
+    },
+    {
+      "name": "total",
+      "start": 101.5,
+      "end": 110.78
+    },
+    {
+      "name": "more_items",
+      "start": 110.78,
+      "end": 121.22
+    },
+    {
+      "name": "arrange",
+      "start": 121.22,
+      "end": 129.9
+    },
+    {
+      "name": "matrix_named",
+      "start": 129.9,
+      "end": 134.86
+    },
+    {
+      "name": "columns",
+      "start": 134.86,
+      "end": 141.94
+    },
+    {
+      "name": "rows",
+      "start": 141.94,
+      "end": 148.12
+    },
+    {
+      "name": "each_number",
+      "start": 148.12,
+      "end": 160.4
+    },
+    {
+      "name": "entry_eg",
+      "start": 160.4,
+      "end": 174.16
+    },
+    {
+      "name": "vector",
+      "start": 174.16,
+      "end": 182.24
+    },
+    {
+      "name": "vector_meaning",
+      "start": 182.24,
+      "end": 194.44
+    },
+    {
+      "name": "how",
+      "start": 194.44,
+      "end": 218.34
+    },
+    {
+      "name": "water_row",
+      "start": 218.34,
+      "end": 226.74
+    },
+    {
+      "name": "samosa_row",
+      "start": 226.74,
+      "end": 234.56
+    },
+    {
+      "name": "banana_row",
+      "start": 234.56,
+      "end": 239.82
+    },
+    {
+      "name": "output",
+      "start": 239.82,
+      "end": 256.58
+    },
+    {
+      "name": "mathematically",
+      "start": 256.58,
+      "end": 262.48
+    },
+    {
+      "name": "idea_simple",
+      "start": 262.48,
+      "end": 281.08
+    },
+    {
+      "name": "order",
+      "start": 281.08,
+      "end": 286.9
+    },
+    {
+      "name": "order_match",
+      "start": 286.9,
+      "end": 305.16
+    },
+    {
+      "name": "order_wrong",
+      "start": 305.16,
+      "end": 307.94
+    },
+    {
+      "name": "function",
+      "start": 307.94,
+      "end": 347.94
+    },
+    {
+      "name": "three_three",
+      "start": 347.94,
+      "end": 356.44
+    },
+    {
+      "name": "scaling",
+      "start": 356.44,
+      "end": 368.36
+    },
+    {
+      "name": "scaling_eg",
+      "start": 368.36,
+      "end": 381.06
+    },
+    {
+      "name": "scaling_name",
+      "start": 381.06,
+      "end": 390.78
+    },
+    {
+      "name": "additivity",
+      "start": 390.78,
+      "end": 403.38
+    },
+    {
+      "name": "additivity_two_ways",
+      "start": 403.38,
+      "end": 412.58
+    },
+    {
+      "name": "additivity_same",
+      "start": 412.58,
+      "end": 415.92
+    },
+    {
+      "name": "linear",
+      "start": 415.92,
+      "end": 439.72
+    },
+    {
+      "name": "geometry",
+      "start": 439.72,
+      "end": 445.46
+    },
+    {
+      "name": "shapes",
+      "start": 445.46,
+      "end": 447.04
+    },
+    {
+      "name": "transform",
+      "start": 447.04,
+      "end": 454.6
+    },
+    {
+      "name": "dimensions",
+      "start": 454.6,
+      "end": 459.88
+    },
+    {
+      "name": "not_just",
+      "start": 459.88,
+      "end": 464.88
+    },
+    {
+      "name": "three_uses",
+      "start": 464.88,
+      "end": 477.06
+    },
+    {
+      "name": "maths_interesting",
+      "start": 477.06,
+      "end": 481.72
+    },
+    {
+      "name": "cta",
+      "start": 481.72,
+      "end": 491.77
+    }
+  ]
+}

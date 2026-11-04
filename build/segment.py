@@ -41,6 +41,9 @@ import subprocess
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from textnorm import normalize  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 # Below this word-overlap score the anchor phrase probably isn't really
@@ -52,8 +55,6 @@ class SegmentError(Exception):
     pass
 
 
-def normalize(word):
-    return re.sub(r"[^a-z0-9]", "", word.lower())
 
 
 def find_phrase(words, phrase, search_from=0):

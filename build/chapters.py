@@ -22,6 +22,24 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 MIN_CHAPTER = 10.0   # YouTube drops the whole list if any chapter is shorter
 
 CHAPTERS = {
+    "concept.matrices": [
+        ("title", "Matrices are not just a table of numbers"),
+        ("students_come", "A cricket tournament: three students, two samosas each"),
+        ("not_only", "Teachers and players too, and they need different things"),
+        ("calc_students", "Counting the samosas group by group"),
+        ("more_items", "Water and bananas: one table for every need"),
+        ("matrix_named", "This table is a matrix"),
+        ("vector", "The column vector: how many people in each group"),
+        ("how", "Multiplying the matrix by the vector"),
+        ("output", "The shopping list that comes out"),
+        ("order", "Why the order of the columns matters"),
+        ("function", "A matrix as a function: inputs to outputs"),
+        ("scaling", "Scaling: double the people, double the order"),
+        ("additivity", "Additivity: two groups, two routes, one answer"),
+        ("linear", "Scaling plus additivity is a linear function"),
+        ("geometry", "Matrices in geometry: stretch and rotate"),
+        ("not_just", "What to remember next time you see a matrix"),
+    ],
     "concept.data_transmission": [
         ("open", "Data transmission: the questions this chapter answers"),
         ("part1", "Packets: header, payload, trailer"),

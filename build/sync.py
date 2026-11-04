@@ -19,6 +19,9 @@ import re
 import sys
 from pathlib import Path
 
+sys.path.insert(0, str(Path(__file__).resolve().parent))
+from textnorm import normalize  # noqa: E402
+
 REPO_ROOT = Path(__file__).resolve().parents[1]
 
 MARKER_RE = re.compile(r"\[\[beat:([A-Za-z0-9_-]+)\]\]")
@@ -64,8 +67,6 @@ def parse_script(path):
     return scene_id, tokens
 
 
-def normalize(word):
-    return re.sub(r"[^a-z0-9]", "", word.lower())
 
 
 def align(script_words, transcript_words):
