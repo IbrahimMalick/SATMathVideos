@@ -45,6 +45,13 @@ import brand                                            # noqa: E402
 REFERENCE_DENSITY = 135.0
 FLOOR_PX = 28.0
 
+# Computer Modern sets smaller than DejaVu Serif at the same nominal size:
+# measured on cap-height glyphs ('H', '5'), a MathTex is 1.43x smaller than
+# the Pango text beside it. So LaTeX has to ask for a bigger number to
+# render the same physical size, and brand.EQUATION_SIZE of 40 sits exactly
+# on the 28px floor rather than comfortably above it.
+LATEX_RATIO = 1.43
+
 OVERLAP_TOL = 0.06      # scene units of mutual intrusion before it counts
 OVERLAP_SHARE = 0.08    # ...and this much of the smaller box's area
 
@@ -55,6 +62,7 @@ CURRENT, PLAYS, PLAY_TIME = [None], [0], [0.0]
 # Tracked text, by object id: the nominal size it asked for and its string.
 # Measured once, at first display — see check_sizes.
 TRACKED = {}
+MATH_SEEN = set()
 
 _real_serif, _real_mono = brand.serif, brand.mono
 
@@ -153,6 +161,26 @@ def text_leaves(scene):
     return out
 
 
+def math_leaves(scene):
+    """Every LaTeX expression on screen, outermost first.
+
+    MathTex is not built through a brand.py factory, so there is nothing to
+    patch and nothing recording its birth — but its ``font_size`` tracks a
+    real scale exactly (40 becomes 20 under scale(0.5)) and does not move
+    with the content, so it can be read directly. Only the outermost
+    MathTex is measured; its submobjects are the same size by construction
+    and would each report again.
+    """
+    out, seen = [], set()
+    for m in scene.mobjects:
+        for sub in m.get_family():
+            if isinstance(sub, manim.MathTex) and id(sub) not in seen:
+                if sub.width > 0 and sub.height > 0:
+                    out.append(sub)
+                seen.update(id(x) for x in sub.get_family())
+    return out
+
+
 def check_overlap(scene):
     """Two pieces of text sitting on top of each other.
 
@@ -206,6 +234,18 @@ def check_sizes(scene):
         rendered = mob.font_size * density
         if rendered < FLOOR_PX - 0.1:
             SMALL.append((CURRENT[0], round(rendered, 1), size, text[:40]))
+
+    for mob in math_leaves(scene):
+        if id(mob) in MATH_SEEN:
+            continue
+        MATH_SEEN.add(id(mob))
+        # Divided by the ratio so LaTeX is reported on the same 28px scale
+        # as everything else, rather than in its own units.
+        rendered = mob.font_size / LATEX_RATIO * density
+        if rendered < FLOOR_PX - 0.1:
+            SMALL.append((CURRENT[0], round(rendered, 1),
+                          round(mob.font_size, 1),
+                          "TeX " + "".join(mob.tex_strings)[:36]))
 
 
 def snap(scene, name, index, folder):

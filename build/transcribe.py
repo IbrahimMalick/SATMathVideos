@@ -114,11 +114,84 @@ BACKENDS = {
 }
 
 
+def silence_points(path, noise_db=-32, min_silence=0.45):
+    """Mid-points of the silences in a recording, in seconds.
+
+    Used to choose chunk boundaries that never fall inside a word.
+    """
+    out = subprocess.run(
+        ["ffmpeg", "-hide_banner", "-nostats", "-i", str(path),
+         "-af", f"silencedetect=noise={noise_db}dB:d={min_silence}",
+         "-f", "null", "-"],
+        capture_output=True, text=True,
+    )
+    starts, points = [], []
+    for line in out.stderr.splitlines():
+        if "silence_start:" in line:
+            starts.append(float(line.rsplit("silence_start:", 1)[1].strip()))
+        elif "silence_end:" in line and starts:
+            end = float(line.rsplit("silence_end:", 1)[1].split("|")[0].strip())
+            points.append((starts.pop() + end) / 2)
+    return sorted(points)
+
+
+def chunk_bounds(path, target, duration):
+    """Cut points roughly `target` seconds apart, each landing in silence.
+
+    Whisper drifts over a long recording: on a 25-minute lecture here it
+    dropped fourteen stretches totalling three minutes, including the
+    sentence that gave a question's final answer, while the same audio in
+    short clips transcribed cleanly. So the long recording is cut up and
+    fed in pieces — and the cuts go in the silences between words, because
+    a cut through a word loses it from both sides.
+    """
+    quiet = silence_points(path)
+    bounds, position = [0.0], 0.0
+    while duration - position > target * 1.5:
+        want = position + target
+        nearby = [q for q in quiet if position + target * 0.4 < q < position + target * 1.6]
+        position = min(nearby, key=lambda q: abs(q - want)) if nearby else want
+        bounds.append(position)
+    bounds.append(duration)
+    return bounds
+
+
+def transcribe_chunked(path, backend, model_size, language, vad,
+                       repetition_penalty, target):
+    """Transcribe a long recording in pieces, with timestamps rebased."""
+    import tempfile
+
+    duration = audio_duration(path)
+    bounds = chunk_bounds(path, target, duration)
+    words = []
+    with tempfile.TemporaryDirectory() as work:
+        for i, (start, end) in enumerate(zip(bounds, bounds[1:])):
+            piece = Path(work) / f"chunk{i:03d}.wav"
+            subprocess.run(
+                ["ffmpeg", "-v", "error", "-y", "-ss", f"{start:.3f}",
+                 "-t", f"{end - start:.3f}", "-i", str(path), str(piece)],
+                check=True,
+            )
+            part = BACKENDS[backend](piece, model_size, language, vad,
+                                     repetition_penalty)
+            for w in part:
+                words.append({"word": w["word"],
+                              "start": round(w["start"] + start, 3),
+                              "end": round(w["end"] + start, 3)})
+            print(f"  chunk {i + 1}/{len(bounds) - 1}  "
+                  f"{start:7.1f}-{end:7.1f}s  {len(part):4d} words")
+    return words
+
+
 def transcribe(audio_path, backend="faster-whisper", model_size="base",
-               language=None, vad=True, repetition_penalty=1.0):
+               language=None, vad=True, repetition_penalty=1.0, chunk=None):
     """Return {"duration": float, "words": [...]} for a recording."""
-    words = BACKENDS[backend](audio_path, model_size, language, vad,
-                              repetition_penalty)
+    if chunk:
+        words = transcribe_chunked(audio_path, backend, model_size, language,
+                                   vad, repetition_penalty, chunk)
+    else:
+        words = BACKENDS[backend](audio_path, model_size, language, vad,
+                                  repetition_penalty)
     return {"duration": round(audio_duration(audio_path), 3), "words": words}
 
 
@@ -144,10 +217,17 @@ def main():
         help="above 1.0 leans the decoder away from repeating itself. "
              "1.25 with --no-vad recovered a sentence a loop had eaten.",
     )
+    parser.add_argument(
+        "--chunk", type=float, default=None, metavar="SECONDS",
+        help="transcribe in pieces of about this length, cut in the "
+             "silences between words. Use it on anything long: whisper "
+             "drifts over a lecture and drops whole sentences, and the "
+             "same audio in short pieces comes back clean.",
+    )
     args = parser.parse_args()
 
     result = transcribe(args.audio, args.backend, args.model, args.language,
-                        args.vad, args.repetition_penalty)
+                        args.vad, args.repetition_penalty, args.chunk)
     out = args.output or args.audio.with_suffix(".words.json")
     out.write_text(json.dumps(result, indent=2))
     print(f"{len(result['words'])} words, {result['duration']}s -> {out}")
