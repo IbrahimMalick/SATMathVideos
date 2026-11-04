@@ -235,10 +235,15 @@ class G9ModelPaper(SATScene):
 
     # --- the worked-solution shape, used by almost every question ---------
 
-    def ask(self, t, problem, title=None, draw=0.2, write=0.3):
-        """Pin a question at the top and return its solution holder."""
+    def ask(self, t, problem, title=None, draw=0.2, write=0.3, floor=FLOOR):
+        """Pin a question at the top and return its solution holder.
+
+        `floor` stops the column short when a caption is going to follow
+        along the bottom of the frame — otherwise the boxed answer lands
+        exactly where that caption will be written.
+        """
         self.wipe(t)
-        self.sol = WorkedSolution(problem, title=title, floor=FLOOR)
+        self.sol = WorkedSolution(problem, title=title, floor=floor)
         if self.sol.title is not None:
             self.play(Write(self.sol.title), run_time=t.fill(draw))
         self.play(Write(self.sol.problem), run_time=t.fill(write))
@@ -433,7 +438,7 @@ class G9ModelPaper(SATScene):
         with self.beat("mcq4") as t:
             sol = self.ask(t, tex(r"n(A\cup B)=50,\quad n(A)=30,"
                                   r"\quad n(B)=35", EQUATION_SIZE),
-                           title="Find n(A ∩ B)")
+                           title="Find n(A ∩ B)", floor=-2.1)
             t.hold()
 
         with self.beat("mcq4_formula") as t:
@@ -510,7 +515,10 @@ class G9ModelPaper(SATScene):
             self.part(t, 2)
             self.ask(t, tex(r"\text{Two rational numbers between }"
                             r"2 \text{ and } 3", EQUATION_SIZE),
-                     title="Short question")
+                     # A two-line caption follows under the answer, and
+                     # foot() places it from the section strip upwards, so
+                     # its top sits higher than it looks.
+                     title="Short question", floor=-1.1)
             t.hold()
 
         with self.beat("sq1_pick") as t:
@@ -637,7 +645,7 @@ class G9ModelPaper(SATScene):
         with self.beat("sq5_list") as t:
             grid = subset_grid(POWER_SET, size=LABEL_SIZE)
             self.hide(grid)
-            self.stack(grid, self.count, buff=GAP_MD * 0.9)
+            self.stack(grid, self.count, buff=GAP_MD * 0.9, floor=-2.1)
             self.reveal(t, grid, 0, len(POWER_SET), 0.15)
             self.grid = grid
             t.hold()
@@ -660,7 +668,7 @@ class G9ModelPaper(SATScene):
                       fraction=0.45)
             t.hold()
 
-        with self.beat("sq6_builder") as t:
+        with self.beat("sq6_notation") as t:
             self.step(t, tex(r"A - B = \{\, x \mid x \in A "
                              r"\text{ and } x \notin B \,\}",
                              EQUATION_SIZE), fraction=0.45)
@@ -737,37 +745,58 @@ class G9ModelPaper(SATScene):
             t.hold()
 
         with self.beat("lq1_rule") as t:
-            self.step(t, self.sol.note("a fractional power is a root, "
-                                       "then a power"), fraction=0.4)
+            # A caption along the foot rather than a line of working: the
+            # column has four root evaluations to hold and cannot spare a
+            # row for a reminder.
+            note = self.caption("a fractional power is a root, then a power",
+                                GREY, LABEL_SIZE)
+            self.foot(note)
+            self.play(Write(note), run_time=t.fill(0.4))
+            self.rule_note = note
             t.hold()
 
         with self.beat("lq1_a") as t:
-            self.step(t, tex(r"25^{3/2} = (\sqrt{25})^3 = 5^3 = 125",
-                             EQUATION_SIZE), fraction=0.4)
+            # Two by two, not four down. All four evaluations are the
+            # answer to this question, so they have to be on screen
+            # together when the result is read off them — stacked in a
+            # column the first two scroll away before the last arrives.
+            cells = VGroup(*[
+                tex(e, EQUATION_SIZE) for e in (
+                    r"25^{3/2} = 5^3 = 125",
+                    r"243^{3/5} = 3^3 = 27",
+                    r"16^{5/4} = 2^5 = 32",
+                    r"8^{4/3} = 2^4 = 16",
+                )])
+            for i, cell in enumerate(cells):
+                cell.move_to([(i % 2 - 0.5) * 6.0,
+                              -(i // 2) * 0.85, 0])
+            self.grid = cells
+            self.hide(cells)
+            moves = self.sol.place(cells, buff=GAP_MD)
+            if moves:
+                self.play(*moves, run_time=t.fill(0.08))
+            self.reveal(t, cells, 0, 1, 0.4)
             t.hold()
 
-        with self.beat("lq1_b") as t:
-            self.step(t, tex(r"243^{3/5} = (\sqrt[5]{243})^3 = 3^3 = 27",
-                             EQUATION_SIZE), fraction=0.4)
-            t.hold()
-
-        with self.beat("lq1_c") as t:
-            self.step(t, tex(r"16^{5/4} = (\sqrt[4]{16})^5 = 2^5 = 32",
-                             EQUATION_SIZE), fraction=0.4)
-            t.hold()
-
-        with self.beat("lq1_d") as t:
-            self.step(t, tex(r"8^{4/3} = (\sqrt[3]{8})^4 = 2^4 = 16",
-                             EQUATION_SIZE), fraction=0.4)
-            t.hold()
+        for name, index in (("lq1_b", 1), ("lq1_c", 2), ("lq1_d", 3)):
+            with self.beat(name) as t:
+                self.reveal(t, self.grid, index, index + 1, 0.4)
+                t.hold()
 
         with self.beat("lq1_combine") as t:
-            self.step(t, tex(r"\frac{125 \times 27}{32 \times 16} = "
-                             r"\frac{3375}{512}", EQUATION_SIZE),
+            self.play(FadeOut(self.rule_note), run_time=t.fill(0.06))
+            self.step(t, tex(r"125 \times 27 = 3375, \quad "
+                             r"32 \times 16 = 512", EQUATION_SIZE),
                       fraction=0.4)
             t.hold()
 
         with self.beat("lq1_answer") as t:
+            # Clear the working first: the four roots and the product have
+            # been read out, and keeping them would push the answer off the
+            # bottom of the frame. clear() fades what the scene actually
+            # holds — the cells were added one at a time, so fading the
+            # group they belong to would leave every one of them on screen.
+            self.clear(t, self.sol.clear_steps(), fraction=0.06)
             self.final(t, tex(r"\frac{3375}{512}", DISPLAY_SIZE * 0.85,
                               SAGE))
             t.hold()
@@ -871,6 +900,11 @@ class G9ModelPaper(SATScene):
     # ------------------------------------------------------------- closing
 
     def closing(self):
+        # The written plan closes on "In Video 2 we'll continue with the
+        # next chapter group" and the channel motto. The recording closes
+        # differently — he promises to finish the 2026 model paper and
+        # signs off with "Insha Allah we shall meet in next session" — so
+        # the cards follow the recording.
         with self.beat("recap") as t:
             self.wipe(t)
             self.title(t, "What we practised", fraction=0.1)
@@ -882,34 +916,32 @@ class G9ModelPaper(SATScene):
                               size=BODY_SIZE, color=CHARCOAL, align=LEFT)
             self.hide(rows)
             self.stack(rows, self.head, buff=GAP_MD, align=LEFT)
-            self.reveal(t, rows, 0, 5, 0.14)
+            self.recap_rows = rows
             t.hold()
 
-        with self.beat("practise") as t:
+        with self.beat("recap_methods") as t:
+            self.reveal(t, self.recap_rows, 0, 2, 0.3)
+            t.hold()
+
+        with self.beat("recap_sets") as t:
+            self.reveal(t, self.recap_rows, 2, 5, 0.22)
+            t.hold()
+
+        with self.beat("next") as t:
             self.wipe(t)
             rows = self.lines("Try these again without the solutions.",
-                              "If you get stuck, pause at that step",
-                              "and name the rule you need.",
+                              "We will finish the 2026 model paper.",
                               size=BODY_SIZE, color=CHARCOAL)
             rows.move_to(UP * 0.3)
             self.play(Write(rows), run_time=t.fill(0.5))
             t.hold()
 
-        with self.beat("next") as t:
-            self.wipe(t)
-            note = self.caption("Video 2: the next chapter group",
-                                CHARCOAL, TITLE_SIZE)
-            note.move_to(UP * 0.4)
-            self.play(Write(note), run_time=t.fill(0.45))
-            t.hold()
-
         with self.beat("close") as t:
             self.wipe(t)
             name = fit(serif("The Digital Tutor", TITLE_SIZE * 1.2, CHARCOAL))
-            motto = serif("Learn today. Lead tomorrow.", BODY_SIZE,
-                          TERRACOTTA)
-            card = VGroup(name, motto).arrange(DOWN, buff=GAP_LG * 0.8)
+            sub = serif("see you in the next session", BODY_SIZE, TERRACOTTA)
+            card = VGroup(name, sub).arrange(DOWN, buff=GAP_LG * 0.8)
             card.move_to(ORIGIN)
             self.play(Write(name), run_time=t.fill(0.3))
-            self.play(Write(motto), run_time=t.fill(0.25))
+            self.play(Write(sub), run_time=t.fill(0.25))
             t.hold()

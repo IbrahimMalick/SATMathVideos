@@ -22,6 +22,28 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 MIN_CHAPTER = 10.0   # YouTube drops the whole list if any chapter is shorter
 
 CHAPTERS = {
+    "concept.g9_model_paper": [
+        ("open", "Grade 9 Mathematics 2026: model paper, Chapters 1 to 4"),
+        ("mcq1", "MCQ: conjugates, and why the answer is rational"),
+        ("mcq2", "MCQ: the base of a common logarithm"),
+        ("mcq3", "MCQ: the power set of the empty set"),
+        ("mcq4", "MCQ: finding an intersection from a union"),
+        ("mcq5", "MCQ: the LCM of algebraic terms"),
+        ("mcq6", "MCQ: taking out a common factor"),
+        ("sq1", "Short: two rational numbers between 2 and 3"),
+        ("sq2", "Short: negative and fractional indices"),
+        ("sq3", "Short: solving a logarithmic equation"),
+        ("sq4", "Short: the characteristic of a small decimal"),
+        ("sq5", "Short: writing out a power set"),
+        ("sq6", "Short: defining the difference of two sets"),
+        ("sq7", "Short: factorizing a quadratic by splitting"),
+        ("sq8", "Short: the difference of two cubes"),
+        ("lq1", "Question 5(a): simplifying with fractional indices"),
+        ("lq2", "Question 5(b): finding x from its logarithm"),
+        ("lq3", "Question 6(a): overlapping sets at the sports club"),
+        ("lq4", "Question 6(b): factorizing a quartic expression"),
+        ("recap", "Recap, and what to do before the next video"),
+    ],
     "concept.matrices": [
         ("title", "Matrices are not just a table of numbers"),
         ("students_come", "A cricket tournament: three students, two samosas each"),

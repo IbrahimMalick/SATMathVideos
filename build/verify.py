@@ -181,12 +181,22 @@ def math_leaves(scene):
     return out
 
 
-def check_overlap(scene):
-    """Two pieces of text sitting on top of each other.
+def _label(mob):
+    """A short name for a piece of writing, Pango or LaTeX."""
+    if hasattr(mob, "text"):
+        return mob.text[:28]
+    return "TeX " + "".join(getattr(mob, "tex_strings", []))[:24]
 
-    Text against text only: a box is supposed to overlap what it surrounds.
+
+def check_overlap(scene):
+    """Two pieces of writing sitting on top of each other.
+
+    Writing against writing only: a box is supposed to overlap what it
+    surrounds. LaTeX counts as writing — a maths video is mostly MathTex,
+    and checking Pango alone let a grid of working land on top of the
+    question it belonged to.
     """
-    leaves = text_leaves(scene)
+    leaves = text_leaves(scene) + math_leaves(scene)
     for i, a in enumerate(leaves):
         for b in leaves[i + 1:]:
             wide = (min(a.get_right()[0], b.get_right()[0])
@@ -202,8 +212,7 @@ def check_overlap(scene):
             if key in SEEN:
                 continue
             SEEN.add(key)
-            OVERLAPS.append((CURRENT[0], getattr(a, "text", "")[:28],
-                             getattr(b, "text", "")[:28],
+            OVERLAPS.append((CURRENT[0], _label(a), _label(b),
                              round(wide, 2), round(high, 2)))
 
 

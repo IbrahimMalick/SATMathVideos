@@ -1,0 +1,506 @@
+{
+  "scene": "concept.g9_model_paper",
+  "duration": 1515.968,
+  "beats": [
+    {
+      "name": "open",
+      "start": 46.66,
+      "end": 59.12
+    },
+    {
+      "name": "topics",
+      "start": 59.12,
+      "end": 66.48
+    },
+    {
+      "name": "method",
+      "start": 66.48,
+      "end": 94.737
+    },
+    {
+      "name": "disclaimer",
+      "start": 94.737,
+      "end": 103.057
+    },
+    {
+      "name": "route",
+      "start": 103.057,
+      "end": 130.397
+    },
+    {
+      "name": "notebook",
+      "start": 130.397,
+      "end": 139.677
+    },
+    {
+      "name": "mcq1",
+      "start": 139.677,
+      "end": 159.617
+    },
+    {
+      "name": "mcq1_identity",
+      "start": 159.617,
+      "end": 178.097
+    },
+    {
+      "name": "mcq1_work",
+      "start": 178.097,
+      "end": 186.57
+    },
+    {
+      "name": "mcq1_answer",
+      "start": 186.57,
+      "end": 193.77
+    },
+    {
+      "name": "mcq1_habit",
+      "start": 193.77,
+      "end": 203.01
+    },
+    {
+      "name": "mcq2",
+      "start": 203.01,
+      "end": 207.55
+    },
+    {
+      "name": "mcq2_answer",
+      "start": 207.55,
+      "end": 227.71
+    },
+    {
+      "name": "mcq3",
+      "start": 227.71,
+      "end": 236.91
+    },
+    {
+      "name": "mcq3_reason",
+      "start": 236.91,
+      "end": 242.85
+    },
+    {
+      "name": "mcq3_answer",
+      "start": 242.85,
+      "end": 254.32
+    },
+    {
+      "name": "mcq3_trap",
+      "start": 254.32,
+      "end": 261.95
+    },
+    {
+      "name": "mcq4",
+      "start": 261.95,
+      "end": 281.554
+    },
+    {
+      "name": "mcq4_formula",
+      "start": 281.554,
+      "end": 292.694
+    },
+    {
+      "name": "mcq4_substitute",
+      "start": 292.694,
+      "end": 307.434
+    },
+    {
+      "name": "mcq4_work",
+      "start": 307.434,
+      "end": 313.114
+    },
+    {
+      "name": "mcq4_answer",
+      "start": 313.114,
+      "end": 343.814
+    },
+    {
+      "name": "mcq4_why",
+      "start": 343.814,
+      "end": 358.634
+    },
+    {
+      "name": "mcq5",
+      "start": 358.634,
+      "end": 368.462
+    },
+    {
+      "name": "mcq5_numbers",
+      "start": 368.462,
+      "end": 382.322
+    },
+    {
+      "name": "mcq5_vars",
+      "start": 382.322,
+      "end": 393.562
+    },
+    {
+      "name": "mcq5_answer",
+      "start": 393.562,
+      "end": 411.092
+    },
+    {
+      "name": "mcq6",
+      "start": 411.092,
+      "end": 420.762
+    },
+    {
+      "name": "mcq6_divide",
+      "start": 420.762,
+      "end": 428.302
+    },
+    {
+      "name": "mcq6_answer",
+      "start": 428.302,
+      "end": 435.622
+    },
+    {
+      "name": "mcq6_check",
+      "start": 435.622,
+      "end": 451.25
+    },
+    {
+      "name": "sq1",
+      "start": 451.25,
+      "end": 455.47
+    },
+    {
+      "name": "sq1_pick",
+      "start": 455.47,
+      "end": 473.43
+    },
+    {
+      "name": "sq1_fractions",
+      "start": 473.43,
+      "end": 480.65
+    },
+    {
+      "name": "sq1_answer",
+      "start": 480.65,
+      "end": 491.49
+    },
+    {
+      "name": "sq1_note",
+      "start": 491.49,
+      "end": 495.95
+    },
+    {
+      "name": "sq2",
+      "start": 495.95,
+      "end": 524.45
+    },
+    {
+      "name": "sq2_negative",
+      "start": 524.45,
+      "end": 546.216
+    },
+    {
+      "name": "sq2_cube",
+      "start": 546.216,
+      "end": 558.916
+    },
+    {
+      "name": "sq2_divide",
+      "start": 558.916,
+      "end": 579.116
+    },
+    {
+      "name": "sq2_cancel",
+      "start": 579.116,
+      "end": 591.016
+    },
+    {
+      "name": "sq2_answer",
+      "start": 591.016,
+      "end": 604.096
+    },
+    {
+      "name": "sq3",
+      "start": 604.096,
+      "end": 616.776
+    },
+    {
+      "name": "sq3_rewrite",
+      "start": 616.776,
+      "end": 635.079
+    },
+    {
+      "name": "sq3_answer",
+      "start": 635.079,
+      "end": 641.419
+    },
+    {
+      "name": "sq4",
+      "start": 641.419,
+      "end": 651.638
+    },
+    {
+      "name": "sq4_rule",
+      "start": 651.638,
+      "end": 666.839
+    },
+    {
+      "name": "sq4_move",
+      "start": 666.839,
+      "end": 677.738
+    },
+    {
+      "name": "sq4_answer",
+      "start": 677.738,
+      "end": 686.738
+    },
+    {
+      "name": "sq4_note",
+      "start": 686.738,
+      "end": 724.011
+    },
+    {
+      "name": "sq5",
+      "start": 724.011,
+      "end": 738.511
+    },
+    {
+      "name": "sq5_count",
+      "start": 738.511,
+      "end": 763.111
+    },
+    {
+      "name": "sq5_list",
+      "start": 763.111,
+      "end": 811.308
+    },
+    {
+      "name": "sq5_sum",
+      "start": 811.308,
+      "end": 821.788
+    },
+    {
+      "name": "sq6",
+      "start": 821.788,
+      "end": 824.068
+    },
+    {
+      "name": "sq6_words",
+      "start": 824.068,
+      "end": 830.408
+    },
+    {
+      "name": "sq6_notation",
+      "start": 830.408,
+      "end": 835.148
+    },
+    {
+      "name": "sq6_example",
+      "start": 835.148,
+      "end": 842.508
+    },
+    {
+      "name": "sq6_answer",
+      "start": 842.508,
+      "end": 858.968
+    },
+    {
+      "name": "sq7",
+      "start": 858.968,
+      "end": 865.208
+    },
+    {
+      "name": "sq7_find",
+      "start": 865.208,
+      "end": 874.448
+    },
+    {
+      "name": "sq7_numbers",
+      "start": 874.448,
+      "end": 881.988
+    },
+    {
+      "name": "sq7_split",
+      "start": 881.988,
+      "end": 895.128
+    },
+    {
+      "name": "sq7_group",
+      "start": 895.128,
+      "end": 911.704
+    },
+    {
+      "name": "sq7_answer",
+      "start": 911.704,
+      "end": 931.524
+    },
+    {
+      "name": "sq8",
+      "start": 931.524,
+      "end": 942.244
+    },
+    {
+      "name": "sq8_cubes",
+      "start": 942.244,
+      "end": 952.224
+    },
+    {
+      "name": "sq8_identity",
+      "start": 952.224,
+      "end": 974.664
+    },
+    {
+      "name": "sq8_answer",
+      "start": 974.664,
+      "end": 996.863
+    },
+    {
+      "name": "lq1",
+      "start": 996.863,
+      "end": 1015.803
+    },
+    {
+      "name": "lq1_rule",
+      "start": 1015.803,
+      "end": 1020.663
+    },
+    {
+      "name": "lq1_a",
+      "start": 1020.663,
+      "end": 1040.543
+    },
+    {
+      "name": "lq1_b",
+      "start": 1040.543,
+      "end": 1056.983
+    },
+    {
+      "name": "lq1_c",
+      "start": 1056.983,
+      "end": 1071.563
+    },
+    {
+      "name": "lq1_d",
+      "start": 1071.563,
+      "end": 1087.9
+    },
+    {
+      "name": "lq1_combine",
+      "start": 1087.9,
+      "end": 1107.56
+    },
+    {
+      "name": "lq1_answer",
+      "start": 1107.56,
+      "end": 1126.26
+    },
+    {
+      "name": "lq2",
+      "start": 1126.26,
+      "end": 1134.72
+    },
+    {
+      "name": "lq2_undo",
+      "start": 1134.72,
+      "end": 1151.28
+    },
+    {
+      "name": "lq2_split",
+      "start": 1151.28,
+      "end": 1162.56
+    },
+    {
+      "name": "lq2_parts",
+      "start": 1162.56,
+      "end": 1172.18
+    },
+    {
+      "name": "lq2_antilog",
+      "start": 1172.18,
+      "end": 1195.22
+    },
+    {
+      "name": "lq2_answer",
+      "start": 1195.22,
+      "end": 1212.74
+    },
+    {
+      "name": "lq3",
+      "start": 1212.74,
+      "end": 1241.38
+    },
+    {
+      "name": "lq3_setup",
+      "start": 1241.38,
+      "end": 1263.355
+    },
+    {
+      "name": "lq3_formula",
+      "start": 1263.355,
+      "end": 1272.575
+    },
+    {
+      "name": "lq3_substitute",
+      "start": 1272.575,
+      "end": 1290.595
+    },
+    {
+      "name": "lq3_work",
+      "start": 1290.595,
+      "end": 1298.455
+    },
+    {
+      "name": "lq3_answer",
+      "start": 1298.455,
+      "end": 1331.275
+    },
+    {
+      "name": "lq4",
+      "start": 1331.275,
+      "end": 1334.255
+    },
+    {
+      "name": "lq4_rewrite",
+      "start": 1334.255,
+      "end": 1347.095
+    },
+    {
+      "name": "lq4_expand",
+      "start": 1347.095,
+      "end": 1368.63
+    },
+    {
+      "name": "lq4_check",
+      "start": 1368.63,
+      "end": 1379.45
+    },
+    {
+      "name": "lq4_identity",
+      "start": 1379.45,
+      "end": 1391.25
+    },
+    {
+      "name": "lq4_answer",
+      "start": 1391.25,
+      "end": 1422.45
+    },
+    {
+      "name": "recap",
+      "start": 1422.45,
+      "end": 1445.45
+    },
+    {
+      "name": "recap_methods",
+      "start": 1445.45,
+      "end": 1472.47
+    },
+    {
+      "name": "recap_sets",
+      "start": 1472.47,
+      "end": 1502.47
+    },
+    {
+      "name": "next",
+      "start": 1502.47,
+      "end": 1508.47
+    },
+    {
+      "name": "close",
+      "start": 1508.47,
+      "end": 1515.968
+    }
+  ]
+}
