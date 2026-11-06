@@ -22,6 +22,24 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 MIN_CHAPTER = 10.0   # YouTube drops the whole list if any chapter is shorter
 
 CHAPTERS = {
+    "concept.cpu_cycle": [
+        ("open", "The question: how a program becomes actions"),
+        ("stored", "The stored-program idea, and the Von Neumann model"),
+        ("inside", "Inside the processor: the CU, the ALU, the registers"),
+        ("four_regs", "The four registers: PC, MAR, MDR, CIR"),
+        ("mix_up", "MAR against MDR: the two that get mixed up"),
+        ("follow", "The fetch stage, traced through the diagram"),
+        ("once_more", "The fetch stage in five steps"),
+        ("cir_holds", "Decode: the operation and the operand address"),
+        ("two_accesses", "Two separate trips to memory"),
+        ("example", "One instruction, with real values"),
+        ("buses", "What the address, data and control buses carry"),
+        ("as_level", "AS Level: the accumulator, index and status registers"),
+        ("rtn", "Register-transfer notation, one step at a time"),
+        ("challenge", "Your turn: predict the accumulator"),
+        ("mistakes", "Three mistakes to avoid"),
+        ("recap", "The whole cycle, once"),
+    ],
     "concept.g9_model_paper": [
         ("open", "Grade 9 Mathematics 2026: model paper, Chapters 1 to 4"),
         ("mcq1", "MCQ: conjugates, and why the answer is rational"),

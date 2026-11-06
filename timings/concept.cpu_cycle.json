@@ -1,0 +1,801 @@
+{
+  "scene": "concept.cpu_cycle",
+  "duration": 925.25,
+  "beats": [
+    {
+      "name": "open",
+      "start": 1.0,
+      "end": 4.16
+    },
+    {
+      "name": "question",
+      "start": 4.16,
+      "end": 10.68
+    },
+    {
+      "name": "think",
+      "start": 10.68,
+      "end": 20.36
+    },
+    {
+      "name": "not_magic",
+      "start": 20.36,
+      "end": 32.02
+    },
+    {
+      "name": "sequence",
+      "start": 32.02,
+      "end": 36.08
+    },
+    {
+      "name": "for_each",
+      "start": 36.08,
+      "end": 44.66
+    },
+    {
+      "name": "then_next",
+      "start": 44.66,
+      "end": 46.52
+    },
+    {
+      "name": "named",
+      "start": 46.52,
+      "end": 54.4
+    },
+    {
+      "name": "alias",
+      "start": 54.4,
+      "end": 62.92
+    },
+    {
+      "name": "today",
+      "start": 62.92,
+      "end": 66.02
+    },
+    {
+      "name": "agenda",
+      "start": 66.02,
+      "end": 74.92
+    },
+    {
+      "name": "stored",
+      "start": 74.92,
+      "end": 84.788
+    },
+    {
+      "name": "program_is",
+      "start": 84.788,
+      "end": 88.068
+    },
+    {
+      "name": "in_memory",
+      "start": 88.068,
+      "end": 94.508
+    },
+    {
+      "name": "retrieves",
+      "start": 94.508,
+      "end": 100.488
+    },
+    {
+      "name": "von_neumann",
+      "start": 100.488,
+      "end": 106.148
+    },
+    {
+      "name": "buses_intro",
+      "start": 106.148,
+      "end": 112.428
+    },
+    {
+      "name": "system",
+      "start": 112.428,
+      "end": 115.348
+    },
+    {
+      "name": "inside",
+      "start": 115.348,
+      "end": 128.688
+    },
+    {
+      "name": "cu",
+      "start": 128.688,
+      "end": 133.348
+    },
+    {
+      "name": "cu_role",
+      "start": 133.348,
+      "end": 138.568
+    },
+    {
+      "name": "alu",
+      "start": 138.568,
+      "end": 144.808
+    },
+    {
+      "name": "alu_logic",
+      "start": 144.808,
+      "end": 150.669
+    },
+    {
+      "name": "regs_role",
+      "start": 150.669,
+      "end": 158.148
+    },
+    {
+      "name": "regs_small",
+      "start": 158.148,
+      "end": 161.208
+    },
+    {
+      "name": "regs_direct",
+      "start": 161.208,
+      "end": 164.688
+    },
+    {
+      "name": "four_regs",
+      "start": 164.688,
+      "end": 169.44
+    },
+    {
+      "name": "pc",
+      "start": 169.44,
+      "end": 172.28
+    },
+    {
+      "name": "pc_role",
+      "start": 172.28,
+      "end": 181.6
+    },
+    {
+      "name": "pc_bookmark",
+      "start": 181.6,
+      "end": 185.52
+    },
+    {
+      "name": "mar",
+      "start": 185.52,
+      "end": 190.88
+    },
+    {
+      "name": "mar_role",
+      "start": 190.88,
+      "end": 195.0
+    },
+    {
+      "name": "mar_example",
+      "start": 195.0,
+      "end": 204.02
+    },
+    {
+      "name": "mdr",
+      "start": 204.02,
+      "end": 207.86
+    },
+    {
+      "name": "mdr_role",
+      "start": 207.86,
+      "end": 214.96
+    },
+    {
+      "name": "mdr_repeat",
+      "start": 214.96,
+      "end": 237.3
+    },
+    {
+      "name": "cir",
+      "start": 237.3,
+      "end": 247.92
+    },
+    {
+      "name": "mix_up",
+      "start": 247.92,
+      "end": 253.56
+    },
+    {
+      "name": "mar_holds",
+      "start": 253.56,
+      "end": 259.818
+    },
+    {
+      "name": "trick",
+      "start": 259.818,
+      "end": 271.768
+    },
+    {
+      "name": "exam_note",
+      "start": 271.768,
+      "end": 275.668
+    },
+    {
+      "name": "follow",
+      "start": 275.668,
+      "end": 280.088
+    },
+    {
+      "name": "pc_1000",
+      "start": 280.088,
+      "end": 282.808
+    },
+    {
+      "name": "mem_1000",
+      "start": 282.808,
+      "end": 288.268
+    },
+    {
+      "name": "copy_mar",
+      "start": 288.268,
+      "end": 295.528
+    },
+    {
+      "name": "brackets",
+      "start": 295.528,
+      "end": 300.588
+    },
+    {
+      "name": "mar_receives",
+      "start": 300.588,
+      "end": 304.368
+    },
+    {
+      "name": "address_bus",
+      "start": 304.368,
+      "end": 313.188
+    },
+    {
+      "name": "read_signal",
+      "start": 313.188,
+      "end": 316.428
+    },
+    {
+      "name": "memory_finds",
+      "start": 316.428,
+      "end": 321.408
+    },
+    {
+      "name": "data_bus",
+      "start": 321.408,
+      "end": 328.768
+    },
+    {
+      "name": "double_brackets",
+      "start": 328.768,
+      "end": 338.508
+    },
+    {
+      "name": "mdr_gets",
+      "start": 338.508,
+      "end": 344.008
+    },
+    {
+      "name": "to_cir",
+      "start": 344.008,
+      "end": 349.934
+    },
+    {
+      "name": "pc_update",
+      "start": 349.934,
+      "end": 357.434
+    },
+    {
+      "name": "pc_increment",
+      "start": 357.434,
+      "end": 361.454
+    },
+    {
+      "name": "pc_note",
+      "start": 361.454,
+      "end": 368.974
+    },
+    {
+      "name": "convention",
+      "start": 368.974,
+      "end": 373.774
+    },
+    {
+      "name": "fetch_done",
+      "start": 373.774,
+      "end": 382.794
+    },
+    {
+      "name": "once_more",
+      "start": 382.794,
+      "end": 385.434
+    },
+    {
+      "name": "s_pc",
+      "start": 385.434,
+      "end": 388.214
+    },
+    {
+      "name": "s_mar",
+      "start": 388.214,
+      "end": 390.754
+    },
+    {
+      "name": "s_mdr",
+      "start": 390.754,
+      "end": 395.094
+    },
+    {
+      "name": "s_cir",
+      "start": 395.094,
+      "end": 398.254
+    },
+    {
+      "name": "s_update",
+      "start": 398.254,
+      "end": 403.974
+    },
+    {
+      "name": "cir_holds",
+      "start": 403.974,
+      "end": 411.704
+    },
+    {
+      "name": "cu_decodes",
+      "start": 411.704,
+      "end": 419.744
+    },
+    {
+      "name": "operation",
+      "start": 419.744,
+      "end": 422.164
+    },
+    {
+      "name": "operand",
+      "start": 422.164,
+      "end": 427.044
+    },
+    {
+      "name": "get_value",
+      "start": 427.044,
+      "end": 433.064
+    },
+    {
+      "name": "mar_2040",
+      "start": 433.064,
+      "end": 439.226
+    },
+    {
+      "name": "read_again",
+      "start": 439.226,
+      "end": 443.486
+    },
+    {
+      "name": "mdr_7",
+      "start": 443.486,
+      "end": 453.316
+    },
+    {
+      "name": "alu_adds",
+      "start": 453.316,
+      "end": 456.016
+    },
+    {
+      "name": "acc_result",
+      "start": 456.016,
+      "end": 462.206
+    },
+    {
+      "name": "two_accesses",
+      "start": 462.206,
+      "end": 471.026
+    },
+    {
+      "name": "first_access",
+      "start": 471.026,
+      "end": 474.706
+    },
+    {
+      "name": "second_access",
+      "start": 474.706,
+      "end": 479.166
+    },
+    {
+      "name": "who_does",
+      "start": 479.166,
+      "end": 487.886
+    },
+    {
+      "name": "regs_hold",
+      "start": 487.886,
+      "end": 493.426
+    },
+    {
+      "name": "example",
+      "start": 493.426,
+      "end": 497.566
+    },
+    {
+      "name": "assume",
+      "start": 497.566,
+      "end": 500.186
+    },
+    {
+      "name": "given_mem",
+      "start": 500.186,
+      "end": 505.446
+    },
+    {
+      "name": "given_7",
+      "start": 505.446,
+      "end": 509.886
+    },
+    {
+      "name": "given_acc",
+      "start": 509.886,
+      "end": 513.426
+    },
+    {
+      "name": "means",
+      "start": 513.426,
+      "end": 523.246
+    },
+    {
+      "name": "ex_fetch",
+      "start": 523.246,
+      "end": 526.37
+    },
+    {
+      "name": "ex_mar",
+      "start": 526.37,
+      "end": 530.59
+    },
+    {
+      "name": "ex_pc",
+      "start": 530.59,
+      "end": 533.39
+    },
+    {
+      "name": "ex_mdr",
+      "start": 533.39,
+      "end": 537.87
+    },
+    {
+      "name": "ex_cir",
+      "start": 537.87,
+      "end": 540.59
+    },
+    {
+      "name": "ex_decode",
+      "start": 540.59,
+      "end": 544.35
+    },
+    {
+      "name": "ex_identify",
+      "start": 544.35,
+      "end": 555.85
+    },
+    {
+      "name": "ex_read",
+      "start": 555.85,
+      "end": 559.61
+    },
+    {
+      "name": "ex_7",
+      "start": 559.61,
+      "end": 562.57
+    },
+    {
+      "name": "ex_add",
+      "start": 562.57,
+      "end": 568.53
+    },
+    {
+      "name": "ex_sum",
+      "start": 568.53,
+      "end": 570.93
+    },
+    {
+      "name": "ex_store",
+      "start": 570.93,
+      "end": 576.29
+    },
+    {
+      "name": "ex_after",
+      "start": 576.29,
+      "end": 578.73
+    },
+    {
+      "name": "ex_state",
+      "start": 578.73,
+      "end": 586.13
+    },
+    {
+      "name": "one_complete",
+      "start": 586.13,
+      "end": 592.47
+    },
+    {
+      "name": "buses",
+      "start": 592.47,
+      "end": 601.47
+    },
+    {
+      "name": "buses_routes",
+      "start": 601.47,
+      "end": 606.99
+    },
+    {
+      "name": "addr_bus",
+      "start": 606.99,
+      "end": 613.278
+    },
+    {
+      "name": "addr_oneway",
+      "start": 613.278,
+      "end": 618.978
+    },
+    {
+      "name": "data_bus_role",
+      "start": 618.978,
+      "end": 621.978
+    },
+    {
+      "name": "data_bidir",
+      "start": 621.978,
+      "end": 629.138
+    },
+    {
+      "name": "ctrl_bus",
+      "start": 629.138,
+      "end": 632.758
+    },
+    {
+      "name": "ctrl_examples",
+      "start": 632.758,
+      "end": 636.738
+    },
+    {
+      "name": "in_example",
+      "start": 636.738,
+      "end": 641.778
+    },
+    {
+      "name": "ctrl_read",
+      "start": 641.778,
+      "end": 644.898
+    },
+    {
+      "name": "data_back",
+      "start": 644.898,
+      "end": 648.538
+    },
+    {
+      "name": "operand_trip",
+      "start": 648.538,
+      "end": 662.138
+    },
+    {
+      "name": "roles",
+      "start": 662.138,
+      "end": 664.038
+    },
+    {
+      "name": "where_what",
+      "start": 664.038,
+      "end": 669.718
+    },
+    {
+      "name": "ctrl_what",
+      "start": 669.718,
+      "end": 677.918
+    },
+    {
+      "name": "as_level",
+      "start": 677.918,
+      "end": 685.578
+    },
+    {
+      "name": "acc",
+      "start": 685.578,
+      "end": 694.878
+    },
+    {
+      "name": "ix",
+      "start": 694.878,
+      "end": 703.498
+    },
+    {
+      "name": "status",
+      "start": 703.498,
+      "end": 708.236
+    },
+    {
+      "name": "flags",
+      "start": 708.236,
+      "end": 717.736
+    },
+    {
+      "name": "no_change",
+      "start": 717.736,
+      "end": 722.096
+    },
+    {
+      "name": "more_places",
+      "start": 722.096,
+      "end": 730.646
+    },
+    {
+      "name": "rtn",
+      "start": 730.646,
+      "end": 740.006
+    },
+    {
+      "name": "rtn_1",
+      "start": 740.006,
+      "end": 747.546
+    },
+    {
+      "name": "rtn_2",
+      "start": 747.546,
+      "end": 760.186
+    },
+    {
+      "name": "rtn_3",
+      "start": 760.186,
+      "end": 766.626
+    },
+    {
+      "name": "rtn_vary",
+      "start": 766.626,
+      "end": 776.406
+    },
+    {
+      "name": "challenge",
+      "start": 776.406,
+      "end": 779.706
+    },
+    {
+      "name": "ch_predict",
+      "start": 779.706,
+      "end": 784.766
+    },
+    {
+      "name": "ch_given",
+      "start": 784.766,
+      "end": 786.286
+    },
+    {
+      "name": "ch_mem",
+      "start": 786.286,
+      "end": 791.006
+    },
+    {
+      "name": "ch_700",
+      "start": 791.006,
+      "end": 793.946
+    },
+    {
+      "name": "ch_acc",
+      "start": 793.946,
+      "end": 797.249
+    },
+    {
+      "name": "ch_pause",
+      "start": 797.249,
+      "end": 804.589
+    },
+    {
+      "name": "ch_answer",
+      "start": 804.589,
+      "end": 809.289
+    },
+    {
+      "name": "ch_pc",
+      "start": 809.289,
+      "end": 815.689
+    },
+    {
+      "name": "ch_decode",
+      "start": 815.689,
+      "end": 818.809
+    },
+    {
+      "name": "ch_read",
+      "start": 818.809,
+      "end": 824.329
+    },
+    {
+      "name": "ch_add",
+      "start": 824.329,
+      "end": 829.329
+    },
+    {
+      "name": "ch_15",
+      "start": 829.329,
+      "end": 835.029
+    },
+    {
+      "name": "ch_check",
+      "start": 835.029,
+      "end": 839.089
+    },
+    {
+      "name": "ch_else",
+      "start": 839.089,
+      "end": 847.859
+    },
+    {
+      "name": "mistakes",
+      "start": 847.859,
+      "end": 854.039
+    },
+    {
+      "name": "three_common",
+      "start": 854.039,
+      "end": 864.099
+    },
+    {
+      "name": "all_the_time",
+      "start": 864.099,
+      "end": 871.999
+    },
+    {
+      "name": "m1",
+      "start": 871.999,
+      "end": 875.679
+    },
+    {
+      "name": "m1_right",
+      "start": 875.679,
+      "end": 879.839
+    },
+    {
+      "name": "m2",
+      "start": 879.839,
+      "end": 884.079
+    },
+    {
+      "name": "m2_right",
+      "start": 884.079,
+      "end": 887.85
+    },
+    {
+      "name": "m3",
+      "start": 887.85,
+      "end": 891.35
+    },
+    {
+      "name": "m3_right",
+      "start": 891.35,
+      "end": 897.81
+    },
+    {
+      "name": "recap",
+      "start": 897.81,
+      "end": 901.73
+    },
+    {
+      "name": "r_pc",
+      "start": 901.73,
+      "end": 904.85
+    },
+    {
+      "name": "r_mar",
+      "start": 904.85,
+      "end": 906.83
+    },
+    {
+      "name": "r_mdr",
+      "start": 906.83,
+      "end": 910.75
+    },
+    {
+      "name": "r_pc_up",
+      "start": 910.75,
+      "end": 915.29
+    },
+    {
+      "name": "r_execute",
+      "start": 915.29,
+      "end": 921.29
+    },
+    {
+      "name": "r_repeat",
+      "start": 921.29,
+      "end": 925.25
+    }
+  ]
+}
