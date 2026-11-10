@@ -1,0 +1,17 @@
+{
+  "scene": "shorts.max_rectangle",
+  "duration": 78.0,
+  "beats": [
+    {"name": "open",       "start":  0.0, "end":  6.0},
+    {"name": "question",   "start":  6.0, "end": 13.0},
+    {"name": "half_width", "start": 13.0, "end": 21.0},
+    {"name": "width",      "start": 21.0, "end": 27.0},
+    {"name": "height",     "start": 27.0, "end": 34.0},
+    {"name": "area",       "start": 34.0, "end": 43.0},
+    {"name": "diff",       "start": 43.0, "end": 52.0},
+    {"name": "solve",      "start": 52.0, "end": 58.0},
+    {"name": "dims",       "start": 58.0, "end": 65.0},
+    {"name": "answer",     "start": 65.0, "end": 71.0},
+    {"name": "bhalay",     "start": 71.0, "end": 78.0}
+  ]
+}
