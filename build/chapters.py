@@ -22,6 +22,21 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 MIN_CHAPTER = 10.0   # YouTube drops the whole list if any chapter is shorter
 
 CHAPTERS = {
+    "cs.ap_csa_strategy": [
+        ("open", "Which exam you are actually preparing for"),
+        ("exam", "The format: two sections, 42 questions, four FRQs"),
+        ("quickref", "The Java Quick Reference, and your pacing"),
+        ("units", "The four units"),
+        ("weighting", "Where the marks are, unit by unit"),
+        ("changed", "What the revision added: data, ethics, text files"),
+        ("inheritance", "What is out, and what is still in"),
+        ("trace", "Multiple choice: trace the code"),
+        ("watch", "Where the marks are lost"),
+        ("frq_spec", "Free response: the prompt is a checklist"),
+        ("four_frq", "The four free-response focuses"),
+        ("practice", "Building a practice routine"),
+        ("recap", "Recap: your exam strategy"),
+    ],
     "concept.cpu_cycle": [
         ("open", "The question: how a program becomes actions"),
         ("stored", "The stored-program idea, and the Von Neumann model"),

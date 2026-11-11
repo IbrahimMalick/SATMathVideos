@@ -1,0 +1,436 @@
+{
+  "scene": "cs.ap_csa_strategy",
+  "duration": 596.992,
+  "beats": [
+    {
+      "name": "open",
+      "start": 1.0,
+      "end": 5.46
+    },
+    {
+      "name": "right_exam",
+      "start": 5.46,
+      "end": 9.98
+    },
+    {
+      "name": "aligned",
+      "start": 9.98,
+      "end": 20.6
+    },
+    {
+      "name": "ced",
+      "start": 20.6,
+      "end": 24.86
+    },
+    {
+      "name": "digital_note",
+      "start": 24.86,
+      "end": 29.46
+    },
+    {
+      "name": "goal",
+      "start": 29.46,
+      "end": 33.9
+    },
+    {
+      "name": "goal_real",
+      "start": 33.9,
+      "end": 43.34
+    },
+    {
+      "name": "exam",
+      "start": 43.34,
+      "end": 48.06
+    },
+    {
+      "name": "two_sections",
+      "start": 48.06,
+      "end": 49.82
+    },
+    {
+      "name": "mcq",
+      "start": 49.82,
+      "end": 55.16
+    },
+    {
+      "name": "mcq_pct",
+      "start": 55.16,
+      "end": 59.06
+    },
+    {
+      "name": "frq",
+      "start": 59.06,
+      "end": 67.16
+    },
+    {
+      "name": "split",
+      "start": 67.16,
+      "end": 74.248
+    },
+    {
+      "name": "quickref",
+      "start": 74.248,
+      "end": 78.348
+    },
+    {
+      "name": "quickref_use",
+      "start": 78.348,
+      "end": 90.088
+    },
+    {
+      "name": "pacing",
+      "start": 90.088,
+      "end": 97.768
+    },
+    {
+      "name": "keep_moving",
+      "start": 97.768,
+      "end": 106.328
+    },
+    {
+      "name": "units",
+      "start": 106.328,
+      "end": 110.968
+    },
+    {
+      "name": "u1",
+      "start": 110.968,
+      "end": 114.808
+    },
+    {
+      "name": "u2",
+      "start": 114.808,
+      "end": 117.868
+    },
+    {
+      "name": "u3",
+      "start": 117.868,
+      "end": 119.948
+    },
+    {
+      "name": "u4",
+      "start": 119.948,
+      "end": 122.348
+    },
+    {
+      "name": "weighting",
+      "start": 122.348,
+      "end": 129.568
+    },
+    {
+      "name": "w2",
+      "start": 129.568,
+      "end": 133.988
+    },
+    {
+      "name": "w13",
+      "start": 133.988,
+      "end": 140.268
+    },
+    {
+      "name": "plan",
+      "start": 140.268,
+      "end": 145.088
+    },
+    {
+      "name": "arrays_time",
+      "start": 145.088,
+      "end": 150.468
+    },
+    {
+      "name": "loops_too",
+      "start": 150.468,
+      "end": 155.806
+    },
+    {
+      "name": "dont_skip",
+      "start": 155.806,
+      "end": 164.166
+    },
+    {
+      "name": "changed",
+      "start": 164.166,
+      "end": 169.286
+    },
+    {
+      "name": "datasets",
+      "start": 169.286,
+      "end": 178.706
+    },
+    {
+      "name": "conclusions",
+      "start": 178.706,
+      "end": 183.246
+    },
+    {
+      "name": "files",
+      "start": 183.246,
+      "end": 190.686
+    },
+    {
+      "name": "practice5",
+      "start": 190.686,
+      "end": 198.946
+    },
+    {
+      "name": "ethics",
+      "start": 198.946,
+      "end": 208.466
+    },
+    {
+      "name": "inheritance",
+      "start": 208.466,
+      "end": 216.506
+    },
+    {
+      "name": "still_in",
+      "start": 216.506,
+      "end": 225.206
+    },
+    {
+      "name": "still_list",
+      "start": 225.206,
+      "end": 230.406
+    },
+    {
+      "name": "lesson",
+      "start": 230.406,
+      "end": 239.706
+    },
+    {
+      "name": "older",
+      "start": 239.706,
+      "end": 246.894
+    },
+    {
+      "name": "trace",
+      "start": 246.894,
+      "end": 253.354
+    },
+    {
+      "name": "dont_skim",
+      "start": 253.354,
+      "end": 257.674
+    },
+    {
+      "name": "read_stem",
+      "start": 257.674,
+      "end": 261.874
+    },
+    {
+      "name": "what_asked",
+      "start": 261.874,
+      "end": 271.574
+    },
+    {
+      "name": "walk",
+      "start": 271.574,
+      "end": 275.834
+    },
+    {
+      "name": "trace_table",
+      "start": 275.834,
+      "end": 279.854
+    },
+    {
+      "name": "one_stmt",
+      "start": 279.854,
+      "end": 284.834
+    },
+    {
+      "name": "loop_check",
+      "start": 284.834,
+      "end": 292.254
+    },
+    {
+      "name": "watch",
+      "start": 292.254,
+      "end": 305.694
+    },
+    {
+      "name": "last_index",
+      "start": 305.694,
+      "end": 318.314
+    },
+    {
+      "name": "eliminate",
+      "start": 318.314,
+      "end": 322.974
+    },
+    {
+      "name": "mark_return",
+      "start": 322.974,
+      "end": 327.274
+    },
+    {
+      "name": "no_debate",
+      "start": 327.274,
+      "end": 337.736
+    },
+    {
+      "name": "frq_spec",
+      "start": 337.736,
+      "end": 343.576
+    },
+    {
+      "name": "checklist",
+      "start": 343.576,
+      "end": 345.976
+    },
+    {
+      "name": "identify",
+      "start": 345.976,
+      "end": 355.296
+    },
+    {
+      "name": "examples",
+      "start": 355.296,
+      "end": 364.736
+    },
+    {
+      "name": "boundary",
+      "start": 364.736,
+      "end": 375.036
+    },
+    {
+      "name": "clear_java",
+      "start": 375.036,
+      "end": 379.656
+    },
+    {
+      "name": "braces",
+      "start": 379.656,
+      "end": 387.896
+    },
+    {
+      "name": "not_compiled",
+      "start": 387.896,
+      "end": 400.716
+    },
+    {
+      "name": "partial",
+      "start": 400.716,
+      "end": 409.776
+    },
+    {
+      "name": "credit",
+      "start": 409.776,
+      "end": 416.876
+    },
+    {
+      "name": "four_frq",
+      "start": 416.876,
+      "end": 421.016
+    },
+    {
+      "name": "q1",
+      "start": 421.016,
+      "end": 432.796
+    },
+    {
+      "name": "q2",
+      "start": 432.796,
+      "end": 446.864
+    },
+    {
+      "name": "q3",
+      "start": 446.864,
+      "end": 458.224
+    },
+    {
+      "name": "q3_shift",
+      "start": 458.224,
+      "end": 466.144
+    },
+    {
+      "name": "q4",
+      "start": 466.144,
+      "end": 480.364
+    },
+    {
+      "name": "q4_bounds",
+      "start": 480.364,
+      "end": 486.044
+    },
+    {
+      "name": "practice",
+      "start": 486.044,
+      "end": 490.384
+    },
+    {
+      "name": "bluebook",
+      "start": 490.384,
+      "end": 494.364
+    },
+    {
+      "name": "timed",
+      "start": 494.364,
+      "end": 500.924
+    },
+    {
+      "name": "frq_timer",
+      "start": 500.924,
+      "end": 507.944
+    },
+    {
+      "name": "compare",
+      "start": 507.944,
+      "end": 510.944
+    },
+    {
+      "name": "exact_req",
+      "start": 510.944,
+      "end": 522.724
+    },
+    {
+      "name": "current_mats",
+      "start": 522.724,
+      "end": 528.602
+    },
+    {
+      "name": "check_old",
+      "start": 528.602,
+      "end": 539.452
+    },
+    {
+      "name": "recap",
+      "start": 539.452,
+      "end": 542.332
+    },
+    {
+      "name": "carry",
+      "start": 542.332,
+      "end": 546.772
+    },
+    {
+      "name": "prioritise",
+      "start": 546.772,
+      "end": 554.892
+    },
+    {
+      "name": "changes",
+      "start": 554.892,
+      "end": 559.392
+    },
+    {
+      "name": "changes_list",
+      "start": 559.392,
+      "end": 569.092
+    },
+    {
+      "name": "four_focus",
+      "start": 569.092,
+      "end": 579.292
+    },
+    {
+      "name": "aligned_again",
+      "start": 579.292,
+      "end": 589.412
+    },
+    {
+      "name": "close",
+      "start": 589.412,
+      "end": 596.992
+    }
+  ]
+}
