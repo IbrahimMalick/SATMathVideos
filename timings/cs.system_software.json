@@ -1,0 +1,511 @@
+{
+  "scene": "cs.system_software",
+  "duration": 491.019,
+  "beats": [
+    {
+      "name": "open",
+      "start": 0.85,
+      "end": 5.01
+    },
+    {
+      "name": "software_is",
+      "start": 5.01,
+      "end": 10.25
+    },
+    {
+      "name": "distinguish",
+      "start": 10.25,
+      "end": 13.27
+    },
+    {
+      "name": "bins",
+      "start": 13.27,
+      "end": 18.35
+    },
+    {
+      "name": "sys_def",
+      "start": 18.35,
+      "end": 23.77
+    },
+    {
+      "name": "sys_eg1",
+      "start": 23.77,
+      "end": 26.93
+    },
+    {
+      "name": "sys_eg2",
+      "start": 26.93,
+      "end": 28.47
+    },
+    {
+      "name": "sys_eg3",
+      "start": 28.47,
+      "end": 29.19
+    },
+    {
+      "name": "app_def",
+      "start": 29.19,
+      "end": 34.23
+    },
+    {
+      "name": "app_eg1",
+      "start": 34.23,
+      "end": 37.17
+    },
+    {
+      "name": "app_eg2",
+      "start": 37.17,
+      "end": 38.31
+    },
+    {
+      "name": "app_eg3",
+      "start": 38.31,
+      "end": 39.85
+    },
+    {
+      "name": "app_eg4",
+      "start": 39.85,
+      "end": 40.75
+    },
+    {
+      "name": "app_eg5",
+      "start": 40.75,
+      "end": 42.65
+    },
+    {
+      "name": "app_eg6",
+      "start": 42.65,
+      "end": 44.25
+    },
+    {
+      "name": "simplest",
+      "start": 44.25,
+      "end": 47.97
+    },
+    {
+      "name": "rule_sys",
+      "start": 47.97,
+      "end": 51.85
+    },
+    {
+      "name": "rule_app",
+      "start": 51.85,
+      "end": 55.51
+    },
+    {
+      "name": "antivirus",
+      "start": 55.51,
+      "end": 57.69
+    },
+    {
+      "name": "can_open",
+      "start": 57.69,
+      "end": 60.33
+    },
+    {
+      "name": "still_system",
+      "start": 60.33,
+      "end": 62.77
+    },
+    {
+      "name": "its_role",
+      "start": 62.77,
+      "end": 67.53
+    },
+    {
+      "name": "mistake",
+      "start": 67.53,
+      "end": 76.63
+    },
+    {
+      "name": "incorrect",
+      "start": 76.63,
+      "end": 79.57
+    },
+    {
+      "name": "by_purpose",
+      "start": 79.57,
+      "end": 81.39
+    },
+    {
+      "name": "not_open",
+      "start": 81.39,
+      "end": 85.37
+    },
+    {
+      "name": "quick_check",
+      "start": 85.37,
+      "end": 86.638
+    },
+    {
+      "name": "qc_item",
+      "start": 86.638,
+      "end": 91.238
+    },
+    {
+      "name": "qc_ask",
+      "start": 91.238,
+      "end": 95.818
+    },
+    {
+      "name": "qc_answer",
+      "start": 95.818,
+      "end": 101.878
+    },
+    {
+      "name": "qc2",
+      "start": 101.878,
+      "end": 104.178
+    },
+    {
+      "name": "qc2_what",
+      "start": 104.178,
+      "end": 108.318
+    },
+    {
+      "name": "qc2_answer",
+      "start": 108.318,
+      "end": 113.178
+    },
+    {
+      "name": "part2",
+      "start": 113.178,
+      "end": 116.938
+    },
+    {
+      "name": "most_important",
+      "start": 116.938,
+      "end": 122.198
+    },
+    {
+      "name": "manages",
+      "start": 122.198,
+      "end": 125.958
+    },
+    {
+      "name": "platform_intro",
+      "start": 125.958,
+      "end": 131.098
+    },
+    {
+      "name": "examples",
+      "start": 131.098,
+      "end": 137.318
+    },
+    {
+      "name": "no_memorise",
+      "start": 137.318,
+      "end": 140.958
+    },
+    {
+      "name": "understand",
+      "start": 140.958,
+      "end": 144.818
+    },
+    {
+      "name": "functions",
+      "start": 144.818,
+      "end": 148.558
+    },
+    {
+      "name": "files",
+      "start": 148.558,
+      "end": 151.258
+    },
+    {
+      "name": "files_verbs",
+      "start": 151.258,
+      "end": 158.018
+    },
+    {
+      "name": "files_folders",
+      "start": 158.018,
+      "end": 161.878
+    },
+    {
+      "name": "files_save",
+      "start": 161.878,
+      "end": 169.898
+    },
+    {
+      "name": "files_asks",
+      "start": 169.898,
+      "end": 173.773
+    },
+    {
+      "name": "files_also",
+      "start": 173.773,
+      "end": 183.173
+    },
+    {
+      "name": "files_weak",
+      "start": 183.173,
+      "end": 189.233
+    },
+    {
+      "name": "files_stronger",
+      "start": 189.233,
+      "end": 193.153
+    },
+    {
+      "name": "files_strong",
+      "start": 193.153,
+      "end": 200.173
+    },
+    {
+      "name": "ui",
+      "start": 200.173,
+      "end": 210.173
+    },
+    {
+      "name": "gui",
+      "start": 210.173,
+      "end": 217.513
+    },
+    {
+      "name": "cli",
+      "start": 217.513,
+      "end": 221.533
+    },
+    {
+      "name": "ui_converts",
+      "start": 221.533,
+      "end": 229.373
+    },
+    {
+      "name": "periph",
+      "start": 229.373,
+      "end": 233.173
+    },
+    {
+      "name": "periph_def",
+      "start": 233.173,
+      "end": 238.713
+    },
+    {
+      "name": "periph_eg",
+      "start": 238.713,
+      "end": 246.013
+    },
+    {
+      "name": "driver_def",
+      "start": 246.013,
+      "end": 252.493
+    },
+    {
+      "name": "diff_printers",
+      "start": 252.493,
+      "end": 259.053
+    },
+    {
+      "name": "not_direct",
+      "start": 259.053,
+      "end": 264.268
+    },
+    {
+      "name": "path",
+      "start": 264.268,
+      "end": 268.268
+    },
+    {
+      "name": "path_os",
+      "start": 268.268,
+      "end": 270.188
+    },
+    {
+      "name": "path_driver",
+      "start": 270.188,
+      "end": 271.868
+    },
+    {
+      "name": "path_hw",
+      "start": 271.868,
+      "end": 273.548
+    },
+    {
+      "name": "separation",
+      "start": 273.548,
+      "end": 285.608
+    },
+    {
+      "name": "memory",
+      "start": 285.608,
+      "end": 292.808
+    },
+    {
+      "name": "mem_decides",
+      "start": 292.808,
+      "end": 296.808
+    },
+    {
+      "name": "mem_how_much",
+      "start": 296.808,
+      "end": 298.568
+    },
+    {
+      "name": "mem_where",
+      "start": 298.568,
+      "end": 301.348
+    },
+    {
+      "name": "mem_release",
+      "start": 301.348,
+      "end": 306.228
+    },
+    {
+      "name": "mem_protect",
+      "start": 306.228,
+      "end": 314.228
+    },
+    {
+      "name": "virtual",
+      "start": 314.228,
+      "end": 320.628
+    },
+    {
+      "name": "virtual_what",
+      "start": 320.628,
+      "end": 326.128
+    },
+    {
+      "name": "slower",
+      "start": 326.128,
+      "end": 329.908
+    },
+    {
+      "name": "excessive",
+      "start": 329.908,
+      "end": 335.068
+    },
+    {
+      "name": "mem_exam",
+      "start": 335.068,
+      "end": 341.208
+    },
+    {
+      "name": "mem_weak",
+      "start": 341.208,
+      "end": 350.196
+    },
+    {
+      "name": "multi",
+      "start": 350.196,
+      "end": 355.796
+    },
+    {
+      "name": "process_def",
+      "start": 355.796,
+      "end": 359.336
+    },
+    {
+      "name": "single_core",
+      "start": 359.336,
+      "end": 364.976
+    },
+    {
+      "name": "allocates",
+      "start": 364.976,
+      "end": 371.056
+    },
+    {
+      "name": "impression",
+      "start": 371.056,
+      "end": 374.756
+    },
+    {
+      "name": "multi_eg",
+      "start": 374.756,
+      "end": 382.836
+    },
+    {
+      "name": "share",
+      "start": 382.836,
+      "end": 391.016
+    },
+    {
+      "name": "security",
+      "start": 391.016,
+      "end": 397.136
+    },
+    {
+      "name": "sec_list",
+      "start": 397.136,
+      "end": 411.296
+    },
+    {
+      "name": "sec_not_all",
+      "start": 411.296,
+      "end": 417.076
+    },
+    {
+      "name": "sec_mechanisms",
+      "start": 417.076,
+      "end": 423.076
+    },
+    {
+      "name": "accounts",
+      "start": 423.076,
+      "end": 425.716
+    },
+    {
+      "name": "acct_maintain",
+      "start": 425.716,
+      "end": 429.916
+    },
+    {
+      "name": "acct_each",
+      "start": 429.916,
+      "end": 437.096
+    },
+    {
+      "name": "admin",
+      "start": 437.096,
+      "end": 442.454
+    },
+    {
+      "name": "admin_why",
+      "start": 442.454,
+      "end": 448.074
+    },
+    {
+      "name": "platform",
+      "start": 448.074,
+      "end": 450.994
+    },
+    {
+      "name": "plat_services",
+      "start": 450.994,
+      "end": 456.714
+    },
+    {
+      "name": "plat_list",
+      "start": 456.714,
+      "end": 468.274
+    },
+    {
+      "name": "why_platform",
+      "start": 468.274,
+      "end": 475.414
+    },
+    {
+      "name": "interrupts",
+      "start": 475.414,
+      "end": 477.934
+    },
+    {
+      "name": "int_manage",
+      "start": 477.934,
+      "end": 482.334
+    },
+    {
+      "name": "int_def",
+      "start": 482.334,
+      "end": 487.894
+    },
+    {
+      "name": "next_time",
+      "start": 487.894,
+      "end": 491.019
+    }
+  ]
+}

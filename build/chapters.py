@@ -22,6 +22,23 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 MIN_CHAPTER = 10.0   # YouTube drops the whole list if any chapter is shorter
 
 CHAPTERS = {
+    "cs.system_software": [
+        ("open", "What software is, and the two kinds of it"),
+        ("bins", "System software against application software"),
+        ("simplest", "The rule: who is it helping?"),
+        ("mistake", "The mistake: judging by the interface"),
+        ("quick_check", "Quick check: a spreadsheet, and disk cleanup"),
+        ("part2", "Part 2: the operating system"),
+        ("files", "Managing files"),
+        ("ui", "Providing an interface: windows, or a command line"),
+        ("periph", "Peripherals, drivers, and the path a request takes"),
+        ("memory", "Managing memory, and virtual memory"),
+        ("multi", "Multitasking: one core, several processes"),
+        ("security", "Providing system security"),
+        ("accounts", "Managing user accounts"),
+        ("platform", "A platform for applications"),
+        ("interrupts", "Handling interrupts, and what comes next"),
+    ],
     "cs.ap_csa_strategy": [
         ("open", "Which exam you are actually preparing for"),
         ("exam", "The format: two sections, 42 questions, four FRQs"),
