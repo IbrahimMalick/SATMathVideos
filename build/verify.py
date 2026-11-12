@@ -136,6 +136,11 @@ def check_frame(scene):
     for m in scene.mobjects:
         if not m.submobjects and m.get_num_points() == 0:
             continue
+        # A background laid past the frame edge on purpose, so that no
+        # seam of the layer underneath survives rounding. The scene says
+        # so by setting the attribute; nothing else is excused.
+        if getattr(m, "full_bleed", False):
+            continue
         left, right = m.get_left()[0], m.get_right()[0]
         bottom, top = m.get_bottom()[1], m.get_top()[1]
         if (left < -half_w - 0.01 or right > half_w + 0.01
