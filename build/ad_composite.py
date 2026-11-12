@@ -62,6 +62,22 @@ CUTS = {
             "[base][1:v]overlay=0:0:format=auto[v]"
         ),
     },
+    "client": {
+        "overlay": "media/videos/apcsa_client/1080p30/ApcsaClient.mov",
+        "out": "out/APCSA-cohort-ad-client.mp4",
+        "size": (1920, 1080),
+        # His own template: the picture is a window across the top 736
+        # rows and a navy band fills the rest. Cropping from the top is
+        # what the window wants anyway, and it removes his first ad's
+        # burned-in captions for free -- they start at row 795, so there
+        # is nothing left to blur.
+        "filter": (
+            "color=c=0x0A1320:s=1920x1080:r=30[bg];"
+            "[0:v]scale=1920:1080,crop=1920:736:0:0[clip];"
+            "[bg][clip]overlay=0:0:shortest=1[framed];"
+            "[framed][1:v]overlay=0:0:format=auto[v]"
+        ),
+    },
     "portrait": {
         "overlay": ("media/videos/apcsa_cohort_vertical/1920p30/"
                     "ApcsaCohortVertical.mov"),

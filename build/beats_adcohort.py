@@ -107,7 +107,7 @@ def mirror_timing():
         sys.exit(f"No timing at {src}; run build/sync.py first.")
     data = json.loads(src.read_text())
     for scene in ("ads.apcsa_cohort_vertical", "ads.apcsa_house",
-                  "ads.apcsa_house_vertical"):
+                  "ads.apcsa_house_vertical", "ads.apcsa_client"):
         data["scene"] = scene
         dst = REPO_ROOT / "timings" / f"{scene}.json"
         dst.write_text(json.dumps(data, indent=2) + "\n")
