@@ -211,6 +211,16 @@ ACCENTS_PORTRAIT = {text: TERRACOTTA for text in (
 )}
 
 
+# The house-style cut puts the landscape copy on cream, so it needs the
+# terracotta accents against the landscape wording rather than the
+# portrait wording.
+ACCENTS_CREAM = {text: TERRACOTTA for text in (
+    "Not $200 an hour.",
+    "It runs.",
+    "$100 / month \u00b7 $600 in all",
+)}
+
+
 def plain_block(lines, size, width, accents=None, color=CHARCOAL,
                 buff=GAP_SM * 0.9):
     """Caption lines with no pill behind them.

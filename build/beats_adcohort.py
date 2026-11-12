@@ -85,9 +85,11 @@ NOTE = ("AP Computer Science A Support Cohort, The Digital Tutor. Caption "
         "phrase against that voiceover, see build/beats_adcohort.py.")
 
 def mirror_timing():
-    """Give the vertical cut its own timing file.
+    """Give every other cut its own timing file.
 
-    Both cuts are the same voiceover and therefore the same beats, but
+    Four cuts are made from this one voiceover -- the client's footage
+    with new captions, in each aspect ratio, and a house-style build with
+    no footage, in each aspect ratio. All four share these beats, but
     scenes/base.py refuses a timing file whose scene id is not its own --
     which is the right thing for a lecture, where a mismatched timing file
     means a scene is being driven by the wrong recording. Here it just
@@ -104,15 +106,25 @@ def mirror_timing():
     if not src.exists():
         sys.exit(f"No timing at {src}; run build/sync.py first.")
     data = json.loads(src.read_text())
-    data["scene"] = "ads.apcsa_cohort_vertical"
-    dst = REPO_ROOT / "timings" / "ads.apcsa_cohort_vertical.json"
-    dst.write_text(json.dumps(data, indent=2) + "\n")
-    print(f"-> {dst.relative_to(REPO_ROOT)}  {len(data['beats'])} beats")
+    for scene in ("ads.apcsa_cohort_vertical", "ads.apcsa_house",
+                  "ads.apcsa_house_vertical"):
+        data["scene"] = scene
+        dst = REPO_ROOT / "timings" / f"{scene}.json"
+        dst.write_text(json.dumps(data, indent=2) + "\n")
+        print(f"-> {dst.relative_to(REPO_ROOT)}  {len(data['beats'])} beats")
 
 
 if __name__ == "__main__":
     if "--mirror" in sys.argv:
         mirror_timing()
     else:
-        build("APCSA-cohort-ad", "ads.apcsa_cohort", BEATS,
-              "APCSA-cohort-ad", NOTE)
+        # One script per scene that render.py drives end to end. The two
+        # overlay cuts are not in this list: they render with alpha and
+        # are composited onto the client's footage by ad_composite.py, so
+        # they take their timing from --mirror instead.
+        for scene, stem in (
+                ("ads.apcsa_cohort", "APCSA-cohort-ad"),
+                ("ads.apcsa_house", "APCSA-cohort-ad-house"),
+                ("ads.apcsa_house_vertical",
+                 "APCSA-cohort-ad-house-vertical")):
+            build("APCSA-cohort-ad", scene, BEATS, stem, NOTE)
