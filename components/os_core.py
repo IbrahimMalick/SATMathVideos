@@ -169,10 +169,11 @@ class RingModel(VGroup):
     """
 
     def __init__(self, names=None, radii=(0.95, 1.55, 2.15, 2.72),
-                 size=LABEL_SIZE, colors=None, width=FRAME_SAFE):
+                 size=MARGIN_SIZE, colors=None, width=FRAME_SAFE):
         super().__init__()
         names = names or ["Hardware", "Kernel", "Shell", "You"]
         colors = colors or [CHARCOAL, SLATE, SAGE, GREY]
+        self._colors = list(colors)
         if len(names) != len(radii):
             raise ValueError("One radius per ring, please.")
 
@@ -189,14 +190,33 @@ class RingModel(VGroup):
                 zip(radii, names, colors)):
             label = serif(name, size, colour)
             if index == 0:
-                label.move_to(ORIGIN)
-            else:
-                band = radius - radii[index - 1]
-                if label.height > band - 0.08:
+                if label.width > radius * 1.7:
                     raise ValueError(
-                        f"Label {name!r} is {label.height:.2f} units tall in "
-                        f"a band only {band:.2f} wide.")
-                label.move_to([0, radius - band / 2, 0])
+                        f"Centre label {name!r} is {label.width:.2f} units "
+                        f"wide inside a circle of radius {radius:.2f}.")
+                label.move_to(ORIGIN)
+                self.labels.add(label)
+                self.add(label)
+                continue
+
+            band = radius - radii[index - 1]
+            if label.height > band - 0.08:
+                raise ValueError(
+                    f"Label {name!r} is {label.height:.2f} units tall in "
+                    f"a band only {band:.2f} wide.")
+            label.move_to([0, radius - band / 2, 0])
+
+            # A horizontal label inside a circular band always crosses the
+            # arc: the band is only wide enough at x=0, and the ring has
+            # curved well below the label by the time it reaches the
+            # label's ends. So the label sits on a patch of background,
+            # which reads as a gap in the ring rather than a collision.
+            patch = Rectangle(width=label.width + GAP_SM * 1.1,
+                              height=label.height + GAP_SM * 0.7,
+                              stroke_width=0)
+            patch.set_fill(CREAM, opacity=1)
+            patch.move_to(label)
+            self.add(patch)
             self.labels.add(label)
             self.add(label)
 
@@ -209,6 +229,16 @@ class RingModel(VGroup):
         ring = self.rings[len(self.rings) - 1 - index]
         return [ring.animate.set_stroke(color, width=5),
                 self.labels[index].animate.set_color(color)]
+
+    def settle_all(self):
+        """Every ring back to the colour it was drawn in."""
+        moves = []
+        for index, label in enumerate(self.labels):
+            ring = self.rings[len(self.rings) - 1 - index]
+            moves.append(ring.animate.set_stroke(self._colors[index],
+                                                 width=3))
+            moves.append(label.animate.set_color(self._colors[index]))
+        return moves
 
 
 class Lifecycle(VGroup):
