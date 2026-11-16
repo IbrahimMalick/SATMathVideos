@@ -49,14 +49,30 @@ def find_phrase(words, phrase, search_from=0):
     target = [normalize(w) for w in phrase.split() if normalize(w)]
     if not target:
         raise BeatError("empty anchor phrase")
+
+    # Tokens that fold to nothing -- a bare "&", an em dash, a stray
+    # comma the transcriber emitted as its own word -- are dropped from
+    # the phrase by the line above. They have to be dropped from the
+    # transcript too. Comparing a phrase with them removed against a
+    # window with them still in it puts the two out of step from the
+    # first one onwards, and the anchor then scores low for a phrase that
+    # is plainly there, or worse, scores well somewhere it is not.
+    keys, where = [], []
+    for index, word in enumerate(words):
+        key = normalize(word["word"])
+        if key:
+            keys.append(key)
+            where.append(index)
+
+    start = next((j for j, index in enumerate(where) if index >= search_from),
+                 len(keys))
     best_score, best_index = 0.0, None
-    for i in range(search_from, max(search_from, len(words) - len(target) + 1)):
-        window = words[i:i + len(target)]
-        hits = sum(1 for a, b in zip(target, window)
-                   if a == normalize(b["word"]))
+    for j in range(start, max(start, len(keys) - len(target) + 1)):
+        hits = sum(1 for a, b in zip(target, keys[j:j + len(target)])
+                   if a == b)
         score = hits / len(target)
         if score > best_score:
-            best_score, best_index = score, i
+            best_score, best_index = score, where[j]
             if score == 1.0:
                 break
     return best_score, best_index

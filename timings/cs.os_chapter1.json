@@ -1,0 +1,591 @@
+{
+  "scene": "cs.os_chapter1",
+  "duration": 1281.0,
+  "beats": [
+    {
+      "name": "open",
+      "start": 3.7,
+      "end": 14.68
+    },
+    {
+      "name": "behind",
+      "start": 14.68,
+      "end": 31.0
+    },
+    {
+      "name": "agenda",
+      "start": 31.0,
+      "end": 41.66
+    },
+    {
+      "name": "fcfs_promise",
+      "start": 41.66,
+      "end": 53.36
+    },
+    {
+      "name": "definition",
+      "start": 53.36,
+      "end": 61.44
+    },
+    {
+      "name": "gives_access",
+      "start": 61.44,
+      "end": 67.72
+    },
+    {
+      "name": "hardware",
+      "start": 67.72,
+      "end": 75.42
+    },
+    {
+      "name": "apps",
+      "start": 75.42,
+      "end": 86.72
+    },
+    {
+      "name": "double_click",
+      "start": 86.72,
+      "end": 92.68
+    },
+    {
+      "name": "request_travels",
+      "start": 92.68,
+      "end": 102.565
+    },
+    {
+      "name": "os_decides",
+      "start": 102.565,
+      "end": 128.605
+    },
+    {
+      "name": "no_detail",
+      "start": 128.605,
+      "end": 156.805
+    },
+    {
+      "name": "waiter",
+      "start": 156.805,
+      "end": 173.965
+    },
+    {
+      "name": "os_examples",
+      "start": 173.965,
+      "end": 183.145
+    },
+    {
+      "name": "many_users",
+      "start": 183.145,
+      "end": 193.784
+    },
+    {
+      "name": "account_has",
+      "start": 193.784,
+      "end": 199.264
+    },
+    {
+      "name": "login_check",
+      "start": 199.264,
+      "end": 212.784
+    },
+    {
+      "name": "admin",
+      "start": 212.784,
+      "end": 231.264
+    },
+    {
+      "name": "siblings",
+      "start": 231.264,
+      "end": 247.904
+    },
+    {
+      "name": "accounts_recap",
+      "start": 247.904,
+      "end": 259.823
+    },
+    {
+      "name": "kernel_shell",
+      "start": 259.823,
+      "end": 271.624
+    },
+    {
+      "name": "kernel",
+      "start": 271.624,
+      "end": 279.564
+    },
+    {
+      "name": "kernel_time",
+      "start": 279.564,
+      "end": 297.404
+    },
+    {
+      "name": "shell",
+      "start": 297.404,
+      "end": 313.304
+    },
+    {
+      "name": "gui",
+      "start": 313.304,
+      "end": 324.244
+    },
+    {
+      "name": "cli",
+      "start": 324.244,
+      "end": 333.484
+    },
+    {
+      "name": "one_line",
+      "start": 333.484,
+      "end": 342.284
+    },
+    {
+      "name": "layers",
+      "start": 342.284,
+      "end": 356.764
+    },
+    {
+      "name": "upper",
+      "start": 356.764,
+      "end": 364.344
+    },
+    {
+      "name": "middle",
+      "start": 364.344,
+      "end": 370.584
+    },
+    {
+      "name": "lower",
+      "start": 370.584,
+      "end": 382.036
+    },
+    {
+      "name": "print_example",
+      "start": 382.036,
+      "end": 394.656
+    },
+    {
+      "name": "printer_driver",
+      "start": 394.656,
+      "end": 403.676
+    },
+    {
+      "name": "libraries",
+      "start": 403.676,
+      "end": 416.986
+    },
+    {
+      "name": "driver_def",
+      "start": 416.986,
+      "end": 427.106
+    },
+    {
+      "name": "driver_eg",
+      "start": 427.106,
+      "end": 434.466
+    },
+    {
+      "name": "process",
+      "start": 434.466,
+      "end": 439.946
+    },
+    {
+      "name": "process_def",
+      "start": 439.946,
+      "end": 447.426
+    },
+    {
+      "name": "browser_example",
+      "start": 447.426,
+      "end": 462.466
+    },
+    {
+      "name": "lifecycle",
+      "start": 462.466,
+      "end": 484.617
+    },
+    {
+      "name": "termination",
+      "start": 484.617,
+      "end": 487.637
+    },
+    {
+      "name": "resources_back",
+      "start": 487.637,
+      "end": 494.457
+    },
+    {
+      "name": "calculator",
+      "start": 494.457,
+      "end": 502.537
+    },
+    {
+      "name": "calc_three",
+      "start": 502.537,
+      "end": 518.097
+    },
+    {
+      "name": "fcfs",
+      "start": 518.097,
+      "end": 521.177
+    },
+    {
+      "name": "waiting_cpu",
+      "start": 521.177,
+      "end": 534.217
+    },
+    {
+      "name": "scheduling",
+      "start": 534.217,
+      "end": 538.377
+    },
+    {
+      "name": "first_come",
+      "start": 538.377,
+      "end": 546.317
+    },
+    {
+      "name": "bakery",
+      "start": 546.317,
+      "end": 560.756
+    },
+    {
+      "name": "the_table",
+      "start": 560.756,
+      "end": 575.016
+    },
+    {
+      "name": "order",
+      "start": 575.016,
+      "end": 579.675
+    },
+    {
+      "name": "p1_runs",
+      "start": 579.675,
+      "end": 585.455
+    },
+    {
+      "name": "p2_runs",
+      "start": 585.455,
+      "end": 593.296
+    },
+    {
+      "name": "p3_runs",
+      "start": 593.296,
+      "end": 597.536
+    },
+    {
+      "name": "formula",
+      "start": 597.536,
+      "end": 603.716
+    },
+    {
+      "name": "p1_wait",
+      "start": 603.716,
+      "end": 611.435
+    },
+    {
+      "name": "p23_wait",
+      "start": 611.435,
+      "end": 615.856
+    },
+    {
+      "name": "average",
+      "start": 615.856,
+      "end": 623.435
+    },
+    {
+      "name": "exam_order",
+      "start": 623.435,
+      "end": 631.356
+    },
+    {
+      "name": "exam_rest",
+      "start": 631.356,
+      "end": 638.126
+    },
+    {
+      "name": "multitasking",
+      "start": 638.126,
+      "end": 652.486
+    },
+    {
+      "name": "multi_eg",
+      "start": 652.486,
+      "end": 674.468
+    },
+    {
+      "name": "concurrency",
+      "start": 674.468,
+      "end": 683.588
+    },
+    {
+      "name": "switching",
+      "start": 683.588,
+      "end": 693.988
+    },
+    {
+      "name": "chef",
+      "start": 693.988,
+      "end": 713.888
+    },
+    {
+      "name": "ram",
+      "start": 713.888,
+      "end": 718.888
+    },
+    {
+      "name": "ram_def",
+      "start": 718.888,
+      "end": 731.008
+    },
+    {
+      "name": "ram_fast",
+      "start": 731.008,
+      "end": 739.998
+    },
+    {
+      "name": "virtual",
+      "start": 739.998,
+      "end": 755.87
+    },
+    {
+      "name": "virtual_slow",
+      "start": 755.87,
+      "end": 790.03
+    },
+    {
+      "name": "thread_def",
+      "start": 790.03,
+      "end": 795.63
+    },
+    {
+      "name": "thread_share",
+      "start": 795.63,
+      "end": 807.23
+    },
+    {
+      "name": "word_threads",
+      "start": 807.23,
+      "end": 812.97
+    },
+    {
+      "name": "autosave",
+      "start": 812.97,
+      "end": 826.99
+    },
+    {
+      "name": "office",
+      "start": 826.99,
+      "end": 856.228
+    },
+    {
+      "name": "multithreading",
+      "start": 856.228,
+      "end": 871.288
+    },
+    {
+      "name": "responsive",
+      "start": 871.288,
+      "end": 884.848
+    },
+    {
+      "name": "syscalls",
+      "start": 884.848,
+      "end": 887.848
+    },
+    {
+      "name": "syscall_def",
+      "start": 887.848,
+      "end": 895.608
+    },
+    {
+      "name": "syscall_when",
+      "start": 895.608,
+      "end": 909.468
+    },
+    {
+      "name": "sc_process",
+      "start": 909.468,
+      "end": 920.288
+    },
+    {
+      "name": "sc_file",
+      "start": 920.288,
+      "end": 927.128
+    },
+    {
+      "name": "sc_device",
+      "start": 927.128,
+      "end": 933.572
+    },
+    {
+      "name": "sc_comm",
+      "start": 933.572,
+      "end": 949.252
+    },
+    {
+      "name": "fork_note",
+      "start": 949.252,
+      "end": 962.132
+    },
+    {
+      "name": "filesystem",
+      "start": 962.132,
+      "end": 967.452
+    },
+    {
+      "name": "fs_def",
+      "start": 967.452,
+      "end": 975.172
+    },
+    {
+      "name": "file",
+      "start": 975.172,
+      "end": 980.572
+    },
+    {
+      "name": "folder",
+      "start": 980.572,
+      "end": 990.572
+    },
+    {
+      "name": "metadata",
+      "start": 990.572,
+      "end": 1002.252
+    },
+    {
+      "name": "papers",
+      "start": 1002.252,
+      "end": 1014.472
+    },
+    {
+      "name": "labelled",
+      "start": 1014.472,
+      "end": 1033.225
+    },
+    {
+      "name": "journey",
+      "start": 1033.225,
+      "end": 1040.045
+    },
+    {
+      "name": "you_type",
+      "start": 1040.045,
+      "end": 1061.105
+    },
+    {
+      "name": "network_card",
+      "start": 1061.105,
+      "end": 1066.945
+    },
+    {
+      "name": "server_replies",
+      "start": 1066.945,
+      "end": 1076.845
+    },
+    {
+      "name": "back_to_browser",
+      "start": 1076.845,
+      "end": 1083.125
+    },
+    {
+      "name": "on_screen",
+      "start": 1083.125,
+      "end": 1115.675
+    },
+    {
+      "name": "recap",
+      "start": 1115.675,
+      "end": 1126.755
+    },
+    {
+      "name": "recap_kernel",
+      "start": 1126.755,
+      "end": 1134.675
+    },
+    {
+      "name": "recap_layers",
+      "start": 1134.675,
+      "end": 1141.335
+    },
+    {
+      "name": "recap_accounts",
+      "start": 1141.335,
+      "end": 1147.455
+    },
+    {
+      "name": "recap_process",
+      "start": 1147.455,
+      "end": 1161.095
+    },
+    {
+      "name": "recap_fcfs",
+      "start": 1161.095,
+      "end": 1168.195
+    },
+    {
+      "name": "recap_multi",
+      "start": 1168.195,
+      "end": 1190.375
+    },
+    {
+      "name": "recap_threads",
+      "start": 1190.375,
+      "end": 1197.225
+    },
+    {
+      "name": "recap_syscalls",
+      "start": 1197.225,
+      "end": 1205.22
+    },
+    {
+      "name": "recap_files",
+      "start": 1205.22,
+      "end": 1213.82
+    },
+    {
+      "name": "pause",
+      "start": 1213.82,
+      "end": 1221.74
+    },
+    {
+      "name": "q1",
+      "start": 1221.74,
+      "end": 1227.54
+    },
+    {
+      "name": "q2",
+      "start": 1227.54,
+      "end": 1231.52
+    },
+    {
+      "name": "q3",
+      "start": 1231.52,
+      "end": 1236.92
+    },
+    {
+      "name": "q4",
+      "start": 1236.92,
+      "end": 1245.22
+    },
+    {
+      "name": "q5",
+      "start": 1245.22,
+      "end": 1248.56
+    },
+    {
+      "name": "q6",
+      "start": 1248.56,
+      "end": 1255.98
+    },
+    {
+      "name": "q7",
+      "start": 1255.98,
+      "end": 1260.67
+    },
+    {
+      "name": "close",
+      "start": 1260.67,
+      "end": 1281.0
+    }
+  ]
+}
