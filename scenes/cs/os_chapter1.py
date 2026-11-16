@@ -52,6 +52,7 @@ from manim import (
 from brand import (
     BODY_SIZE,
     CHARCOAL,
+    CREAM,
     DISPLAY_SIZE,
     GAP_LG,
     GAP_MD,
@@ -1163,10 +1164,13 @@ class OsChapter1(SATScene):
                     f"A recap line runs {widest:.2f} units. Shorten it.")
             self.place(lines, self.head, buff=GAP_MD * 0.7)
             self.recap_lines = lines
+            # Cream on slate, not sage on slate: sage and slate are close
+            # enough in tone that the numbers all but vanished when every
+            # cell lit at once.
             self.play(*[cell.animate.set_stroke(SLATE)
                         .set_fill(SLATE, opacity=1)
                         for cell in self.strip.cells],
-                      *[number.animate.set_color(SAGE)
+                      *[number.animate.set_color(CREAM)
                         for number in self.strip.numbers],
                       run_time=t.fill(0.12))
             t.hold()
