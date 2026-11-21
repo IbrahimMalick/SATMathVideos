@@ -638,7 +638,7 @@ class Software(SATScene):
         # Five boxes have to fit between a heading and the numbered
         # strip, which is 5.4 units, and the default height and gap run
         # 6.32: the stack reached y=-3.95 and sat on the strip.
-        boot = BootStack(height=0.68, gap=0.40)
+        boot = BootStack(height=0.66, gap=0.46)
         arrows = boot.starts()
 
         with self.beat("startup_open") as t:
@@ -1109,14 +1109,14 @@ class Software(SATScene):
         # heights and centring each centres a different thing.
         asm_head = serif("Assembly language", LABEL_SIZE, SLATE)
         bin_head = serif("Machine code", LABEL_SIZE, SLATE)
-        asm_head.move_to([-3.4, 1.15, 0])
-        bin_head.move_to([3.1, 1.15, 0])
+        asm_head.move_to([-3.4, 1.5, 0])
+        bin_head.move_to([3.1, 1.5, 0])
         align_baselines([asm_head, bin_head],
                         ["Assembly language", "Machine code"], LABEL_SIZE)
         asm_block = CodeBlock(assembly, MARGIN_SIZE, CHARCOAL)
         bin_block = CodeBlock(binary, MARGIN_SIZE, CHARCOAL)
-        asm_block.move_to([-3.4, 0.15, 0])
-        bin_block.move_to([3.1, 0.15, 0])
+        asm_block.move_to([-3.4, 0.05, 0])
+        bin_block.move_to([3.1, 0.05, 0])
 
         with self.beat("machine_open") as t:
             self.section(t, "Machine code and assembly language", ASM)
@@ -1686,27 +1686,31 @@ class Software(SATScene):
         with self.beat("pause") as t:
             self.wipe(t)
             self.title(t, "Pause, and answer these yourself", fraction=0.1)
-            asked, rows = numbered(QUESTIONS, size=MARGIN_SIZE)
+            # Tighter than the default so seven rows leave the
+            # commentary band free underneath them.
+            asked, rows = numbered(QUESTIONS, size=MARGIN_SIZE,
+                                   gap=GAP_SM * 0.9)
             self.place(asked, self.head, buff=GAP_MD)
             self.asked = asked
-            for row in rows:
-                self.play(FadeIn(row), run_time=t.fill(0.11))
+            # All seven in one play. Revealed a row at a time they spend
+            # 4.5s of a 5.9s beat, so the seventh question landed two
+            # tenths of a second before the next beat wiped the screen --
+            # on the one card in the lecture whose whole purpose is to be
+            # read and paused on.
+            self.play(FadeIn(asked), run_time=t.fill(0.3))
             t.hold()
 
         with self.beat("close") as t:
-            self.wipe(t)
-            line = prose("Clear definitions and precise comparisons are "
-                         "the whole of this chapter.", TITLE_SIZE,
-                         CHARCOAL, 11.8)
-            line.move_to([0, 0.5, 0])
-            self.play(Write(line), run_time=t.fill(0.5))
-            self.closing = line
+            # The questions stay up and the closing line goes in the band
+            # beneath them. Clearing the screen here would leave the
+            # self-check card showing for six seconds in total.
+            self.say(t, "Clear definitions and precise comparisons are "
+                        "the whole of this chapter.", fraction=0.3,
+                     color=CHARCOAL)
             t.hold()
 
         with self.beat("see_you") as t:
-            nxt = serif("Chapter 5 next", TITLE_SIZE, SLATE)
-            self.place(nxt, self.closing, buff=GAP_LG)
-            self.play(FadeIn(nxt), run_time=t.fill(0.45))
+            self.say(t, "Chapter 5 next", fraction=0.4, color=SLATE)
             t.hold()
 
     # ------------------------------------------------------- scaffolding
