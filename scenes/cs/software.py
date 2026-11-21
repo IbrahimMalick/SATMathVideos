@@ -191,8 +191,8 @@ RECAP_CARDS = [
     ]),
     ("The operating system", [
         "It manages files, memory and processor time.",
-        "It manages peripherals, accounts and security.",
-        "Applications ask it for the services they need.",
+        "It manages peripherals, accounts, security.",
+        "Applications ask it for the services.",
     ]),
     ("Start-up", [
         "Firmware initialises the hardware.",
@@ -207,8 +207,8 @@ RECAP_CARDS = [
     ("Languages and translators", [
         "High-level: easier to read and portable.",
         "Low-level: closer control of the hardware.",
-        "An assembler makes machine code from assembly.",
-        "A compiler translates the whole program first.",
+        "An assembler makes machine code.",
+        "A compiler translates the whole program.",
         "An interpreter translates a line at a time.",
     ]),
 ]
@@ -989,7 +989,9 @@ class Software(SATScene):
         # under the five-step list they would not fit: the list already
         # reaches y=-1.78 and two stacked lines below it land on the strip.
         with self.beat("not_discarded") as t:
-            self.title_swap(t, "And the program is not discarded",
+            # Not a restatement of the line below it: the heading asks
+            # the question, the line answers it.
+            self.title_swap(t, "Why saving the state matters",
                             fraction=0.2)
             self.say(t, "The original program is never discarded.",
                      fraction=0.4, color=TERRACOTTA)
@@ -1144,7 +1146,9 @@ class Software(SATScene):
         with self.beat("not_raw") as t:
             note = mono("opcodes here are invented for the lesson",
                         MARGIN_SIZE, GREY)
-            note.move_to([0, -2.35, 0])
+            # Under the two code blocks, well clear of the commentary
+            # band: at y=-2.35 it reached into it by 0.05 units.
+            note.move_to([0, -1.35, 0])
             self.play(FadeIn(note), run_time=t.fill(0.3))
             t.hold()
 
@@ -1254,7 +1258,9 @@ class Software(SATScene):
 
         with self.beat("syntax_errors") as t:
             found = serif("Syntax errors  —  found", LABEL_SIZE, SAGE)
-            found.move_to([0, 2.0, 0])
+            # High under the heading, because the code block below needs
+            # 2.86 units and the commentary band starts at y=-2.27.
+            found.move_to([0, 2.25, 0])
             self.found = found
             self.play(FadeIn(found), run_time=t.fill(0.4))
             t.hold()
@@ -1262,14 +1268,14 @@ class Software(SATScene):
         with self.beat("logic_wrong") as t:
             missed = serif("A wrong algorithm  —  not found",
                            LABEL_SIZE, TERRACOTTA)
-            missed.next_to(self.found, DOWN, buff=GAP_MD)
+            missed.next_to(self.found, DOWN, buff=GAP_SM * 1.4)
             self.play(FadeIn(missed), run_time=t.fill(0.3))
             self.missed = missed
             t.hold()
 
         with self.beat("wrong_formula") as t:
             block = CodeBlock(WRONG_SUM, MARGIN_SIZE, CHARCOAL)
-            self.place(block, self.missed, buff=GAP_MD * 1.2)
+            self.place(block, self.missed, buff=GAP_MD * 0.8)
             self.wrong = block
             for line in block.lines:
                 self.play(FadeIn(line), run_time=t.fill(0.12))
@@ -1292,11 +1298,13 @@ class Software(SATScene):
             self.one = one
             self.play(FadeIn(one), run_time=t.fill(0.3))
             block = CodeBlock(WRONG_SUM, MARGIN_SIZE, GREY, gutter=True)
-            self.place(block, one, buff=GAP_LG * 0.8)
+            self.place(block, one, buff=GAP_MD * 1.2)
             self.running = block
-            for line in block.lines:
-                self.play(FadeIn(line), run_time=t.fill(0.08))
-            self.play(FadeIn(block.numbers), run_time=t.fill(0.1))
+            # The whole listing in one play. Five lines plus the gutter
+            # plus the section opening needs 0.83s more than this beat
+            # has, and the point of the section is the lighting that
+            # follows, not the arrival.
+            self.play(FadeIn(block), run_time=t.fill(0.3))
             t.hold()
 
         with self.beat("reads_translates") as t:
@@ -1317,7 +1325,7 @@ class Software(SATScene):
             self.wipe(t)
             self.title(t, "Nothing comes out the other end", fraction=0.12)
             flow = TranslatorFlow("Source\ncode", "Interpreter")
-            self.place(flow, self.head, buff=GAP_LG)
+            self.place(flow, self.head, buff=GAP_MD * 1.2)
             self.flow3 = flow
             self.play(Create(flow.source[0]), FadeIn(flow.source[1]),
                       run_time=t.fill(0.2))
@@ -1330,7 +1338,7 @@ class Software(SATScene):
             none = prose("No separate translated file. Translation "
                          "happens as the program runs.", LABEL_SIZE,
                          GREY, 10.6)
-            self.place(none, self.flow3, buff=GAP_LG * 0.9)
+            self.place(none, self.flow3, buff=GAP_MD * 1.2)
             self.none = none
             self.play(FadeIn(none), run_time=t.fill(0.4))
             t.hold()
@@ -1356,7 +1364,7 @@ class Software(SATScene):
             slow = serif("so it runs more slowly than compiled code",
                          LABEL_SIZE, TERRACOTTA)
             slow = fit(slow, 11.4)
-            self.place(slow, self.none, buff=GAP_MD * 1.2)
+            self.place(slow, self.none, buff=GAP_MD)
             self.play(FadeIn(slow), run_time=t.fill(0.4))
             t.hold()
 
@@ -1376,7 +1384,7 @@ class Software(SATScene):
         with self.beat("compare_open") as t:
             self.section(t, "Side by side", SIDEBYSIDE)
             table, cells, heads = comparison(COMPARISON)
-            self.place(table, self.head, buff=GAP_MD * 1.2)
+            self.place(table, self.head, buff=GAP_SM * 1.2)
             self.table, self.cells = table, cells
             self.play(*[FadeIn(head) for head in heads],
                       run_time=t.fill(0.24))
@@ -1555,28 +1563,26 @@ class Software(SATScene):
             self.play(FadeIn(brief), run_time=t.fill(0.4))
             t.hold()
 
+        # Short enough to sit on one line each, and laid out in one go
+        # rather than one under the next: six lines placed successively,
+        # each wrapping to two, come to 7.35 units and leave the frame.
         steps = [
-            ("ide_provides", "While writing it: an editor, a translator "
-                             "and somewhere to run it."),
-            ("interp_linebyline", "With an interpreter, step through it "
-                                  "one line at a time."),
+            ("ide_provides", "An editor, a translator, somewhere to run it."),
+            ("interp_linebyline", "An interpreter steps through it line by "
+                                  "line."),
             ("diag_help", "Diagnostics say where the problem was."),
-            ("needs_timing", "The sensor needs precise timing and direct "
-                             "control."),
+            ("needs_timing", "The sensor needs precise timing."),
             ("choose_low2", "So reach for a low-level language."),
-            ("assembler2", "Assembly language? An assembler turns the "
-                           "mnemonics into machine code."),
+            ("assembler2", "An assembler makes machine code from it."),
         ]
-        anchor = None
-        for beat_name, text in steps:
+        block = self.lines(*[text for _, text in steps], size=LABEL_SIZE)
+        placed = False
+        for index, (beat_name, _) in enumerate(steps):
             with self.beat(beat_name) as t:
-                line = prose(text, LABEL_SIZE, CHARCOAL, 11.4)
-                self.place(line, anchor or self.brief,
-                           buff=GAP_MD * (1.2 if anchor is None else 0.75))
-                if anchor is None:
-                    self.example_first = line
-                self.play(FadeIn(line), run_time=t.fill(0.45))
-                anchor = line
+                if not placed:
+                    self.stack(block, self.brief, buff=GAP_MD * 0.9)
+                    placed = True
+                self.play(FadeIn(block[index]), run_time=t.fill(0.45))
                 t.hold()
 
         with self.beat("not_alone") as t:
@@ -1584,9 +1590,9 @@ class Software(SATScene):
             self.title(t, "And when it runs?", fraction=0.1)
             self.place(route, self.head, buff=GAP_LG)
             self.route2 = route
-            self.play(Create(route.boxes), run_time=t.fill(0.26))
-            self.play(*[FadeIn(label) for label in route.labels],
-                      run_time=t.fill(0.18))
+            self.play(Create(route.boxes),
+                      *[FadeIn(label) for label in route.labels],
+                      run_time=t.fill(0.3))
             self.say(t, "It does not drive the sensor itself",
                      fraction=0.26)
             t.hold()
@@ -1704,8 +1710,15 @@ class Software(SATScene):
             self.play(FadeIn(self.strip), run_time=t.fill(0.05))
             self.keep = [self.margin, self.strip]
             self.floor = FLOOR
-        self.play(*self.strip.focus(index), run_time=t.fill(0.05))
-        self.title(t, text, fraction=fraction)
+        head = fit(serif(text, TITLE_SIZE, CHARCOAL))
+        head.to_edge(UP, buff=GAP_MD * 1.7)
+        # The strip lights while the heading writes, as one play rather
+        # than two: the shortest section opening here is 1.44s, and three
+        # plays at the 0.5s pacing floor do not fit in it.
+        self.play(*self.strip.focus(index), Write(head),
+                  run_time=t.fill(fraction))
+        self.head = head
+        return head
 
     def side_note(self, t, text, fraction=0.25, color=CHARCOAL,
                   size=LABEL_SIZE, x=3.6, y=0.6, width=5.4):
