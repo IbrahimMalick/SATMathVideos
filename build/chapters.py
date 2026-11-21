@@ -22,6 +22,46 @@ REPO_ROOT = Path(__file__).resolve().parents[1]
 MIN_CHAPTER = 10.0   # YouTube drops the whole list if any chapter is shorter
 
 CHAPTERS = {
+    "cs.software": [
+        ("open", "Hardware cannot do anything on its own"),
+        ("two_categories", "System software against application software"),
+        ("utility_case", "The test: purpose, not who opens it"),
+        ("os_central", "The operating system as the link to the hardware"),
+        ("functions_open", "What the operating system manages"),
+        ("startup_open", "Start-up: firmware, bootloader, operating system"),
+        ("interrupt_open", "What an interrupt is, and why polling wastes time"),
+        ("hw_interrupt", "Hardware interrupts and software interrupts"),
+        ("steps_open", "Handling an interrupt, step by step"),
+        ("sequence_open", "The five steps to remember"),
+        ("lang_open", "High-level and low-level languages"),
+        ("machine_open", "Machine code, mnemonics, and the assembler"),
+        ("compiler_open", "The compiler, and what it cannot tell you"),
+        ("interp_open", "The interpreter, a line at a time"),
+        ("compare_open", "Compiler and interpreter, side by side"),
+        ("ide_open", "Inside an IDE"),
+        ("together_open", "One example: a temperature sensor"),
+        ("recap_open", "Recap"),
+        ("pause", "Questions to answer yourself"),
+    ],
+    # The titles are the ones already given to the channel for this
+    # video, so the description and this list cannot disagree.
+    "cs.os_chapter1": [
+        ("open", "What an operating system is"),
+        ("definition", "What it does: hardware, applications, your request"),
+        ("many_users", "Managing user accounts"),
+        ("kernel_shell", "The kernel and the shell"),
+        ("layers", "Layers, libraries and device drivers"),
+        ("process", "Processes and the process lifecycle"),
+        ("fcfs", "FCFS scheduling, worked through"),
+        ("multitasking", "Multitasking and concurrency"),
+        ("ram", "RAM and virtual memory"),
+        ("thread_def", "Threads and multithreading"),
+        ("syscalls", "System calls"),
+        ("filesystem", "File systems and metadata"),
+        ("journey", "From your keyboard to a server and back"),
+        ("recap", "Recap"),
+        ("pause", "Questions to answer yourself"),
+    ],
     "cs.system_software": [
         ("open", "What software is, and the two kinds of it"),
         ("bins", "System software against application software"),

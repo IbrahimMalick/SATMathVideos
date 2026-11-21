@@ -1,0 +1,1096 @@
+{
+  "scene": "cs.software",
+  "duration": 1407.8,
+  "beats": [
+    {
+      "name": "open",
+      "start": 1.3,
+      "end": 12.26
+    },
+    {
+      "name": "hardware",
+      "start": 12.26,
+      "end": 20.96
+    },
+    {
+      "name": "needs_instructions",
+      "start": 20.96,
+      "end": 27.86
+    },
+    {
+      "name": "provided_by",
+      "start": 27.86,
+      "end": 30.74
+    },
+    {
+      "name": "switch_on",
+      "start": 30.74,
+      "end": 35.52
+    },
+    {
+      "name": "before_browser",
+      "start": 35.52,
+      "end": 40.44
+    },
+    {
+      "name": "must_start",
+      "start": 40.44,
+      "end": 44.78
+    },
+    {
+      "name": "makes_possible",
+      "start": 44.78,
+      "end": 48.32
+    },
+    {
+      "name": "agenda_sysapp",
+      "start": 48.32,
+      "end": 53.3
+    },
+    {
+      "name": "agenda_os",
+      "start": 53.3,
+      "end": 58.14
+    },
+    {
+      "name": "agenda_interrupt",
+      "start": 58.14,
+      "end": 63.9
+    },
+    {
+      "name": "agenda_lang",
+      "start": 63.9,
+      "end": 73.46
+    },
+    {
+      "name": "focus",
+      "start": 73.46,
+      "end": 83.02
+    },
+    {
+      "name": "two_categories",
+      "start": 83.02,
+      "end": 90.6
+    },
+    {
+      "name": "sys_defn",
+      "start": 90.6,
+      "end": 94.64
+    },
+    {
+      "name": "sys_helps",
+      "start": 94.64,
+      "end": 101.84
+    },
+    {
+      "name": "sys_examples",
+      "start": 101.84,
+      "end": 109.28
+    },
+    {
+      "name": "app_defn",
+      "start": 109.28,
+      "end": 116.28
+    },
+    {
+      "name": "app_word",
+      "start": 116.28,
+      "end": 119.74
+    },
+    {
+      "name": "app_browser",
+      "start": 119.74,
+      "end": 127.24
+    },
+    {
+      "name": "app_db",
+      "start": 127.24,
+      "end": 132.26
+    },
+    {
+      "name": "app_game",
+      "start": 132.26,
+      "end": 134.9
+    },
+    {
+      "name": "purpose_not_person",
+      "start": 134.9,
+      "end": 142.72
+    },
+    {
+      "name": "utility_case",
+      "start": 142.72,
+      "end": 150.04
+    },
+    {
+      "name": "even_though",
+      "start": 150.04,
+      "end": 156.08
+    },
+    {
+      "name": "therefore_system",
+      "start": 156.08,
+      "end": 158.34
+    },
+    {
+      "name": "exam_rule_1",
+      "start": 158.34,
+      "end": 170.82
+    },
+    {
+      "name": "os_central",
+      "start": 170.82,
+      "end": 175.7
+    },
+    {
+      "name": "os_link",
+      "start": 175.7,
+      "end": 180.7
+    },
+    {
+      "name": "suppose_save",
+      "start": 180.7,
+      "end": 183.62
+    },
+    {
+      "name": "app_requests",
+      "start": 183.62,
+      "end": 188.42
+    },
+    {
+      "name": "os_manages",
+      "start": 188.42,
+      "end": 199.32
+    },
+    {
+      "name": "no_direct",
+      "start": 199.32,
+      "end": 209.3
+    },
+    {
+      "name": "no_tech_detail",
+      "start": 209.3,
+      "end": 213.84
+    },
+    {
+      "name": "coordinates",
+      "start": 213.84,
+      "end": 221.78
+    },
+    {
+      "name": "appear_same_time",
+      "start": 221.78,
+      "end": 230.46
+    },
+    {
+      "name": "resource_manager",
+      "start": 230.46,
+      "end": 239.8
+    },
+    {
+      "name": "functions_open",
+      "start": 239.8,
+      "end": 244.4
+    },
+    {
+      "name": "fn_file",
+      "start": 244.4,
+      "end": 250.28
+    },
+    {
+      "name": "file_detail",
+      "start": 250.28,
+      "end": 255.42
+    },
+    {
+      "name": "file_access",
+      "start": 255.42,
+      "end": 258.74
+    },
+    {
+      "name": "fn_memory",
+      "start": 258.74,
+      "end": 262.7
+    },
+    {
+      "name": "ram_alloc",
+      "start": 262.7,
+      "end": 269.3
+    },
+    {
+      "name": "virtual_memory",
+      "start": 269.3,
+      "end": 273.58
+    },
+    {
+      "name": "vm_detail",
+      "start": 273.58,
+      "end": 281.22
+    },
+    {
+      "name": "fn_multitask",
+      "start": 281.22,
+      "end": 286.48
+    },
+    {
+      "name": "mt_detail",
+      "start": 286.48,
+      "end": 291.8
+    },
+    {
+      "name": "mt_switch",
+      "start": 291.8,
+      "end": 297.26
+    },
+    {
+      "name": "fn_peripheral",
+      "start": 297.26,
+      "end": 303.12
+    },
+    {
+      "name": "drivers_help",
+      "start": 303.12,
+      "end": 307.04
+    },
+    {
+      "name": "driver_defn",
+      "start": 307.04,
+      "end": 314.0
+    },
+    {
+      "name": "and_more",
+      "start": 314.0,
+      "end": 331.26
+    },
+    {
+      "name": "exam_rule_2",
+      "start": 331.26,
+      "end": 338.86
+    },
+    {
+      "name": "name_a_function",
+      "start": 338.86,
+      "end": 344.3
+    },
+    {
+      "name": "startup_open",
+      "start": 344.3,
+      "end": 348.2
+    },
+    {
+      "name": "base_hardware",
+      "start": 348.2,
+      "end": 358.68
+    },
+    {
+      "name": "firmware_first",
+      "start": 358.68,
+      "end": 364.94
+    },
+    {
+      "name": "firmware_defn",
+      "start": 364.94,
+      "end": 368.44
+    },
+    {
+      "name": "firmware_tasks",
+      "start": 368.44,
+      "end": 374.16
+    },
+    {
+      "name": "begins_boot",
+      "start": 374.16,
+      "end": 377.12
+    },
+    {
+      "name": "starts_bootloader",
+      "start": 377.12,
+      "end": 383.4
+    },
+    {
+      "name": "bootloader_job",
+      "start": 383.4,
+      "end": 388.32
+    },
+    {
+      "name": "into_ram",
+      "start": 388.32,
+      "end": 391.2
+    },
+    {
+      "name": "os_takes_control",
+      "start": 391.2,
+      "end": 402.32
+    },
+    {
+      "name": "app_can_run",
+      "start": 402.32,
+      "end": 404.72
+    },
+    {
+      "name": "app_uses_services",
+      "start": 404.72,
+      "end": 410.28
+    },
+    {
+      "name": "order_matters",
+      "start": 410.28,
+      "end": 412.44
+    },
+    {
+      "name": "order_recap",
+      "start": 412.44,
+      "end": 418.68
+    },
+    {
+      "name": "request_down",
+      "start": 418.68,
+      "end": 426.36
+    },
+    {
+      "name": "driver_to_hw",
+      "start": 426.36,
+      "end": 434.88
+    },
+    {
+      "name": "interrupt_open",
+      "start": 434.88,
+      "end": 436.32
+    },
+    {
+      "name": "interrupt_defn",
+      "start": 436.32,
+      "end": 443.08
+    },
+    {
+      "name": "why_needed",
+      "start": 443.08,
+      "end": 446.08
+    },
+    {
+      "name": "polling",
+      "start": 446.08,
+      "end": 452.72
+    },
+    {
+      "name": "waste",
+      "start": 452.72,
+      "end": 457.14
+    },
+    {
+      "name": "instead_signal",
+      "start": 457.14,
+      "end": 463.28
+    },
+    {
+      "name": "deal_with_event",
+      "start": 463.28,
+      "end": 466.1
+    },
+    {
+      "name": "hw_interrupt",
+      "start": 466.1,
+      "end": 470.12
+    },
+    {
+      "name": "hw_examples",
+      "start": 470.12,
+      "end": 474.39
+    },
+    {
+      "name": "hw_more",
+      "start": 474.39,
+      "end": 481.34
+    },
+    {
+      "name": "sw_interrupt",
+      "start": 481.34,
+      "end": 486.1
+    },
+    {
+      "name": "sw_error",
+      "start": 486.1,
+      "end": 491.36
+    },
+    {
+      "name": "sw_request",
+      "start": 491.36,
+      "end": 497.14
+    },
+    {
+      "name": "isr_intro",
+      "start": 497.14,
+      "end": 509.54
+    },
+    {
+      "name": "isr_contains",
+      "start": 509.54,
+      "end": 517.78
+    },
+    {
+      "name": "steps_open",
+      "start": 517.78,
+      "end": 521.76
+    },
+    {
+      "name": "step_generated",
+      "start": 521.76,
+      "end": 523.94
+    },
+    {
+      "name": "step_finish",
+      "start": 523.94,
+      "end": 529.8
+    },
+    {
+      "name": "not_abandon",
+      "start": 529.8,
+      "end": 534.4
+    },
+    {
+      "name": "step_save",
+      "start": 534.4,
+      "end": 538.4
+    },
+    {
+      "name": "state_contains",
+      "start": 538.4,
+      "end": 543.44
+    },
+    {
+      "name": "state_detail",
+      "start": 543.44,
+      "end": 549.9
+    },
+    {
+      "name": "priorities",
+      "start": 549.9,
+      "end": 561.8
+    },
+    {
+      "name": "step_isr",
+      "start": 561.8,
+      "end": 566.28
+    },
+    {
+      "name": "isr_deals",
+      "start": 566.28,
+      "end": 575.64
+    },
+    {
+      "name": "cleared",
+      "start": 575.64,
+      "end": 576.94
+    },
+    {
+      "name": "step_restore",
+      "start": 576.94,
+      "end": 582.7
+    },
+    {
+      "name": "step_resume",
+      "start": 582.7,
+      "end": 586.26
+    },
+    {
+      "name": "sequence_open",
+      "start": 586.26,
+      "end": 589.76
+    },
+    {
+      "name": "seq_1",
+      "start": 589.76,
+      "end": 593.64
+    },
+    {
+      "name": "seq_2",
+      "start": 593.64,
+      "end": 595.46
+    },
+    {
+      "name": "seq_3",
+      "start": 595.46,
+      "end": 597.3
+    },
+    {
+      "name": "seq_4",
+      "start": 597.3,
+      "end": 599.16
+    },
+    {
+      "name": "seq_5",
+      "start": 599.16,
+      "end": 600.82
+    },
+    {
+      "name": "not_discarded",
+      "start": 600.82,
+      "end": 605.64
+    },
+    {
+      "name": "correct_point",
+      "start": 605.64,
+      "end": 617.04
+    },
+    {
+      "name": "lang_open",
+      "start": 617.04,
+      "end": 622.3
+    },
+    {
+      "name": "how_close",
+      "start": 622.3,
+      "end": 630.64
+    },
+    {
+      "name": "high_level",
+      "start": 630.64,
+      "end": 640.74
+    },
+    {
+      "name": "high_easy",
+      "start": 640.74,
+      "end": 646.48
+    },
+    {
+      "name": "high_portable",
+      "start": 646.48,
+      "end": 652.04
+    },
+    {
+      "name": "still_translated",
+      "start": 652.04,
+      "end": 656.82
+    },
+    {
+      "name": "low_level",
+      "start": 656.82,
+      "end": 672.54
+    },
+    {
+      "name": "low_control",
+      "start": 672.54,
+      "end": 676.38
+    },
+    {
+      "name": "low_timing",
+      "start": 676.38,
+      "end": 680.92
+    },
+    {
+      "name": "low_harder",
+      "start": 680.92,
+      "end": 688.12
+    },
+    {
+      "name": "low_dependent",
+      "start": 688.12,
+      "end": 691.88
+    },
+    {
+      "name": "choose_open",
+      "start": 691.88,
+      "end": 700.7
+    },
+    {
+      "name": "choose_high",
+      "start": 700.7,
+      "end": 709.94
+    },
+    {
+      "name": "choose_low",
+      "start": 709.94,
+      "end": 721.2
+    },
+    {
+      "name": "machine_open",
+      "start": 721.2,
+      "end": 723.22
+    },
+    {
+      "name": "machine_defn",
+      "start": 723.22,
+      "end": 730.08
+    },
+    {
+      "name": "binary_hard",
+      "start": 730.08,
+      "end": 742.56
+    },
+    {
+      "name": "assembly_easier",
+      "start": 742.56,
+      "end": 749.28
+    },
+    {
+      "name": "mnemonic_defn",
+      "start": 749.28,
+      "end": 756.16
+    },
+    {
+      "name": "mnemonic_eg",
+      "start": 756.16,
+      "end": 760.58
+    },
+    {
+      "name": "symbolic",
+      "start": 760.58,
+      "end": 768.7
+    },
+    {
+      "name": "not_raw",
+      "start": 768.7,
+      "end": 771.56
+    },
+    {
+      "name": "not_executed",
+      "start": 771.56,
+      "end": 778.44
+    },
+    {
+      "name": "must_translate",
+      "start": 778.44,
+      "end": 783.94
+    },
+    {
+      "name": "assembler",
+      "start": 783.94,
+      "end": 788.34
+    },
+    {
+      "name": "assembler_detail",
+      "start": 788.34,
+      "end": 797.6
+    },
+    {
+      "name": "processor_specific",
+      "start": 797.6,
+      "end": 802.62
+    },
+    {
+      "name": "not_portable",
+      "start": 802.62,
+      "end": 815.95
+    },
+    {
+      "name": "compiler_open",
+      "start": 815.95,
+      "end": 819.67
+    },
+    {
+      "name": "compiler_defn",
+      "start": 819.67,
+      "end": 825.39
+    },
+    {
+      "name": "writes_source",
+      "start": 825.39,
+      "end": 827.29
+    },
+    {
+      "name": "checks_translates",
+      "start": 827.29,
+      "end": 836.99
+    },
+    {
+      "name": "errors_found",
+      "start": 836.99,
+      "end": 848.25
+    },
+    {
+      "name": "run_without",
+      "start": 848.25,
+      "end": 854.91
+    },
+    {
+      "name": "execute_quickly",
+      "start": 854.91,
+      "end": 861.13
+    },
+    {
+      "name": "compiler_useful",
+      "start": 861.13,
+      "end": 872.33
+    },
+    {
+      "name": "cannot_guarantee",
+      "start": 872.33,
+      "end": 877.25
+    },
+    {
+      "name": "syntax_errors",
+      "start": 877.25,
+      "end": 883.19
+    },
+    {
+      "name": "logic_wrong",
+      "start": 883.19,
+      "end": 894.99
+    },
+    {
+      "name": "wrong_formula",
+      "start": 894.99,
+      "end": 899.23
+    },
+    {
+      "name": "wont_reveal",
+      "start": 899.23,
+      "end": 905.39
+    },
+    {
+      "name": "interp_open",
+      "start": 905.39,
+      "end": 913.65
+    },
+    {
+      "name": "reads_translates",
+      "start": 913.65,
+      "end": 917.71
+    },
+    {
+      "name": "next_statement",
+      "start": 917.71,
+      "end": 920.73
+    },
+    {
+      "name": "stops_at_error",
+      "start": 920.73,
+      "end": 927.21
+    },
+    {
+      "name": "no_executable",
+      "start": 927.21,
+      "end": 935.77
+    },
+    {
+      "name": "as_it_runs",
+      "start": 935.77,
+      "end": 940.63
+    },
+    {
+      "name": "useful_dev",
+      "start": 940.63,
+      "end": 948.75
+    },
+    {
+      "name": "change_and_test",
+      "start": 948.75,
+      "end": 955.79
+    },
+    {
+      "name": "tradeoff",
+      "start": 955.79,
+      "end": 963.89
+    },
+    {
+      "name": "slower",
+      "start": 963.89,
+      "end": 976.31
+    },
+    {
+      "name": "scenario_interp",
+      "start": 976.31,
+      "end": 983.95
+    },
+    {
+      "name": "scenario_compile",
+      "start": 983.95,
+      "end": 993.27
+    },
+    {
+      "name": "compare_open",
+      "start": 993.27,
+      "end": 997.23
+    },
+    {
+      "name": "cmp_when",
+      "start": 997.23,
+      "end": 1000.93
+    },
+    {
+      "name": "cmp_when_i",
+      "start": 1000.93,
+      "end": 1008.05
+    },
+    {
+      "name": "cmp_output",
+      "start": 1008.05,
+      "end": 1012.59
+    },
+    {
+      "name": "cmp_output_i",
+      "start": 1012.59,
+      "end": 1018.69
+    },
+    {
+      "name": "cmp_errors",
+      "start": 1018.69,
+      "end": 1023.93
+    },
+    {
+      "name": "cmp_errors_i",
+      "start": 1023.93,
+      "end": 1031.67
+    },
+    {
+      "name": "cmp_speed",
+      "start": 1031.67,
+      "end": 1038.9
+    },
+    {
+      "name": "cmp_speed_i",
+      "start": 1038.9,
+      "end": 1046.09
+    },
+    {
+      "name": "cmp_use_i",
+      "start": 1046.09,
+      "end": 1052.21
+    },
+    {
+      "name": "cmp_use_c",
+      "start": 1052.21,
+      "end": 1064.07
+    },
+    {
+      "name": "exam_compare",
+      "start": 1064.07,
+      "end": 1068.83
+    },
+    {
+      "name": "same_feature",
+      "start": 1068.83,
+      "end": 1083.22
+    },
+    {
+      "name": "ide_open",
+      "start": 1083.22,
+      "end": 1088.84
+    },
+    {
+      "name": "ide_combines",
+      "start": 1088.84,
+      "end": 1094.52
+    },
+    {
+      "name": "ide_editor",
+      "start": 1094.52,
+      "end": 1099.0
+    },
+    {
+      "name": "ide_highlight",
+      "start": 1099.0,
+      "end": 1105.8
+    },
+    {
+      "name": "ide_translator",
+      "start": 1105.8,
+      "end": 1111.28
+    },
+    {
+      "name": "ide_runtime",
+      "start": 1111.28,
+      "end": 1120.02
+    },
+    {
+      "name": "ide_diagnostics",
+      "start": 1120.02,
+      "end": 1127.98
+    },
+    {
+      "name": "ide_helps",
+      "start": 1127.98,
+      "end": 1133.61
+    },
+    {
+      "name": "ide_autocomplete",
+      "start": 1133.61,
+      "end": 1142.61
+    },
+    {
+      "name": "ide_autocorrect",
+      "start": 1142.61,
+      "end": 1147.51
+    },
+    {
+      "name": "ide_pretty",
+      "start": 1147.51,
+      "end": 1156.05
+    },
+    {
+      "name": "ide_colour",
+      "start": 1156.05,
+      "end": 1160.65
+    },
+    {
+      "name": "exam_ide",
+      "start": 1160.65,
+      "end": 1168.19
+    },
+    {
+      "name": "too_general",
+      "start": 1168.19,
+      "end": 1176.6
+    },
+    {
+      "name": "together_open",
+      "start": 1176.6,
+      "end": 1178.84
+    },
+    {
+      "name": "sensor_scene",
+      "start": 1178.84,
+      "end": 1188.96
+    },
+    {
+      "name": "ide_provides",
+      "start": 1188.96,
+      "end": 1195.02
+    },
+    {
+      "name": "interp_linebyline",
+      "start": 1195.02,
+      "end": 1206.84
+    },
+    {
+      "name": "diag_help",
+      "start": 1206.84,
+      "end": 1211.26
+    },
+    {
+      "name": "needs_timing",
+      "start": 1211.26,
+      "end": 1217.86
+    },
+    {
+      "name": "choose_low2",
+      "start": 1217.86,
+      "end": 1222.47
+    },
+    {
+      "name": "assembler2",
+      "start": 1222.47,
+      "end": 1234.46
+    },
+    {
+      "name": "not_alone",
+      "start": 1234.46,
+      "end": 1237.84
+    },
+    {
+      "name": "through_os",
+      "start": 1237.84,
+      "end": 1248.86
+    },
+    {
+      "name": "driver_sensor",
+      "start": 1248.86,
+      "end": 1253.48
+    },
+    {
+      "name": "connects_all",
+      "start": 1253.48,
+      "end": 1262.94
+    },
+    {
+      "name": "recap_open",
+      "start": 1262.94,
+      "end": 1266.98
+    },
+    {
+      "name": "recap_sys",
+      "start": 1266.98,
+      "end": 1271.78
+    },
+    {
+      "name": "recap_app",
+      "start": 1271.78,
+      "end": 1276.18
+    },
+    {
+      "name": "recap_os",
+      "start": 1276.18,
+      "end": 1285.52
+    },
+    {
+      "name": "recap_services",
+      "start": 1285.52,
+      "end": 1292.4
+    },
+    {
+      "name": "recap_boot",
+      "start": 1292.4,
+      "end": 1296.82
+    },
+    {
+      "name": "recap_loader",
+      "start": 1296.82,
+      "end": 1301.02
+    },
+    {
+      "name": "recap_os_runs",
+      "start": 1301.02,
+      "end": 1307.22
+    },
+    {
+      "name": "recap_interrupt",
+      "start": 1307.22,
+      "end": 1314.56
+    },
+    {
+      "name": "recap_steps",
+      "start": 1314.56,
+      "end": 1326.18
+    },
+    {
+      "name": "recap_restore",
+      "start": 1326.18,
+      "end": 1334.2
+    },
+    {
+      "name": "recap_high",
+      "start": 1334.2,
+      "end": 1345.86
+    },
+    {
+      "name": "recap_low",
+      "start": 1345.86,
+      "end": 1351.42
+    },
+    {
+      "name": "recap_assembler",
+      "start": 1351.42,
+      "end": 1355.56
+    },
+    {
+      "name": "recap_compiler",
+      "start": 1355.56,
+      "end": 1364.26
+    },
+    {
+      "name": "recap_interp",
+      "start": 1364.26,
+      "end": 1370.54
+    },
+    {
+      "name": "recap_ide",
+      "start": 1370.54,
+      "end": 1380.18
+    },
+    {
+      "name": "pause",
+      "start": 1380.18,
+      "end": 1386.06
+    },
+    {
+      "name": "close",
+      "start": 1386.06,
+      "end": 1403.1
+    },
+    {
+      "name": "see_you",
+      "start": 1403.1,
+      "end": 1407.8
+    }
+  ]
+}
