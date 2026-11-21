@@ -639,7 +639,6 @@ class Software(SATScene):
         # strip, which is 5.4 units, and the default height and gap run
         # 6.32: the stack reached y=-3.95 and sat on the strip.
         boot = BootStack(height=0.66, gap=0.46)
-        arrows = boot.starts()
 
         with self.beat("startup_open") as t:
             self.section(t, "What happens at start-up", STARTUP)
@@ -658,8 +657,8 @@ class Software(SATScene):
             with self.beat(beat_name) as t:
                 self.play(Create(boot.boxes[index]), run_time=t.fill(0.2))
                 self.play(FadeIn(boot.labels[index]), run_time=t.fill(0.14))
-                if index < 4:
-                    self.play(Create(arrows[3 - index]),
+                if index < len(boot.boxes) - 1:
+                    self.play(Create(boot.arrow_into(index)),
                               run_time=t.fill(0.14))
                 self.side_note(t, text, fraction=0.3, x=4.1, y=1.5,
                                width=5.0)
@@ -683,7 +682,7 @@ class Software(SATScene):
         with self.beat("starts_bootloader") as t:
             self.play(Create(boot.boxes[2]), run_time=t.fill(0.22))
             self.play(FadeIn(boot.labels[2]), run_time=t.fill(0.16))
-            self.play(Create(arrows[2]), run_time=t.fill(0.16))
+            self.play(Create(boot.arrow_into(2)), run_time=t.fill(0.16))
             t.hold()
 
         with self.beat("bootloader_job") as t:
@@ -700,7 +699,7 @@ class Software(SATScene):
         with self.beat("os_takes_control") as t:
             self.play(Create(boot.boxes[1]), run_time=t.fill(0.2))
             self.play(FadeIn(boot.labels[1]), run_time=t.fill(0.14))
-            self.play(Create(arrows[1]), run_time=t.fill(0.14))
+            self.play(Create(boot.arrow_into(1)), run_time=t.fill(0.14))
             self.side_note(t, "Loaded, the OS takes control of the "
                               "machine's resources.", fraction=0.3,
                            x=4.1, y=1.5, width=5.0)
@@ -709,7 +708,7 @@ class Software(SATScene):
         with self.beat("app_can_run") as t:
             self.play(Create(boot.boxes[0]), run_time=t.fill(0.22))
             self.play(FadeIn(boot.labels[0]), run_time=t.fill(0.16))
-            self.play(Create(arrows[0]), run_time=t.fill(0.16))
+            self.play(Create(boot.arrow_into(0)), run_time=t.fill(0.16))
             t.hold()
 
         with self.beat("app_uses_services") as t:

@@ -227,6 +227,19 @@ class BootStack(VGroup):
         """The upward arrows, in start-up order: firmware first."""
         return list(self.up)[::-1]
 
+    def arrow_into(self, index):
+        """The start-up arrow that points into box ``index`` from below.
+
+        ``starts()`` runs bottom to top, so its k-th arrow points into
+        box ``len - 2 - k``, not box k. Writing those indices out by hand
+        in a scene got them wrong: the bottom arrow was drawn twice and
+        the one between the operating system and the application was
+        never drawn at all. Nothing could catch that -- an arrow that was
+        never created is not off-frame, does not overlap and is not too
+        small -- so the arithmetic lives here instead.
+        """
+        return self.starts()[len(self.boxes) - 2 - index]
+
     def row(self, index):
         return VGroup(self.boxes[index], self.labels[index])
 
