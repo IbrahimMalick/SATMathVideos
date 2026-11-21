@@ -371,11 +371,16 @@ class InterruptTimeline(VGroup):
                     f"The label {label!r} is {label.width:.2f} units wide "
                     f"under a rail only {rail.width:.2f} wide.")
 
-        self.flag_line = Line([-break_half - 0.95, bar * 1.1, 0],
-                              [-break_half - 0.95, 1.25, 0],
+        flag_x = -break_half - 0.95
+        self.flag_line = Line([flag_x, bar * 1.1, 0], [flag_x, 1.25, 0],
                               color=CHARCOAL, stroke_width=2.5)
         self.flag_label = serif("interrupt", size, CHARCOAL)
-        self.flag_label.next_to(self.flag_line, UP, buff=GAP_SM * 0.6)
+        # Beside the mark, not above it. Centred above, the label's right
+        # half runs under the ISR box -- which the acceptance check cannot
+        # see, because it compares text against text and a box is a shape.
+        # Only a frame pulled from the finished render shows it.
+        self.flag_label.move_to([flag_x - GAP_SM * 0.7, 0.72, 0],
+                                aligned_edge=RIGHT)
         self.flag = VGroup(self.flag_line, self.flag_label)
 
         rows = ["where it had reached", "the data it was using"]

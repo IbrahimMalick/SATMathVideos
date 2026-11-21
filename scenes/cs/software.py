@@ -82,7 +82,14 @@ from brand import (
     serif,
 )
 from components.os_core import Chain, callout
-from components.os_shape import FunctionList, LayerStack, SortBench, chips, grid
+from components.os_shape import (
+    FunctionList,
+    LayerStack,
+    SortBench,
+    align_baselines,
+    chips,
+    grid,
+)
 from components.software import (
     BootStack,
     CodeBlock,
@@ -1094,18 +1101,30 @@ class Software(SATScene):
     def machine_and_assembly(self):
         assembly, binary = machine_code()
 
+        # Both columns are built together on shared y coordinates, so
+        # the two headings and the two listings line up as a table
+        # should. Built a beat apart and each centred on its own group,
+        # they sat a few pixels out: "Assembly language" has a descender
+        # and "Machine code" does not, so their ink boxes are different
+        # heights and centring each centres a different thing.
+        asm_head = serif("Assembly language", LABEL_SIZE, SLATE)
+        bin_head = serif("Machine code", LABEL_SIZE, SLATE)
+        asm_head.move_to([-3.4, 1.15, 0])
+        bin_head.move_to([3.1, 1.15, 0])
+        align_baselines([asm_head, bin_head],
+                        ["Assembly language", "Machine code"], LABEL_SIZE)
+        asm_block = CodeBlock(assembly, MARGIN_SIZE, CHARCOAL)
+        bin_block = CodeBlock(binary, MARGIN_SIZE, CHARCOAL)
+        asm_block.move_to([-3.4, 0.15, 0])
+        bin_block.move_to([3.1, 0.15, 0])
+
         with self.beat("machine_open") as t:
             self.section(t, "Machine code and assembly language", ASM)
             t.hold()
 
         with self.beat("machine_defn") as t:
-            block = CodeBlock(binary, MARGIN_SIZE, CHARCOAL)
-            head = serif("Machine code", LABEL_SIZE, SLATE)
-            group = VGroup(head, block).arrange(DOWN, buff=GAP_MD)
-            group.move_to([3.1, 0.35, 0])
-            self.binary_block, self.binary_group = block, group
-            self.play(FadeIn(head), run_time=t.fill(0.18))
-            for line in block.lines:
+            self.play(FadeIn(bin_head), run_time=t.fill(0.18))
+            for line in bin_block.lines:
                 self.play(FadeIn(line), run_time=t.fill(0.16))
             self.say(t, "Binary instructions the processor runs directly",
                      fraction=0.22)
@@ -1117,13 +1136,8 @@ class Software(SATScene):
             t.hold()
 
         with self.beat("assembly_easier") as t:
-            block = CodeBlock(assembly, MARGIN_SIZE, CHARCOAL)
-            head = serif("Assembly language", LABEL_SIZE, SLATE)
-            group = VGroup(head, block).arrange(DOWN, buff=GAP_MD)
-            group.move_to([-3.4, 0.35, 0])
-            self.asm_block, self.asm_group = block, group
-            self.play(FadeIn(head), run_time=t.fill(0.2))
-            for line in block.lines:
+            self.play(FadeIn(asm_head), run_time=t.fill(0.2))
+            for line in asm_block.lines:
                 self.play(FadeIn(line), run_time=t.fill(0.18))
             t.hold()
 
@@ -1133,12 +1147,12 @@ class Software(SATScene):
             t.hold()
 
         with self.beat("mnemonic_eg") as t:
-            self.play(*self.asm_block.light(1), run_time=t.fill(0.22))
+            self.play(*asm_block.light(1), run_time=t.fill(0.22))
             self.say(t, "ADD adds; LDD loads; STO stores", fraction=0.3)
             t.hold()
 
         with self.beat("symbolic") as t:
-            self.play(*self.asm_block.settle(), run_time=t.fill(0.14))
+            self.play(*asm_block.settle(), run_time=t.fill(0.14))
             self.say(t, "and an address can be a name instead of a number",
                      fraction=0.4)
             t.hold()
@@ -1480,7 +1494,7 @@ class Software(SATScene):
         with self.beat("ide_diagnostics") as t:
             self.wipe(t)
             self.title(t, "Error diagnostics", fraction=0.1)
-            self.place(window, self.head, buff=GAP_MD * 1.1)
+            self.place(window, self.head, buff=GAP_SM * 1.2)
             self.window = window
             self.play(Create(window.frame), run_time=t.fill(0.14))
             self.play(Create(window.bar), FadeIn(window.title),
@@ -1829,7 +1843,7 @@ class Software(SATScene):
             self.play(Transform(self.note, line), run_time=t.fill(fraction))
         return self.note
 
-    def band_is_clear(self, line, tol=0.05):
+    def band_is_clear(self, line, tol=0.05, clearance=0.08):
         """Refuse to print commentary through whatever is already there.
 
         The acceptance check compares writing against writing, so a
@@ -1844,7 +1858,11 @@ class Software(SATScene):
                     - max(line.get_left()[0], mobject.get_left()[0]))
             high = (min(line.get_top()[1], mobject.get_top()[1])
                     - max(line.get_bottom()[1], mobject.get_bottom()[1]))
-            if wide > tol and high > tol:
+            # Not merely "does not overlap": a caption whose ascenders
+            # stop 0.02 units under a box reads as touching it on screen.
+            # The old test allowed up to `tol` of real overlap and let
+            # the IDE window through.
+            if wide > tol and high > -clearance:
                 # Name the obstruction. "runs through something already on
                 # screen" sends you measuring every figure in the section
                 # by hand; the label and the overlap say which one it is
@@ -1946,6 +1964,10 @@ def comparison(entries, size=MARGIN_SIZE, row_gap=GAP_SM * 1.7,
         for j, cell in enumerate(row):
             cell.move_to([xs[j], y, 0], aligned_edge=LEFT)
             group.add(cell)
+        # One baseline per row. move_to centres on the ink box, so a
+        # cell with a descender sits a few pixels off one without: the
+        # header row had "Feature" low against "Compiler".
+        align_baselines(row, list(table[i]), size)
         if i:
             cells.append(row)
 
