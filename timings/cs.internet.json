@@ -1,0 +1,876 @@
+{
+  "scene": "cs.internet",
+  "duration": 895.817,
+  "beats": [
+    {
+      "name": "open",
+      "start": 0.0,
+      "end": 3.82
+    },
+    {
+      "name": "welcome",
+      "start": 3.82,
+      "end": 10.92
+    },
+    {
+      "name": "journey_promise",
+      "start": 10.92,
+      "end": 17.12
+    },
+    {
+      "name": "also_cookies",
+      "start": 17.12,
+      "end": 19.22
+    },
+    {
+      "name": "also_threats",
+      "start": 19.22,
+      "end": 24.52
+    },
+    {
+      "name": "also_controls",
+      "start": 24.52,
+      "end": 29.86
+    },
+    {
+      "name": "easy_to_confuse",
+      "start": 29.86,
+      "end": 36.64
+    },
+    {
+      "name": "naming_first_step",
+      "start": 36.64,
+      "end": 40.24
+    },
+    {
+      "name": "explain_it",
+      "start": 40.24,
+      "end": 43.82
+    },
+    {
+      "name": "distinguish",
+      "start": 43.82,
+      "end": 46.78
+    },
+    {
+      "name": "internet_is",
+      "start": 46.78,
+      "end": 53.58
+    },
+    {
+      "name": "web_is",
+      "start": 53.58,
+      "end": 63.98
+    },
+    {
+      "name": "not_the_same",
+      "start": 63.98,
+      "end": 67.74
+    },
+    {
+      "name": "email_example",
+      "start": 67.74,
+      "end": 73.98
+    },
+    {
+      "name": "browser_intro",
+      "start": 73.98,
+      "end": 77.6
+    },
+    {
+      "name": "browser_jobs",
+      "start": 77.6,
+      "end": 85.62
+    },
+    {
+      "name": "browser_tools",
+      "start": 85.62,
+      "end": 97.16
+    },
+    {
+      "name": "url_open",
+      "start": 97.16,
+      "end": 103.26
+    },
+    {
+      "name": "url_parts",
+      "start": 103.26,
+      "end": 108.32
+    },
+    {
+      "name": "three_parts",
+      "start": 108.32,
+      "end": 115.82
+    },
+    {
+      "name": "protocol_is",
+      "start": 115.82,
+      "end": 121.0
+    },
+    {
+      "name": "domain_is",
+      "start": 121.0,
+      "end": 125.62
+    },
+    {
+      "name": "path_is",
+      "start": 125.62,
+      "end": 132.68
+    },
+    {
+      "name": "extract_domain",
+      "start": 132.68,
+      "end": 136.08
+    },
+    {
+      "name": "needs_ip",
+      "start": 136.08,
+      "end": 141.9
+    },
+    {
+      "name": "asks_dns",
+      "start": 141.9,
+      "end": 148.52
+    },
+    {
+      "name": "resolving_means",
+      "start": 148.52,
+      "end": 153.46
+    },
+    {
+      "name": "dns_returns",
+      "start": 153.46,
+      "end": 156.26
+    },
+    {
+      "name": "dns_not_page",
+      "start": 156.26,
+      "end": 160.34
+    },
+    {
+      "name": "dns_job",
+      "start": 160.34,
+      "end": 163.9
+    },
+    {
+      "name": "connects",
+      "start": 163.9,
+      "end": 168.88
+    },
+    {
+      "name": "sends_request",
+      "start": 168.88,
+      "end": 174.06
+    },
+    {
+      "name": "http_is",
+      "start": 174.06,
+      "end": 178.9
+    },
+    {
+      "name": "https_is",
+      "start": 178.9,
+      "end": 185.44
+    },
+    {
+      "name": "server_returns",
+      "start": 185.44,
+      "end": 191.06
+    },
+    {
+      "name": "what_comes_back",
+      "start": 191.06,
+      "end": 200.18
+    },
+    {
+      "name": "renders",
+      "start": 200.18,
+      "end": 209.34
+    },
+    {
+      "name": "recap_1",
+      "start": 209.34,
+      "end": 213.6
+    },
+    {
+      "name": "recap_2",
+      "start": 213.6,
+      "end": 216.34
+    },
+    {
+      "name": "recap_3",
+      "start": 216.34,
+      "end": 220.26
+    },
+    {
+      "name": "recap_4",
+      "start": 220.26,
+      "end": 224.62
+    },
+    {
+      "name": "recap_5",
+      "start": 224.62,
+      "end": 228.32
+    },
+    {
+      "name": "recap_6",
+      "start": 228.32,
+      "end": 232.78
+    },
+    {
+      "name": "distinction",
+      "start": 232.78,
+      "end": 235.86
+    },
+    {
+      "name": "dns_does",
+      "start": 235.86,
+      "end": 239.92
+    },
+    {
+      "name": "server_does",
+      "start": 239.92,
+      "end": 243.24
+    },
+    {
+      "name": "cookies_open",
+      "start": 243.24,
+      "end": 248.78
+    },
+    {
+      "name": "cookie_is",
+      "start": 248.78,
+      "end": 254.26
+    },
+    {
+      "name": "cookies_convenient",
+      "start": 254.26,
+      "end": 257.56
+    },
+    {
+      "name": "basket",
+      "start": 257.56,
+      "end": 261.8
+    },
+    {
+      "name": "preferences",
+      "start": 261.8,
+      "end": 267.04
+    },
+    {
+      "name": "two_types",
+      "start": 267.04,
+      "end": 270.54
+    },
+    {
+      "name": "named",
+      "start": 270.54,
+      "end": 273.46
+    },
+    {
+      "name": "session_is",
+      "start": 273.46,
+      "end": 278.66
+    },
+    {
+      "name": "session_deleted",
+      "start": 278.66,
+      "end": 283.4
+    },
+    {
+      "name": "session_use",
+      "start": 283.4,
+      "end": 290.32
+    },
+    {
+      "name": "persistent_is",
+      "start": 290.32,
+      "end": 294.32
+    },
+    {
+      "name": "persistent_until",
+      "start": 294.32,
+      "end": 298.44
+    },
+    {
+      "name": "persistent_use",
+      "start": 298.44,
+      "end": 306.96
+    },
+    {
+      "name": "privacy",
+      "start": 306.96,
+      "end": 313.16
+    },
+    {
+      "name": "tracking",
+      "start": 313.16,
+      "end": 319.32
+    },
+    {
+      "name": "compare_cookies",
+      "start": 319.32,
+      "end": 323.92
+    },
+    {
+      "name": "currency_open",
+      "start": 323.92,
+      "end": 327.1
+    },
+    {
+      "name": "currency_is",
+      "start": 327.1,
+      "end": 333.3
+    },
+    {
+      "name": "uses_blockchain",
+      "start": 333.3,
+      "end": 337.34
+    },
+    {
+      "name": "ledger",
+      "start": 337.34,
+      "end": 343.18
+    },
+    {
+      "name": "simplified",
+      "start": 343.18,
+      "end": 349.5
+    },
+    {
+      "name": "broadcast",
+      "start": 349.5,
+      "end": 355.9
+    },
+    {
+      "name": "network_checks",
+      "start": 355.9,
+      "end": 360.71
+    },
+    {
+      "name": "grouped",
+      "start": 360.71,
+      "end": 363.7
+    },
+    {
+      "name": "timestamp_link",
+      "start": 363.7,
+      "end": 369.5
+    },
+    {
+      "name": "replicated",
+      "start": 369.5,
+      "end": 378.16
+    },
+    {
+      "name": "changing_older",
+      "start": 378.16,
+      "end": 382.12
+    },
+    {
+      "name": "needs_network",
+      "start": 382.12,
+      "end": 386.12
+    },
+    {
+      "name": "difficult",
+      "start": 386.12,
+      "end": 389.5
+    },
+    {
+      "name": "not_impossible",
+      "start": 389.5,
+      "end": 394.68
+    },
+    {
+      "name": "accurate",
+      "start": 394.68,
+      "end": 403.88
+    },
+    {
+      "name": "threats_open",
+      "start": 403.88,
+      "end": 406.78
+    },
+    {
+      "name": "threat_is",
+      "start": 406.78,
+      "end": 413.46
+    },
+    {
+      "name": "different_ways",
+      "start": 413.46,
+      "end": 415.9
+    },
+    {
+      "name": "brute_force",
+      "start": 415.9,
+      "end": 424.0
+    },
+    {
+      "name": "interception",
+      "start": 424.0,
+      "end": 430.6
+    },
+    {
+      "name": "hacking",
+      "start": 430.6,
+      "end": 436.08
+    },
+    {
+      "name": "ddos",
+      "start": 436.08,
+      "end": 441.06
+    },
+    {
+      "name": "ddos_flood",
+      "start": 441.06,
+      "end": 444.72
+    },
+    {
+      "name": "ddos_aim",
+      "start": 444.72,
+      "end": 452.98
+    },
+    {
+      "name": "availability",
+      "start": 452.98,
+      "end": 454.88
+    },
+    {
+      "name": "malware_open",
+      "start": 454.88,
+      "end": 457.26
+    },
+    {
+      "name": "malware_types",
+      "start": 457.26,
+      "end": 460.24
+    },
+    {
+      "name": "virus",
+      "start": 460.24,
+      "end": 466.6
+    },
+    {
+      "name": "worm",
+      "start": 466.6,
+      "end": 474.46
+    },
+    {
+      "name": "trojan",
+      "start": 474.46,
+      "end": 482.3
+    },
+    {
+      "name": "spyware",
+      "start": 482.3,
+      "end": 488.3
+    },
+    {
+      "name": "adware",
+      "start": 488.3,
+      "end": 493.78
+    },
+    {
+      "name": "ransomware",
+      "start": 493.78,
+      "end": 498.36
+    },
+    {
+      "name": "mechanisms",
+      "start": 498.36,
+      "end": 502.58
+    },
+    {
+      "name": "virus_host",
+      "start": 502.58,
+      "end": 507.28
+    },
+    {
+      "name": "worm_self",
+      "start": 507.28,
+      "end": 511.3
+    },
+    {
+      "name": "trojan_deceives",
+      "start": 511.3,
+      "end": 515.58
+    },
+    {
+      "name": "ransomware_blocks",
+      "start": 515.58,
+      "end": 519.68
+    },
+    {
+      "name": "spyware_collects",
+      "start": 519.68,
+      "end": 523.14
+    },
+    {
+      "name": "too_vague",
+      "start": 523.14,
+      "end": 527.14
+    },
+    {
+      "name": "name_it",
+      "start": 527.14,
+      "end": 530.62
+    },
+    {
+      "name": "deceive_open",
+      "start": 530.62,
+      "end": 533.76
+    },
+    {
+      "name": "phishing_is",
+      "start": 533.76,
+      "end": 541.4
+    },
+    {
+      "name": "phishing_bank",
+      "start": 541.4,
+      "end": 547.46
+    },
+    {
+      "name": "phishing_link",
+      "start": 547.46,
+      "end": 553.78
+    },
+    {
+      "name": "pharming_is",
+      "start": 553.78,
+      "end": 555.64
+    },
+    {
+      "name": "pharming_how",
+      "start": 555.64,
+      "end": 561.46
+    },
+    {
+      "name": "pharming_cause",
+      "start": 561.46,
+      "end": 568.36
+    },
+    {
+      "name": "keep_clear",
+      "start": 568.36,
+      "end": 570.38
+    },
+    {
+      "name": "phishing_short",
+      "start": 570.38,
+      "end": 574.62
+    },
+    {
+      "name": "pharming_short",
+      "start": 574.62,
+      "end": 579.56
+    },
+    {
+      "name": "social_is",
+      "start": 579.56,
+      "end": 586.06
+    },
+    {
+      "name": "pretend",
+      "start": 586.06,
+      "end": 592.94
+    },
+    {
+      "name": "social_aim",
+      "start": 592.94,
+      "end": 602.02
+    },
+    {
+      "name": "not_only_software",
+      "start": 602.02,
+      "end": 605.78
+    },
+    {
+      "name": "people_decide",
+      "start": 605.78,
+      "end": 608.78
+    },
+    {
+      "name": "controls_open",
+      "start": 608.78,
+      "end": 612.86
+    },
+    {
+      "name": "authentication",
+      "start": 612.86,
+      "end": 616.56
+    },
+    {
+      "name": "auth_kinds",
+      "start": 616.56,
+      "end": 622.56
+    },
+    {
+      "name": "two_step",
+      "start": 622.56,
+      "end": 628.46
+    },
+    {
+      "name": "code_to_device",
+      "start": 628.46,
+      "end": 633.48
+    },
+    {
+      "name": "stolen_password",
+      "start": 633.48,
+      "end": 639.16
+    },
+    {
+      "name": "access_levels",
+      "start": 639.16,
+      "end": 643.94
+    },
+    {
+      "name": "student_account",
+      "start": 643.94,
+      "end": 650.12
+    },
+    {
+      "name": "firewall",
+      "start": 650.12,
+      "end": 656.9
+    },
+    {
+      "name": "firewall_limits",
+      "start": 656.9,
+      "end": 661.48
+    },
+    {
+      "name": "antimalware",
+      "start": 661.48,
+      "end": 667.1
+    },
+    {
+      "name": "updates",
+      "start": 667.1,
+      "end": 671.34
+    },
+    {
+      "name": "updates_why",
+      "start": 671.34,
+      "end": 678.14
+    },
+    {
+      "name": "encryption",
+      "start": 678.14,
+      "end": 683.04
+    },
+    {
+      "name": "https_again",
+      "start": 683.04,
+      "end": 689.02
+    },
+    {
+      "name": "certificate",
+      "start": 689.02,
+      "end": 695.78
+    },
+    {
+      "name": "https_limit",
+      "start": 695.78,
+      "end": 702.94
+    },
+    {
+      "name": "fake_still_lies",
+      "start": 702.94,
+      "end": 709.06
+    },
+    {
+      "name": "proxy",
+      "start": 709.06,
+      "end": 713.88
+    },
+    {
+      "name": "proxy_does",
+      "start": 713.88,
+      "end": 719.94
+    },
+    {
+      "name": "privacy_settings",
+      "start": 719.94,
+      "end": 724.86
+    },
+    {
+      "name": "check_message",
+      "start": 724.86,
+      "end": 731.42
+    },
+    {
+      "name": "check_link",
+      "start": 731.42,
+      "end": 737.18
+    },
+    {
+      "name": "no_single",
+      "start": 737.18,
+      "end": 740.06
+    },
+    {
+      "name": "layers",
+      "start": 740.06,
+      "end": 744.36
+    },
+    {
+      "name": "example_open",
+      "start": 744.36,
+      "end": 748.06
+    },
+    {
+      "name": "check_sender",
+      "start": 748.06,
+      "end": 750.06
+    },
+    {
+      "name": "sender_address",
+      "start": 750.06,
+      "end": 755.06
+    },
+    {
+      "name": "check_wording",
+      "start": 755.06,
+      "end": 757.4
+    },
+    {
+      "name": "wording_signs",
+      "start": 757.4,
+      "end": 763.56
+    },
+    {
+      "name": "check_destination",
+      "start": 763.56,
+      "end": 767.9
+    },
+    {
+      "name": "text_vs_address",
+      "start": 767.9,
+      "end": 775.5
+    },
+    {
+      "name": "do_not_enter",
+      "start": 775.5,
+      "end": 780.26
+    },
+    {
+      "name": "contact_directly",
+      "start": 780.26,
+      "end": 786.84
+    },
+    {
+      "name": "two_step_helps",
+      "start": 786.84,
+      "end": 792.3
+    },
+    {
+      "name": "but_not_the_code",
+      "start": 792.3,
+      "end": 796.1
+    },
+    {
+      "name": "both_matter",
+      "start": 796.1,
+      "end": 801.14
+    },
+    {
+      "name": "recap_open",
+      "start": 801.14,
+      "end": 804.54
+    },
+    {
+      "name": "r_internet",
+      "start": 804.54,
+      "end": 807.98
+    },
+    {
+      "name": "r_web",
+      "start": 807.98,
+      "end": 816.02
+    },
+    {
+      "name": "r_dns",
+      "start": 816.02,
+      "end": 820.18
+    },
+    {
+      "name": "r_browser",
+      "start": 820.18,
+      "end": 827.66
+    },
+    {
+      "name": "r_cookies",
+      "start": 827.66,
+      "end": 832.32
+    },
+    {
+      "name": "r_blockchain",
+      "start": 832.32,
+      "end": 839.0
+    },
+    {
+      "name": "r_threats",
+      "start": 839.0,
+      "end": 842.32
+    },
+    {
+      "name": "r_virus",
+      "start": 842.32,
+      "end": 845.04
+    },
+    {
+      "name": "r_worm",
+      "start": 845.04,
+      "end": 847.78
+    },
+    {
+      "name": "r_phishing",
+      "start": 847.78,
+      "end": 854.72
+    },
+    {
+      "name": "r_ddos",
+      "start": 854.72,
+      "end": 858.8
+    },
+    {
+      "name": "r_ransomware",
+      "start": 858.8,
+      "end": 862.3
+    },
+    {
+      "name": "r_layers",
+      "start": 862.3,
+      "end": 865.04
+    },
+    {
+      "name": "r_controls",
+      "start": 865.04,
+      "end": 876.18
+    },
+    {
+      "name": "r_each",
+      "start": 876.18,
+      "end": 881.36
+    },
+    {
+      "name": "exam_advice",
+      "start": 881.36,
+      "end": 886.6
+    },
+    {
+      "name": "connect_control",
+      "start": 886.6,
+      "end": 890.26
+    },
+    {
+      "name": "close",
+      "start": 890.26,
+      "end": 895.817
+    }
+  ]
+}

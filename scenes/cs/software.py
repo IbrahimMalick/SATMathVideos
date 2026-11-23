@@ -46,7 +46,6 @@ Render: python build/render.py scripts/CH04-software.md \\
     audio/CH04-software.m4a
 """
 
-import textwrap
 from contextlib import contextmanager
 
 from manim import (
@@ -82,14 +81,8 @@ from brand import (
     serif,
 )
 from components.os_core import Chain, callout
-from components.os_shape import (
-    FunctionList,
-    LayerStack,
-    SortBench,
-    align_baselines,
-    chips,
-    grid,
-)
+from components.os_shape import FunctionList, LayerStack, SortBench, chips, grid
+from components.editorial import columns, fit, numbered, prose
 from components.software import (
     BootStack,
     CodeBlock,
@@ -229,26 +222,6 @@ QUESTIONS = [
     "Compare a compiler and an interpreter.",
     "Name two IDE features, and say what each does.",
 ]
-
-
-def fit(mobject, width=FRAME_SAFE):
-    if mobject.width > width:
-        mobject.scale_to_fit_width(width)
-    return mobject
-
-
-def prose(text, size=BODY_SIZE, color=CHARCOAL, width=FRAME_SAFE):
-    """A sentence that wraps to fit rather than shrinking to fit."""
-    body = serif(text, size, color)
-    if body.width <= width:
-        return body
-    budget = max(10, int(len(text) * width / body.width))
-    while budget >= 10:
-        body = serif(textwrap.fill(text, budget), size, color)
-        if body.width <= width:
-            return body
-        budget -= 2
-    return fit(body, width)
 
 
 def machine_code():
@@ -1396,7 +1369,8 @@ class Software(SATScene):
     def side_by_side(self):
         with self.beat("compare_open") as t:
             self.section(t, "Side by side", SIDEBYSIDE)
-            table, cells, heads = comparison(COMPARISON)
+            table, cells, heads = columns(
+                ("Feature", "Compiler", "Interpreter"), COMPARISON)
             self.place(table, self.head, buff=GAP_SM * 1.2)
             self.table, self.cells = table, cells
             self.play(*[FadeIn(head) for head in heads],
@@ -1884,100 +1858,3 @@ class Software(SATScene):
 
 
 # ----------------------------------------------------- local furniture
-
-def numbered(items, size=LABEL_SIZE, color=CHARCOAL, number_color=GREY,
-             gap=GAP_SM * 1.4, width=FRAME_SAFE):
-    """A numbered list with a hanging indent, like ``FunctionList``.
-
-    Returns the group and the rows, so a scene can bring them in one at
-    a time. Each row is placed from one origin rather than next to the
-    row above, because a row whose text has no descender sits higher
-    than one that does and a column built with ``next_to`` walks.
-    """
-    rows, numbers, labels = VGroup(), [], []
-    for index, text in enumerate(items):
-        number = serif(f"{index + 1}", size, number_color)
-        label = prose(text, size, color, width - 1.0)
-        numbers.append(number)
-        labels.append(label)
-
-    widest = max(number.width for number in numbers)
-    pitch = max(label.height for label in labels) + gap
-    for index, (number, label) in enumerate(zip(numbers, labels)):
-        y = -index * pitch
-        number.move_to([-width / 2 + widest, y, 0], aligned_edge=RIGHT)
-        label.move_to([-width / 2 + widest + GAP_SM * 1.4, y, 0],
-                      aligned_edge=LEFT)
-        # A wrapped label is taller than one line, so its centre is not
-        # its first line. Lift it so the first line sits on the number.
-        if label.height > pitch - gap + 0.01:
-            label.shift(UP * (label.height - (pitch - gap)) / 2)
-        row = VGroup(number, label)
-        rows.add(row)
-    group = VGroup(rows)
-    group.move_to(ORIGIN)
-    if group.width > width:
-        raise ValueError(
-            f"A numbered list is {group.width:.2f} units wide, over the "
-            f"{width:.2f} the frame allows.")
-    return group, rows
-
-
-def comparison(entries, size=MARGIN_SIZE, row_gap=GAP_SM * 1.7,
-               col_gap=GAP_MD * 0.8, width=FRAME_SAFE):
-    """Feature, compiler, interpreter: three columns on one left edge.
-
-    ``make_table`` in components.table right-aligns its cells, which is
-    right for numbers and wrong for prose, so the columns here are laid
-    out on their left edges instead.
-
-    The column positions are measured rather than chosen. Hardcoded x
-    values were wrong twice over: the serif face is wider per character
-    than it looks, so a table that was supposed to fit in 12.6 units
-    came out at 12.97, and the fix by eye then put two columns 4
-    hundredths apart. Taking each column's width from its own widest
-    cell makes both faults impossible to reintroduce.
-    """
-    heads = ("Feature", "Compiler", "Interpreter")
-    # Build every cell first, then let the widest in each column set the
-    # column's x.
-    table = [list(heads)] + [list(row) for row in entries]
-    made = [[serif(text, size, GREY if i == 0 or j == 0 else CHARCOAL)
-             for j, text in enumerate(row)]
-            for i, row in enumerate(table)]
-    spans = [max(row[j].width for row in made) for j in range(3)]
-
-    total = sum(spans) + col_gap * 2
-    if total > width:
-        raise ValueError(
-            f"The comparison needs {total:.2f} units and the frame allows "
-            f"{width:.2f}. Shorten the longest cell in the widest column: "
-            + ", ".join(f"{span:.2f}" for span in spans))
-
-    left = -total / 2
-    xs = []
-    for span in spans:
-        xs.append(left)
-        left += span + col_gap
-
-    pitch = made[0][0].height + row_gap
-    group, cells = VGroup(), []
-    for i, row in enumerate(made):
-        y = 0.0 if i == 0 else -(i * pitch + row_gap)
-        for j, cell in enumerate(row):
-            cell.move_to([xs[j], y, 0], aligned_edge=LEFT)
-            group.add(cell)
-        # One baseline per row. move_to centres on the ink box, so a
-        # cell with a descender sits a few pixels off one without: the
-        # header row had "Feature" low against "Compiler".
-        align_baselines(row, list(table[i]), size)
-        if i:
-            cells.append(row)
-
-    rule = Line([xs[0] - GAP_SM, -pitch / 2 - row_gap / 2, 0],
-                [xs[2] + spans[2] + GAP_SM, -pitch / 2 - row_gap / 2, 0],
-                color=GREY, stroke_width=1.5)
-    group.add(rule)
-    group.rule = rule
-    group.move_to(ORIGIN)
-    return group, cells, made[0]
