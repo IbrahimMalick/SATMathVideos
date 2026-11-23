@@ -278,9 +278,11 @@ class Internet(SATScene):
             bench = SortBench("The internet", "The World Wide Web")
             bench.next_to(self.head, DOWN, buff=GAP_MD)
             self.bench = bench
+            # One play, not two: this beat also pays for the strip's
+            # first appearance, and five plays at the 0.5s pacing floor
+            # need 2.5s of a 2.4s beat.
             self.play(Write(bench.heads[0]), Write(bench.heads[1]),
-                      run_time=t.fill(0.3))
-            self.play(Create(bench.rules), run_time=t.fill(0.22))
+                      Create(bench.rules), run_time=t.fill(0.4))
             t.hold()
 
         with self.beat("internet_is") as t:
@@ -689,19 +691,20 @@ class Internet(SATScene):
             self.section(t, "Cybersecurity threats", THREATS)
             t.hold()
 
+        # The definition goes in the commentary band rather than on a
+        # line of its own. Placed above the table it pushed four rows
+        # down into the band, and there is no arrangement of the two
+        # that fits: the table alone needs everything under the heading.
         with self.beat("threat_is") as t:
-            defn = prose("An action or a piece of software that puts data "
-                         "or systems at risk.", BODY_SIZE, CHARCOAL, 11.8)
-            self.place(defn, self.head, buff=GAP_MD * 1.4)
-            self.threat_defn = defn
-            self.play(FadeIn(defn), run_time=t.fill(0.4))
+            self.say(t, "An action or a piece of software that puts data "
+                        "or systems at risk.", fraction=0.4)
             t.hold()
 
         with self.beat("different_ways") as t:
             table, cells, heads = columns(
                 ("Threat", "How it works"), THREAT_ROWS,
                 row_gap=GAP_SM * 1.3)
-            self.place(table, self.threat_defn, buff=GAP_LG * 0.8)
+            self.place(table, self.head, buff=GAP_MD * 1.2)
             self.table, self.cells = table, cells
             self.play(*[FadeIn(head) for head in heads],
                       Create(table.rule), run_time=t.fill(0.4))
@@ -746,7 +749,7 @@ class Internet(SATScene):
             table, cells, heads = columns(
                 ("Type", "How it works"), MALWARE_ROWS,
                 row_gap=GAP_SM * 1.1)
-            self.place(table, self.head, buff=GAP_MD * 1.3)
+            self.place(table, self.head, buff=GAP_SM * 1.2)
             self.mal_table, self.mal_cells = table, cells
             self.play(*[FadeIn(head) for head in heads],
                       Create(table.rule), run_time=t.fill(0.4))
