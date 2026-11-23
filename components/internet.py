@@ -177,10 +177,18 @@ class Journey:
     def __init__(self, size=MARGIN_SIZE, box=3.3, height=1.2):
         self.browser, self.browser_box = self._panel(
             "Browser", [-4.4, 0.25, 0], box, height, size, SLATE)
+        # 1.85 and -1.35, not 2.05 and -1.55. At 2.05 the top of the DNS
+        # box sat at 2.65 and the descenders of a section heading placed
+        # with to_edge(UP, 0.85) reach 2.60, so the box line was drawn
+        # straight through the tail of a 'p' or 'g'. Nothing here could
+        # catch it: a box is not text, and the acceptance check compares
+        # text against text. Dropping both boxes by a fifth of a unit
+        # keeps the browser at the midpoint and leaves the web server
+        # 0.36 units clear of the commentary band below.
         self.dns, self.dns_box = self._panel(
-            "DNS server", [3.2, 2.05, 0], box, height, size, GREY)
+            "DNS server", [3.2, 1.85, 0], box, height, size, GREY)
         self.server, self.server_box = self._panel(
-            "Web server", [3.2, -1.55, 0], box, height, size, SLATE)
+            "Web server", [3.2, -1.35, 0], box, height, size, SLATE)
 
         # 0.45 apart, not 0.18. Over a diagonal of nearly eight units a
         # pair offset by a fifth of a unit renders as one line with a
