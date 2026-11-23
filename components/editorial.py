@@ -135,7 +135,12 @@ def columns(heads, entries, size=MARGIN_SIZE, row_gap=GAP_SM * 1.7,
         xs.append(left)
         left += span + col_gap
 
-    pitch = made[0][0].height + row_gap
+    # The tallest cell anywhere in the table, not the first header cell.
+    # A table whose first heading is blank -- the comparison tables, where
+    # the left column labels the rows rather than naming a column -- gave
+    # that cell a height of zero, and every row then sat a row gap apart
+    # with its text overlapping the row above by a seventh of a unit.
+    pitch = max(cell.height for row in made for cell in row) + row_gap
     group, cells = VGroup(), []
     for i, row in enumerate(made):
         y = 0.0 if i == 0 else -(i * pitch + row_gap)

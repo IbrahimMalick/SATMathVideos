@@ -1,0 +1,971 @@
+{
+  "scene": "cs.automation",
+  "duration": 1330.4,
+  "beats": [
+    {
+      "name": "open",
+      "start": 0.72,
+      "end": 7.9
+    },
+    {
+      "name": "three_areas",
+      "start": 7.9,
+      "end": 17.58
+    },
+    {
+      "name": "sensors_actuators",
+      "start": 17.58,
+      "end": 24.12
+    },
+    {
+      "name": "robots_where",
+      "start": 24.12,
+      "end": 34.9
+    },
+    {
+      "name": "focus_on",
+      "start": 34.9,
+      "end": 40.62
+    },
+    {
+      "name": "produces",
+      "start": 40.62,
+      "end": 45.82
+    },
+    {
+      "name": "auto_open",
+      "start": 45.82,
+      "end": 51.98
+    },
+    {
+      "name": "follow_info",
+      "start": 51.98,
+      "end": 58.32
+    },
+    {
+      "name": "sensor_gathers",
+      "start": 58.32,
+      "end": 61.74
+    },
+    {
+      "name": "micro_receives",
+      "start": 61.74,
+      "end": 66.2
+    },
+    {
+      "name": "actuator_does",
+      "start": 66.2,
+      "end": 72.22
+    },
+    {
+      "name": "greenhouse",
+      "start": 72.22,
+      "end": 76.2
+    },
+    {
+      "name": "moisture",
+      "start": 76.2,
+      "end": 80.46
+    },
+    {
+      "name": "reading_sent",
+      "start": 80.46,
+      "end": 84.16
+    },
+    {
+      "name": "compares",
+      "start": 84.16,
+      "end": 89.1
+    },
+    {
+      "name": "too_dry",
+      "start": 89.1,
+      "end": 95.42
+    },
+    {
+      "name": "opens_valve",
+      "start": 95.42,
+      "end": 100.46
+    },
+    {
+      "name": "another_reading",
+      "start": 100.46,
+      "end": 106.8
+    },
+    {
+      "name": "check_result",
+      "start": 106.8,
+      "end": 112.08
+    },
+    {
+      "name": "still_dry",
+      "start": 112.08,
+      "end": 117.8
+    },
+    {
+      "name": "target_reached",
+      "start": 117.8,
+      "end": 120.94
+    },
+    {
+      "name": "feedback_named",
+      "start": 120.94,
+      "end": 128.06
+    },
+    {
+      "name": "loop_open",
+      "start": 128.06,
+      "end": 131.0
+    },
+    {
+      "name": "measures_property",
+      "start": 131.0,
+      "end": 139.66
+    },
+    {
+      "name": "sends_reading",
+      "start": 139.66,
+      "end": 143.82
+    },
+    {
+      "name": "converted",
+      "start": 143.82,
+      "end": 152.14
+    },
+    {
+      "name": "compare_preset",
+      "start": 152.14,
+      "end": 160.48
+    },
+    {
+      "name": "decides",
+      "start": 160.48,
+      "end": 166.56
+    },
+    {
+      "name": "signal_actuator",
+      "start": 166.56,
+      "end": 171.54
+    },
+    {
+      "name": "changes_system",
+      "start": 171.54,
+      "end": 174.5
+    },
+    {
+      "name": "measures_again",
+      "start": 174.5,
+      "end": 178.98
+    },
+    {
+      "name": "heating",
+      "start": 178.98,
+      "end": 183.98
+    },
+    {
+      "name": "room_temp",
+      "start": 183.98,
+      "end": 194.84
+    },
+    {
+      "name": "too_cold",
+      "start": 194.84,
+      "end": 206.0
+    },
+    {
+      "name": "switch_off",
+      "start": 206.0,
+      "end": 209.26
+    },
+    {
+      "name": "essential",
+      "start": 209.26,
+      "end": 211.2
+    },
+    {
+      "name": "without_feedback",
+      "start": 211.2,
+      "end": 219.6
+    },
+    {
+      "name": "oven",
+      "start": 219.6,
+      "end": 221.86
+    },
+    {
+      "name": "exam_cycle",
+      "start": 221.86,
+      "end": 226.34
+    },
+    {
+      "name": "five_words",
+      "start": 226.34,
+      "end": 239.38
+    },
+    {
+      "name": "uses_open",
+      "start": 239.38,
+      "end": 242.52
+    },
+    {
+      "name": "lighting",
+      "start": 242.52,
+      "end": 247.04
+    },
+    {
+      "name": "proximity",
+      "start": 247.04,
+      "end": 250.66
+    },
+    {
+      "name": "walking_near",
+      "start": 250.66,
+      "end": 261.14
+    },
+    {
+      "name": "lamp_output",
+      "start": 261.14,
+      "end": 271.58
+    },
+    {
+      "name": "weather",
+      "start": 271.58,
+      "end": 278.68
+    },
+    {
+      "name": "record_alarm",
+      "start": 278.68,
+      "end": 286.36
+    },
+    {
+      "name": "tank",
+      "start": 286.36,
+      "end": 294.6
+    },
+    {
+      "name": "vehicle",
+      "start": 294.6,
+      "end": 300.62
+    },
+    {
+      "name": "warning_brake",
+      "start": 300.62,
+      "end": 306.74
+    },
+    {
+      "name": "dashboard",
+      "start": 306.74,
+      "end": 314.91
+    },
+    {
+      "name": "identify_three",
+      "start": 314.91,
+      "end": 327.9
+    },
+    {
+      "name": "structure",
+      "start": 327.9,
+      "end": 335.04
+    },
+    {
+      "name": "weigh_open",
+      "start": 335.04,
+      "end": 339.78
+    },
+    {
+      "name": "continuous",
+      "start": 339.78,
+      "end": 344.96
+    },
+    {
+      "name": "quick_precise",
+      "start": 344.96,
+      "end": 353.64
+    },
+    {
+      "name": "dangerous_places",
+      "start": 353.64,
+      "end": 360.16
+    },
+    {
+      "name": "record_data",
+      "start": 360.16,
+      "end": 367.44
+    },
+    {
+      "name": "costs_open",
+      "start": 367.44,
+      "end": 370.38
+    },
+    {
+      "name": "expensive",
+      "start": 370.38,
+      "end": 378.02
+    },
+    {
+      "name": "wrong_action",
+      "start": 378.02,
+      "end": 387.62
+    },
+    {
+      "name": "dangerous_where",
+      "start": 387.62,
+      "end": 395.02
+    },
+    {
+      "name": "unexpected",
+      "start": 395.02,
+      "end": 406.32
+    },
+    {
+      "name": "jobs",
+      "start": 406.32,
+      "end": 416.34
+    },
+    {
+      "name": "cyber",
+      "start": 416.34,
+      "end": 425.54
+    },
+    {
+      "name": "not_good_bad",
+      "start": 425.54,
+      "end": 428.74
+    },
+    {
+      "name": "connect_situation",
+      "start": 428.74,
+      "end": 435.24
+    },
+    {
+      "name": "robot_open",
+      "start": 435.24,
+      "end": 437.12
+    },
+    {
+      "name": "robotics_is",
+      "start": 437.12,
+      "end": 444.5
+    },
+    {
+      "name": "robot_is",
+      "start": 444.5,
+      "end": 456.76
+    },
+    {
+      "name": "structure_parts",
+      "start": 456.76,
+      "end": 463.22
+    },
+    {
+      "name": "robot_sensors",
+      "start": 463.22,
+      "end": 467.8
+    },
+    {
+      "name": "robot_processor",
+      "start": 467.8,
+      "end": 476.32
+    },
+    {
+      "name": "robot_actuator",
+      "start": 476.32,
+      "end": 483.52
+    },
+    {
+      "name": "programmable",
+      "start": 483.52,
+      "end": 491.64
+    },
+    {
+      "name": "distinguish",
+      "start": 491.64,
+      "end": 498.6
+    },
+    {
+      "name": "washing_machine",
+      "start": 498.6,
+      "end": 503.98
+    },
+    {
+      "name": "not_a_robot",
+      "start": 503.98,
+      "end": 513.42
+    },
+    {
+      "name": "checklist",
+      "start": 513.42,
+      "end": 527.72
+    },
+    {
+      "name": "robot_uses_open",
+      "start": 527.72,
+      "end": 530.84
+    },
+    {
+      "name": "industry",
+      "start": 530.84,
+      "end": 538.6
+    },
+    {
+      "name": "precise_moves",
+      "start": 538.6,
+      "end": 551.14
+    },
+    {
+      "name": "transport",
+      "start": 551.14,
+      "end": 559.6
+    },
+    {
+      "name": "drones",
+      "start": 559.6,
+      "end": 567.22
+    },
+    {
+      "name": "agriculture",
+      "start": 567.22,
+      "end": 576.36
+    },
+    {
+      "name": "large_areas",
+      "start": 576.36,
+      "end": 585.08
+    },
+    {
+      "name": "medicine",
+      "start": 585.08,
+      "end": 597.28
+    },
+    {
+      "name": "homes",
+      "start": 597.28,
+      "end": 605.28
+    },
+    {
+      "name": "entertainment",
+      "start": 605.28,
+      "end": 613.62
+    },
+    {
+      "name": "depends",
+      "start": 613.62,
+      "end": 618.04
+    },
+    {
+      "name": "factory_answer",
+      "start": 618.04,
+      "end": 626.52
+    },
+    {
+      "name": "limitations",
+      "start": 626.52,
+      "end": 639.5
+    },
+    {
+      "name": "balanced",
+      "start": 639.5,
+      "end": 649.36
+    },
+    {
+      "name": "ai_open",
+      "start": 649.36,
+      "end": 654.18
+    },
+    {
+      "name": "ai_is",
+      "start": 654.18,
+      "end": 660.02
+    },
+    {
+      "name": "ai_uses",
+      "start": 660.02,
+      "end": 669.92
+    },
+    {
+      "name": "ai_reasons",
+      "start": 669.92,
+      "end": 680.64
+    },
+    {
+      "name": "mistake",
+      "start": 680.64,
+      "end": 686.26
+    },
+    {
+      "name": "too_vague",
+      "start": 686.26,
+      "end": 691.72
+    },
+    {
+      "name": "instead",
+      "start": 691.72,
+      "end": 704.02
+    },
+    {
+      "name": "can_learn",
+      "start": 704.02,
+      "end": 710.64
+    },
+    {
+      "name": "two_examples",
+      "start": 710.64,
+      "end": 718.24
+    },
+    {
+      "name": "expert_open",
+      "start": 718.24,
+      "end": 731.82
+    },
+    {
+      "name": "plant_disease",
+      "start": 731.82,
+      "end": 739.46
+    },
+    {
+      "name": "four_parts",
+      "start": 739.46,
+      "end": 743.94
+    },
+    {
+      "name": "knowledge_base",
+      "start": 743.94,
+      "end": 749.32
+    },
+    {
+      "name": "rule_base",
+      "start": 749.32,
+      "end": 754.72
+    },
+    {
+      "name": "inference",
+      "start": 754.72,
+      "end": 765.94
+    },
+    {
+      "name": "interface",
+      "start": 765.94,
+      "end": 774.22
+    },
+    {
+      "name": "follow_open",
+      "start": 774.22,
+      "end": 778.04
+    },
+    {
+      "name": "user_enters",
+      "start": 778.04,
+      "end": 785.46
+    },
+    {
+      "name": "engine_checks",
+      "start": 785.46,
+      "end": 793.0
+    },
+    {
+      "name": "applies_rules",
+      "start": 793.0,
+      "end": 804.48
+    },
+    {
+      "name": "presents",
+      "start": 804.48,
+      "end": 815.11
+    },
+    {
+      "name": "displays",
+      "start": 815.11,
+      "end": 827.11
+    },
+    {
+      "name": "engine_role",
+      "start": 827.11,
+      "end": 832.29
+    },
+    {
+      "name": "kb_role",
+      "start": 832.29,
+      "end": 836.79
+    },
+    {
+      "name": "rb_role",
+      "start": 836.79,
+      "end": 839.15
+    },
+    {
+      "name": "ui_role",
+      "start": 839.15,
+      "end": 844.73
+    },
+    {
+      "name": "distinct",
+      "start": 844.73,
+      "end": 849.67
+    },
+    {
+      "name": "strengths_open",
+      "start": 849.67,
+      "end": 854.41
+    },
+    {
+      "name": "consistent",
+      "start": 854.41,
+      "end": 858.55
+    },
+    {
+      "name": "available",
+      "start": 858.55,
+      "end": 864.37
+    },
+    {
+      "name": "preserve",
+      "start": 864.37,
+      "end": 871.39
+    },
+    {
+      "name": "explain_rules",
+      "start": 871.39,
+      "end": 879.35
+    },
+    {
+      "name": "depends_quality",
+      "start": 879.35,
+      "end": 886.45
+    },
+    {
+      "name": "out_of_date",
+      "start": 886.45,
+      "end": 894.97
+    },
+    {
+      "name": "not_covered",
+      "start": 894.97,
+      "end": 902.07
+    },
+    {
+      "name": "no_empathy",
+      "start": 902.07,
+      "end": 908.11
+    },
+    {
+      "name": "updating",
+      "start": 908.11,
+      "end": 915.55
+    },
+    {
+      "name": "narrow_area",
+      "start": 915.55,
+      "end": 928.58
+    },
+    {
+      "name": "ml_open",
+      "start": 928.58,
+      "end": 932.9
+    },
+    {
+      "name": "finds_patterns",
+      "start": 932.9,
+      "end": 937.52
+    },
+    {
+      "name": "during_training",
+      "start": 937.52,
+      "end": 945.0
+    },
+    {
+      "name": "predictions",
+      "start": 945.0,
+      "end": 951.88
+    },
+    {
+      "name": "leaves",
+      "start": 951.88,
+      "end": 959.86
+    },
+    {
+      "name": "distinguishes",
+      "start": 959.86,
+      "end": 967.64
+    },
+    {
+      "name": "new_image",
+      "start": 967.64,
+      "end": 976.66
+    },
+    {
+      "name": "stages_open",
+      "start": 976.66,
+      "end": 981.56
+    },
+    {
+      "name": "collect",
+      "start": 981.56,
+      "end": 984.02
+    },
+    {
+      "name": "prepare",
+      "start": 984.02,
+      "end": 988.24
+    },
+    {
+      "name": "train",
+      "start": 988.24,
+      "end": 991.74
+    },
+    {
+      "name": "evaluate",
+      "start": 991.74,
+      "end": 999.46
+    },
+    {
+      "name": "handle_new",
+      "start": 999.46,
+      "end": 1003.44
+    },
+    {
+      "name": "use_model",
+      "start": 1003.44,
+      "end": 1008.62
+    },
+    {
+      "name": "monitor",
+      "start": 1008.62,
+      "end": 1011.18
+    },
+    {
+      "name": "update",
+      "start": 1011.18,
+      "end": 1016.1
+    },
+    {
+      "name": "no_guarantee",
+      "start": 1016.1,
+      "end": 1023.48
+    },
+    {
+      "name": "biased",
+      "start": 1023.48,
+      "end": 1034.24
+    },
+    {
+      "name": "quality_matters",
+      "start": 1034.24,
+      "end": 1038.24
+    },
+    {
+      "name": "compare_open",
+      "start": 1038.24,
+      "end": 1041.84
+    },
+    {
+      "name": "es_facts",
+      "start": 1041.84,
+      "end": 1047.08
+    },
+    {
+      "name": "ml_patterns",
+      "start": 1047.08,
+      "end": 1052.12
+    },
+    {
+      "name": "es_traced",
+      "start": 1052.12,
+      "end": 1058.06
+    },
+    {
+      "name": "ml_harder",
+      "start": 1058.06,
+      "end": 1063.76
+    },
+    {
+      "name": "es_static",
+      "start": 1063.76,
+      "end": 1069.48
+    },
+    {
+      "name": "ml_adapts",
+      "start": 1069.48,
+      "end": 1078.8
+    },
+    {
+      "name": "es_narrow",
+      "start": 1078.8,
+      "end": 1085.64
+    },
+    {
+      "name": "store_example",
+      "start": 1085.64,
+      "end": 1098.3
+    },
+    {
+      "name": "ml_large",
+      "start": 1098.3,
+      "end": 1107.18
+    },
+    {
+      "name": "neither",
+      "start": 1107.18,
+      "end": 1111.58
+    },
+    {
+      "name": "explain_how",
+      "start": 1111.58,
+      "end": 1124.16
+    },
+    {
+      "name": "example_open",
+      "start": 1124.16,
+      "end": 1129.16
+    },
+    {
+      "name": "ex_sensor",
+      "start": 1129.16,
+      "end": 1134.82
+    },
+    {
+      "name": "ex_sends",
+      "start": 1134.82,
+      "end": 1137.82
+    },
+    {
+      "name": "ex_compares",
+      "start": 1137.82,
+      "end": 1142.32
+    },
+    {
+      "name": "ex_below",
+      "start": 1142.32,
+      "end": 1149.24
+    },
+    {
+      "name": "ex_valve",
+      "start": 1149.24,
+      "end": 1152.4
+    },
+    {
+      "name": "ex_again",
+      "start": 1152.4,
+      "end": 1159.16
+    },
+    {
+      "name": "ex_that_is",
+      "start": 1159.16,
+      "end": 1162.68
+    },
+    {
+      "name": "ex_robot",
+      "start": 1162.68,
+      "end": 1168.66
+    },
+    {
+      "name": "ex_robot_parts",
+      "start": 1168.66,
+      "end": 1178.98
+    },
+    {
+      "name": "ex_ai",
+      "start": 1178.98,
+      "end": 1185.42
+    },
+    {
+      "name": "ex_expert",
+      "start": 1185.42,
+      "end": 1194.36
+    },
+    {
+      "name": "ex_ml",
+      "start": 1194.36,
+      "end": 1203.12
+    },
+    {
+      "name": "ex_depends",
+      "start": 1203.12,
+      "end": 1213.9
+    },
+    {
+      "name": "recap_open",
+      "start": 1213.9,
+      "end": 1223.82
+    },
+    {
+      "name": "r_processor",
+      "start": 1223.82,
+      "end": 1228.28
+    },
+    {
+      "name": "r_loop",
+      "start": 1228.28,
+      "end": 1234.06
+    },
+    {
+      "name": "r_benefits",
+      "start": 1234.06,
+      "end": 1240.04
+    },
+    {
+      "name": "r_costs",
+      "start": 1240.04,
+      "end": 1246.66
+    },
+    {
+      "name": "r_robot",
+      "start": 1246.66,
+      "end": 1254.6
+    },
+    {
+      "name": "r_robot_parts",
+      "start": 1254.6,
+      "end": 1258.66
+    },
+    {
+      "name": "r_ai",
+      "start": 1258.66,
+      "end": 1268.26
+    },
+    {
+      "name": "r_adapt",
+      "start": 1268.26,
+      "end": 1272.26
+    },
+    {
+      "name": "r_expert",
+      "start": 1272.26,
+      "end": 1278.7
+    },
+    {
+      "name": "r_engine",
+      "start": 1278.7,
+      "end": 1282.16
+    },
+    {
+      "name": "r_ml",
+      "start": 1282.16,
+      "end": 1290.92
+    },
+    {
+      "name": "r_unreliable",
+      "start": 1290.92,
+      "end": 1297.22
+    },
+    {
+      "name": "exam_order",
+      "start": 1297.22,
+      "end": 1302.32
+    },
+    {
+      "name": "evaluations",
+      "start": 1302.32,
+      "end": 1312.46
+    },
+    {
+      "name": "close",
+      "start": 1312.46,
+      "end": 1320.14
+    },
+    {
+      "name": "questions",
+      "start": 1320.14,
+      "end": 1330.4
+    }
+  ]
+}

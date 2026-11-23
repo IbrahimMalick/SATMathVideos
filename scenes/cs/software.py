@@ -81,7 +81,14 @@ from brand import (
     serif,
 )
 from components.os_core import Chain, callout
-from components.os_shape import FunctionList, LayerStack, SortBench, chips, grid
+from components.os_shape import (
+    FunctionList,
+    LayerStack,
+    SortBench,
+    align_baselines,
+    chips,
+    grid,
+)
 from components.editorial import columns, fit, numbered, prose
 from components.software import (
     BootStack,
@@ -1369,8 +1376,15 @@ class Software(SATScene):
     def side_by_side(self):
         with self.beat("compare_open") as t:
             self.section(t, "Side by side", SIDEBYSIDE)
+            # A tighter row gap than the default, to hold the table at
+            # the height it was rendered at: ``columns`` now takes its
+            # row pitch from the tallest cell in the table rather than
+            # from the first header cell, which is correct and makes
+            # every row a little taller, and the last row of this one
+            # reached into the commentary band.
             table, cells, heads = columns(
-                ("Feature", "Compiler", "Interpreter"), COMPARISON)
+                ("Feature", "Compiler", "Interpreter"), COMPARISON,
+                row_gap=GAP_SM * 1.35)
             self.place(table, self.head, buff=GAP_SM * 1.2)
             self.table, self.cells = table, cells
             self.play(*[FadeIn(head) for head in heads],
