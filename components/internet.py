@@ -64,6 +64,10 @@ FRAME_SAFE = 12.6
 # An address invented for the lesson. example.org is the reserved
 # documentation domain, so this cannot accidentally be somebody's site.
 URL = "https://www.example.org/notes/chapter5.html"
+# Invented, and distinct, so that each block's "prev" is the block
+# before it rather than a decorative constant.
+HASHES = ["4f2a", "9c1e", "b70d", "25fa", "8e03"]
+
 URL_PARTS = [
     (0, 8, "protocol"),
     (8, 23, "domain name"),
@@ -178,20 +182,50 @@ class Journey:
         self.server, self.server_box = self._panel(
             "Web server", [3.2, -1.55, 0], box, height, size, SLATE)
 
-        self.ask = self._hop(self.browser_box, self.dns_box, GREY, 0.18)
-        self.answer = self._hop(self.dns_box, self.browser_box, SAGE, -0.18)
+        # 0.45 apart, not 0.18. Over a diagonal of nearly eight units a
+        # pair offset by a fifth of a unit renders as one line with a
+        # head at each end -- which is exactly the double-headed arrow
+        # the comment below used to warn against, drawn anyway.
+        # The same lift for all four, not alternating signs. _hop takes
+        # the perpendicular from the arrow's own direction, so a reversed
+        # arrow already has a reversed perpendicular: negating the lift
+        # as well flipped it back and laid the reply exactly on top of
+        # the request. The pair rendered as one line with a head at each
+        # end, and the second arrow drawn hid the first one's colour.
+        self.ask = self._hop(self.browser_box, self.dns_box, GREY, 0.45)
+        self.answer = self._hop(self.dns_box, self.browser_box, SAGE, 0.45)
         self.request = self._hop(self.browser_box, self.server_box, GREY,
-                                 0.18)
+                                 0.45)
         self.resources = self._hop(self.server_box, self.browser_box, SAGE,
-                                   -0.18)
+                                   0.45)
         self.arrows = [self.ask, self.answer, self.request, self.resources]
 
+        # A third of the way along each arrow from its own start, not at
+        # the midpoint. All four midpoints cluster near the browser,
+        # where the arrows meet, and 2 and 3 printed on top of one
+        # another. Measured from each arrow's start they spread out,
+        # because the four arrows start at four different places.
         self.tags = VGroup()
         for index, arrow in enumerate(self.arrows):
             tag = serif(str(index + 1), size, CHARCOAL)
-            spot = arrow.get_center() + self._offset(arrow)
+            start, end = arrow.get_start(), arrow.get_end()
+            spot = start + (end - start) * 0.32 + self._offset(arrow) * 0.8
             tag.move_to(spot)
             self.tags.add(tag)
+
+        # Guard rather than trust: two numbers on top of each other is
+        # not off-frame, does not overlap any *text* the acceptance
+        # check knows about, and is not too small, so nothing else here
+        # would notice.
+        import numpy as np
+        for i in range(len(self.tags)):
+            for j in range(i + 1, len(self.tags)):
+                apart = float(np.linalg.norm(
+                    self.tags[i].get_center() - self.tags[j].get_center()))
+                if apart < 0.6:
+                    raise ValueError(
+                        f"Hop labels {i + 1} and {j + 1} are {apart:.2f} "
+                        "units apart and will read as one mark.")
 
     @staticmethod
     def _panel(name, centre, box, height, size, colour):
@@ -220,8 +254,10 @@ class Journey:
         along = (b - a)
         along = along / np.linalg.norm(along)
         across = np.array([-along[1], along[0], 0.0]) * lift
+        # The boxes are 3.3 wide, so half of one is 1.65: a buff of 1.0
+        # starts the arrow six tenths of a unit inside the box it leaves.
         return Arrow(a + across, b + across, color=colour, stroke_width=3.5,
-                     buff=1.0, max_tip_length_to_length_ratio=0.28)
+                     buff=1.95, max_tip_length_to_length_ratio=0.28)
 
     @staticmethod
     def _offset(arrow):
@@ -229,7 +265,7 @@ class Journey:
         a, b = arrow.get_start(), arrow.get_end()
         along = (b - a)
         along = along / np.linalg.norm(along)
-        return np.array([-along[1], along[0], 0.0]) * 0.34
+        return np.array([-along[1], along[0], 0.0]) * 0.42
 
     def hop(self, index):
         """One arrow and its number."""
@@ -248,7 +284,7 @@ class BlockChain(VGroup):
     argument for why a chain is hard to rewrite unnoticed.
     """
 
-    def __init__(self, count=3, size=MARGIN_SIZE, box=3.3, height=1.9,
+    def __init__(self, count=3, size=MARGIN_SIZE, box=3.3, height=2.35,
                  gap=0.72, width=FRAME_SAFE, first=1):
         super().__init__()
         self.boxes, self.bodies, self.links = VGroup(), VGroup(), VGroup()
@@ -260,8 +296,17 @@ class BlockChain(VGroup):
             frame.set_fill(SLATE, opacity=0.08)
             title = serif(f"Block {first + index}", size, CHARCOAL)
             stamp = mono("09:4%d" % (index + 1), size, GREY)
-            link = mono("prev: 00a7" if index else "prev: none", size, GREY)
-            body = VGroup(title, stamp, link)
+            # Each block carries its own hash and the hash of the one
+            # before, and they actually match up: block n's "prev" is
+            # block n-1's "hash". The first draft printed the same
+            # "prev" in every block, which says each block follows the
+            # same predecessor -- not a chain at all, and the one thing
+            # this figure exists to show.
+            own = mono(f"hash: {HASHES[index]}", size, GREY)
+            link = mono(
+                f"prev: {HASHES[index - 1]}" if index else "prev: none",
+                size, GREY)
+            body = VGroup(title, stamp, own, link)
             body.arrange(DOWN, buff=GAP_SM * 0.6)
             if body.width > box - GAP_SM * 1.4:
                 raise ValueError(

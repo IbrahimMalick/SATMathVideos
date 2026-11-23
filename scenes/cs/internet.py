@@ -1162,9 +1162,13 @@ class Internet(SATScene):
                     share = len(lines) * (position + 1) // len(beats)
                     already = len(lines) * position // len(beats)
                     for line in card[already:share]:
+                        # 0.5, not 0.7: the beat that opens a card also
+                        # pays for the wipe and the heading, and at 0.7
+                        # the shortest of them overran by two
+                        # hundredths of a second.
                         self.play(FadeIn(line),
                                   run_time=t.fill(
-                                      0.7 / max(1, share - already)))
+                                      0.5 / max(1, share - already)))
                     t.hold()
 
         with self.beat("r_ddos") as t:
