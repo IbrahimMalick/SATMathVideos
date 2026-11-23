@@ -405,10 +405,14 @@ class Internet(SATScene):
             t.hold()
 
         with self.beat("dns_not_page") as t:
-            warn = serif("DNS does not send the page", LABEL_SIZE,
-                         TERRACOTTA)
-            warn.move_to([trip.dns_box.get_center()[0],
-                          trip.dns_box.get_top()[1] + GAP_MD * 1.1, 0])
+            # Between the two servers on the right, not above the DNS
+            # box: there is only a tenth of a unit between the top of
+            # that box and the section heading, and the warning sat in
+            # it. The gap between the DNS box and the web server below
+            # is empty and belongs to this point anyway.
+            warn = prose("DNS does not send the page", LABEL_SIZE,
+                         TERRACOTTA, 4.4)
+            warn.move_to([trip.dns_box.get_center()[0], 0.3, 0])
             self.warn = warn
             self.play(FadeIn(warn), run_time=t.fill(0.4))
             t.hold()
