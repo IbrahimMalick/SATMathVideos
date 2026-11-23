@@ -846,9 +846,12 @@ class Internet(SATScene):
             t.hold()
 
         with self.beat("pharming_cause") as t:
-            self.play(FadeIn(bench.item(
-                1, "malicious code, or poisoned DNS")),
-                run_time=t.fill(0.4))
+            # Two items, not one: the lecture gives two causes, and
+            # one line carrying both is 7.42 units in a 6.05-unit column.
+            self.play(FadeIn(bench.item(1, "malicious code on your PC")),
+                      run_time=t.fill(0.22))
+            self.play(FadeIn(bench.item(1, "or a poisoned DNS server")),
+                      run_time=t.fill(0.3))
             t.hold()
 
         with self.beat("keep_clear") as t:
