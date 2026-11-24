@@ -114,7 +114,14 @@ class TopicStrip(VGroup):
             cell = Square(side_length=side, color=dim, stroke_width=2)
             number = serif(str(i + 1), size, dim)
             if number.width > side * 0.82:
-                number.scale_to_fit_width(side * 0.82)
+                # Raise rather than shrink. Scaling a two-digit number
+                # into a small cell is how a strip ends up with 27px
+                # text, which fails the floor in the acceptance check
+                # and is unreadable on a phone either way.
+                raise ValueError(
+                    f"Number {i + 1} is {number.width:.2f} units wide and "
+                    f"a cell of {side:.2f} allows {side * 0.82:.2f}. Use "
+                    f"side={number.width / 0.82:.2f} or larger.")
             number.move_to(cell)
             self.cells.add(cell)
             self.numbers.add(number)

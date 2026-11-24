@@ -1,0 +1,1096 @@
+{
+  "scene": "cs.algorithms",
+  "duration": 1071.491,
+  "beats": [
+    {
+      "name": "open",
+      "start": 0.0,
+      "end": 6.64
+    },
+    {
+      "name": "turning",
+      "start": 6.64,
+      "end": 12.66
+    },
+    {
+      "name": "cycle_promise",
+      "start": 12.66,
+      "end": 19.6
+    },
+    {
+      "name": "represent",
+      "start": 19.6,
+      "end": 25.3
+    },
+    {
+      "name": "also_testing",
+      "start": 25.3,
+      "end": 35.1
+    },
+    {
+      "name": "precision",
+      "start": 35.1,
+      "end": 40.82
+    },
+    {
+      "name": "without_guessing",
+      "start": 40.82,
+      "end": 46.5
+    },
+    {
+      "name": "pdlc_open",
+      "start": 46.5,
+      "end": 49.8
+    },
+    {
+      "name": "four_stages",
+      "start": 49.8,
+      "end": 55.14
+    },
+    {
+      "name": "analysis",
+      "start": 55.14,
+      "end": 62.14
+    },
+    {
+      "name": "analysis_ipos",
+      "start": 62.14,
+      "end": 69.24
+    },
+    {
+      "name": "requirements",
+      "start": 69.24,
+      "end": 72.82
+    },
+    {
+      "name": "design",
+      "start": 72.82,
+      "end": 77.04
+    },
+    {
+      "name": "design_tools",
+      "start": 77.04,
+      "end": 83.66
+    },
+    {
+      "name": "design_detail",
+      "start": 83.66,
+      "end": 87.36
+    },
+    {
+      "name": "coding",
+      "start": 87.36,
+      "end": 92.4
+    },
+    {
+      "name": "code_checked",
+      "start": 92.4,
+      "end": 95.1
+    },
+    {
+      "name": "testing",
+      "start": 95.1,
+      "end": 99.2
+    },
+    {
+      "name": "compare_results",
+      "start": 99.2,
+      "end": 105.92
+    },
+    {
+      "name": "connected",
+      "start": 105.92,
+      "end": 108.3
+    },
+    {
+      "name": "not_wait",
+      "start": 108.3,
+      "end": 112.16
+    },
+    {
+      "name": "test_parts",
+      "start": 112.16,
+      "end": 120.24
+    },
+    {
+      "name": "iterative",
+      "start": 120.24,
+      "end": 127.82
+    },
+    {
+      "name": "break_open",
+      "start": 127.82,
+      "end": 132.92
+    },
+    {
+      "name": "two_techniques",
+      "start": 132.92,
+      "end": 136.96
+    },
+    {
+      "name": "abstraction_is",
+      "start": 136.96,
+      "end": 142.12
+    },
+    {
+      "name": "library_image",
+      "start": 142.12,
+      "end": 149.2
+    },
+    {
+      "name": "walls",
+      "start": 149.2,
+      "end": 154.4
+    },
+    {
+      "name": "keep_these",
+      "start": 154.4,
+      "end": 159.6
+    },
+    {
+      "name": "decomposition_is",
+      "start": 159.6,
+      "end": 165.02
+    },
+    {
+      "name": "four_parts",
+      "start": 165.02,
+      "end": 173.24
+    },
+    {
+      "name": "divided_again",
+      "start": 173.24,
+      "end": 178.26
+    },
+    {
+      "name": "book_tasks",
+      "start": 178.26,
+      "end": 186.64
+    },
+    {
+      "name": "easier",
+      "start": 186.64,
+      "end": 192.52
+    },
+    {
+      "name": "different_people",
+      "start": 192.52,
+      "end": 195.66
+    },
+    {
+      "name": "must_fit",
+      "start": 195.66,
+      "end": 198.96
+    },
+    {
+      "name": "overdue",
+      "start": 198.96,
+      "end": 206.58
+    },
+    {
+      "name": "ipos_open",
+      "start": 206.58,
+      "end": 213.36
+    },
+    {
+      "name": "payroll",
+      "start": 213.36,
+      "end": 216.58
+    },
+    {
+      "name": "inputs",
+      "start": 216.58,
+      "end": 223.72
+    },
+    {
+      "name": "processes",
+      "start": 223.72,
+      "end": 228.6
+    },
+    {
+      "name": "outputs",
+      "start": 228.6,
+      "end": 232.36
+    },
+    {
+      "name": "storage",
+      "start": 232.36,
+      "end": 236.36
+    },
+    {
+      "name": "four_questions",
+      "start": 236.36,
+      "end": 240.36
+    },
+    {
+      "name": "what_does",
+      "start": 240.36,
+      "end": 242.04
+    },
+    {
+      "name": "comes_out",
+      "start": 242.04,
+      "end": 244.14
+    },
+    {
+      "name": "kept",
+      "start": 244.14,
+      "end": 246.66
+    },
+    {
+      "name": "define_first",
+      "start": 246.66,
+      "end": 251.36
+    },
+    {
+      "name": "algo_open",
+      "start": 251.36,
+      "end": 257.92
+    },
+    {
+      "name": "finite",
+      "start": 257.92,
+      "end": 261.3
+    },
+    {
+      "name": "precise_means",
+      "start": 261.3,
+      "end": 265.04
+    },
+    {
+      "name": "describes_how",
+      "start": 265.04,
+      "end": 268.7
+    },
+    {
+      "name": "not_repeat",
+      "start": 268.7,
+      "end": 274.34
+    },
+    {
+      "name": "grade_example",
+      "start": 274.34,
+      "end": 280.7
+    },
+    {
+      "name": "needs_to",
+      "start": 280.7,
+      "end": 288.52
+    },
+    {
+      "name": "specific",
+      "start": 288.52,
+      "end": 290.96
+    },
+    {
+      "name": "not_precise",
+      "start": 290.96,
+      "end": 294.22
+    },
+    {
+      "name": "exact",
+      "start": 294.22,
+      "end": 301.06
+    },
+    {
+      "name": "ways_open",
+      "start": 301.06,
+      "end": 304.02
+    },
+    {
+      "name": "structure_is",
+      "start": 304.02,
+      "end": 310.62
+    },
+    {
+      "name": "structure_use",
+      "start": 310.62,
+      "end": 315.94
+    },
+    {
+      "name": "structure_not",
+      "start": 315.94,
+      "end": 320.76
+    },
+    {
+      "name": "flow_is",
+      "start": 320.76,
+      "end": 324.2
+    },
+    {
+      "name": "flow_shows",
+      "start": 324.2,
+      "end": 336.58
+    },
+    {
+      "name": "flow_limit",
+      "start": 336.58,
+      "end": 341.36
+    },
+    {
+      "name": "pseudo_is",
+      "start": 341.36,
+      "end": 348.28
+    },
+    {
+      "name": "pseudo_conventions",
+      "start": 348.28,
+      "end": 351.98
+    },
+    {
+      "name": "pseudo_useful",
+      "start": 351.98,
+      "end": 361.32
+    },
+    {
+      "name": "symbols_open",
+      "start": 361.32,
+      "end": 364.86
+    },
+    {
+      "name": "terminator",
+      "start": 364.86,
+      "end": 369.48
+    },
+    {
+      "name": "process",
+      "start": 369.48,
+      "end": 374.62
+    },
+    {
+      "name": "io",
+      "start": 374.62,
+      "end": 380.0
+    },
+    {
+      "name": "decision",
+      "start": 380.0,
+      "end": 386.5
+    },
+    {
+      "name": "subroutine",
+      "start": 386.5,
+      "end": 391.38
+    },
+    {
+      "name": "flowlines",
+      "start": 391.38,
+      "end": 395.32
+    },
+    {
+      "name": "correct_symbol",
+      "start": 395.32,
+      "end": 398.2
+    },
+    {
+      "name": "connect",
+      "start": 398.2,
+      "end": 404.24
+    },
+    {
+      "name": "precise_open",
+      "start": 404.24,
+      "end": 407.28
+    },
+    {
+      "name": "suppose",
+      "start": 407.28,
+      "end": 412.54
+    },
+    {
+      "name": "read_mark",
+      "start": 412.54,
+      "end": 414.82
+    },
+    {
+      "name": "test_mark",
+      "start": 414.82,
+      "end": 419.16
+    },
+    {
+      "name": "assign_a",
+      "start": 419.16,
+      "end": 422.96
+    },
+    {
+      "name": "otherwise",
+      "start": 422.96,
+      "end": 425.96
+    },
+    {
+      "name": "output_grade",
+      "start": 425.96,
+      "end": 428.32
+    },
+    {
+      "name": "notice",
+      "start": 428.32,
+      "end": 432.38
+    },
+    {
+      "name": "not_enough",
+      "start": 432.38,
+      "end": 436.04
+    },
+    {
+      "name": "unambiguous",
+      "start": 436.04,
+      "end": 441.96
+    },
+    {
+      "name": "both",
+      "start": 441.96,
+      "end": 445.8
+    },
+    {
+      "name": "search_open",
+      "start": 445.8,
+      "end": 452.08
+    },
+    {
+      "name": "search_is",
+      "start": 452.08,
+      "end": 460.34
+    },
+    {
+      "name": "names_example",
+      "start": 460.34,
+      "end": 464.16
+    },
+    {
+      "name": "start_first",
+      "start": 464.16,
+      "end": 467.62
+    },
+    {
+      "name": "if_matches",
+      "start": 467.62,
+      "end": 470.72
+    },
+    {
+      "name": "if_not",
+      "start": 470.72,
+      "end": 475.64
+    },
+    {
+      "name": "stops",
+      "start": 475.64,
+      "end": 481.2
+    },
+    {
+      "name": "unsorted",
+      "start": 481.2,
+      "end": 484.44
+    },
+    {
+      "name": "limitation",
+      "start": 484.44,
+      "end": 487.34
+    },
+    {
+      "name": "found_var",
+      "start": 487.34,
+      "end": 493.3
+    },
+    {
+      "name": "found_false",
+      "start": 493.3,
+      "end": 496.26
+    },
+    {
+      "name": "while_loop",
+      "start": 496.26,
+      "end": 503.5
+    },
+    {
+      "name": "found_true",
+      "start": 503.5,
+      "end": 507.1
+    },
+    {
+      "name": "not_present",
+      "start": 507.1,
+      "end": 513.9
+    },
+    {
+      "name": "order_matters",
+      "start": 513.9,
+      "end": 517.08
+    },
+    {
+      "name": "beyond_end",
+      "start": 517.08,
+      "end": 524.0
+    },
+    {
+      "name": "sort_open",
+      "start": 524.0,
+      "end": 526.3
+    },
+    {
+      "name": "sort_is",
+      "start": 526.3,
+      "end": 534.24
+    },
+    {
+      "name": "lets_sort",
+      "start": 534.24,
+      "end": 539.94
+    },
+    {
+      "name": "seven_three",
+      "start": 539.94,
+      "end": 541.68
+    },
+    {
+      "name": "swap1",
+      "start": 541.68,
+      "end": 544.56
+    },
+    {
+      "name": "list_now",
+      "start": 544.56,
+      "end": 548.52
+    },
+    {
+      "name": "seven_five",
+      "start": 548.52,
+      "end": 550.36
+    },
+    {
+      "name": "swap2",
+      "start": 550.36,
+      "end": 554.92
+    },
+    {
+      "name": "seven_two",
+      "start": 554.92,
+      "end": 556.92
+    },
+    {
+      "name": "swap3",
+      "start": 556.92,
+      "end": 561.78
+    },
+    {
+      "name": "after_pass",
+      "start": 561.78,
+      "end": 565.6
+    },
+    {
+      "name": "next_pass",
+      "start": 565.6,
+      "end": 567.36
+    },
+    {
+      "name": "three_five",
+      "start": 567.36,
+      "end": 571.06
+    },
+    {
+      "name": "five_two",
+      "start": 571.06,
+      "end": 574.5
+    },
+    {
+      "name": "becomes",
+      "start": 574.5,
+      "end": 577.44
+    },
+    {
+      "name": "next_comparison",
+      "start": 577.44,
+      "end": 581.78
+    },
+    {
+      "name": "continues",
+      "start": 581.78,
+      "end": 587.12
+    },
+    {
+      "name": "exam_passes",
+      "start": 587.12,
+      "end": 592.78
+    },
+    {
+      "name": "show_each",
+      "start": 592.78,
+      "end": 599.12
+    },
+    {
+      "name": "count_open",
+      "start": 599.12,
+      "end": 605.64
+    },
+    {
+      "name": "counter",
+      "start": 605.64,
+      "end": 607.34
+    },
+    {
+      "name": "increase",
+      "start": 607.34,
+      "end": 612.3
+    },
+    {
+      "name": "above_fifty",
+      "start": 612.3,
+      "end": 617.42
+    },
+    {
+      "name": "check_each",
+      "start": 617.42,
+      "end": 622.78
+    },
+    {
+      "name": "total_zero",
+      "start": 622.78,
+      "end": 625.94
+    },
+    {
+      "name": "add_value",
+      "start": 625.94,
+      "end": 629.3
+    },
+    {
+      "name": "max_init",
+      "start": 629.3,
+      "end": 635.7
+    },
+    {
+      "name": "compare_rest",
+      "start": 635.7,
+      "end": 638.86
+    },
+    {
+      "name": "replace_max",
+      "start": 638.86,
+      "end": 643.04
+    },
+    {
+      "name": "replace_min",
+      "start": 643.04,
+      "end": 647.56
+    },
+    {
+      "name": "not_zero",
+      "start": 647.56,
+      "end": 651.46
+    },
+    {
+      "name": "negatives",
+      "start": 651.46,
+      "end": 657.58
+    },
+    {
+      "name": "average",
+      "start": 657.58,
+      "end": 661.8
+    },
+    {
+      "name": "divide",
+      "start": 661.8,
+      "end": 665.48
+    },
+    {
+      "name": "check_open",
+      "start": 665.48,
+      "end": 669.54
+    },
+    {
+      "name": "validation_is",
+      "start": 669.54,
+      "end": 674.44
+    },
+    {
+      "name": "not_true",
+      "start": 674.44,
+      "end": 677.16
+    },
+    {
+      "name": "range_check",
+      "start": 677.16,
+      "end": 683.04
+    },
+    {
+      "name": "range_example",
+      "start": 683.04,
+      "end": 686.78
+    },
+    {
+      "name": "length_check",
+      "start": 686.78,
+      "end": 690.6
+    },
+    {
+      "name": "password",
+      "start": 690.6,
+      "end": 694.0
+    },
+    {
+      "name": "type_check",
+      "start": 694.0,
+      "end": 700.52
+    },
+    {
+      "name": "presence_check",
+      "start": 700.52,
+      "end": 704.72
+    },
+    {
+      "name": "format_check",
+      "start": 704.72,
+      "end": 709.22
+    },
+    {
+      "name": "check_digit",
+      "start": 709.22,
+      "end": 714.58
+    },
+    {
+      "name": "verification_is",
+      "start": 714.58,
+      "end": 720.16
+    },
+    {
+      "name": "visual",
+      "start": 720.16,
+      "end": 724.08
+    },
+    {
+      "name": "double_entry",
+      "start": 724.08,
+      "end": 729.02
+    },
+    {
+      "name": "key_distinction",
+      "start": 729.02,
+      "end": 731.18
+    },
+    {
+      "name": "validation_asks",
+      "start": 731.18,
+      "end": 735.16
+    },
+    {
+      "name": "verification_asks",
+      "start": 735.16,
+      "end": 739.9
+    },
+    {
+      "name": "dob",
+      "start": 739.9,
+      "end": 750.44
+    },
+    {
+      "name": "test_open",
+      "start": 750.44,
+      "end": 753.54
+    },
+    {
+      "name": "normal",
+      "start": 753.54,
+      "end": 757.26
+    },
+    {
+      "name": "ages_example",
+      "start": 757.26,
+      "end": 763.52
+    },
+    {
+      "name": "abnormal",
+      "start": 763.52,
+      "end": 766.08
+    },
+    {
+      "name": "outside",
+      "start": 766.08,
+      "end": 776.34
+    },
+    {
+      "name": "extreme",
+      "start": 776.34,
+      "end": 784.72
+    },
+    {
+      "name": "extreme_values",
+      "start": 784.72,
+      "end": 787.48
+    },
+    {
+      "name": "boundary",
+      "start": 787.48,
+      "end": 793.62
+    },
+    {
+      "name": "boundary_values",
+      "start": 793.62,
+      "end": 798.36
+    },
+    {
+      "name": "accepted_limits",
+      "start": 798.36,
+      "end": 801.16
+    },
+    {
+      "name": "just_outside",
+      "start": 801.16,
+      "end": 805.22
+    },
+    {
+      "name": "remember_diff",
+      "start": 805.22,
+      "end": 807.36
+    },
+    {
+      "name": "extreme_acceptable",
+      "start": 807.36,
+      "end": 812.02
+    },
+    {
+      "name": "beyond_edges",
+      "start": 812.02,
+      "end": 816.78
+    },
+    {
+      "name": "cover_cases",
+      "start": 816.78,
+      "end": 819.84
+    },
+    {
+      "name": "only_normal",
+      "start": 819.84,
+      "end": 824.58
+    },
+    {
+      "name": "trace_open",
+      "start": 824.58,
+      "end": 828.56
+    },
+    {
+      "name": "records",
+      "start": 828.56,
+      "end": 834.86
+    },
+    {
+      "name": "lets_trace",
+      "start": 834.86,
+      "end": 836.92
+    },
+    {
+      "name": "total_starts",
+      "start": 836.92,
+      "end": 843.52
+    },
+    {
+      "name": "each_time",
+      "start": 843.52,
+      "end": 848.34
+    },
+    {
+      "name": "x_two",
+      "start": 848.34,
+      "end": 853.6
+    },
+    {
+      "name": "x_four",
+      "start": 853.6,
+      "end": 859.0
+    },
+    {
+      "name": "x_six",
+      "start": 859.0,
+      "end": 864.52
+    },
+    {
+      "name": "outputs_are",
+      "start": 864.52,
+      "end": 868.08
+    },
+    {
+      "name": "follow_order",
+      "start": 868.08,
+      "end": 871.92
+    },
+    {
+      "name": "only_when",
+      "start": 871.92,
+      "end": 875.94
+    },
+    {
+      "name": "record_output",
+      "start": 875.94,
+      "end": 879.54
+    },
+    {
+      "name": "not_every_cell",
+      "start": 879.54,
+      "end": 884.54
+    },
+    {
+      "name": "errors_open",
+      "start": 884.54,
+      "end": 888.96
+    },
+    {
+      "name": "syntax",
+      "start": 888.96,
+      "end": 894.92
+    },
+    {
+      "name": "may_not_run",
+      "start": 894.92,
+      "end": 899.88
+    },
+    {
+      "name": "logic",
+      "start": 899.88,
+      "end": 906.2
+    },
+    {
+      "name": "boundary_err",
+      "start": 906.2,
+      "end": 911.3
+    },
+    {
+      "name": "init_err",
+      "start": 911.3,
+      "end": 916.94
+    },
+    {
+      "name": "update_err",
+      "start": 916.94,
+      "end": 924.78
+    },
+    {
+      "name": "condition_err",
+      "start": 924.78,
+      "end": 932.0
+    },
+    {
+      "name": "loop_example",
+      "start": 932.0,
+      "end": 940.44
+    },
+    {
+      "name": "that_is",
+      "start": 940.44,
+      "end": 944.0
+    },
+    {
+      "name": "debugging",
+      "start": 944.0,
+      "end": 949.46
+    },
+    {
+      "name": "first_step",
+      "start": 949.46,
+      "end": 955.78
+    },
+    {
+      "name": "recap_open",
+      "start": 955.78,
+      "end": 958.18
+    },
+    {
+      "name": "r_pdlc",
+      "start": 958.18,
+      "end": 965.02
+    },
+    {
+      "name": "r_analysis",
+      "start": 965.02,
+      "end": 970.7
+    },
+    {
+      "name": "r_design",
+      "start": 970.7,
+      "end": 975.22
+    },
+    {
+      "name": "r_testing",
+      "start": 975.22,
+      "end": 981.48
+    },
+    {
+      "name": "r_abstraction",
+      "start": 981.48,
+      "end": 984.44
+    },
+    {
+      "name": "r_decomposition",
+      "start": 984.44,
+      "end": 988.5
+    },
+    {
+      "name": "r_represent",
+      "start": 988.5,
+      "end": 994.52
+    },
+    {
+      "name": "r_methods",
+      "start": 994.52,
+      "end": 1005.58
+    },
+    {
+      "name": "r_validation",
+      "start": 1005.58,
+      "end": 1008.78
+    },
+    {
+      "name": "r_verification",
+      "start": 1008.78,
+      "end": 1012.98
+    },
+    {
+      "name": "r_testdata",
+      "start": 1012.98,
+      "end": 1018.54
+    },
+    {
+      "name": "r_trace",
+      "start": 1018.54,
+      "end": 1022.42
+    },
+    {
+      "name": "exam_open",
+      "start": 1022.42,
+      "end": 1028.64
+    },
+    {
+      "name": "exam_stage",
+      "start": 1028.64,
+      "end": 1033.64
+    },
+    {
+      "name": "exam_algo",
+      "start": 1033.64,
+      "end": 1036.84
+    },
+    {
+      "name": "exam_test",
+      "start": 1036.84,
+      "end": 1045.08
+    },
+    {
+      "name": "exam_valid",
+      "start": 1045.08,
+      "end": 1050.48
+    },
+    {
+      "name": "exam_trace",
+      "start": 1050.48,
+      "end": 1058.82
+    },
+    {
+      "name": "pause",
+      "start": 1058.82,
+      "end": 1064.26
+    },
+    {
+      "name": "close",
+      "start": 1064.26,
+      "end": 1071.491
+    }
+  ]
+}
